@@ -1,0 +1,201 @@
+- name: EPITA.fr
+  href: https://www.epita.fr/
+  class: tile-wide
+  style:
+  - 'background-color: #0f9bd7'
+  - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
+  
+- name: EPITA.net
+  href: https://epita.net/
+  class: tile-medium
+  style:
+  - 'background-color: #223049'
+  - 'background-image: url(https://epita.net/sites/all/themes/thecompany-responsive-theme/logo.png)'
+  
+- name: Intracom
+  href: http://intracom.epita.fr/
+  class: tile-medium
+  style:
+  - 'background-color: #ff6f00'
+  - 'background-image: url(http://intracom.epita.fr/assets/img/intracomLogo.png)'
+  
+- name: Odyssée
+  href: http://odyssee.epita.fr/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(http://odyssee.epita.fr/img/design/nv/logo_epita.jpg)'
+  
+- name: CRI EPITA
+  href: https://cri.epita.fr/
+  class: tile-medium
+  style:
+  - 'background-color: #607d8b'
+  
+- name: ACDC EPITA
+  href: https://acdc.epita.fr/
+  class: tile-wide
+  style:
+  - 'background-color: #922b2c'
+  - 'background-image: url(https://acdc.epita.fr/media/themes/img/header2021.gif)'
+  
+- name: IonisX
+  href: https://ionisx.com/
+  class: tile-medium
+  style:
+  - 'background-color: #bd1e86'
+  - 'background-image: url(https://cdn.ionisx.com/images/logo-executive.67e327e7.png)'
+  
+- name: Chronos
+  href: http://chronos.epita.net/
+  class: tile-medium
+  style:
+  - 'background-color: #b77fa2'
+  - 'background-image: url(http://chronos.epita.net/ade/img/bgEnterprise.gif)'
+  
+- class: tiles-grid tile-medium
+  items:
+  - name: iChronos
+    href: https://ichronos.net/
+    class: tile-small-wide
+    style:
+    - 'background-color: #616161'
+    
+  - name: Map EPITA
+    href: http://map.epita.eu/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    
+- name: Algo TD
+  href: https://algo-td.infoprepa.epita.fr/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #e5e5f0'
+  - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
+  
+- class: tiles-grid tile-medium
+  items:
+  - name: Debug-Pro (Archi)
+    href: http://www.debug-pro.com/epita/archi/s0
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #f5f5ff'
+    
+  - name: Debug-Pro (Prog)
+    href: http://www.debug-pro.com/epita/prog/s0
+    class: tile-small-wide
+    style:
+    - 'background-color: #2f97b6'
+    
+- name: Wiki Prog
+  href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #f6f6f6'
+  
+- name: Pegasus
+  href: https://prepa-epita.helvetius.net/pegasus
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
+  
+- name: 
+  href: https://www.projet-voltaire.fr/
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #a2d416'
+  - 'background-image: url(https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png)'
+  
+- name: Back to Basics
+  href: https://backtobasics.axen.io/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://backtobasics.axen.io/static/img/favicon.png)'
+  
+- name: Redux
+  href: https://redux.epita.cf/
+  class: tile-medium
+  style:
+  - 'background-color: #1254a4'
+  - 'background-image: url(https://redux.epita.cf/img/logo.png)'
+  
+- name: Zoroark.guru
+  href: https://zoroark.guru/
+  class: tile-medium
+  style:
+  - 'background-color: #424242'
+  - 'background-image: url(https://zoroark.guru/favicon.png)'
+  
+- name: Epidocs
+  href: https://epidocs.eu/
+  class: tile-medium
+  style:
+  - 'background-color: #24292e; background-image: url(https://avatars2.githubusercontent.com/u/46812871?s=150)'
+  
+- name: Epinnal
+  href: https://github.com/Epinnal
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff; background-image: url(https://avatars3.githubusercontent.com/u/33984020?s=150)'
+  
+- name: HyperAnnales
+  href: https://annales.hyperion.tf/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #eee'
+  
+- name: Mastercorp
+  href: http://mastercorp.epita.eu/
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #fff'
+  
+- name: EpiPortal
+  href: https://epiportal.com/
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #fafafa'
+  
+- name: Bocal
+  href: https://console.bocal.org/
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #e7e7e7'
+  
+- name: Dyjix
+  href: https://dyjix.eu/
+  class: tile-small-wide
+  style:
+  - 'background-color: #26a7e0; background-image: url(https://dyjix.eu/images/vesta_logo.png)'
+  
+- name: EpiLogin
+  href: https://epilogin.fr/
+  class: tile-medium
+  style:
+  - 'background-color: #41b6f3'
+  - 'background-image: url(https://epilogin.fr/static/img/mainpage/EpiLogin_logo.png), url(https://epilogin.fr/static/img/mainpage/background_epita.jpg)'
+  - 'background-size: contain, cover'
+  
+- name: EPIFUN
+  href: https://www.epifun.com/
+  class: tile-medium
+  style:
+  - 'background-color: #41b6f3'
+  - 'background-image: url(https://www.epifun.com/img/logo.png), url(https://www.epifun.com/img/background-toptitle.jpg)'
+  - 'background-size: contain, cover'
+  
+- name: Segfault
+  href: https://fb.me/Segfolt
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #4267b2'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20292577_1368594359891882_6097096610434857111_n.jpg?_nc_cat=102&_nc_ht=scontent-cdg2-1.xx&oh=b23e173bf1f6f029bbc090b0d08d282b&oe=5D93BE6E)'
+  
+- name: Epiquote
+  href: http://epiquote.fr/
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #e7e7e7'
