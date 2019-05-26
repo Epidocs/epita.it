@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	{% if site.title %}<meta name="title" content="{{ site.title }}" />{% endif %}
+	{% if site.description %}<meta name="description" content="{{ site.description }}" />{% endif %}
+	{% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}" />{% endif %}
+	{% if site.author %}<meta name="author" content="{{ site.author }}" />{% endif %}
+	<link rel="shortcut icon" type="image/png" href="{{ '/assets/logo.png?v=' | append: site.github.build_revision | relative_url }}">
+    
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
+	<link rel="stylesheet" href="{{ '/assets/css/tiles.css?v=' | append: site.github.build_revision | relative_url }}" />
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" />
+	
+	<title>
+		{{ site.title }}
+		{% if page.title %}– {{ page.title }}{% endif %}
+	</title>
+    
+</head>
+<body>
+
+	{{ content }}
+
+</body>
+</html>

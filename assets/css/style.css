@@ -1,0 +1,32 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #50a0f0;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	color: #fff;
+}
+
+#main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+#main h1 {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+#footer {
+	background: rgba(0, 0, 0, .1);
+	padding: 20px;
+}
+@media (min-width: 992px) {
+	#footer .container {
+		max-width: 960px;
+	}
+}
+#footer ul { padding: 0 }
+#footer ul > li { display: inline-block }
+#footer ul > li + li { margin-left: 5px }
+#footer ul > li + li:before { content: "|"; margin-right: 10px; }
