@@ -101,7 +101,7 @@
   - 'background-color: #fff'
   - 'background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
   
-- name: 
+- name: Projet Voltaire
   href: https://www.projet-voltaire.fr/
   class: tile-small-wide text-dark
   style:
