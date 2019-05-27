@@ -152,7 +152,7 @@
   
 - name: HyperAnnales
   href: https://annales.hyperion.tf/
-  class: tile-medium text-dark
+  class: tile-small-wide text-dark
   style:
   - 'background-color: #eee'
   
