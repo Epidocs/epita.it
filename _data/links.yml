@@ -101,13 +101,22 @@
   - 'background-color: #fff'
   - 'background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
   
-- name: Projet Voltaire
-  href: https://www.projet-voltaire.fr/
-  class: tile-small-wide text-dark
-  style:
-  - 'background-color: #a2d416'
-  - 'background-image: url(https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png)'
-  
+- class: tiles-grid tile-medium
+  items:
+  - name: Projet Voltaire
+    href: https://www.projet-voltaire.fr/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #a2d416'
+    - 'background-image: url(https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png)'
+    
+  - name: Rosetta Stone
+    href: https://he2.tellmemorecampus.com/
+    class: tile-small-wide
+    style:
+    - 'background-color: #262a2f'
+    - 'background-image: url(https://resources.rosettastone.com/assets/ss/221270--8920100/App_Themes/Default/Global/0101UnidentifiedHomePage/Images/r/logo_RS.png)'
+    
 - name: Back to Basics
   href: https://backtobasics.axen.io/
   class: tile-medium text-dark
