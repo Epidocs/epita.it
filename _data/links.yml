@@ -178,6 +178,14 @@
   style:
   - 'background-color: #e7e7e7'
   
+- name: sup-sub
+  href: https://sup-sub.cri.epita.fr/
+  class: tile-small-wide
+  style:
+  - 'background-color: #014866'
+  - 'background-image: url(https://sup-sub.cri.epita.fr/static/project/img/logo-epita-nb.png)'
+  - 'background-position-x: right'
+  
 - name: GConfs
   href: https://gconfs.fr/
   class: tile-small-wide
