@@ -116,6 +116,7 @@
     style:
     - 'background-color: #262a2f'
     - 'background-image: url(https://resources.rosettastone.com/assets/ss/221270--8920100/App_Themes/Default/Global/0101UnidentifiedHomePage/Images/r/logo_RS.png)'
+    - 'background-position-y: 25%'
     
 - name: Back to Basics
   href: https://backtobasics.axen.io/
