@@ -109,6 +109,7 @@
     style:
     - 'background-color: #a2d416'
     - 'background-image: url(https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png)'
+    - 'background-position-x: right'
     
   - name: Rosetta Stone
     href: https://he2.tellmemorecampus.com/
