@@ -182,6 +182,7 @@
   style:
   - 'background-color: #26a7e0'
   - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
+  - 'background-position-y: 25%'
   
 - name: EpiLogin
   href: https://epilogin.fr/
