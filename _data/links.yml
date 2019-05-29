@@ -210,6 +210,13 @@
   - 'background-image: url(https://www.lrde.epita.fr/skins/common/images/logo.png)'
   - 'background-position-x: right'
   
+- name: 3ie
+  href: https://www.3ie.fr/
+  class: tile-small-wide
+  style:
+  - 'background-color: #00ffd2'
+  - 'background-image: url(https://www.3ie.fr/images/3ie-logo.svg)'
+  
 - name: Dyjix
   href: https://dyjix.eu/
   class: tile-small-wide
