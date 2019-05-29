@@ -176,6 +176,14 @@
   style:
   - 'background-color: #e7e7e7'
   
+- name: LRDE
+  href: https://www.lrde.epita.fr/
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #d5e6f7'
+  - 'background-image: url(https://www.lrde.epita.fr/skins/common/images/logo.png)'
+  - 'background-position-x: right'
+  
 - name: Dyjix
   href: https://dyjix.eu/
   class: tile-small-wide
