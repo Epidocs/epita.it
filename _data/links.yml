@@ -184,6 +184,14 @@
   - 'background-image: url(https://www.lrde.epita.fr/skins/common/images/logo.png)'
   - 'background-position-x: right'
   
+- name: LSE
+  href: https://lse.epita.fr/
+  class: tile-small-wide
+  style:
+  - 'background-color: #141212'
+  - 'background-image: url(https://lse.epita.fr/images/logoLSE.png)'
+  - 'background-position-x: 75%'
+  
 - name: Dyjix
   href: https://dyjix.eu/
   class: tile-small-wide
