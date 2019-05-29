@@ -192,6 +192,14 @@
   - 'background-image: url(https://lse.epita.fr/images/logoLSE.png)'
   - 'background-position-x: 75%'
   
+- name: GConfs
+  href: https://gconfs.fr/
+  class: tile-small-wide
+  style:
+  - 'background-color: #343a40'
+  - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
+  - 'background-position-y: 25%'
+  
 - name: Dyjix
   href: https://dyjix.eu/
   class: tile-small-wide
