@@ -142,13 +142,15 @@
   href: https://epidocs.eu/
   class: tile-medium
   style:
-  - 'background-color: #24292e; background-image: url(https://avatars2.githubusercontent.com/u/46812871?s=150)'
+  - 'background-color: #24292e'
+  - 'background-image: url(https://avatars2.githubusercontent.com/u/46812871?s=150)'
   
 - name: Epinnal
   href: https://github.com/Epinnal
   class: tile-medium text-dark
   style:
-  - 'background-color: #fff; background-image: url(https://avatars3.githubusercontent.com/u/33984020?s=150)'
+  - 'background-color: #fff'
+  - 'background-image: url(https://avatars3.githubusercontent.com/u/33984020?s=150)'
   
 - name: HyperAnnales
   href: https://annales.hyperion.tf/
@@ -178,7 +180,8 @@
   href: https://dyjix.eu/
   class: tile-small-wide
   style:
-  - 'background-color: #26a7e0; background-image: url(https://dyjix.eu/images/vesta_logo.png)'
+  - 'background-color: #26a7e0'
+  - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
   
 - name: EpiLogin
   href: https://epilogin.fr/
