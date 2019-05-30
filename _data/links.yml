@@ -145,7 +145,7 @@
   class: tile-medium
   style:
   - 'background-color: #24292e'
-  - 'background-image: url(https://avatars2.githubusercontent.com/u/46812871?s=150)'
+  - 'background-image: url(https://epidocs.eu/assets/logo.png)'
   
 - name: Epinnal
   href: https://github.com/Epinnal
