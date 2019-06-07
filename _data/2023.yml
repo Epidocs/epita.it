@@ -1,0 +1,8 @@
+- title: Communauté étudiante
+  items:
+  - name: Discord EPITA 2023
+    href: https://discordapp.com/invite/8eVWhxm
+    class: tile-wide
+    style:
+    - 'background-color: #202225'
+    - 'background-image: url(https://cdn.discordapp.com/icons/415982150714916874/756eb354fd78ceb10c60c59a03eb8111.png?size=256)'
