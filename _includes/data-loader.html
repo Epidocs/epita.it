@@ -1,0 +1,8 @@
+{% for section in data %}
+	<h2>{{ section.title }}</h2>
+	
+	{% assign grid = section.items %}
+	{% include grid-loader.html %}
+	
+	{% unless forloop.last %}<hr />{% endunless %}
+{% endfor %}
