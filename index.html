@@ -7,30 +7,17 @@ layout: default
 		<h1>EPITA.it</h1>
 		<p>Portail vers des services en lien avec l'EPITA</p>
 
+		{% assign grid = site.data.links %}
+		{% include grid-loader.html %}
+		
+		<!--
 		<div class="tiles-grid">
-			<!--
 			<div class="tile-medium">
 				<span class="icon fab fa-facebook fa-fw"></span>
 				<span class="branding-bar">Facebook</span>
 				<span class="badge-bottom">10</span>
 			</div>
-			-->
-			
-			{% for item in site.data.links %}
-				{% if item.items %}
-					<div class="{{ item.class }}">
-						{% for subitem in item.items %}
-							<a href="{{ subitem.href }}" class="{{ subitem.class }}" style="{% for rule in subitem.style %}{{ rule }}{% unless forloop.last %}; {% endunless %}{% endfor %}">
-								<span class="branding-bar">{{ subitem.name }}</span>
-							</a>
-						{% endfor %}
-					</div>
-				{% else %}
-					<a href="{{ item.href }}" class="{{ item.class }}" style="{% for rule in item.style %}{{ rule }}{% unless forloop.last %}; {% endunless %}{% endfor %}">
-						<span class="branding-bar">{{ item.name }}</span>
-					</a>
-				{% endif %}
-			{% endfor %}
 		</div>
+		-->
 	</div>
 </div>
