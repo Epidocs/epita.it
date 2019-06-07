@@ -7,6 +7,10 @@ body {
 	color: #fff;
 }
 
+#navbar {
+	margin-bottom: 1rem;
+}
+
 #main {
 	max-width: 960px;
 	margin: 0 auto;
