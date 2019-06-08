@@ -230,9 +230,9 @@
   
 - name: Dyjix
   href: https://dyjix.eu/
-  class: tile-small-wide
+  class: tile-small-wide text-dark
   style:
-  - 'background-color: #26a7e0'
+  - 'background-color: #fff'
   - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
   - 'background-size: 90%'
   - 'background-position-y: 25%'
