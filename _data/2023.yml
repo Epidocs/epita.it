@@ -33,6 +33,13 @@
     - 'background-image: url(https://ogamlgames.github.io/img/gameIcon.png)'
     - 'background-size: 80%'
     
+  - name: Scape
+    href: https://globalscopegames.wixsite.com/website
+    class: tile-medium
+    style:
+    - 'background-color: #191919'
+    - 'background-image: url(https://static.wixstatic.com/media/bfd2e2_53b2c50174e143aeb2ddb5e8296e86ec~mv2_d_1818_1818_s_2.png/v1/fill/w_150,h_150,al_c,q_80,usm_0.66_1.00_0.01/bfd2e2_53b2c50174e143aeb2ddb5e8296e86ec~mv2_d_1818_1818_s_2.webp)'
+    
   - name: SCFE
     href: https://salamanders.dev/
     class: tile-medium text-dark
