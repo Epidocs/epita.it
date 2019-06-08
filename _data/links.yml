@@ -2,7 +2,7 @@
   href: https://www.epita.fr/
   class: tile-wide
   style:
-  - 'background-color: #0f9bd7'
+  - 'background-color: #03374e'
   - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
   
 - name: EPITA.net
@@ -18,6 +18,8 @@
   style:
   - 'background-color: #ff6f00'
   - 'background-image: url(http://intracom.epita.fr/assets/img/intracomLogo.png)'
+  - 'background-size: 90%'
+  - 'background-position-y: 25%'
   
 - name: Odyssée
   href: http://odyssee.epita.fr/
@@ -45,6 +47,7 @@
   style:
   - 'background-color: #bd1e86'
   - 'background-image: url(https://cdn.ionisx.com/images/logo-executive.67e327e7.png)'
+  - 'background-size: 90%'
   
 - name: Chronos
   href: http://chronos.epita.net/
@@ -52,6 +55,7 @@
   style:
   - 'background-color: #b77fa2'
   - 'background-image: url(http://chronos.epita.net/ade/img/bgEnterprise.gif)'
+  - 'background-size: 90%'
   
 - class: tiles-grid tile-medium
   items:
@@ -109,6 +113,7 @@
     style:
     - 'background-color: #a2d416'
     - 'background-image: url(https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png)'
+    - 'background-size: auto 90%'
     - 'background-position-x: right'
     
   - name: Rosetta Stone
@@ -117,6 +122,7 @@
     style:
     - 'background-color: #262a2f'
     - 'background-image: url(https://resources.rosettastone.com/assets/ss/221270--8920100/App_Themes/Default/Global/0101UnidentifiedHomePage/Images/r/logo_RS.png)'
+    - 'background-size: 90%'
     - 'background-position-y: 25%'
     
 - name: Back to Basics
@@ -125,6 +131,8 @@
   style:
   - 'background-color: #fff'
   - 'background-image: url(https://backtobasics.axen.io/static/img/favicon.png)'
+  - 'background-size: 90%'
+  - 'background-position-y: top'
   
 - name: Redux
   href: https://redux.epita.cf/
@@ -192,6 +200,7 @@
   style:
   - 'background-color: #343a40'
   - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
+  - 'background-size: 90%'
   - 'background-position-y: 25%'
   
 - name: LSE
@@ -200,6 +209,7 @@
   style:
   - 'background-color: #141212'
   - 'background-image: url(https://lse.epita.fr/images/logoLSE.png)'
+  - 'background-size: auto 90%'
   - 'background-position-x: 75%'
   
 - name: LRDE
@@ -215,14 +225,16 @@
   class: tile-small-wide
   style:
   - 'background-color: #00ffd2'
+  - 'background-size: auto 90%'
   - 'background-image: url(https://www.3ie.fr/images/3ie-logo.svg)'
   
 - name: Dyjix
   href: https://dyjix.eu/
-  class: tile-small-wide
+  class: tile-small-wide text-dark
   style:
-  - 'background-color: #26a7e0'
+  - 'background-color: #fff'
   - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
+  - 'background-size: 90%'
   - 'background-position-y: 25%'
   
 - name: EpiLogin
@@ -239,7 +251,7 @@
   style:
   - 'background-color: #41b6f3'
   - 'background-image: url(https://www.epifun.com/img/logo.png), url(https://www.epifun.com/img/background-toptitle.jpg)'
-  - 'background-size: contain, cover'
+  - 'background-size: 90%, cover'
   
 - name: Segfault
   href: https://fb.me/Segfolt
