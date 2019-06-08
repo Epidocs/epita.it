@@ -23,6 +23,7 @@
     style:
     - 'background-color: #2d142c'
     - 'background-image: url(https://ogamlgames.github.io/img/gameIcon.png)'
+    - 'background-size: 80%'
     
   - name: SCFE
     href: https://salamanders.dev/
@@ -30,3 +31,5 @@
     style:
     - 'background-color: #fff'
     - 'background-image: url(https://salamanders.dev/library/scfe.svg)'
+    - 'background-size: 80%'
+    - 'background-position-x: right'
