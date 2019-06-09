@@ -17,6 +17,14 @@
     - 'background-image: url(https://g00pix.github.io/ProjetBlast/logo.png), url(https://g00pix.github.io/ProjetBlast/square-background-150px.png)'
     - 'background-size: contain, cover'
     
+  - name: Du Bekar!
+    href: https://hobbyte.azurewebsites.net/
+    class: tile-medium
+    style:
+    - 'background-color: #333'
+    - 'background-image: url(https://hobbyte.azurewebsites.net/images/logo-du-bekarv3.png)'
+    - 'background-size: 90%'
+    
   - name: EscapeIt
     href: https://www.justcodeit.gastbob40.ovh/
     class: tile-medium
