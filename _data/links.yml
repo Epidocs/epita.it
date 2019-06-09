@@ -49,6 +49,15 @@
   - 'background-image: url(https://cdn.ionisx.com/images/logo-executive.67e327e7.png)'
   - 'background-size: 90%'
   
+- name: Assistants
+  href: https://assistants.epita.fr/
+  class: tile-medium
+  style:
+  - 'background-color: #684e8c'
+  - 'background-image: url(http://assistants.epita.fr/logos/yaka2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
+  - 'background-size: 90%, auto'
+  - 'background-repeat: no-repeat, repeat'
+  
 - name: Chronos
   href: http://chronos.epita.net/
   class: tile-medium
