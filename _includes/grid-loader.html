@@ -1,13 +1,9 @@
-<div class="tiles-grid">
+<div class="tiles-grid{% if grid_class %} {{ grid_class }}{% endif %}">
 	{% for item in grid %}
 		{% if item.items %}
-			<div class="{{ item.class }}">
-				{% for subitem in item.items %}
-					<a href="{{ subitem.href }}" class="{{ subitem.class }}" style="{% for rule in subitem.style %}{{ rule }}{% unless forloop.last %}; {% endunless %}{% endfor %}">
-						<span class="branding-bar">{{ subitem.name }}</span>
-					</a>
-				{% endfor %}
-			</div>
+			{% assign grid = item.items %}
+			{% assign grid_class = item.class %}
+			{% include grid-loader.html %}
 		{% else %}
 			<a href="{{ item.href }}" class="{{ item.class }}" style="{% for rule in item.style %}{{ rule }}{% unless forloop.last %}; {% endunless %}{% endfor %}">
 				<span class="branding-bar">{{ item.name }}</span>
