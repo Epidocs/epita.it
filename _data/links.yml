@@ -87,6 +87,12 @@
   - 'background-color: #e5e5f0'
   - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
   
+- name: Debug-Pro (Prog)
+  href: http://www.debug-pro.com/epita/prog/s0
+  class: tile-medium
+  style:
+  - 'background-color: #2f97b6'
+  
 - class: tile-medium
   items:
   - name: Debug-Pro (Archi)
@@ -95,18 +101,12 @@
     style:
     - 'background-color: #f5f5ff'
     
-  - name: Debug-Pro (Prog)
-    href: http://www.debug-pro.com/epita/prog/s0
-    class: tile-small-wide
+  - name: Wiki Prog
+    href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
+    class: tile-small-wide text-dark
     style:
-    - 'background-color: #2f97b6'
+    - 'background-color: #f6f6f6'
     
-- name: Wiki Prog
-  href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
-  class: tile-small-wide text-dark
-  style:
-  - 'background-color: #f6f6f6'
-  
 - name: Pegasus
   href: https://prepa-epita.helvetius.net/pegasus
   class: tile-medium text-dark
