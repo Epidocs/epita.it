@@ -6,3 +6,11 @@
     style:
     - 'background-color: #202225'
     - 'background-image: url(https://cdn.discordapp.com/icons/352524741980061698/1354631b275be398828293db89515300.png?size=256)'
+    
+- title: Projets de S2
+  items:
+  - name: DITH
+    href: https://dith.hyperion.tf
+    class: tile-medium
+    style:
+    - 'background-color: #1b1f22'
