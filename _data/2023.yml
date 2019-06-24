@@ -42,6 +42,13 @@
     - 'background-image: url(https://www.heroesofthekeep.cf/images/hero-logo.png)'
     - 'background-position-y: 25%'
     
+  - name: Hunter-Hunter
+    href: http://hunter-hunter.fr/
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #ffffff'
+    - 'background-image: url(https://cdn.discordapp.com/attachments/448927470134099989/592811496384233513/8.jpg)'
+    
   - name: PunchMan
     href: https://sajjteam2023.wixsite.com/website-1
     class: tile-medium text-dark
