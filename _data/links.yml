@@ -119,8 +119,7 @@
   class: tile-medium text-dark
   style:
   - 'background-color: #fff'
-  - 'background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
-  
+  - 'background-image: url(https://inge-etud.epita.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
   
 - class: tile-medium
   items:
@@ -291,7 +290,7 @@
   - 'background-image: url(https://www.logolynx.com/images/logolynx/97/973922683e2bef373d662c29680247ac.png)'
 
 - name: Logements
-  href: https://logement.epita.fr
+  href: https://logement.epita.fr/
   class: tile-medium text-dark
   style:
   - 'background-color: #fff'
