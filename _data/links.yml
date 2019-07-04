@@ -286,12 +286,13 @@
   href: https://epita.fandom.com/fr/
   class: tile-small-wide
   style:
-  - 'background-color: #00262f'
-  - 'background-image: url(https://www.logolynx.com/images/logolynx/97/973922683e2bef373d662c29680247ac.png)'
+  - 'background-color: #002a32'
+  - 'background-image: url(https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png)'
+  - 'background-position-x: right'
 
 - name: Logements
   href: https://logement.epita.fr/
   class: tile-medium text-dark
   style:
   - 'background-color: #fff'
-  - 'background-image: url(https://pbs.twimg.com/profile_images/982210316581814272/okLNcPgm.jpg)'
+  - 'background-image: url(https://pbs.twimg.com/profile_images/982210316581814272/okLNcPgm_200x200.jpg)'
