@@ -54,7 +54,7 @@
   class: tile-medium
   style:
   - 'background-color: #684e8c'
-  - 'background-image: url(http://assistants.epita.fr/logos/yaka2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
+  - 'background-image: url(https://assistants.epita.fr/logos/yaka2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
   - 'background-size: 90%, auto'
   - 'background-repeat: no-repeat, repeat'
   
@@ -107,12 +107,20 @@
     style:
     - 'background-color: #f6f6f6'
     
-- name: Pegasus
+- name: Pegasus Prepa
   href: https://prepa-epita.helvetius.net/pegasus
   class: tile-medium text-dark
   style:
   - 'background-color: #fff'
   - 'background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
+
+- name: Pegasus Ing
+  href: https://inge-etud.epita.net/pegasus/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
+  
   
 - class: tile-medium
   items:
@@ -270,7 +278,21 @@
   - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20292577_1368594359891882_6097096610434857111_n.jpg?_nc_cat=102&_nc_ht=scontent-cdg2-1.xx&oh=b23e173bf1f6f029bbc090b0d08d282b&oe=5D93BE6E)'
   
 - name: Epiquote
-  href: http://epiquote.fr/
+  href: https://epiquote.fr/
   class: tile-small-wide text-dark
   style:
   - 'background-color: #e7e7e7'
+
+- name: Wikia Epita
+  href: https://epita.fandom.com/fr/
+  class: tile-small-wide
+  style:
+  - 'background-color: #00262f'
+  - 'background-image: url(https://www.logolynx.com/images/logolynx/97/973922683e2bef373d662c29680247ac.png)'
+
+- name: Logements
+  href: https://logement.epita.fr
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://pbs.twimg.com/profile_images/982210316581814272/okLNcPgm.jpg)'
