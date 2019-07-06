@@ -107,20 +107,24 @@
     style:
     - 'background-color: #f6f6f6'
     
-- name: Pegasus Prepa
-  href: https://prepa-epita.helvetius.net/pegasus
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
-
-- name: Pegasus Ing
-  href: https://inge-etud.epita.net/pegasus/
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(https://inge-etud.epita.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png)'
-  
+- class: tile-medium
+  items:
+  - name: Pegasus Prepa
+    href: https://prepa-epita.helvetius.net/pegasus
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg)'
+    - 'background-position-x: left'
+    
+  - name: Pegasus Ing
+    href: https://inge-etud.epita.net/pegasus/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg)'
+    - 'background-position-x: left'
+    
 - class: tile-medium
   items:
   - name: Projet Voltaire
@@ -202,6 +206,22 @@
   style:
   - 'background-color: #e7e7e7'
   
+- name: Wikia Epita
+  href: https://epita.fandom.com/fr/
+  class: tile-small-wide
+  style:
+  - 'background-color: #002a32'
+  - 'background-image: url(https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png)'
+  - 'background-position-x: right'
+  
+- name: Logements
+  href: https://logement.epita.fr/
+  class: tile-small-wide text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://pbs.twimg.com/profile_images/982210316581814272/okLNcPgm_200x200.jpg)'
+  - 'background-position-x: right'
+  
 - name: sup-sub
   href: https://sup-sub.cri.epita.fr/
   class: tile-small-wide
@@ -252,18 +272,3 @@
   - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
   - 'background-size: 90%'
   - 'background-position-y: 25%'
-
-- name: Wikia Epita
-  href: https://epita.fandom.com/fr/
-  class: tile-small-wide
-  style:
-  - 'background-color: #002a32'
-  - 'background-image: url(https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png)'
-  - 'background-position-x: right'
-
-- name: Logements
-  href: https://logement.epita.fr/
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(https://pbs.twimg.com/profile_images/982210316581814272/okLNcPgm_200x200.jpg)'
