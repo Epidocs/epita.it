@@ -4,6 +4,13 @@ The open source web portal for EPITA websites and projects
 
 Visit the website: [epita.it](https://epita.it/)
 
+## Development
+
+```bash
+$ gem install bundler jekyll
+$ bundle exec jekyll serve
+```
+
 ## Contributing
 
 To contribute, you can fork this project and then open a pull request.
