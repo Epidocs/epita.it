@@ -252,12 +252,6 @@
   - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
   - 'background-size: 90%'
   - 'background-position-y: 25%'
-  
-- name: Epiquote
-  href: https://epiquote.fr/
-  class: tile-small-wide text-dark
-  style:
-  - 'background-color: #e7e7e7'
 
 - name: Wikia Epita
   href: https://epita.fandom.com/fr/

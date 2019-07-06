@@ -17,6 +17,12 @@
     - 'background-color: #dfe8ef'
     - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20292577_1368594359891882_6097096610434857111_n.jpg?_nc_cat=102&_nc_ht=scontent-cdg2-1.xx&oh=b23e173bf1f6f029bbc090b0d08d282b&oe=5D93BE6E)'
     
+  - name: Epiquote
+    href: https://epiquote.fr/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #e7e7e7'
+    
 - title: Services
   items:
   - name: EpiLogin
