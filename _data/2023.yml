@@ -81,3 +81,12 @@
     - 'background-image: url(https://salamanders.dev/library/scfe.svg)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
+
+  - name: Tales of the Apocalypse
+    href: http://filiga.me/
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://cdn.discordapp.com/attachments/595197904365289492/595566748317777921/Tales.png)'
+    - 'background-size: 80%'
+    - 'background-position-y: 25%'
