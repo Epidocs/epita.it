@@ -8,6 +8,13 @@
     - 'background-image: url(https://www.epifun.com/img/logo.png), url(https://www.epifun.com/img/background-toptitle.jpg)'
     - 'background-size: 90%, cover'
     
+  - name: EPITA International
+    href: https://discord.gg/bQ7Tpk2
+    class: tile-medium
+    style:
+    - 'background-color: #80b2fa'
+    - 'background-image: url(https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256)'
+    
 - title: Blogs et pages
   items:
   - name: Segfault
