@@ -253,29 +253,6 @@
   - 'background-size: 90%'
   - 'background-position-y: 25%'
   
-- name: EpiLogin
-  href: https://epilogin.fr/
-  class: tile-medium
-  style:
-  - 'background-color: #41b6f3'
-  - 'background-image: url(https://epilogin.fr/static/img/mainpage/EpiLogin_logo.png), url(https://epilogin.fr/static/img/mainpage/background_epita.jpg)'
-  - 'background-size: contain, cover'
-  
-- name: EPIFUN
-  href: https://www.epifun.com/
-  class: tile-medium
-  style:
-  - 'background-color: #41b6f3'
-  - 'background-image: url(https://www.epifun.com/img/logo.png), url(https://www.epifun.com/img/background-toptitle.jpg)'
-  - 'background-size: 90%, cover'
-  
-- name: Segfault
-  href: https://fb.me/Segfolt
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #dfe8ef'
-  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20292577_1368594359891882_6097096610434857111_n.jpg?_nc_cat=102&_nc_ht=scontent-cdg2-1.xx&oh=b23e173bf1f6f029bbc090b0d08d282b&oe=5D93BE6E)'
-  
 - name: Epiquote
   href: https://epiquote.fr/
   class: tile-small-wide text-dark
