@@ -7,8 +7,8 @@ Visit the website: [epita.it](https://epita.it/)
 ## Development
 
 ```bash
-$ gem install bundler jekyll
-$ bundle exec jekyll serve
+$ gem install jekyll
+$ jekyll serve
 ```
 
 ## Contributing
