@@ -12,6 +12,9 @@ body {
 	color: #fff;
 }
 
+a { color: #50a0f0 }
+a:hover { color: #4080c0 }
+
 #navbar {
 	margin-bottom: 1rem;
 }
