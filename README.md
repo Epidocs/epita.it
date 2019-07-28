@@ -4,7 +4,7 @@ The open source web portal for EPITA websites and projects
 
 Visit the website: [epita.it](https://epita.it/)
 
-## Development
+## Build instructions
 
 ```bash
 $ gem install jekyll
