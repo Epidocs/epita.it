@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background: #204060;
@@ -5,6 +9,9 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 	color: #fff;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 #navbar {
@@ -13,9 +20,12 @@ body {
 
 #main {
 	max-width: 960px;
+	min-width: 66%;
 	margin: 0 auto;
 	padding: 20px 0;
+	flex: 1 0 auto;
 }
+
 #main h1 {
 	font-size: 4em;
 	font-weight: bold;
@@ -24,6 +34,7 @@ body {
 #footer {
 	background: rgba(0, 0, 0, .1);
 	padding: 20px;
+	flex-shrink: 0;
 }
 @media (min-width: 992px) {
 	#footer .container {
