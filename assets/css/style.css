@@ -1,17 +1,15 @@
-html {
+html, body {
 	height: 100%;
 }
-
 body {
 	font-family: 'Roboto', sans-serif;
 	background: #204060;
+	display: flex;
 	margin: 0;
 	padding: 0;
+	flex-direction: column;
 	overflow-x: hidden;
 	color: #fff;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
 }
 
 #navbar {
@@ -20,16 +18,12 @@ body {
 
 #main {
 	max-width: 960px;
-	min-width: 66%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 20px 0;
-	flex: 1 0 auto;
+	flex: 1 0;
 }
-
-#main h1 {
-	font-size: 4em;
-	font-weight: bold;
-}
+#main h1 { font-size: 4em; font-weight: bold }
 
 #footer {
 	background: rgba(0, 0, 0, .1);
@@ -44,4 +38,4 @@ body {
 #footer ul { padding: 0 }
 #footer ul > li { display: inline-block }
 #footer ul > li + li { margin-left: 5px }
-#footer ul > li + li:before { content: "|"; margin-right: 10px; }
+#footer ul > li + li:before { content: "|"; margin-right: 10px }
