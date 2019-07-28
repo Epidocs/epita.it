@@ -5,10 +5,12 @@ $(document).ready(function() {
 	$link.addClass('btn-primary').removeClass('btn-secondary');
 	
 	// Handle display behavior on small screens
-	$(window).resize(function() {
+	var checkScreenSize = function() {
 		if($('#main').width() < 500)
 			$('#main').addClass('smallscreen');
 		else
 			$('#main').removeClass('smallscreen');
-	});
+	};
+	checkScreenSize(); // Execute once after script load
+	$(window).resize(checkScreenSize);
 });
