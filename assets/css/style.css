@@ -26,7 +26,15 @@ a:hover { color: #4080c0 }
 	padding: 20px 0;
 	flex: 1 0;
 }
+#main.smallscreen {
+	text-align: center;
+}
 #main h1 { font-size: 4em; font-weight: bold }
+#main.smallscreen .tiles-grid {
+	width: fit-content;
+	margin: 0 auto;
+	text-align: initial;
+}
 
 #footer {
 	background: rgba(0, 0, 0, .1);
