@@ -50,6 +50,21 @@
     - 'background-image: url(https://cdn.discordapp.com/attachments/448927470134099989/592811496384233513/8.jpg)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
+
+  - name: "Orion: A New Horizon"
+    href: http://orion-game.ml/
+    class: tile-medium
+    style:
+    - 'background-color: #000'
+    - 'background-image: url(https://cdn.discordapp.com/attachments/522443590287491082/606516673926922260/unknown.png)'
+    - 'background-size: cover'
+  
+  - name: "Overplant"
+    href: https://lycoon.github.io/en/
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://i.imgur.com/Y2jXy1C.png)'
     
   - name: PunchMan
     href: https://sajjteam2023.wixsite.com/website-1
@@ -66,6 +81,13 @@
     - 'background-image: url(https://ogamlgames.github.io/img/gameIcon.png)'
     - 'background-size: 80%'
     
+  - name: "SALADE, TOMATE, CADDY !!!"
+    href: https://theobviouscorp.com/stc.html
+    class: tile-medium
+    style:
+    - 'background-color: #1681de'
+    - 'background-image: url(https://theobviouscorp.com/img/stc/STC_SQUARE_LOGO.png)'
+
   - name: Scape
     href: https://globalscopegames.wixsite.com/website
     class: tile-medium
@@ -89,4 +111,13 @@
     - 'background-color: #fff'
     - 'background-image: url(https://cdn.discordapp.com/attachments/595197904365289492/595566748317777921/Tales.png)'
     - 'background-size: 80%'
+    - 'background-position-y: 25%'
+
+  - name: "TouchDownRumble"
+    href: https://christopherlefevre6.wixsite.com/touchdownrumble
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://static.wixstatic.com/media/1c7e57_5fe8c337aa9e403184fad1eec4f591d1~mv2.png/v1/fill/w_96,h_96,al_c,q_80,usm_0.66_1.00_0.01/jeu2.webp)'
+    - 'background-size: 75%'
     - 'background-position-y: 25%'
