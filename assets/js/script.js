@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	// Get current URL path and assign 'active' class
 	var pathname = window.location.pathname;
-	var $link = $('#navbar a[href="' + pathname + '"]');
-	$link.addClass('btn-primary').removeClass('btn-secondary');
+	var $link = $('#navbar .navbar-nav a[href="' + pathname + '"]');
+	$link.addClass('active');
 	
 	// Handle display behavior on small screens
 	var checkScreenSize = function() {
