@@ -16,7 +16,7 @@ a { color: #50a0f0 }
 a:hover { color: #4080c0 }
 
 #navbar {
-	margin-bottom: 1rem;
+	background: #183048;
 }
 
 #main {
