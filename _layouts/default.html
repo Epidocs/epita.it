@@ -34,7 +34,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="{{ 'index.html' | relative_url }}">{{ site.title }}</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
 				<div class="navbar-nav">
 					{% assign current = page.url | downcase | split: '/' %}
 					{% for item in site.data.navbar %}
-						<a class="nav-item nav-link{% if current[1] == item.href %} active{% endif %}" href="{{ item.href | relative_url }}">{{ item.title }}</a>
+						<a class="nav-item nav-link" href="{{ item.href | relative_url }}">{{ item.title }}</a>
 					{% endfor %}
 				</div>
 			</div>
