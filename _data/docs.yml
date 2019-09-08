@@ -4,7 +4,10 @@
     href: https://doc.cri.epita.fr/
     class: tile-wide
     style:
-    - 'background-color: #2980B9'
+    - 'background-color: #2980b9'
+    - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
+    - 'background-size: 30%'
+    - 'background-position-y: 30%'
 
 - title: Guides
   items:
@@ -12,7 +15,8 @@
     href: https://sheatnoisette.github.io/SupProjectStarterGuide/
     class: tile-wide text-dark
     style:
-    - 'background-color: #FFFFFF'
+    - 'background-color: #ffffff'
     - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
     - 'background-size: 30%'
+    - 'background-position-y: 30%'
     
