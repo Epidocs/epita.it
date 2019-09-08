@@ -1,8 +1,7 @@
-{% for section in data %}
+{% for section in include.data %}
 	<h2>{{ section.title }}</h2>
 	
-	{% assign grid = section.items %}
-	{% include grid-loader.html %}
+	{% include grid-loader.html grid = section.items %}
 	
 	{% unless forloop.last %}<hr />{% endunless %}
 {% endfor %}

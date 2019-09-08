@@ -7,7 +7,6 @@ layout: default
 		<h1>Documentation</h1>
 		<p>Portail vers de la documentation et des guides en lien avec l'EPITA</p>
 
-		{% assign data = site.data.docs %}
-		{% include data-loader.html %}
+		{% include data-loader.html data = site.data.docs %}
 	</div>
 </div>

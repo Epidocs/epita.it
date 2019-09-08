@@ -7,7 +7,6 @@ layout: default
 		<h1>Communauté étudiante</h1>
 		<p>Portail vers des groupes communautaires communs à toutes les promotions</p>
 
-		{% assign data = site.data.community %}
-		{% include data-loader.html %}
+		{% include data-loader.html data = site.data.community %}
 	</div>
 </div>
