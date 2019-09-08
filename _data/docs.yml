@@ -1,0 +1,18 @@
+- title: Documentation
+  items:
+  - name: Documentation EPITA (CRI)
+    href: https://doc.cri.epita.fr/
+    class: tile-wide
+    style:
+    - 'background-color: #2980B9'
+
+- title: Guides
+  items:
+  - name: Guide de survie Projet S2
+    href: https://sheatnoisette.github.io/SupProjectStarterGuide/
+    class: tile-wide text-dark
+    style:
+    - 'background-color: #FFFFFF'
+    - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
+    - 'background-size: 30%'
+    
