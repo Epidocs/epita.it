@@ -161,13 +161,6 @@
   - 'background-color: #1254a4'
   - 'background-image: url(https://redux.epita.cf/img/logo.png)'
   
-- name: Zoroark.guru
-  href: https://zoroark.guru/
-  class: tile-medium
-  style:
-  - 'background-color: #424242'
-  - 'background-image: url(https://zoroark.guru/favicon.png)'
-  
 - name: Epidocs
   href: https://epidocs.eu/
   class: tile-medium
