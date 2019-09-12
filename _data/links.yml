@@ -167,6 +167,7 @@
   style:
   - 'background-color: #24292e'
   - 'background-image: url(https://epidocs.eu/assets/logo.png)'
+  - 'background-size: 90%'
   
 - name: Epinnal
   href: https://github.com/Epinnal
