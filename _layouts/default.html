@@ -41,11 +41,13 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					{% assign current = page.url | downcase | split: '/' %}
+				<div class="navbar-nav mr-auto">
 					{% for item in site.data.navbar %}
 						<a class="nav-item nav-link" href="{{ item.href | relative_url }}">{{ item.title }}</a>
 					{% endfor %}
+				</div>
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="{{ site.github.repository_url }}"><i class="fas fa-code-branch fa-fw"></i> Github</a>
 				</div>
 			</div>
 		</div>
