@@ -38,8 +38,9 @@
   href: https://acdc.epita.fr/
   class: tile-wide
   style:
-  - 'background-color: #922b2c'
-  - 'background-image: url(https://acdc.epita.fr/media/themes/img/header2021.gif)'
+  - 'background-color: #577899'
+  - 'background-image: url(https://acdc.epita.fr/media/themes/img/header2022_g4QyGpn.png)'
+  - 'background-size: 75%'
   
 - name: IonisX
   href: https://ionisx.com/
@@ -53,9 +54,10 @@
   href: https://assistants.epita.fr/
   class: tile-medium
   style:
-  - 'background-color: #684e8c'
-  - 'background-image: url(https://assistants.epita.fr/logos/yaka2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
-  - 'background-size: 90%, auto'
+  - 'background-color: #222'
+  - 'background-image: url(https://assistants.epita.fr/logos/acu2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
+  - 'background-position-y: 20%'
+  - 'background-size: 50%, auto'
   - 'background-repeat: no-repeat, repeat'
   
 - name: Chronos

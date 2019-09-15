@@ -15,7 +15,8 @@
     style:
     - 'background-color: #424242'
     - 'background-image: url(https://kb.zoroark.guru/favicon.png)'
-    - 'background-size: 90%'
+    - 'background-position-y: 10%'
+    - 'background-size: 70%'
     
 - title: Guides
   items:
