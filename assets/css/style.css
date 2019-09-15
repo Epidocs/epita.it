@@ -18,6 +18,15 @@ a:hover { color: #4080c0 }
 #navbar {
 	background: #183048;
 }
+#navbar .dropdown-menu {
+    background: #285078;
+}
+#navbar .dropdown-menu .dropdown-item {
+    color: #fff;
+}
+#navbar .dropdown-menu .dropdown-item:hover, #navbar .dropdown-menu .dropdown-item:focus {
+    background: #306090;
+}
 
 #main {
 	max-width: 960px;
