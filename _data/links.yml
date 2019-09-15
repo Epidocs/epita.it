@@ -55,9 +55,10 @@
   class: tile-medium
   style:
   - 'background-color: #222'
-  - 'background-image: url(https://assistants.epita.fr/logos/acu2020_logo.svg)'
+  - 'background-image: url(https://assistants.epita.fr/logos/acu2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
   - 'background-position-y: 20%'
-  - 'background-size: 50%'
+  - 'background-size: 50%, auto'
+  - 'background-repeat: no-repeat, repeat'
   
 - name: Chronos
   href: http://chronos.epita.net/
