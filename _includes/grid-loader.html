@@ -9,7 +9,7 @@
 				{% capture href %}{{ item.href }}{% endcapture %}
 			{% endif %}
 			
-			<a href="{{ item.href }}" class="{{ item.class }}" style="{% for rule in item.style %}{{ rule }}{% unless forloop.last %}; {% endunless %}{% endfor %}">
+			<a href="{{ href }}" class="{{ item.class }}" style="{% for rule in item.style %}{{ rule }}{% unless forloop.last %}; {% endunless %}{% endfor %}">
 				<span class="branding-bar">{{ item.name }}</span>
 			</a>
 		{% endif %}
