@@ -2,13 +2,13 @@
   items:
   - class: tile-medium
     items:
-    - name: Archi S1 (fr)
+    - name: Archi S1 (FR)
       href: http://www.debug-pro.com/epita/archi/s1/fr
       class: tile-small-wide text-dark
       style:
       - 'background-color: #f5f5ff'
 
-    - name: Archi S1 (en)
+    - name: Archi S1 (EN)
       href: http://www.debug-pro.com/epita/archi/s1/en
       class: tile-small-wide text-dark
       style:
@@ -18,13 +18,13 @@
   items:
   - class: tile-medium
     items:
-    - name: Archi S2 (fr)
-      href: http://www.debug-pro.com/epita/archi/s2/en
+    - name: Archi S2 (FR)
+      href: http://www.debug-pro.com/epita/archi/s2/fr
       class: tile-small-wide text-dark
       style:
       - 'background-color: #f5f5ff'
 
-    - name: Archi S2 (en)
+    - name: Archi S2 (EN)
       href: http://www.debug-pro.com/epita/archi/s2/en
       class: tile-small-wide text-dark
       style:
@@ -34,13 +34,13 @@
   items:
   - class: tile-medium
     items:
-    - name: Archi S3 (fr)
-      href: http://www.debug-pro.com/epita/archi/s3/en
+    - name: Archi S3 (FR)
+      href: http://www.debug-pro.com/epita/archi/s3/fr
       class: tile-small-wide text-dark
       style:
       - 'background-color: #f5f5ff'
 
-    - name: Archi S3 (en)
+    - name: Archi S3 (EN)
       href: http://www.debug-pro.com/epita/archi/s3/en
       class: tile-small-wide text-dark
       style:
@@ -56,13 +56,13 @@
   items:
   - class: tile-medium
     items:
-    - name: Archi S4 (fr)
-      href: http://www.debug-pro.com/epita/archi/s4/en
+    - name: Archi S4 (FR)
+      href: http://www.debug-pro.com/epita/archi/s4/fr
       class: tile-small-wide text-dark
       style:
       - 'background-color: #f5f5ff'
 
-    - name: Archi S4 (en)
+    - name: Archi S4 (EN)
       href: http://www.debug-pro.com/epita/archi/s4/en
       class: tile-small-wide text-dark
       style:
