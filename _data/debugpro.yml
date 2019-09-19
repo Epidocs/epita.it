@@ -2,7 +2,7 @@
   items:
   - name: Archi S1 (EN)
     href: http://www.debug-pro.com/epita/archi/s1/en
-    class: tile-normal text-dark
+    class: tile-medium text-dark
     style:
     - 'background-color: #f5f5ff'
 
