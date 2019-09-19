@@ -1,4 +1,4 @@
-- title: 1st Semester
+- title: SUP
   items:
   - class: tile-medium
     items:
@@ -14,8 +14,6 @@
       style:
       - 'background-color: #f5f5ff'
 
-- title: 2nd Semester
-  items:
   - class: tile-medium
     items:
     - name: Archi S2 (FR)
@@ -30,7 +28,7 @@
       style:
       - 'background-color: #f5f5ff'
 
-- title: 3rd Semester
+- title: SPE
   items:
   - class: tile-medium
     items:
@@ -52,8 +50,6 @@
     style:
     - 'background-color: #2f97b6'
 
-- title: 4th Semester
-  items:
   - class: tile-medium
     items:
     - name: Archi S4 (FR)
