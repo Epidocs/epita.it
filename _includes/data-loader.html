@@ -1,5 +1,5 @@
 {% for section in include.data %}
-	<h2>{{ section.title }}</h2>
+	{% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
 	
 	{% include grid-loader.html grid = section.items %}
 	

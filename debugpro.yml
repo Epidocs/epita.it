@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h1>Debug-Pro (Archi & Prog)</h1>
+<p>Portail vers les sites Debug-Pro de chaque promotion.</p>
+
+{% include data-loader.html data = site.data.debugpro %}

@@ -1,0 +1,44 @@
+- title: 1st Semester
+  items:
+  - name: Archi S1
+    href: http://www.debug-pro.com/epita/archi/s1/en
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #f5f5ff'
+
+- title: 2nd Semester
+  items:
+  - name: Archi S2
+    href: http://www.debug-pro.com/epita/archi/s2/en
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #f5f5ff'
+
+- title: 3rd Semester
+  items:
+  - name: Archi S3
+    href: http://www.debug-pro.com/epita/archi/s3/en
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #f5f5ff'
+
+  - name: Prog S3
+    href: http://www.debug-pro.com/epita/prog/s3
+    class: tile-medium
+    style:
+    - 'background-color: #2f97b6'
+
+- title: 4th Semester
+  items:
+  - name: Archi S4
+    href: http://www.debug-pro.com/epita/archi/s4/en
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #f5f5ff'
+
+  - name: Prog S4
+    href: http://www.debug-pro.com/epita/prog/s4
+    class: tile-medium
+    style:
+    - 'background-color: #2f97b6'
+

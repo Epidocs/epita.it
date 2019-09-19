@@ -3,6 +3,12 @@
 		{% if item.items %}
 			{% include grid-loader.html grid = item.items grid_class = item.class %}
 		{% else %}
+			{% if item.relurl %}
+				{% capture href %}{{ item.relurl | relative_url }}{% endcapture %}
+			{% else %}
+				{% capture href %}{{ item.href }}{% endcapture %}
+			{% endif %}
+			
 			<a href="{{ item.href }}" class="{{ item.class }}" style="{% for rule in item.style %}{{ rule }}{% unless forloop.last %}; {% endunless %}{% endfor %}">
 				<span class="branding-bar">{{ item.name }}</span>
 			</a>

@@ -98,7 +98,7 @@
 - class: tile-medium
   items:
   - name: Debug-Pro (Archi)
-    href: http://www.debug-pro.com/epita/archi/s0
+    relurl: debugpro
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
