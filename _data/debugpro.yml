@@ -1,18 +1,10 @@
 - title: SUP
   items:
-  - class: tile-medium
-    items:
-    - name: Archi S1 (FR)
-      href: http://www.debug-pro.com/epita/archi/s1/fr
-      class: tile-small-wide text-dark
-      style:
-      - 'background-color: #f5f5ff'
-
-    - name: Archi S1 (EN)
-      href: http://www.debug-pro.com/epita/archi/s1/en
-      class: tile-small-wide text-dark
-      style:
-      - 'background-color: #f5f5ff'
+  - name: Archi S1 (EN)
+    href: http://www.debug-pro.com/epita/archi/s1/en
+    class: tile-normal text-dark
+    style:
+    - 'background-color: #f5f5ff'
 
   - class: tile-medium
     items:
