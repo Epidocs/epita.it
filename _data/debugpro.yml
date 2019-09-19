@@ -24,7 +24,7 @@
 
   - name: Prog S3
     href: http://www.debug-pro.com/epita/prog/s3
-    class: tile-medium
+    class: tile-small-wide
     style:
     - 'background-color: #2f97b6'
 
@@ -38,7 +38,7 @@
 
   - name: Prog S4
     href: http://www.debug-pro.com/epita/prog/s4
-    class: tile-medium
+    class: tile-small-wide
     style:
     - 'background-color: #2f97b6'
 
