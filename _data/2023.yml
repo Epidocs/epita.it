@@ -1,4 +1,4 @@
-- title: Communauté étudiante
+- title: Student Community
   items:
   - name: Discord EPITA 2023
     href: https://discordapp.com/invite/8eVWhxm
@@ -7,7 +7,7 @@
     - 'background-color: #202225'
     - 'background-image: url(https://cdn.discordapp.com/icons/415982150714916874/756eb354fd78ceb10c60c59a03eb8111.png?size=256)'
     
-- title: Projets de S2
+- title: S2 Projects
   items:
   - name: Blast
     href: https://g00pix.github.io/ProjetBlast/

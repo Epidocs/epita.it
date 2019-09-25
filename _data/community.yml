@@ -1,4 +1,4 @@
-- title: Groupes de discussion
+- title: Student Global Community
   items:
   - name: EPIFUN
     href: https://www.epifun.com/
@@ -15,7 +15,7 @@
     - 'background-color: #80b2fa'
     - 'background-image: url(https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256)'
     
-- title: Blogs et pages
+- title: Blogs & Pages
   items:
   - name: Segfault
     href: https://fb.me/Segfolt

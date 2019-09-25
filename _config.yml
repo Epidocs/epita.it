@@ -1,5 +1,9 @@
+# Site configuration
 title: EPITA.it
 description: Portail vers des services en lien avec l'EPITA
 keywords: Epidocs, portail, portal, open, source, open-source, services, sites, internet, website, , documents, utiles, useful, étudiants, students, EPITA 
 author: Matiboux
-lang: fr
+lang: en
+
+# Jekyll confiuration
+exclude: [CNAME]
