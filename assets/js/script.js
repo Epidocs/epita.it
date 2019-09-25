@@ -25,4 +25,16 @@ $(document).ready(function() {
 	};
 	checkScreenSize(); // Execute once after script load
 	$(window).resize(checkScreenSize);
+	
+	// Handle Outbound link events for Analytics
+	$('.tiles-grid').on('click', 'a', function() {
+		// Check if link is not relative
+		if($(this).attr('href')[0] != '/') {
+			gtag('event', 'click', {
+				event_category: 'Outbound Link',
+				event_label: $(this).find('.branding-bar').text(),
+				transport_type: 'beacon'
+			});
+		}
+	});
 });
