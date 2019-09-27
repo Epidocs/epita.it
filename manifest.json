@@ -1,0 +1,26 @@
+{
+	"short_name": "EPITA.it",
+	"name": "EPITA.it",
+	"icons": [
+		{
+			"src": "/assets/icon-64.png",
+			"type": "image/png",
+			"sizes": "64x64"
+		},
+		{
+			"src": "/assets/icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/assets/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/?utm_source=pwa",
+	"background_color": "#183048",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#183048"
+}
