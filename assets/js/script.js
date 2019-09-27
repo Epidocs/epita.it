@@ -37,4 +37,9 @@ $(document).ready(function() {
 			});
 		}
 	});
+	
+	// Open tiles grid links in a new tab (from the web app)
+	if (window.matchMedia('(display-mode: standalone)').matches) {
+		$('.tiles-grid a').attr('target', '_blank');
+	}
 });
