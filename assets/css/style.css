@@ -17,6 +17,7 @@ a:hover { color: #4080c0 }
 
 #navbar {
 	background: #183048;
+	display: initial; /* Toggles off `display: flex` from Bootstrap */
 }
 #navbar .dropdown-menu {
     background: #285078;
@@ -24,7 +25,8 @@ a:hover { color: #4080c0 }
 #navbar .dropdown-menu .dropdown-item {
     color: #fff;
 }
-#navbar .dropdown-menu .dropdown-item:hover, #navbar .dropdown-menu .dropdown-item:focus {
+#navbar .dropdown-menu .dropdown-item:hover,
+#navbar .dropdown-menu .dropdown-item:focus {
     background: #306090;
 }
 
