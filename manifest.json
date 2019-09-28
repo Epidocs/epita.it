@@ -18,7 +18,7 @@
 			"sizes": "512x512"
 		}
 	],
-	"start_url": "/?utm_source=pwa",
+	"start_url": "/?utm_source=pwa&utm_medium=pwa",
 	"background_color": "#183048",
 	"display": "standalone",
 	"theme_color": "#183048"
