@@ -42,4 +42,7 @@ $(document).ready(function() {
 	if (window.matchMedia('(display-mode: standalone)').matches) {
 		$('.tiles-grid a').attr('target', '_blank');
 	}
+	else {
+		$('#addToHomeScreen').show();
+	}
 });
