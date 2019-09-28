@@ -21,7 +21,7 @@
 - title: Guides
   items:
   - name: Guide de survie Projet S2 (FR)
-    href: https://sheatnoisette.github.io/SupProjectStarterGuide/
+    href: https://s2guide.epita.it/
     class: tile-wide text-dark
     style:
     - 'background-color: #ffffff'
