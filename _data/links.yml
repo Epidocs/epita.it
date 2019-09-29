@@ -17,7 +17,7 @@
   class: tile-medium
   style:
   - 'background-color: #ff6f00'
-  - 'background-image: url(http://intracom.epita.fr/assets/img/intracomLogo.png)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/intracom.png)'
   - 'background-size: 90%'
   - 'background-position-y: 25%'
   
@@ -26,7 +26,7 @@
   class: tile-medium text-dark
   style:
   - 'background-color: #fff'
-  - 'background-image: url(http://odyssee.epita.fr/img/design/nv/logo_epita.jpg)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
   
 - name: CRI EPITA
   href: https://cri.epita.fr/
@@ -65,7 +65,7 @@
   class: tile-medium
   style:
   - 'background-color: #b77fa2'
-  - 'background-image: url(http://chronos.epita.net/ade/img/bgEnterprise.gif)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/chronos.gif)'
   - 'background-size: 90%'
   
 - class: tile-medium
