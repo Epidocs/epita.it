@@ -38,9 +38,14 @@ $(document).ready(function() {
 		}
 	});
 	
-	// Open tiles grid links in a new tab (from the web app)
+	// Open all external links in a new tab (from the web app)
+	$.expr[':'].external = function(a) {
+		var regex = /^(\w+:)?\/\//;
+		var href = $(a).attr('href');
+		return href !== undefined && href.search(regex) !== -1;
+	};
 	if (window.matchMedia('(display-mode: standalone)').matches) {
-		$('.tiles-grid a').attr('target', '_blank');
+		$('a:external').attr('target', '_blank');
 	}
 	else {
 		$('#addToHomeScreen').show();
