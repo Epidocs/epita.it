@@ -8,7 +8,15 @@
     - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
-    
+
+  - name: Epita ALED
+    href: https://epita.litarvan.com/a/aled
+    class: tile-medium
+    style:
+    - 'background-color: #1E1E1E'
+    - 'background-image: url(/assets/ALED-icon.png)'
+    - 'background-size: 75%'
+
   - name: kb.zoroark.guru
     href: https://kb.zoroark.guru/
     class: tile-medium

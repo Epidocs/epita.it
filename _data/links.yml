@@ -88,7 +88,27 @@
   style:
   - 'background-color: #e5e5f0'
   - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
-  
+
+- class: tile-medium
+  items:
+  - name: Algo Cours (FR)
+    href: https://algo.infoprepa.epita.fr/index.php/Epita:Algo:Cours
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png)'
+    - 'background-position: 50% 15%'
+    - 'background-size: 50%'
+
+  - name: Algo Courses (EN)
+    href: https://algo.infoprepa.epita.fr/english/index.php/Epita:Algo:Course
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png)'
+    - 'background-position: 50% 15%'
+    - 'background-size: 50%'
+
 - name: Debug-Pro (Prog)
   href: http://www.debug-pro.com/epita/prog/s0
   class: tile-medium
