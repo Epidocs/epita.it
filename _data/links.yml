@@ -44,10 +44,10 @@
   
 - name: IonisX
   href: https://ionisx.com/
-  class: tile-medium
+  class: tile-medium text-dark
   style:
-  - 'background-color: #bd1e86'
-  - 'background-image: url(https://cdn.ionisx.com/images/logo-executive.67e327e7.png)'
+  - 'background-color: #d09c01'
+  - 'background-image: url(https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png)'
   - 'background-size: 90%'
   
 - name: Assistants
