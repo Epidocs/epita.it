@@ -50,6 +50,13 @@
   - 'background-image: url(https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png)'
   - 'background-size: 90%'
   
+- name: Office
+  href: https://www.office.com/?auth=2
+  class: tile-medium
+  style:
+  - 'background-color: #ea3c00'
+  - 'background-image: url(https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/113/2016/02/OfcLogoText-768x331.jpg)'
+  
 - name: Assistants
   href: https://assistants.epita.fr/
   class: tile-medium
