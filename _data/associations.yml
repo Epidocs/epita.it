@@ -66,3 +66,12 @@
     - 'background-color: #343a40'
     - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
     - 'background-size: 90%'
+    
+  - name: VJN
+    icon: fab fa-facebook
+    href: https://www.facebook.com/vjnights/
+    class: tile-medium
+    style:
+    - 'background-color: #000'
+    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/12572977_1065413473525700_5438134733743263789_n.png?_nc_cat=101&_nc_oc=AQmJIf42z0WZExXwpzMWPUD--CF6Bn6xRY4fylSBbpl66sj653vgTIBOOTM-VD2Wk_8&_nc_ht=scontent-cdg2-1.xx&oh=110eb04351c6699ee5b11d29e3059bf0&oe=5E1D32FC)'
+    - 'background-size: 80%'
