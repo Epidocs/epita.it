@@ -29,13 +29,3 @@
     class: tile-small-wide text-dark
     style:
     - 'background-color: #e7e7e7'
-    
-- title: Services
-  items:
-  - name: EpiLogin
-    href: https://epilogin.fr/
-    class: tile-medium
-    style:
-    - 'background-color: #41b6f3'
-    - 'background-image: url(https://epilogin.fr/static/img/mainpage/EpiLogin_logo.png), url(https://epilogin.fr/static/img/mainpage/background_epita.jpg)'
-    - 'background-size: contain, cover'
