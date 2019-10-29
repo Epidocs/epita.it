@@ -50,7 +50,18 @@
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav mr-auto">
 					{% for item in site.data.navbar %}
-						<a class="nav-item nav-link" href="{{ item.href | relative_url }}">{{ item.title }}</a>
+						{% if item.children %}
+							<div class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPlusDropdown">
+									{% for subitem in item.children %}
+										<a class="dropdown-item" href="{{ subitem.href | relative_url }}">{{ subitem.title }}</a>
+									{% endfor %}
+								</div>
+							</div>
+						{% else %}
+							<a class="nav-item nav-link" href="{{ item.href | relative_url }}">{{ item.title }}</a>
+						{% endif %}
 					{% endfor %}
 				</div>
 				<div class="navbar-nav">
