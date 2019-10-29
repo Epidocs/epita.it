@@ -43,6 +43,14 @@
     - 'background-size: contain, cover'
     - 'background-position-y: 40%'
     
+  - name: Epiqueer
+    href: https://epiqueer.fr/
+    class: tile-medium
+    style:
+    - 'background-color: #37a1de'
+    - 'background-image: url(https://epiqueer.fr/img/epiqueer.png)'
+    - 'background-size: 90%'
+    
   - name: GConfs
     href: https://gconfs.fr/
     class: tile-medium
