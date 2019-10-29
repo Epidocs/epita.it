@@ -27,6 +27,13 @@
     
 - title: Student Associations
   items:
+  - name: Ephemere
+    href: http://club-ephemere.fr/
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #f5f5f5'
+    - 'background-image: url(https://live.staticflickr.com/775/buddyicons/100015017@N04_r.jpg)'
+    
   - name: EpiLogin
     href: https://epilogin.fr/
     class: tile-medium
