@@ -1,3 +1,11 @@
+- name: Cristal
+  href: https://www.cristal.je/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://www.cristal.je/images/logo.f8f7b4e.png)'
+  - 'background-size: 90%'
+  
 - name: Ephemere
   href: http://club-ephemere.fr/
   class: tile-medium text-dark
