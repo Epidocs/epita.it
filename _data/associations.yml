@@ -22,6 +22,14 @@
   - 'background-image: url(https://epiqueer.fr/img/epiqueer.png)'
   - 'background-size: 90%'
   
+- name: Epimathia
+  icon: fab fa-facebook
+  href: https://www.facebook.com/Epimathia/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/16426252_181431442340739_3058406475741899686_n.png?_nc_cat=108&_nc_oc=AQkgYvH5PrOKrKccQSyWgIOoajNekemqWs811l9P91cTQ3n4CRvMxSmRq0jgpNb0W44&_nc_ht=scontent-cdg2-1.xx&oh=78a36c4e7eeef142bf2418dc0644bb81&oe=5E50A0D7)'
+  
 - name: Episport
   icon: fab fa-facebook
   href: https://www.facebook.com/Episport/
