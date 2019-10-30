@@ -38,6 +38,14 @@
   - 'background-color: #0f111d'
   - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1929294_1102982006410404_8593874841212626256_n.png?_nc_cat=108&_nc_oc=AQkefHJNEwA5GvXHiRV6rI9yzDuv3CyXOch1XRIrV8IzSAMR90G115bP2UHcu9cubo8&_nc_ht=scontent-cdg2-1.xx&oh=20e5bdd73fa91791479db42b6460ffc8&oe=5E564EA9)'
   
+- name: Evotutek
+  icon: fab fa-facebook
+  href: https://www.facebook.com/evolutek.ionis/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/68929544_2370465209656945_3040911586588884992_n.png?_nc_cat=104&_nc_oc=AQkwnqtIHGR0a_KmhioZLPPRpsr0nrbns1_MlbNQYh76d3sVbRdiXnmVwZp-woxNui4&_nc_ht=scontent-cdg2-1.xx&oh=eb45ed038560ac687e097e54e3b6b39f&oe=5E1F2CF4)'
+  
 - name: GConfs
   href: https://gconfs.fr/
   class: tile-medium
