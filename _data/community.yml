@@ -30,7 +30,8 @@
     style:
     - 'background-color: #e7e7e7'
     - 'background-image: url(https://epiquote.fr/static/favicon.png)'
-    - 'background-position-x: 90%'
+    - 'background-size: auto 50%'
+    - 'background-position-x: 60%'
     
 - title: Services
   items:
