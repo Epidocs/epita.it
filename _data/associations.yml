@@ -54,6 +54,14 @@
   - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
   - 'background-size: 90%'
   
+- name: Prologin
+  href: https://prologin.org/
+  class: tile-medium
+  style:
+  - 'background-color: #35479a'
+  - 'background-image: url(https://prologin.org/static/img/logo_cube.png)'
+  - 'background-size: 50%'
+  
 - name: VJN
   icon: fab fa-facebook
   href: https://www.facebook.com/vjnights/
