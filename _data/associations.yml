@@ -103,6 +103,15 @@
   - 'background-image: url(https://prologin.org/static/img/logo_cube.png)'
   - 'background-size: 60%'
   
+- name: UnPlug
+  icon: fab fa-facebook
+  href: https://www.facebook.com/UnPlugEpita
+  class: tile-medium
+  style:
+  - 'background-color: #741a1a'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/56184325_1000158720182384_7223400535284514816_n.jpg?_nc_cat=108&_nc_oc=AQnuPtqc5fHPFZhzMP8LXaKwRlXN_d-OKmjg9gEIV0SBDOiElX5avJyQqazRxGXeFPg&_nc_ht=scontent-cdg2-1.xx&oh=a3c097685a1b4bd8806e3bd081462d9a&oe=5E1EC479)'
+  - 'background-size: cover'
+  
 - name: VJN
   icon: fab fa-facebook
   href: https://www.facebook.com/vjnights/
