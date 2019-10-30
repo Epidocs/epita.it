@@ -95,6 +95,15 @@
   - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
   - 'background-size: 90%'
   
+- name: Lateb
+  href: http://intra.lateb.eu/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(http://intra.lateb.eu/images/favicon.png)'
+  - 'background-size: auto 90%'
+  - 'background-position-x: 80%'
+  
 - name: Prologin
   href: https://prologin.org/
   class: tile-medium
@@ -102,6 +111,14 @@
   - 'background-color: #35479a'
   - 'background-image: url(https://prologin.org/static/img/logo_cube.png)'
   - 'background-size: 60%'
+  
+- name: Soul of Sound
+  icon: fab fa-facebook
+  href: https://www.facebook.com/soulofsoundband
+  class: tile-medium
+  style:
+  - 'background-color: #000'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10868241_403711526461671_7963996436528935247_n.jpg?_nc_cat=109&_nc_oc=AQlxivzLafRRVMGA6xcSMQkYsUWkk5QMydPi7xTDAWet7DXdip0Ui3f1Rc4OZjvObro&_nc_ht=scontent-cdg2-1.xx&oh=faf74e0fcd6f06d52fbd1dd40baef48e&oe=5E625883)'
   
 - name: UnPlug
   icon: fab fa-facebook
