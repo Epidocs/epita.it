@@ -13,7 +13,7 @@
 				<span class="branding-bar">{{ item.name }}</span>
 				
 				{% if item.icon %}
-					<span class="branding-icon"><i class="{{ item.icon | default: fas fa-question }}"></i></span>
+					<span class="branding-icon"><i class="{{ item.icon | default: fas fa-question }} fa-fw"></i></span>
 				{% endif %}
 			</a>
 		{% endif %}
