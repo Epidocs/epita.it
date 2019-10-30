@@ -72,6 +72,13 @@
   - 'background-image: url(https://www.epitanime.com/wp-content/uploads/2017/02/logo_flat_small.png)'
   - 'background-size: 60%'
   
+- name: Epiworld
+  href: http://www.epiworld.org/
+  class: tile-medium
+  style:
+  - 'background-color: #000'
+  - 'background-image: url(http://www.epiworld.org/img/Logo-Epiworld-2.png)'
+  
 - name: Evotutek
   icon: fab fa-facebook
   href: https://www.facebook.com/evolutek.ionis/
