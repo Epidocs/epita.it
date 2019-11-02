@@ -68,6 +68,15 @@
 		</div>
 	</nav>
 	
+	{% if page.newsline %}
+		<div class="newsline" id="addToHomeScreen">
+			<div class="container">
+				<i class="fa fa-info-circle fa-fw"></i>
+				<b>Add to your home screen</b> for easier access!
+			</div>
+		</div>
+	{% endif %}
+	
 	<div id="main"{% if page.textalignleft %} class="text-left"{% endif %}>
 		<div class="container">
 		
