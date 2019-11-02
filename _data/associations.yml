@@ -16,6 +16,16 @@
   - 'background-size: 90%'
   - 'background-position-y: top'
   
+- name: BDE
+  icon: fab fa-facebook
+  href: https://www.facebook.com/bdeepita/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/52537816_2353565907996357_4359829093240274944_n.png?_nc_cat=107&_nc_oc=AQlO-U0jJ5hdNlMYYK2x4_vcwxNsd1ieRg4yzrwzdbtkxECI62ViBItolNYTHa-O-gk&_nc_ht=scontent-cdg2-1.xx&oh=ae1b059909fbdc8ac43bf1050462bdb1&oe=5E57060A)'
+  - 'background-size: 90%'
+  - 'background-position-y: 25%'
+  
 - name: Cristal
   href: https://www.cristal.je/
   class: tile-medium text-dark
