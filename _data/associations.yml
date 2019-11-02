@@ -113,6 +113,14 @@
   - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
   - 'background-size: 90%'
   
+- name: La Paillote
+  icon: fab fa-facebook
+  href: https://www.facebook.com/lapaillote.apero
+  class: tile-medium
+  style:
+  - 'background-color: #000'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/1795498_654372867957351_750431015_n.jpg?_nc_cat=105&_nc_oc=AQlsfWt332Ia2sJxxvfl7GjnQKSwEquyV0lFhV8ImPVmtZZ1Uqbs3Q0C8YS5lIZHWxQ&_nc_ht=scontent-cdg2-1.xx&oh=03fc4b25b172a3829db70a455d7077ef&oe=5E1BBC8D)'
+  
 - name: Lateb
   href: http://intra.lateb.eu/
   class: tile-medium text-dark
