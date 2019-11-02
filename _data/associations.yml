@@ -89,6 +89,14 @@
   - 'background-color: #000'
   - 'background-image: url(http://www.epiworld.org/img/Logo-Epiworld-2.png)'
   
+- name: EPTV
+  href: http://eptv.fr/
+  class: tile-medium
+  style:
+  - 'background-color: #000'
+  - 'background-image: url(http://eptv.fr/eptv_logo_good_to_script.png)'
+  - 'background-size: 90%'
+  
 - name: Evotutek
   icon: fab fa-facebook
   href: https://www.facebook.com/evolutek.ionis/
