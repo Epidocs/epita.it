@@ -14,7 +14,7 @@
     class: tile-medium
     style:
     - 'background-color: #1E1E1E'
-    - 'background-image: url(/assets/ALED-icon.png)'
+    - 'background-image: url(/static/ALED-icon.png)'
     - 'background-size: 75%'
 
   - name: kb.zoroark.guru
