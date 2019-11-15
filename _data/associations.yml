@@ -87,14 +87,16 @@
   class: tile-medium
   style:
   - 'background-color: #000'
-  - 'background-image: url(http://www.epiworld.org/img/Logo-Epiworld-2.png)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/epiworld.png)'
+  # - 'background-image: url(http://www.epiworld.org/img/Logo-Epiworld-2.png)'
   
 - name: EPTV
   href: http://eptv.fr/
   class: tile-medium
   style:
   - 'background-color: #000'
-  - 'background-image: url(http://eptv.fr/eptv_logo_good_to_script.png)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/eptv.png)'
+  # - 'background-image: url(http://eptv.fr/eptv_logo_good_to_script.png)'
   - 'background-size: 90%'
   
 - name: Evotutek
@@ -126,7 +128,8 @@
   class: tile-medium text-dark
   style:
   - 'background-color: #fff'
-  - 'background-image: url(http://intra.lateb.eu/images/favicon.png)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/lateb.png)'
+  # - 'background-image: url(http://intra.lateb.eu/images/favicon.png)'
   - 'background-size: auto 90%'
   - 'background-position-x: 80%'
   
