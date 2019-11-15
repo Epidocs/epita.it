@@ -75,6 +75,16 @@
   - 'background-color: #fff'
   - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/16426252_181431442340739_3058406475741899686_n.png?_nc_cat=108&_nc_oc=AQkgYvH5PrOKrKccQSyWgIOoajNekemqWs811l9P91cTQ3n4CRvMxSmRq0jgpNb0W44&_nc_ht=scontent-cdg2-1.xx&oh=78a36c4e7eeef142bf2418dc0644bb81&oe=5E50A0D7)'
   
+- name: Episoldaire
+  icon: fab fa-facebook
+  href: https://www.facebook.com/episoldaire/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/73061384_1281384252022089_157672359719862272_o.png?_nc_cat=110&_nc_oc=AQk3Tsm8XxKgMsTiofEHYqlO-koKDc-sAdp_Nopa9mFG2BWgTryaz5VpISzCPJEo97E&_nc_ht=scontent-cdg2-1.xx&oh=74913af896bda27d553576e61b200148&oe=5E4D30F6)'
+  - 'background-size: 80%'
+  - 'background-position-y: 25%'
+  
 - name: Episport
   icon: fab fa-facebook
   href: https://www.facebook.com/Episport/
