@@ -34,6 +34,15 @@
   - 'background-image: url(https://www.cristal.je/images/logo.f8f7b4e.png)'
   - 'background-size: 90%'
   
+- name: Cycom
+  href: http://cycom.org/
+  class: tile-medium
+  style:
+  - 'background-color: #252525'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/cycom.png)'
+  - 'background-size: 80%'
+  - 'background-position-y: 25%'
+  
 - name: Ephemere
   href: http://club-ephemere.fr/
   class: tile-medium text-dark
