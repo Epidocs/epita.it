@@ -22,10 +22,13 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #dfe8ef'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20292577_1368594359891882_6097096610434857111_n.jpg?_nc_cat=102&_nc_ht=scontent-cdg2-1.xx&oh=b23e173bf1f6f029bbc090b0d08d282b&oe=5D93BE6E)'
+    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/70796422_2342948259123149_916712047222194176_n.jpg?_nc_cat=109&_nc_oc=AQnoTNqr_pEEZNjELSngTdaVltp5vMhvU8VzCZzMBsdtJAZJDeUALDe6HveQYDXIvRw&_nc_ht=scontent-cdg2-1.xx&oh=2cfce92311412142aacaa8bc25294126&oe=5E1F2E69)'
     
   - name: Epiquote
     href: https://epiquote.fr/
     class: tile-small-wide text-dark
     style:
     - 'background-color: #e7e7e7'
+    - 'background-image: url(https://epiquote.fr/static/favicon.png)'
+    - 'background-size: auto 50%'
+    - 'background-position-x: 60%'
