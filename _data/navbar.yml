@@ -2,7 +2,12 @@
   href: /
   
 - title: Community
-  href: /community
+  children:
+  - title: Groups
+    href: /community
+    
+  - title: Associations
+    href: /associations
   
 - title: Documentation
   href: /docs

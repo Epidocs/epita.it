@@ -3,6 +3,8 @@ $(document).ready(function() {
 	var pathname = window.location.pathname;
 	var $link = $('#navbar .navbar-nav a[href="' + pathname + '"]');
 	$link.addClass('active');
+	if($link.hasClass('dropdown-item'))
+		$link.parents('.nav-item').find('.nav-link').addClass('active');
 	
 	// Handle display behavior on small screens
 	var checkScreenSize = function() {
