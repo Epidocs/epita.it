@@ -168,6 +168,14 @@
   - 'background-color: #000'
   - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10868241_403711526461671_7963996436528935247_n.jpg?_nc_cat=109&_nc_oc=AQlxivzLafRRVMGA6xcSMQkYsUWkk5QMydPi7xTDAWet7DXdip0Ui3f1Rc4OZjvObro&_nc_ht=scontent-cdg2-1.xx&oh=faf74e0fcd6f06d52fbd1dd40baef48e&oe=5E625883)'
   
+- name: Strataegyc
+  icon: fab fa-facebook
+  href: https://www.facebook.com/Strataegyc/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/53233315_2221471704576837_1185523884091244544_n.png?_nc_cat=109&_nc_oc=AQl_ZW6-pvZ0l4XWnw8b6FTPo3fxKLvl1ODK0BZXIbZccLtmZvYD0gW8mmojJLu5to8&_nc_ht=scontent-cdg2-1.xx&oh=ae02dfbad21ea301e8da53964a5bead1&oe=5E48EA3D)'
+  
 - name: Unisson
   icon: fab fa-facebook
   href: https://www.facebook.com/unisson/
