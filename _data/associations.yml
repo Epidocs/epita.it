@@ -152,6 +152,16 @@
   - 'background-size: auto 90%'
   - 'background-position-x: 80%'
   
+- name: Pôle Gastronomique
+  icon: fab fa-facebook
+  href: https://www.facebook.com/P%C3%B4le-Gastronomique-107151704029031/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/72382200_108925870518281_822532927773474816_n.jpg?_nc_cat=104&_nc_oc=AQm_34GcGon5LEjPR87D_fj6jABRmeWAg_uJPZc-05lYuaDcFPNC5S7vHnrcJAw3Mi0&_nc_ht=scontent-cdg2-1.xx&oh=93f97a0080f7764e02c67e96c7254082&oe=5E46B1F9)'
+  - 'background-size: 80%'
+  - 'background-position-y: 25%'
+  
 - name: Prologin
   href: https://prologin.org/
   class: tile-medium
