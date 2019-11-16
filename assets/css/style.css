@@ -36,7 +36,7 @@ a:hover { color: #4080c0 }
     background: #4080c0;
 }
 
-.newsline {
+#newsline {
 	background: #1c3854;
 	padding: .75rem 1rem;
 }

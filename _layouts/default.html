@@ -80,10 +80,16 @@
 	</nav>
 	
 	{% if page.newsline %}
-		<div class="newsline" id="addToHomeScreen" style="display: none">
+		<div id="newsline">
 			<div class="container">
-				<i class="fa fa-info-circle fa-fw"></i>
-				<b>Add to your home screen</b> for easier access!
+				<div class="carousel-item active">
+					<i class="fas fa-book fa-fw"></i>
+					Need to study for your exams? Check out <a href="https://past-exams.epidocs.eu/">Past-Exams</a>!
+				</div>
+				<div id="addToHomeScreen" class="d-none">
+					<i class="fas fa-info-circle fa-fw"></i>
+					<b>Add to your home screen</b> for easier access!
+				</div>
 			</div>
 		</div>
 	{% endif %}
