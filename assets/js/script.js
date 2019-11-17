@@ -17,7 +17,6 @@ $(document).ready(function() {
 		$next.addClass('active');
 	}, carouselInterval);
 	
-	
 	// Handle display behavior on small screens
 	var checkScreenSize = function() {
 		var $main = $('#main');
@@ -40,24 +39,35 @@ $(document).ready(function() {
 	checkScreenSize(); // Execute once after script load
 	$(window).resize(checkScreenSize);
 	
-	// Handle Outbound link events for Analytics
-	$('.tiles-grid').on('click', 'a', function() {
-		// Check if link is not relative
-		if($(this).attr('href')[0] != '/') {
+	// jQuery addon for selecting external links
+	$.expr[':'].external = function(a) {
+		var regex = /^(\w+:)?\/\//;
+		var href = $(a).attr('href');
+		return href !== undefined && href.search(regex) !== -1;
+	};
+	
+	// Handle Tiles Grid link events for Analytics
+	$('.tiles-grid').on('click', 'a:external', function() {
+		gtag('event', 'click', {
+			event_category: 'Outbound Link',
+			event_label: $(this).find('.branding-bar').text(),
+			transport_type: 'beacon'
+		});
+	});
+	
+	// Handle other External link events for Analytics
+	$('body').on('click', 'a:external', function(e) {
+		// Check that the element in not in the tiles grid
+		if($(this).not($('.tiles-grid a')).length) {
 			gtag('event', 'click', {
-				event_category: 'Outbound Link',
-				event_label: $(this).find('.branding-bar').text(),
+				event_category: 'External Link',
+				event_label: $(this).attr('href'),
 				transport_type: 'beacon'
 			});
 		}
 	});
 	
 	// Open all external links in a new tab (from the web app)
-	$.expr[':'].external = function(a) {
-		var regex = /^(\w+:)?\/\//;
-		var href = $(a).attr('href');
-		return href !== undefined && href.search(regex) !== -1;
-	};
 	if (window.matchMedia('(display-mode: standalone)').matches) {
 		$('a:external').attr('target', '_blank');
 	}
