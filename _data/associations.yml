@@ -58,7 +58,15 @@
   - 'background-image: url(https://epilogin.fr/static/img/mainpage/EpiLogin_logo.png), url(https://epilogin.fr/static/img/mainpage/background_epita.jpg)'
   - 'background-size: contain, cover'
   - 'background-position-y: 40%'
-  
+
+- name: EpiMac
+  href: https://www.epimac.org/
+  class: tile-medium
+  style:
+  - 'background-color: #353535'
+  - 'background-image: url(https://www.epimac.org/img/2.png)'
+  - 'background-size: 90%'
+
 - name: Epimathia
   icon: fab fa-facebook
   href: https://www.facebook.com/Epimathia/
