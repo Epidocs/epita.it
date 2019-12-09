@@ -2,12 +2,12 @@
   items:
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-wide
+    class: tile-wide text-dark
     style:
-    - 'background-color: #343a40'
+    - 'background-color: #e9ecef'
     - 'background-image: url(https://epidocs.eu/assets/logo.png)'
     - 'background-size: auto 90%'
-    - 'background-position-x: 75%'
+    - 'background-position-x: 65%'
     
   # - name: Plannings
     # href: https://plannings.epidocs.eu/
