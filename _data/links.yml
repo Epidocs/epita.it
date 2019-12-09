@@ -4,13 +4,15 @@
   style:
   - 'background-color: #03374e'
   - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
+  - 'background-size: auto 90%'
   
 - name: EPITA.net
   href: https://epita.net/
   class: tile-medium
   style:
   - 'background-color: #223049'
-  - 'background-image: url(https://epita.net/sites/all/themes/thecompany-responsive-theme/logo.png)'
+  - 'background-image: url(https://epita.net/Epita.png)'
+  - 'background-size: 90%'
   
 - name: Intracom
   href: http://intracom.epita.fr/
@@ -27,6 +29,7 @@
   style:
   - 'background-color: #fff'
   - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
+  - 'background-size: 90%'
   
 - name: CRI EPITA
   href: https://cri.epita.fr/
@@ -183,20 +186,20 @@
   - 'background-size: 90%'
   - 'background-position-y: top'
   
+- name: Past-Exams
+  href: https://past-exams.epidocs.eu/
+  class: tile-medium
+  style:
+  - 'background-color: #24292e'
+  - 'background-image: url(https://epidocs.eu/assets/logo.png)'
+  - 'background-size: 90%'
+  
 - name: Redux
   href: https://redux.epita.cf/
   class: tile-medium
   style:
   - 'background-color: #1254a4'
   - 'background-image: url(https://redux.epita.cf/img/logo.png)'
-  
-- name: Epidocs
-  href: https://epidocs.eu/
-  class: tile-medium
-  style:
-  - 'background-color: #24292e'
-  - 'background-image: url(https://epidocs.eu/assets/logo.png)'
-  - 'background-size: 90%'
   
 - name: Epinnal
   href: https://github.com/Epinnal
