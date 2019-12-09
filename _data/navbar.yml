@@ -3,14 +3,19 @@
   
 - title: Community
   children:
-  - title: Groups
+  - title: Groups & Pages
     href: /community
     
   - title: Associations
     href: /associations
   
-- title: Documentation
-  href: /docs
+- title: Resources
+  children:
+  - title: Documentation
+    href: /docs
+    
+  - title: Epidocs
+    href: /epidocs
   
 - title: 2021
   href: /2021
