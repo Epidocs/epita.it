@@ -9,6 +9,12 @@
     - 'background-size: auto 90%'
     - 'background-position-x: 65%'
     
+  - name: MCQ Online
+    href: https://mcq.epidocs.eu/
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #fffff8'
+    
   # - name: Plannings
     # href: https://plannings.epidocs.eu/
     # class: tile-small-wide
