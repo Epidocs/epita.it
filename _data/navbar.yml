@@ -1,30 +1,20 @@
 - title: Home
   href: /
-  
-- title: Community
-  children:
-  - title: Groups & Pages
-    href: /community
-    
-  - title: Associations
-    href: /associations
-  
-- title: Resources
-  children:
-  - title: Documentation
-    href: /docs
-    
-  - title: Epidocs Projects
-    href: /epidocs
-  
+
+- title: Community & clubs
+  href: /community
+
+- title: Docs & resources
+  href: /docs
+
 - title: 2021
   href: /2021
-  
+
 - title: 2022
   href: /2022
-  
+
 - title: 2023
   href: /2023
-  
+
 - title: 2024
   href: /2024
