@@ -25,7 +25,7 @@
     - 'background-image: url(https://kb.zoroark.guru/favicon.png)'
     - 'background-position-y: 10%'
     - 'background-size: 70%'
-    
+
 - title: Guides
   items:
   - name: Guide de survie Projet S2 (FR)
@@ -37,7 +37,7 @@
     - 'background-size: 30%'
     - 'background-position-y: 30%'
 
-- title: EpiDocs
+- title: Resources
   items:
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
@@ -47,26 +47,6 @@
     - 'background-image: url(https://epidocs.eu/assets/logo.png)'
     - 'background-size: auto 90%'
     - 'background-position-x: 65%'
-    
-  - name: MCQ Online
-    href: https://mcq.epidocs.eu/
-    class: tile-medium text-dark
-    style:
-    - 'background-color: #fffff8'
-    
-  # - name: Plannings
-    # href: https://plannings.epidocs.eu/
-    # class: tile-small-wide
-    # style:
-    # - 'background-color: #343a40'
-    # - 'background-image: url(https://epita.it/assets/icon-192.png)'
-    # - 'background-size: 90%'
-    
-  # - name: Tips
-    # href: https://tips.epidocs.eu/
-    # class: tile-small-wide
-    # style:
-    # - 'background-color: #343a40'
 
   - class: tile-medium
     items:
@@ -84,19 +64,35 @@
       - 'background-color: #fff'
       # - 'background-image: url()'
 
-  - name: Epidocs.eu
-    href: https://epidocs.eu/
+  - name: Redux
+    href: https://redux.epita.cf/
     class: tile-medium
     style:
-    - 'background-color: #606090'
-    - 'background-image: url(https://epidocs.eu/assets/logo.png)'
-    - 'background-size: 90%'
-    
-  - name: EPITA.it
-    href: https://epita.it/
-    class: tile-medium
+    - 'background-color: #1254a4'
+    - 'background-image: url(https://redux.epita.cf/img/logo.png)'
+
+  - name: Epinnal
+    href: https://github.com/Epinnal
+    class: tile-medium text-dark
     style:
-    - 'background-color: #183048'
-    - 'background-image: url(https://epita.it/assets/icon-192.png)'
-    - 'background-size: 90%'
+    - 'background-color: #fff'
+    - 'background-image: url(https://avatars3.githubusercontent.com/u/33984020?s=150)'
+
+  - name: HyperAnnales
+    href: https://annales.hyperion.tf/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #eee'
+
+  - name: Mastercorp
+    href: http://mastercorp.epita.eu/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+
+  - name: EpiPortal
+    href: https://epiportal.com/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fafafa'
 
