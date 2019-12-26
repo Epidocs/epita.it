@@ -25,7 +25,7 @@
     - 'background-image: url(https://kb.zoroark.guru/favicon.png)'
     - 'background-position-y: 10%'
     - 'background-size: 70%'
-    
+
 - title: Guides
   items:
   - name: Guide de survie Projet S2 (FR)
@@ -47,7 +47,7 @@
     - 'background-image: url(https://epidocs.eu/assets/logo.png)'
     - 'background-size: auto 90%'
     - 'background-position-x: 65%'
-    
+
   - class: tile-medium
     items:
     - name: Algostats
@@ -63,4 +63,36 @@
       style:
       - 'background-color: #fff'
       # - 'background-image: url()'
+
+  - name: Redux
+    href: https://redux.epita.cf/
+    class: tile-medium
+    style:
+    - 'background-color: #1254a4'
+    - 'background-image: url(https://redux.epita.cf/img/logo.png)'
+
+  - name: Epinnal
+    href: https://github.com/Epinnal
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://avatars3.githubusercontent.com/u/33984020?s=150)'
+
+  - name: HyperAnnales
+    href: https://annales.hyperion.tf/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #eee'
+
+  - name: Mastercorp
+    href: http://mastercorp.epita.eu/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+
+  - name: EpiPortal
+    href: https://epiportal.com/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fafafa'
 

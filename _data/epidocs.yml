@@ -2,25 +2,24 @@
   items:
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-wide text-dark
+    class: tile-medium text-dark
     style:
     - 'background-color: #e9ecef'
-    - 'background-image: url(https://epidocs.eu/assets/logo.png)'
-    - 'background-size: auto 90%'
-    - 'background-position-x: 65%'
+    # - 'background-image: url()'
     
   - name: MCQ Online
     href: https://mcq.epidocs.eu/
     class: tile-medium text-dark
     style:
     - 'background-color: #fffff8'
+    # - 'background-image: url()'
     
   # - name: Plannings
     # href: https://plannings.epidocs.eu/
     # class: tile-small-wide
     # style:
     # - 'background-color: #343a40'
-    # - 'background-image: url(https://epita.it/assets/icon-192.png)'
+    # - 'background-image: url()'
     # - 'background-size: 90%'
     
   # - name: Tips
@@ -28,6 +27,7 @@
     # class: tile-small-wide
     # style:
     # - 'background-color: #343a40'
+    # - 'background-image: url()'
     
 - title: Stats
   items:
