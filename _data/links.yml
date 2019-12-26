@@ -232,14 +232,6 @@
   style:
   - 'background-color: #e7e7e7'
   
-- name: Wikia Epita
-  href: https://epita.fandom.com/fr/
-  class: tile-small-wide
-  style:
-  - 'background-color: #002a32'
-  - 'background-image: url(https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png)'
-  - 'background-position-x: right'
-  
 - name: Logements
   href: https://logement.epita.fr/
   class: tile-small-wide text-dark
