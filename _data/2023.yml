@@ -35,11 +35,11 @@
     - 'background-position-y: top'
     
   - name: Heroes of the Keep
-    href: https://www.heroesofthekeep.cf/
+    href: https://htk.corrieri.fr/
     class: tile-medium
     style:
     - 'background-color: #703600'
-    - 'background-image: url(https://www.heroesofthekeep.cf/images/hero-logo.png)'
+    - 'background-image: url(https://htk.corrieri.fr/images/hero-logo.png)'
     - 'background-position-y: 25%'
     
   - name: Hunter-Hunter
