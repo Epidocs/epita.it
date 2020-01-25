@@ -64,9 +64,9 @@
   href: https://assistants.epita.fr/
   class: tile-medium
   style:
-  - 'background-color: #222'
-  - 'background-image: url(https://assistants.epita.fr/logos/acu2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
-  - 'background-position-y: 20%'
+  - 'background-color: #761637'
+  - 'background-image: url(https://assistants.epita.fr/logos/yaka2021_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
+  - 'background-position-y: 30%'
   - 'background-size: 50%, auto'
   - 'background-repeat: no-repeat, repeat'
   
