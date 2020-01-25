@@ -119,11 +119,22 @@
     - 'background-position: 50% 15%'
     - 'background-size: 50%'
 
-- name: Debug-Pro (Prog)
-  href: http://www.debug-pro.com/epita/prog/s0
-  class: tile-medium
-  style:
-  - 'background-color: #2f97b6'
+- class: tile-medium
+  items:
+  - name: CRI's Gitlab
+    href: https://gitlab.cri.epita.fr/
+    class: tile-small-wide
+    style:
+    - 'background-color: #292961'
+    - 'background-image: url(https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg)'
+    - 'background-position-y: top'
+    - 'background-size: 75%'
+
+  - name: Debug-Pro (Prog)
+    href: http://www.debug-pro.com/epita/prog/s0
+    class: tile-small-wide
+    style:
+    - 'background-color: #2f97b6'
   
 - class: tile-medium
   items:
