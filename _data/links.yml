@@ -23,6 +23,14 @@
   - 'background-size: 90%'
   - 'background-position-y: 25%'
   
+- name: EPITA Study Abroad
+  href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #fff'
+  - 'background-image: url(https://epitafr.sharepoint.com/sites/EPITAStudyAbroad/SiteAssets/__sitelogo__sans-titre.png)'
+  - 'background-size: 90%'
+  
 - name: Odyssée
   href: http://odyssee.epita.fr/
   class: tile-medium text-dark
