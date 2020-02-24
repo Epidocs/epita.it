@@ -21,14 +21,15 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #dfe8ef'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/70796422_2342948259123149_916712047222194176_n.jpg?_nc_cat=109&_nc_oc=AQnoTNqr_pEEZNjELSngTdaVltp5vMhvU8VzCZzMBsdtJAZJDeUALDe6HveQYDXIvRw&_nc_ht=scontent-cdg2-1.xx&oh=2cfce92311412142aacaa8bc25294126&oe=5E1F2E69)'
+    - 'background-image: url(https://web.archive.org/web/20200224134219if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/70796422_2342948259123149_916712047222194176_n.jpg?_nc_cat=109&_nc_ohc=vs9Zoo7YsGUAX9duwr1&_nc_ht=scontent-dub4-1.xx&oh=4a38b327cca215041a266f0381e2e624&oe=5EBD6269)'
 
   - name: Disruptif
     icon: fab fa-facebook
     href: https://fb.me/Disruptifs
     class: tile-medium text-dark
     style:
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p320x320/60801045_324366948242565_8543184341134475264_n.jpg?_nc_cat=110&_nc_ohc=xe4IXUG41VwAQlrpdQH3pmjKIi9JD0Kewx1KYeHc_pFhlYGTSl4lvXjdg&_nc_ht=scontent-cdg2-1.xx&oh=e5036e35d352666bc95c0178acea32ba&oe=5E6B07DD)'
+    - 'background-color: #fff'
+    - 'background-image: url(https://web.archive.org/web/20200224134248if_/https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p320x320/60801045_324366948242565_8543184341134475264_n.jpg?_nc_cat=110&_nc_ohc=xe4IXUG41VwAQlrpdQH3pmjKIi9JD0Kewx1KYeHc_pFhlYGTSl4lvXjdg&_nc_ht=scontent-cdg2-1.xx&oh=e5036e35d352666bc95c0178acea32ba&oe=5E6B07DD)'
 
   - class: tile-medium
     items:
@@ -117,7 +118,7 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/16426252_181431442340739_3058406475741899686_n.png?_nc_cat=108&_nc_oc=AQkgYvH5PrOKrKccQSyWgIOoajNekemqWs811l9P91cTQ3n4CRvMxSmRq0jgpNb0W44&_nc_ht=scontent-cdg2-1.xx&oh=78a36c4e7eeef142bf2418dc0644bb81&oe=5E50A0D7)'
+    - 'background-image: url(https://web.archive.org/web/20200224134142if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/16426252_181431442340739_3058406475741899686_n.png?_nc_cat=108&_nc_oc=AQkWsUBnZdW3g2JgS0eYEfmmOpc1K3s3dicbQC_ccCUV5DV-fCe6ftBtTbBi3LulLDA&_nc_ht=scontent-dub4-1.xx&oh=09a1b90395a504eb70cba683dbbd9bf7&oe=5EEED4D7)'
 
   - name: Epiqueer
     href: https://epiqueer.fr/
@@ -133,7 +134,7 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/73061384_1281384252022089_157672359719862272_o.png?_nc_cat=110&_nc_oc=AQk3Tsm8XxKgMsTiofEHYqlO-koKDc-sAdp_Nopa9mFG2BWgTryaz5VpISzCPJEo97E&_nc_ht=scontent-cdg2-1.xx&oh=74913af896bda27d553576e61b200148&oe=5E4D30F6)'
+    - 'background-image: url(https://web.archive.org/web/20200224134123if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/p960x960/73061384_1281384252022089_157672359719862272_o.png?_nc_cat=110&_nc_ohc=4r3CVtVoQsQAX8b0m-K&_nc_ht=scontent-dub4-1.xx&oh=7078890bae3dcee2ed92ad9a5f9f539d&oe=5EC3D7F6)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
 
@@ -143,7 +144,7 @@
     class: tile-medium
     style:
     - 'background-color: #0f111d'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1929294_1102982006410404_8593874841212626256_n.png?_nc_cat=108&_nc_oc=AQkefHJNEwA5GvXHiRV6rI9yzDuv3CyXOch1XRIrV8IzSAMR90G115bP2UHcu9cubo8&_nc_ht=scontent-cdg2-1.xx&oh=20e5bdd73fa91791479db42b6460ffc8&oe=5E564EA9)'
+    - 'background-image: url(https://web.archive.org/web/20200224134057if_/https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1929294_1102982006410404_8593874841212626256_n.png?_nc_cat=108&_nc_oc=AQkefHJNEwA5GvXHiRV6rI9yzDuv3CyXOch1XRIrV8IzSAMR90G115bP2UHcu9cubo8&_nc_ht=scontent-cdg2-1.xx&oh=20e5bdd73fa91791479db42b6460ffc8&oe=5E564EA9)'
 
   - name: Epitanime
     href: https://www.epitanime.com/
@@ -171,12 +172,11 @@
     - 'background-size: 90%'
 
   - name: Evotutek
-    icon: fab fa-facebook
-    href: https://www.facebook.com/evolutek.ionis/
+    href: https://evolutek.fr/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/68929544_2370465209656945_3040911586588884992_n.png?_nc_cat=104&_nc_oc=AQkwnqtIHGR0a_KmhioZLPPRpsr0nrbns1_MlbNQYh76d3sVbRdiXnmVwZp-woxNui4&_nc_ht=scontent-cdg2-1.xx&oh=eb45ed038560ac687e097e54e3b6b39f&oe=5E1F2CF4)'
+    - 'background-image: url(https://web.archive.org/web/20200224134025if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/68929544_2370465209656945_3040911586588884992_n.png?_nc_cat=104&_nc_ohc=bZCwcDUN648AX8L6ApG&_nc_ht=scontent-dub4-1.xx&oh=6ae3ef1123cfcf4149d1ea932e835d05&oe=5EBD60F4)'
 
   - name: GConfs
     href: https://gconfs.fr/
@@ -192,7 +192,7 @@
     class: tile-medium
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/1795498_654372867957351_750431015_n.jpg?_nc_cat=105&_nc_oc=AQlsfWt332Ia2sJxxvfl7GjnQKSwEquyV0lFhV8ImPVmtZZ1Uqbs3Q0C8YS5lIZHWxQ&_nc_ht=scontent-cdg2-1.xx&oh=03fc4b25b172a3829db70a455d7077ef&oe=5E1BBC8D)'
+    - 'background-image: url(https://web.archive.org/web/20200224134000if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-1/1795498_654372867957351_750431015_n.jpg?_nc_cat=105&_nc_ohc=QVzLXFGKnLMAX9HHWa-&_nc_ht=scontent-dub4-1.xx&oh=c954b4a0bd00347fbbe04842d71b4ac1&oe=5EB9F08D)'
 
   - name: Lateb
     href: http://intra.lateb.eu/
@@ -210,7 +210,7 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/72382200_108925870518281_822532927773474816_n.jpg?_nc_cat=104&_nc_oc=AQm_34GcGon5LEjPR87D_fj6jABRmeWAg_uJPZc-05lYuaDcFPNC5S7vHnrcJAw3Mi0&_nc_ht=scontent-cdg2-1.xx&oh=93f97a0080f7764e02c67e96c7254082&oe=5E46B1F9)'
+    - 'background-image: url(https://web.archive.org/web/20200224133939if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/72382200_108925870518281_822532927773474816_n.jpg?_nc_cat=104&_nc_ohc=4VXaL5q6H5UAX99Lryc&_nc_ht=scontent-dub4-1.xx&oh=508bebd6fbf9588d947d2e161a2acd65&oe=5EBD58F9)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
 
@@ -228,7 +228,7 @@
     class: tile-medium
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10868241_403711526461671_7963996436528935247_n.jpg?_nc_cat=109&_nc_oc=AQlxivzLafRRVMGA6xcSMQkYsUWkk5QMydPi7xTDAWet7DXdip0Ui3f1Rc4OZjvObro&_nc_ht=scontent-cdg2-1.xx&oh=faf74e0fcd6f06d52fbd1dd40baef48e&oe=5E625883)'
+    - 'background-image: url(https://web.archive.org/web/20200224133910if_/https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10868241_403711526461671_7963996436528935247_n.jpg?_nc_cat=109&_nc_oc=AQlxivzLafRRVMGA6xcSMQkYsUWkk5QMydPi7xTDAWet7DXdip0Ui3f1Rc4OZjvObro&_nc_ht=scontent-cdg2-1.xx&oh=faf74e0fcd6f06d52fbd1dd40baef48e&oe=5E625883)'
 
   - name: Strataegyc
     icon: fab fa-facebook
@@ -236,7 +236,7 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/53233315_2221471704576837_1185523884091244544_n.png?_nc_cat=109&_nc_oc=AQl_ZW6-pvZ0l4XWnw8b6FTPo3fxKLvl1ODK0BZXIbZccLtmZvYD0gW8mmojJLu5to8&_nc_ht=scontent-cdg2-1.xx&oh=ae02dfbad21ea301e8da53964a5bead1&oe=5E48EA3D)'
+    - 'background-image: url(https://web.archive.org/web/20200224133823if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/53233315_2221471704576837_1185523884091244544_n.png?_nc_cat=109&_nc_ohc=nwKtTMnNtz4AX8R8Prb&_nc_ht=scontent-dub4-1.xx&oh=9d835706d5d6b27a061ab69ab4625a85&oe=5EBF913D)'
 
   - name: Unisson
     icon: fab fa-facebook
@@ -244,7 +244,7 @@
     class: tile-medium
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/17426109_10155147511837579_7185918079549655354_n.jpg?_nc_cat=102&_nc_oc=AQlt96CHnmUAzynrbBbB2DfKtw183cv0pNdo7cb2Ly2q7A6-AungBwrvf568qIYf2WQ&_nc_ht=scontent-cdg2-1.xx&oh=b22db1c231a16994cffabee42e2ef693&oe=5E51BA06)'
+    - 'background-image: url(https://web.archive.org/web/20200224133740if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/17426109_10155147511837579_7185918079549655354_n.jpg?_nc_cat=102&_nc_ohc=C8feLrGt6SsAX9i08yj&_nc_ht=scontent-dub4-1.xx&oh=3cc7ade43530eeae089fa7874416ee8a&oe=5EEFEE06)'
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
@@ -254,7 +254,7 @@
     class: tile-medium
     style:
     - 'background-color: #741a1a'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/56184325_1000158720182384_7223400535284514816_n.jpg?_nc_cat=108&_nc_oc=AQnuPtqc5fHPFZhzMP8LXaKwRlXN_d-OKmjg9gEIV0SBDOiElX5avJyQqazRxGXeFPg&_nc_ht=scontent-cdg2-1.xx&oh=a3c097685a1b4bd8806e3bd081462d9a&oe=5E1EC479)'
+    - 'background-image: url(https://web.archive.org/web/20200224133705if_/https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/s960x960/56384973_1000158716849051_3391946127048704000_o.jpg?_nc_cat=100&_nc_ohc=-0uiwrEnBUMAX-0unGZ&_nc_ht=scontent-dub4-1.xx&_nc_tp=7&oh=c9bbcae108c4e7bb39c5091ca0561d07&oe=5EBFDA68)'
     - 'background-size: cover'
 
   - name: VJN
@@ -263,5 +263,5 @@
     class: tile-medium
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/12572977_1065413473525700_5438134733743263789_n.png?_nc_cat=101&_nc_oc=AQmJIf42z0WZExXwpzMWPUD--CF6Bn6xRY4fylSBbpl66sj653vgTIBOOTM-VD2Wk_8&_nc_ht=scontent-cdg2-1.xx&oh=110eb04351c6699ee5b11d29e3059bf0&oe=5E1D32FC)'
-  - 'background-size: 80%'
+    - 'background-image: url(https://web.archive.org/web/20200224133614if_/https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/12572977_1065413473525700_5438134733743263789_n.png?_nc_cat=101&_nc_ohc=W8uYKUeFxMgAX9GERlP&_nc_ht=scontent-cdt1-1.xx&oh=eb29c685fd88b07345509f94faefbb6e&oe=5EBB66FC)'
+    - 'background-size: 80%'
