@@ -23,21 +23,27 @@
   - 'background-size: 90%'
   - 'background-position-y: 25%'
   
-- name: EPITA Study Abroad
-  href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(https://epitafr.sharepoint.com/sites/EPITAStudyAbroad/SiteAssets/__sitelogo__sans-titre.png)'
-  - 'background-size: 90%'
-  
-- name: Odyssée
-  href: http://odyssee.epita.fr/
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
-  - 'background-size: 90%'
+- class: tile-medium
+  items:
+  - name: Study Abroad
+    href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
+    - 'background-size: auto 75%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
+    
+  - name: Odyssée
+    href: http://odyssee.epita.fr/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
+    - 'background-size: auto 75%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
   
 - name: CRI EPITA
   href: https://cri.epita.fr/
