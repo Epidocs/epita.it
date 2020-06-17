@@ -1,15 +1,9 @@
 ---
 layout: default
+title: 2024
 ---
 
-<div id="main">
-	<div class="container">
-		<h1>Promotion 2024</h1>
-		<p>Portail vers des projets en lien avec la promo 2024</p>
-		
-		{% include navbar.html %}
+<h1># 2024</h1>
+<p>Portal to projects useful for the 2024 year group</p>
 
-		{% assign data = site.data.2024 %}
-		{% include data-loader.html %}
-	</div>
-</div>
+{% include data-loader.html data = site.data.2024 %}

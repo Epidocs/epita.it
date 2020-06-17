@@ -15,8 +15,32 @@ body {
 a { color: #50a0f0 }
 a:hover { color: #4080c0 }
 
+p img { height: 1rem }
+
 #navbar {
-	margin-bottom: 1rem;
+	background: #183048;
+	display: initial; /* Toggles off `display: flex` from Bootstrap */
+}
+#navbar .dropdown-menu {
+    background: #285078;
+}
+#navbar .dropdown-menu .dropdown-item {
+    color: #fff;
+}
+#navbar .dropdown-menu .dropdown-item:hover,
+#navbar .dropdown-menu .dropdown-item:focus {
+    background: #306090;
+}
+#navbar .dropdown-menu .dropdown-item:active {
+    background: #3870a8;
+}
+#navbar .dropdown-menu .dropdown-item.active {
+    background: #4080c0;
+}
+
+#newsline {
+	background: #1c3854;
+	padding: .75rem 1rem;
 }
 
 #main {
@@ -34,6 +58,26 @@ a:hover { color: #4080c0 }
 #main.smallscreen .tiles-grid {
 	margin: 0 auto;
 	text-align: initial;
+}
+
+.tile-small .branding-icon,
+.tile-small-wide .branding-icon,
+.tile-medium .branding-icon,
+.tile-wide .branding-icon,
+.tile-large .branding-icon,
+.tile-app .branding-icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	padding: 5px 5px 0;
+	text-align: right;
+	font-size: 1rem;
+	font-weight: 500;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	z-index: 2;
 }
 
 #footer {

@@ -4,29 +4,46 @@
   style:
   - 'background-color: #03374e'
   - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
+  - 'background-size: auto 90%'
   
 - name: EPITA.net
   href: https://epita.net/
   class: tile-medium
   style:
   - 'background-color: #223049'
-  - 'background-image: url(https://epita.net/sites/all/themes/thecompany-responsive-theme/logo.png)'
+  - 'background-image: url(https://epita.net/Epita.png)'
+  - 'background-size: 90%'
   
 - name: Intracom
   href: http://intracom.epita.fr/
   class: tile-medium
   style:
   - 'background-color: #ff6f00'
-  - 'background-image: url(http://intracom.epita.fr/assets/img/intracomLogo.png)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/intracom.png)'
   - 'background-size: 90%'
   - 'background-position-y: 25%'
   
-- name: Odyssée
-  href: http://odyssee.epita.fr/
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(http://odyssee.epita.fr/img/design/nv/logo_epita.jpg)'
+- class: tile-medium
+  items:
+  - name: Study Abroad
+    href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
+    - 'background-size: auto 75%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
+    
+  - name: Odyssée
+    href: http://odyssee.epita.fr/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
+    - 'background-size: auto 75%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
   
 - name: CRI EPITA
   href: https://cri.epita.fr/
@@ -38,24 +55,33 @@
   href: https://acdc.epita.fr/
   class: tile-wide
   style:
-  - 'background-color: #922b2c'
-  - 'background-image: url(https://acdc.epita.fr/media/themes/img/header2021.gif)'
+  - 'background-color: #577899'
+  - 'background-image: url(https://acdc.epita.fr/media/themes/img/header2022_g4QyGpn.png)'
+  - 'background-size: 75%'
   
 - name: IonisX
   href: https://ionisx.com/
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #d09c01'
+  - 'background-image: url(https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png)'
+  - 'background-size: 90%'
+  
+- name: Office
+  href: https://www.office.com/?auth=2
   class: tile-medium
   style:
-  - 'background-color: #bd1e86'
-  - 'background-image: url(https://cdn.ionisx.com/images/logo-executive.67e327e7.png)'
-  - 'background-size: 90%'
+  - 'background-color: #ea3c00'
+  - 'background-image: url(https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/113/2016/02/OfcLogoText-768x331.jpg)'
   
 - name: Assistants
   href: https://assistants.epita.fr/
   class: tile-medium
   style:
-  - 'background-color: #684e8c'
-  - 'background-image: url(https://assistants.epita.fr/logos/yaka2020_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
-  - 'background-size: 90%, auto'
+  - 'background-color: #761637'
+  - 'background-image: url(https://assistants.epita.fr/logos/yaka2021_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
+  - 'background-position-y: 30%'
+  - 'background-size: 50%, auto'
   - 'background-repeat: no-repeat, repeat'
   
 - name: Chronos
@@ -63,7 +89,7 @@
   class: tile-medium
   style:
   - 'background-color: #b77fa2'
-  - 'background-image: url(http://chronos.epita.net/ade/img/bgEnterprise.gif)'
+  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/chronos.gif)'
   - 'background-size: 90%'
   
 - class: tile-medium
@@ -86,17 +112,48 @@
   style:
   - 'background-color: #e5e5f0'
   - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
-  
-- name: Debug-Pro (Prog)
-  href: http://www.debug-pro.com/epita/prog/s0
-  class: tile-medium
-  style:
-  - 'background-color: #2f97b6'
+
+- class: tile-medium
+  items:
+  - name: Algo Cours (FR)
+    href: https://algo.infoprepa.epita.fr/index.php/Epita:Algo:Cours
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png)'
+    - 'background-position: 50% 15%'
+    - 'background-size: 50%'
+
+  - name: Algo Courses (EN)
+    href: https://algo.infoprepa.epita.fr/english/index.php/Epita:Algo:Course
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png)'
+    - 'background-position: 50% 15%'
+    - 'background-size: 50%'
+
+- class: tile-medium
+  items:
+  - name: CRI's Gitlab
+    href: https://gitlab.cri.epita.fr/
+    class: tile-small-wide
+    style:
+    - 'background-color: #292961'
+    - 'background-image: url(https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg)'
+    - 'background-position-y: top'
+    - 'background-size: 75%'
+
+  - name: Debug-Pro (Prog)
+    href: http://www.debug-pro.com/epita/prog/s0
+    class: tile-small-wide
+    style:
+    - 'background-color: #2f97b6'
   
 - class: tile-medium
   items:
   - name: Debug-Pro (Archi)
-    href: http://www.debug-pro.com/epita/archi/s0
+    relurl: debugpro
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
@@ -154,26 +211,20 @@
   - 'background-size: 90%'
   - 'background-position-y: top'
   
+- name: Past-Exams
+  href: https://past-exams.epidocs.eu/
+  class: tile-medium
+  style:
+  - 'background-color: #24292e'
+  - 'background-image: url(https://epidocs.eu/assets/logo.png)'
+  - 'background-size: 90%'
+  
 - name: Redux
   href: https://redux.epita.cf/
   class: tile-medium
   style:
   - 'background-color: #1254a4'
   - 'background-image: url(https://redux.epita.cf/img/logo.png)'
-  
-- name: Zoroark.guru
-  href: https://zoroark.guru/
-  class: tile-medium
-  style:
-  - 'background-color: #424242'
-  - 'background-image: url(https://zoroark.guru/favicon.png)'
-  
-- name: Epidocs
-  href: https://epidocs.eu/
-  class: tile-medium
-  style:
-  - 'background-color: #24292e'
-  - 'background-image: url(https://epidocs.eu/assets/logo.png)'
   
 - name: HyperAnnales
   href: https://annales.hyperion.tf/
@@ -199,14 +250,6 @@
   style:
   - 'background-color: #e7e7e7'
   
-- name: Wikia Epita
-  href: https://epita.fandom.com/fr/
-  class: tile-small-wide
-  style:
-  - 'background-color: #002a32'
-  - 'background-image: url(https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png)'
-  - 'background-position-x: right'
-  
 - name: Logements
   href: https://logement.epita.fr/
   class: tile-small-wide text-dark
@@ -222,15 +265,6 @@
   - 'background-color: #014866'
   - 'background-image: url(https://sup-sub.cri.epita.fr/static/project/img/logo-epita-nb.png)'
   - 'background-position-x: right'
-  
-- name: GConfs
-  href: https://gconfs.fr/
-  class: tile-small-wide
-  style:
-  - 'background-color: #343a40'
-  - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
-  - 'background-size: 90%'
-  - 'background-position-y: 25%'
   
 - name: LSE
   href: https://lse.epita.fr/

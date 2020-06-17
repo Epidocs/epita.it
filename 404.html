@@ -4,26 +4,9 @@ title: 404 Not Found
 permalink: /404.html
 ---
 
-<div id="main">
-	<div class="container">
-		<h1>EPITA.it</h1>
-		<h2>404 Not Found</h2>
-		
-		<a href="{{ '' | relative_url }}" class="btn btn-primary">
-			<i class="fas fa-home fa-fw"></i> Retour à l'accueil
-		</a>
-	</div>
-</div>
+<h1>EPITA.it</h1>
+<h2 class="text-warning">404 Not Found</h2>
 
-<script>
-// Redirections!
-// Disabled for now
-/*
-(function() {
-	var pathname = document.location.pathname.toLowerCase();
-	if (pathname.startsWith('/path')) {
-		// window.location.href = '#';
-	}
-})();
-*/
-</script>
+<a href="{{ '' | relative_url }}" class="btn btn-primary btn-sm">
+	<i class="fas fa-home fa-fw"></i> Retour à l'accueil
+</a>
