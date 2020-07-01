@@ -210,7 +210,7 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/Pôle-Gastronomique-107151704029031/picture?width=256)'
+    - 'background-image: url(https://graph.facebook.com/107151704029031/picture?width=256)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
 
