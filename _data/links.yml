@@ -95,12 +95,14 @@
 - class: tile-medium
   items:
   - name: iChronos
+    icon: fas fa-user-friends
     href: https://ichronos.net/
     class: tile-small-wide
     style:
     - 'background-color: #616161'
     
   - name: Map EPITA
+    icon: fas fa-user-friends fab
     href: http://map.epita.eu/
     class: tile-small-wide text-dark
     style:
@@ -214,6 +216,7 @@
 - name: Past-Exams
   href: https://past-exams.epidocs.eu/
   class: tile-medium
+  icon: fas fa-user-friends
   style:
   - 'background-color: #24292e'
   - 'background-image: url(https://epidocs.eu/assets/logo.png)'
@@ -222,6 +225,7 @@
 - name: Redux
   href: https://redux.epita.cf/
   class: tile-medium
+  icon: fas fa-user-friends
   style:
   - 'background-color: #1254a4'
   - 'background-image: url(https://redux.epita.cf/img/logo.png)'
@@ -229,18 +233,21 @@
 - name: HyperAnnales
   href: https://annales.hyperion.tf/
   class: tile-small-wide text-dark
+  icon: fas fa-user-friends
   style:
   - 'background-color: #eee'
   
 - name: Mastercorp
   href: http://mastercorp.epita.eu/
   class: tile-small-wide text-dark
+  icon: fas fa-user-friends
   style:
   - 'background-color: #fff'
   
 - name: EpiPortal
   href: https://epiportal.com/
   class: tile-small-wide text-dark
+  icon: fas fa-user-friends
   style:
   - 'background-color: #fafafa'
   
@@ -294,6 +301,7 @@
 - name: Dyjix
   href: https://dyjix.eu/
   class: tile-small-wide text-dark
+  icon: fas fa-user-friends
   style:
   - 'background-color: #fff'
   - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
