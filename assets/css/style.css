@@ -60,12 +60,13 @@ p img { height: 1rem }
 	text-align: initial;
 }
 
-.tile-small .branding-icon,
-.tile-small-wide .branding-icon,
-.tile-medium .branding-icon,
-.tile-wide .branding-icon,
-.tile-large .branding-icon,
-.tile-app .branding-icon {
+#main .container > .tiles-grid { margin-bottom: 1rem }
+#main .tiles-grid .tile-small .branding-icon,
+#main .tiles-grid .tile-small-wide .branding-icon,
+#main .tiles-grid .tile-medium .branding-icon,
+#main .tiles-grid .tile-wide .branding-icon,
+#main .tiles-grid .tile-large .branding-icon,
+#main .tiles-grid .tile-app .branding-icon {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -94,3 +95,5 @@ p img { height: 1rem }
 #footer ul > li { display: inline-block }
 #footer ul > li + li { margin-left: 5px }
 #footer ul > li + li:before { content: "|"; margin-right: 10px }
+
+*:last-child { margin-bottom: 0 }

@@ -305,5 +305,6 @@
   style:
   - 'background-color: #fff'
   - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
-  - 'background-size: 90%'
+  - 'background-size: 70%'
+  - 'background-position-x: 25%'
   - 'background-position-y: 25%'
