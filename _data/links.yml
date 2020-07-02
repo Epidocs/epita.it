@@ -23,13 +23,27 @@
   - 'background-size: 90%'
   - 'background-position-y: 25%'
   
-- name: Odyssée
-  href: http://odyssee.epita.fr/
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
-  - 'background-size: 90%'
+- class: tile-medium
+  items:
+  - name: Study Abroad
+    href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
+    - 'background-size: auto 75%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
+    
+  - name: Odyssée
+    href: http://odyssee.epita.fr/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
+    - 'background-size: auto 75%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
   
 - name: CRI EPITA
   href: https://cri.epita.fr/
@@ -211,13 +225,6 @@
   style:
   - 'background-color: #1254a4'
   - 'background-image: url(https://redux.epita.cf/img/logo.png)'
-  
-- name: Epinnal
-  href: https://github.com/Epinnal
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #fff'
-  - 'background-image: url(https://avatars3.githubusercontent.com/u/33984020?s=150)'
   
 - name: HyperAnnales
   href: https://annales.hyperion.tf/

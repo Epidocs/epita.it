@@ -28,6 +28,7 @@
     href: https://fb.me/Disruptifs
     class: tile-medium text-dark
     style:
+    - 'background-color: #fff'
     - 'background-image: url(https://graph.facebook.com/Disruptifs/picture?width=256)'
 
   - class: tile-medium
@@ -171,8 +172,7 @@
     - 'background-size: 90%'
 
   - name: Evotutek
-    icon: fab fa-facebook
-    href: https://www.facebook.com/evolutek.ionis/
+    href: https://evolutek.fr/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
