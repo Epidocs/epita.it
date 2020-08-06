@@ -90,3 +90,8 @@
     style:
     - 'background-color: #fafafa'
 
+  - name: awesome-epita
+    href: https://github.com/ItsAnas/awesome-epita
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fafafa'
