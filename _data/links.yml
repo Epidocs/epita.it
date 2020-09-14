@@ -47,9 +47,13 @@
   
 - name: CRI EPITA
   href: https://cri.epita.fr/
-  class: tile-medium
+  class: tile-medium text-dark
   style:
-  - 'background-color: #607d8b'
+  - 'background-color: #fff'
+  - 'background-image: url(https://s3.cri.epita.fr/cri-intranet/img/logo.png)'
+  - 'background-size: 75%'
+  # - 'background-position-x: 90%'
+  - 'background-position-y: 20%'
   
 - name: ACDC EPITA
   href: https://acdc.epita.fr/
