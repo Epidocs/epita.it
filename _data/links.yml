@@ -82,10 +82,10 @@
   href: https://assistants.epita.fr/
   class: tile-medium
   style:
-  - 'background-color: #761637'
-  - 'background-image: url(https://assistants.epita.fr/logos/yaka2021_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
+  - 'background-color: #000'
+  - 'background-image: url(https://assistants.epita.fr/logos/acu2021_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
   - 'background-position-y: 30%'
-  - 'background-size: 50%, auto'
+  - 'background-size: 90%, auto'
   - 'background-repeat: no-repeat, repeat'
   
 - name: Chronos
