@@ -82,12 +82,25 @@
   - 'background-size: 90%, auto'
   - 'background-repeat: no-repeat, repeat'
   
-- name: Office
-  href: https://www.office.com/?auth=2
-  class: tile-medium
-  style:
-  - 'background-color: #ea3c00'
-  - 'background-image: url(https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/113/2016/02/OfcLogoText-768x331.jpg)'
+- class: tile-medium
+  items:
+  - name: Office
+    href: https://www.office.com/?auth=2
+    class: tile-small-wide
+    style:
+    - 'background-color: #ea3c00'
+    - 'background-image: url(https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/113/2016/02/OfcLogoText-768x331.jpg)'
+    - 'background-size: 90%'
+    - 'background-position-y: top'
+    
+  - name: Rocket.Chat
+    href: http://rocketchat.cri.epita.fr/
+    class: tile-small-wide
+    style:
+    - 'background-color: #444'
+    - 'background-image: url(https://rocketchat.cri.epita.fr/assets/logo.png)'
+    - 'background-size: 90%'
+    - 'background-position-y: 25%'
 
 - name: Chronos
   href: http://chronos.epita.net/
