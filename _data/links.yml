@@ -163,26 +163,19 @@
     - 'background-image: url(https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg)'
     - 'background-position-y: top'
     - 'background-size: 75%'
-
-  - name: Debug-Pro (Prog)
-    href: http://www.debug-pro.com/epita/prog/s0
-    class: tile-small-wide
-    style:
-    - 'background-color: #2f97b6'
-  
-- class: tile-medium
-  items:
-  - name: Debug-Pro (Archi)
-    relurl: debugpro
-    class: tile-small-wide text-dark
-    style:
-    - 'background-color: #f5f5ff'
     
   - name: Wiki Prog
     href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f6f6f6'
+
+  
+- name: Debug-Pro
+  relurl: debugpro
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #f5f5ff'
     
 - class: tile-medium
   items:
