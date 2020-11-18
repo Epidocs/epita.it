@@ -170,7 +170,6 @@
     style:
     - 'background-color: #f6f6f6'
 
-  
 - name: Debug-Pro
   relurl: debugpro
   class: tile-medium text-dark
