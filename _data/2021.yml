@@ -9,8 +9,9 @@
 
 - title: S2 Projects
   items:
-  - name: Block\'n\'roll
+  - name: Block'n'roll
     href: https://guccitaps.github.io/index.html
     class: tile-medium
     style:
-      - 'background-color: #4c668f'
+    - 'background-color: #4c668f'
+    - 'background-image: url(https://guccitaps.github.io/Image/logojeu.png)'
