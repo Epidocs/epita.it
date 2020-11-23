@@ -6,3 +6,11 @@
     style:
     - 'background-color: #202225'
     - 'background-image: url(https://cdn.discordapp.com/icons/364120280072716309/da24989523fa2b5ffa995efebb6bf5b2.png?size=256)'
+
+- title: S2 Projects
+  items:
+  - name: Block\'n\'roll
+    href: https://guccitaps.github.io/index.html
+    class: tile-medium
+    style:
+      - 'background-color: #4c668f'
