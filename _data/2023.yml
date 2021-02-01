@@ -19,7 +19,7 @@
     
   - name: Du Bekar!
     href: https://hobbyte.azurewebsites.net/
-    class: tile-medium
+    class: tile-medium invalid
     style:
     - 'background-color: #333'
     - 'background-image: url(https://hobbyte.azurewebsites.net/images/logo-du-bekarv3.png)'
@@ -27,7 +27,7 @@
     
   - name: EscapeIt
     href: https://www.justcodeit.gastbob40.ovh/
-    class: tile-medium
+    class: tile-medium invalid
     style:
     - 'background-color: #321111'
     - 'background-image: url(https://www.justcodeit.gastbob40.ovh/static/icons/game.png)'
@@ -44,7 +44,7 @@
     
   - name: Hunter-Hunter
     href: http://hunter-hunter.fr/
-    class: tile-medium text-dark
+    class: tile-medium invalid text-dark
     style:
     - 'background-color: #ffffff'
     - 'background-image: url(https://cdn.discordapp.com/attachments/448927470134099989/592811496384233513/8.jpg)'
@@ -53,7 +53,7 @@
 
   - name: "Orion: A New Horizon"
     href: http://orion-game.ga/
-    class: tile-medium
+    class: tile-medium invalid
     style:
     - 'background-color: #000'
     - 'background-image: url(https://cdn.discordapp.com/attachments/522443590287491082/606516673926922260/unknown.png)'
@@ -61,7 +61,7 @@
   
   - name: "Overplant"
     href: https://lycoon.github.io/en/
-    class: tile-medium text-dark
+    class: tile-medium invalid text-dark
     style:
     - 'background-color: #fff'
     - 'background-image: url(https://i.imgur.com/Y2jXy1C.png)'
@@ -106,7 +106,7 @@
     
   - name: SCFE
     href: https://salamanders.dev/
-    class: tile-medium text-dark
+    class: tile-medium invalid text-dark
     style:
     - 'background-color: #fff'
     - 'background-image: url(https://salamanders.dev/library/scfe.svg)'
@@ -115,7 +115,7 @@
 
   - name: Tales of the Apocalypse
     href: http://filiga.me/
-    class: tile-medium text-dark
+    class: tile-medium invalid text-dark
     style:
     - 'background-color: #fff'
     - 'background-image: url(https://cdn.discordapp.com/attachments/595197904365289492/595566748317777921/Tales.png)'
