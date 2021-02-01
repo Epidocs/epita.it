@@ -11,6 +11,6 @@
   items:
   - name: DITH
     href: https://dith.hyperion.tf
-    class: tile-medium
+    class: tile-medium invalid
     style:
     - 'background-color: #1b1f22'
