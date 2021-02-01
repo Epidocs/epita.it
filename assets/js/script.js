@@ -48,6 +48,9 @@ $(document).ready(function() {
 	
 	// Handle Tiles Grid link events for Analytics
 	$('.tiles-grid').on('click', 'a:external', function() {
+		if ($(this).hasClass('invalid'))
+			return; // Ignore clicks on invalid links
+		
 		gtag('event', 'click', {
 			event_category: 'Outbound Link',
 			event_label: $(this).find('.branding-bar').text(),
@@ -56,7 +59,7 @@ $(document).ready(function() {
 	});
 	
 	// Handle other External link events for Analytics
-	$('body').on('click', 'a:external', function(e) {
+	$('body').on('click', 'a:external', function() {
 		// Check that the element in not in the tiles grid
 		if($(this).not($('.tiles-grid a')).length) {
 			gtag('event', 'click', {
@@ -77,8 +80,8 @@ $(document).ready(function() {
 		$('#addToHomeScreen').addClass('carousel-item').removeClass('d-none');
 	}
 	
-	// Handle clicks on invalid links to warn the user
-	$('body').on('click', 'a.invalid', function(e) {
+	// Handle clicks on Tiles Grid invalid links to warn the user
+	$('.tiles-grid').on('click', 'a.invalid', function(e) {
 		e.preventDefault();
 		
 		const brand = $(this).find('.branding-bar').text();
