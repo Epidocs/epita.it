@@ -41,6 +41,32 @@
 </head>
 <body>
 
+	<div id="warn-invalid-modal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">The link to <b id="warn-invalid-brand"></b> is invalid</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>Beware! This link has been tagged as invalid. This means:</p>
+				<ul>
+					<li>the link could be dead or broken</li>
+					<li>the link could have been taken over</li>
+					<li>the link could point to irrelevant information</li>
+				</ul>
+				<p>Do you really want to continue to <code id="warn-invalid-href"></code>?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<a id="warn-invalid-link" class="btn btn-primary">Proceed anyway</a>
+			</div>
+			</div>
+		</div>
+	</div>
+
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
 			<a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>

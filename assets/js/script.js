@@ -67,13 +67,27 @@ $(document).ready(function() {
 		}
 	});
 	
-	// Open all external links in a new tab (from the web app)
 	if (window.matchMedia('(display-mode: standalone)').matches) {
+		// From the web app
+		// Open all external links in a new tab
 		$('a:external').attr('target', '_blank');
 	}
-	
-	// Display ad about the web app in the newsline carousel
 	else {
+		// Display ad about the web app in the newsline carousel
 		$('#addToHomeScreen').addClass('carousel-item').removeClass('d-none');
 	}
+	
+	// Handle clicks on invalid links to warn the user
+	$('body').on('click', 'a.invalid', function(e) {
+		e.preventDefault();
+		
+		const brand = $(this).find('.branding-bar').text();
+		const href = $(this).attr('href');
+		const target = $(this).attr('target');
+		
+		$('#warn-invalid-brand').text(brand);
+		$('#warn-invalid-href').text(href);
+		$('#warn-invalid-link').attr({ 'href': href, 'target': target });
+		$('#warn-invalid-modal').modal();
+	});
 });
