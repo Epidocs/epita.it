@@ -62,7 +62,7 @@
 
   - name: Back to basics
     icon: fab fa-facebook
-    href: https://www.facebook.com/btbepita/
+    href: https://fb.me/btbepita/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
@@ -72,7 +72,7 @@
 
   - name: BDE
     icon: fab fa-facebook
-    href: https://www.facebook.com/bdeepita/
+    href: https://fb.me/bdeepita/
     class: tile-medium text-dark
     style:
     - 'background-color: #ffede1'
@@ -114,7 +114,7 @@
 
   - name: Epimathia
     icon: fab fa-facebook
-    href: https://www.facebook.com/Epimathia/
+    href: https://fb.me/Epimathia/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
@@ -130,7 +130,7 @@
 
   - name: Episolidaire
     icon: fab fa-facebook
-    href: https://www.facebook.com/episolidaire/
+    href: https://fb.me/episolidaire/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
@@ -140,7 +140,7 @@
 
   - name: Episport
     icon: fab fa-facebook
-    href: https://www.facebook.com/Episport/
+    href: https://fb.me/Episport/
     class: tile-medium
     style:
     - 'background-color: #0f111d'
@@ -188,7 +188,7 @@
 
   - name: La Paillote
     icon: fab fa-facebook
-    href: https://www.facebook.com/lapaillote.apero
+    href: https://fb.me/lapaillote.apero
     class: tile-medium
     style:
     - 'background-color: #000'
@@ -206,7 +206,7 @@
 
   - name: Pôle Gastronomique
     icon: fab fa-facebook
-    href: https://www.facebook.com/P%C3%B4le-Gastronomique-107151704029031/
+    href: https://fb.me/P%C3%B4le-Gastronomique-107151704029031/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
@@ -224,7 +224,7 @@
 
   - name: Soul of Sound
     icon: fab fa-facebook
-    href: https://www.facebook.com/soulofsoundband
+    href: https://fb.me/soulofsoundband
     class: tile-medium
     style:
     - 'background-color: #000'
@@ -232,7 +232,7 @@
 
   - name: Strataegyc
     icon: fab fa-facebook
-    href: https://www.facebook.com/Strataegyc/
+    href: https://fb.me/Strataegyc/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
@@ -240,7 +240,7 @@
 
   - name: Unisson
     icon: fab fa-facebook
-    href: https://www.facebook.com/unisson/
+    href: https://fb.me/unisson/
     class: tile-medium
     style:
     - 'background-color: #000'
@@ -250,7 +250,7 @@
 
   - name: UnPlug
     icon: fab fa-facebook
-    href: https://www.facebook.com/UnPlugEpita
+    href: https://fb.me/UnPlugEpita
     class: tile-medium
     style:
     - 'background-color: #741a1a'
@@ -259,7 +259,7 @@
 
   - name: VJN
     icon: fab fa-facebook
-    href: https://www.facebook.com/vjnights/
+    href: https://fb.me/vjnights/
     class: tile-medium
     style:
     - 'background-color: #000'
