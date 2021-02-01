@@ -6,3 +6,14 @@
     style:
     - 'background-color: #202225'
     - 'background-image: url(https://cdn.discordapp.com/icons/701706719293866065/5d34371f775c04f626597c8985796e60.webp?size=256)'
+
+- title: Misc.
+  items:
+  - name: Guide de survie Projet S2 (FR)
+    href: https://s2guide.epita.it/
+    class: tile-wide text-dark
+    style:
+    - 'background-color: #FFFFFF'
+    - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
+    - 'background-size: 30%'
+    - 'background-position-y: 30%'
