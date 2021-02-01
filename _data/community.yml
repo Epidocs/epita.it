@@ -128,13 +128,13 @@
     - 'background-image: url(https://epiqueer.fr/img/epiqueer.png)'
     - 'background-size: 90%'
 
-  - name: Episoldaire
+  - name: Episolidaire
     icon: fab fa-facebook
-    href: https://www.facebook.com/episoldaire/
+    href: https://www.facebook.com/episolidaire/
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/episoldaire/picture?width=256)'
+    - 'background-image: url(https://graph.facebook.com/episolidaire/picture?width=256)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
 
