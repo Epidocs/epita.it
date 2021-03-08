@@ -142,6 +142,29 @@
     class: tile-small-wide text-dark
     style:
     - 'background-color: #fff'
+
+- class: tile-medium
+  items:
+  - name: CRI's Gitlab
+    href: https://gitlab.cri.epita.fr/
+    class: tile-small-wide
+    style:
+    - 'background-color: #292961'
+    - 'background-image: url(https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg)'
+    - 'background-position-y: top'
+    - 'background-size: 75%'
+    
+  - name: Wiki Prog
+    href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #f6f6f6'
+
+- name: Debug-Pro
+  relurl: debugpro
+  class: tile-medium text-dark
+  style:
+  - 'background-color: #f5f5ff'
     
 - name: Algo TD
   href: https://algo-td.infoprepa.epita.fr/
@@ -169,29 +192,6 @@
     - 'background-image: url(https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png)'
     - 'background-position: 50% 15%'
     - 'background-size: 50%'
-
-- class: tile-medium
-  items:
-  - name: CRI's Gitlab
-    href: https://gitlab.cri.epita.fr/
-    class: tile-small-wide
-    style:
-    - 'background-color: #292961'
-    - 'background-image: url(https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg)'
-    - 'background-position-y: top'
-    - 'background-size: 75%'
-    
-  - name: Wiki Prog
-    href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
-    class: tile-small-wide text-dark
-    style:
-    - 'background-color: #f6f6f6'
-
-- name: Debug-Pro
-  relurl: debugpro
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #f5f5ff'
     
 - class: tile-medium
   items:
