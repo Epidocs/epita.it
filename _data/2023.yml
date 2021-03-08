@@ -77,7 +77,7 @@
 
   - name: Pointless Adventure
     href: https://sneerow.github.io/Test/
-    class: tile-medium text-dark
+    class: tile-medium text-dark invalid
     style:
     - 'background-color: #fff'
     - 'background-image: url(https://sneerow.github.io/Test/images/logo.png)'
