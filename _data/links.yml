@@ -120,8 +120,25 @@
     - 'background-color: #616161'
     
   - name: Map EPITA
-    icon: fas fa-user-friends fab
+    icon: fas fa-user-friends
     href: http://map.epita.eu/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+  
+- class: tile-medium
+  items:
+  - name: Muffin Reader
+    icon: fas fa-bullhorn
+    href: https://news.deliciousmuffins.net/
+    class: tile-small-wide
+    style:
+    - 'background-color: #222222'
+    - 'background-image: url(https://news.deliciousmuffins.net/static/muffinreader.png)'
+    
+  - name: RTFN
+    icon: fas fa-bullhorn
+    href: https://rtfn.fr/
     class: tile-small-wide text-dark
     style:
     - 'background-color: #fff'
