@@ -85,7 +85,7 @@
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://www.cristal.je/images/logo.f8f7b4e.png)'
+    - 'background-image: url(https://www.cristal.je/wp-content/uploads/2021/03/cristal-logo-vect.svg)'
     - 'background-size: 90%'
 
   - name: Cycom
@@ -172,7 +172,9 @@
     - 'background-size: 90%'
 
   - name: Evotutek
-    href: https://evolutek.fr/
+    icon: fab fa-facebook
+    # href: https://evolutek.fr/
+    href: https://fb.me/evolutek.ionis
     class: tile-medium text-dark
     style:
     - 'background-color: #fff'
