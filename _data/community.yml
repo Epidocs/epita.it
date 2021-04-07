@@ -240,6 +240,16 @@
     - 'background-color: #fff'
     - 'background-image: url(https://graph.facebook.com/Strataegyc/picture?width=256)'
 
+  - name: The Stack
+    icon: fab fa-facebook
+    href: https://fb.me/Epitactic
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #fff'
+    - 'background-image: url(https://graph.facebook.com/Epitactic/picture?width=256)'
+    - 'background-size: 75%'
+    - 'background-position-y: 25%'
+
   - name: Unisson
     icon: fab fa-facebook
     href: https://fb.me/unisson/
