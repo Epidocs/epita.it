@@ -239,6 +239,15 @@
   - 'background-image: url(https://backtobasics.axen.io/static/img/favicon.png)'
   - 'background-size: 90%'
   - 'background-position-y: top'
+
+- name: Epitaf
+  href: https://www.epitaf.fr/
+  class: tile-medium
+  icon: fas fa-user-friends
+  style:
+  - 'background-image: url(https://www.epitaf.fr/logo.png)'
+  - 'background-size: 100%'
+  - 'background-position-y: top'
   
 - name: Past-Exams
   href: https://past-exams.epidocs.eu/
