@@ -246,8 +246,6 @@
   icon: fas fa-user-friends
   style:
   - 'background-image: url(https://www.epitaf.fr/logo.png)'
-  - 'background-size: 100%'
-  - 'background-position-y: top'
   
 - name: Past-Exams
   href: https://past-exams.epidocs.eu/
