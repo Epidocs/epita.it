@@ -89,12 +89,12 @@
     - 'background-size: 90%'
 
   - name: Cycom
-    href: http://cycom.org/
-    class: tile-medium
+    href: https://cycom.org/
+    class: tile-medium text-dark
     style:
-    - 'background-color: #252525'
-    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/cycom.png)'
-    - 'background-size: 80%'
+    - 'background-color: #fff'
+    - 'background-image: url(https://cycom.org/content/images/size/w600/2020/03/cycom_logo.png)'
+    - 'background-size: 90%'
     - 'background-position-y: 25%'
 
   - name: Ephemere
