@@ -49,20 +49,20 @@
     - 'background-size: auto 90%'
     - 'background-position-x: 65%'
 
-  - class: tile-medium
-    items:
-    - name: Algostats
-      href: http://algostats.epidocs.eu/
-      class: tile-small-wide text-dark
-      style:
-      - 'background-color: #fff'
+  # - class: tile-medium
+    # items:
+    # - name: Algostats
+      # href: http://algostats.epidocs.eu/
+      # class: tile-small-wide text-dark
+      # style:
+      # - 'background-color: #fff'
       # - 'background-image: url()'
       
-    - name: Progstats
-      href: http://progstats.epidocs.eu/
-      class: tile-small-wide text-dark
-      style:
-      - 'background-color: #fff'
+    # - name: Progstats
+      # href: http://progstats.epidocs.eu/
+      # class: tile-small-wide text-dark
+      # style:
+      # - 'background-color: #fff'
       # - 'background-image: url()'
 
   - name: Redux
