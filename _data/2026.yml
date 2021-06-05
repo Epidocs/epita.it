@@ -1,11 +1,11 @@
 - title: Student Community
   items:
-  - name: Discord EPITA 2025
-    href: https://discord.gg/SR5jzVA
+  - name: Discord EPITA 2026
+    href: https://discord.gg/FAQQHEVhZE
     class: tile-wide
     style:
     - 'background-color: #202225'
-    - 'background-image: url(https://cdn.discordapp.com/attachments/813321650266832927/827414228737589348/Usual_Icon.webp)'
+    - 'background-image: url(https://cdn.discordapp.com/icons/727181487325315244/69ccc1a3651f52fd8dbe8f0f2f644d49.webp)'
 
 - title: Misc.
   items:
