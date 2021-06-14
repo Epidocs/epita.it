@@ -65,6 +65,14 @@
       # - 'background-color: #fff'
       # - 'background-image: url()'
 
+  - name: Epinotes
+    href: https://epinotes.core2duo.fr/
+    class: tile-medium
+    style:
+    - 'background-color: #131415'
+    - 'background-image: url(https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png)'
+    - 'background-size: 90%'
+
   - name: Redux
     href: https://redux.epita.cf/
     class: tile-medium
