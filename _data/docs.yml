@@ -95,3 +95,12 @@
     class: tile-small-wide text-dark
     style:
     - 'background-color: #fafafa'
+
+    - name: Epinotes
+    href: https://epinotes.core2duo.fr/
+    class: tile-medium text-dark
+    style:
+    - 'background-color: #131415'
+    - 'background-image: url(https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png)'
+    - 'background-size: 90%'
+
