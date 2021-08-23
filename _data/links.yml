@@ -102,13 +102,21 @@
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
-- name: Chronos
-  href: http://chronos.epita.net/
-  class: tile-medium
-  style:
-  - 'background-color: #b77fa2'
-  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/chronos.gif)'
-  - 'background-size: 90%'
+- class: tile-medium
+  items:
+  - name: Zeus
+    href: https://zeus.3ie.fr/
+    class: tile-small-wide
+    style:
+    - 'background-color: #1d2e37'
+    - 'background-image: url(https://zeus.3ie.fr/assets/png/logo-zeus-blanc.png)'
+    
+  - name: Infinity Zeus
+    icon: fas fa-user-friends
+    href: https://zeus.infinity.study/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #bd510a'
   
 - class: tile-medium
   items:
