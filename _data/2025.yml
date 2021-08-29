@@ -39,3 +39,11 @@
     - 'background-image: url(https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/main/logo_hunterxhunted.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
+  - name: Beyond Styx
+    href: https://beyondstyx.fr/
+    class: tile-medium
+    style:
+    - 'background-color: #000000'
+    - 'background-image: url(https://i.imgur.com/w8fxQPw.png)'
+    - 'background-size: contain, cover'
+    - 'background-size: 85%'
