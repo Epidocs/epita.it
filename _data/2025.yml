@@ -47,3 +47,12 @@
     - 'background-image: url(https://i.imgur.com/w8fxQPw.png)'
     - 'background-size: contain, cover'
     - 'background-size: 85%'
+    
+  - name: Hell Riders
+    href: http://hellriders.ml/
+    class: tile-medium
+    style:
+    - 'background-color: #000000'
+    - 'background-image: url(https://i.ibb.co/BVHYP0K/Hell-riders.png)'
+    - 'background-size: contain, cover'
+    - 'background-size: 95%'
