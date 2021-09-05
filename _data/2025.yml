@@ -57,3 +57,12 @@
     - 'background-image: url(https://projectthehunter.tk/assets/img/Version_FR.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
+    
+  - name: Hell Riders
+    href: http://hellriders.ml/
+    class: tile-medium
+    style:
+    - 'background-color: #000000'
+    - 'background-image: url(https://i.ibb.co/BVHYP0K/Hell-riders.png)'
+    - 'background-size: contain, cover'
+    - 'background-size: 95%'
