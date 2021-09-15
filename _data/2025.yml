@@ -66,3 +66,12 @@
     - 'background-image: url(https://i.ibb.co/BVHYP0K/Hell-riders.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
+  
+  - name: The Beaver Project
+    href: http://thebeaverproject.tk
+    class: tile-medium
+    style:
+    - 'background-color: #B400FF'
+    - 'background-image: url(https://thebeaverproject.tk/logo512.png)'
+    - 'background-size: contain, cover'
+    - 'background-size: 95%'
