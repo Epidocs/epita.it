@@ -68,7 +68,7 @@
     - 'background-size: 95%'
   
   - name: The Beaver Project
-    href: http://thebeaverproject.tk
+    href: https://thebeaverproject.tk
     class: tile-medium
     style:
     - 'background-color: #B400FF'
