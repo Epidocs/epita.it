@@ -121,10 +121,12 @@
     
   - name: Map EPITA
     icon: fas fa-user-friends
-    href: http://map.epita.eu/
+    href: https://epimap.fr/
     class: tile-small-wide text-dark
     style:
-    - 'background-color: #fff'
+    - 'background-color: #230071'
+    - 'background-image: url(https://epimap.fr/img/logo-min.png)'
+    - 'background-size: cover'
   
 - class: tile-medium
   items:
