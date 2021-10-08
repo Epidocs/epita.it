@@ -8,26 +8,26 @@
 	{% if site.description %}<meta name="description" content="{{ site.description }}" />{% endif %}
 	{% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}" />{% endif %}
 	{% if site.author %}<meta name="author" content="{{ site.author }}" />{% endif %}
-	
+
 	<link rel="icon" sizes="48x48" href="{{ '/assets/icon-48.png?v=' | append: site.github.build_revision | relative_url }}" />
 	<link rel="icon" sizes="192x192" href="{{ '/assets/icon-192.png?v=' | append: site.github.build_revision | relative_url }}" />
 	<link rel="icon" sizes="512x512" href="{{ '/assets/icon-512.png?v=' | append: site.github.build_revision | relative_url }}" />
 	<link rel="apple-touch-icon" href="{{ '/assets/apple-icon.png?v=' | append: site.github.build_revision | relative_url }}" />
-	
+
 	<link rel="manifest" href="{{ 'manifest.json' | relative_url }}" />
 	<meta name="theme-color" content="#183048" />
-    
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
 	<link rel="stylesheet" href="{{ '/assets/css/tiles.css?v=' | append: site.github.build_revision | relative_url }}" />
 	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" />
-	
+
 	<title>
 		{{ site.title }}
 		{% if page.title %}– {{ page.title }}{% endif %}
 	</title>
-	
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140860210-2"></script>
 	<script>
@@ -37,7 +37,7 @@
 
 	  gtag('config', 'UA-140860210-2');
 	</script>
-    
+
 </head>
 <body>
 
@@ -95,16 +95,16 @@
 					<div class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-plus fa-fw"></i></a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPlusDropdown">
-							<a class="dropdown-item" href="{{ 'about' | relative_url }}">About</a>
-							<a class="dropdown-item" href="{{ 'legal' | relative_url }}">Legal</a>
-							<a class="dropdown-item" href="{{ 'epidocs' | relative_url }}">Epidocs Projects</a>
+							{% for item in site.data.navbarplus %}
+								<a class="dropdown-item" href="{{ item.href | relative_url }}">{{ item.title }}</a>
+							{% endfor %}
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
-	
+
 	{% if page.newsline %}
 		<div id="newsline">
 			<div class="container">
@@ -119,15 +119,15 @@
 			</div>
 		</div>
 	{% endif %}
-	
+
 	<div id="main"{% if page.textalignleft %} class="text-left"{% endif %}>
 		<div class="container">
-		
+
 			{{ content }}
-		
+
 		</div>
 	</div>
-	
+
 	<div id="footer">
 		<div class="container">
 			<p>
@@ -144,7 +144,7 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
