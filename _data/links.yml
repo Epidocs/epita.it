@@ -271,7 +271,7 @@
 
 - name: Redux
   href: https://redux.epita.cf/
-  class: tile-medium
+  class: tile-small-wide invalid
   icon: fas fa-user-friends
   style:
   - 'background-color: #1254a4'
