@@ -293,7 +293,7 @@
 
 - name: EpiPortal
   href: https://epiportal.com/
-  class: tile-small-wide text-dark
+  class: tile-small-wide text-dark invalid
   icon: fas fa-user-friends
   style:
   - 'background-color: #fafafa'
