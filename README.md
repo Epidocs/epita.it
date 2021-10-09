@@ -15,9 +15,9 @@ $ jekyll serve
 
 **Creative Commons Attribution-NonCommercial 4.0 International License**
 ([*CC BY-NC 4.0*](https://creativecommons.org/licenses/by-nc/4.0))  
-Copyright (c) 2019-2020 Mathieu Guérin (Matiboux)
+Copyright (c) 2019-2021 Mathieu Guérin (Matiboux)
 
-*Disclaimer:* External ressources are the property of their respective owners,
+*Disclaimer:* External resources are the property of their respective owners,
 and therefore are not subject to this license (e.g. images from external links).
 
 ## Contributing
