@@ -298,7 +298,7 @@
   style:
   - 'background-color: #fafafa'
 
-- name: Bocal
+- name: Console Bocal
   href: https://console.bocal.org/
   class: tile-small-wide text-dark
   style:
