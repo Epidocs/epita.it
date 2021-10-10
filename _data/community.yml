@@ -9,6 +9,7 @@
     # - 'background-size: 90%, cover'
 
   - name: EPITA International
+    icon: fab fa-discord
     href: https://discord.gg/bQ7Tpk2
     class: tile-medium
     style:

@@ -1,6 +1,7 @@
 - title: Student Community
   items:
   - name: Discord EPITA 2024
+    icon: fab fa-discord
     href: https://discordapp.com/invite/TUHpqPn
     class: tile-wide
     style:
