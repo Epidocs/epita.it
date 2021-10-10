@@ -169,13 +169,6 @@
   style:
   - 'background-color: #f5f5ff'
 
-- name: Algo TD
-  href: https://algo-td.infoprepa.epita.fr/
-  class: tile-medium text-dark
-  style:
-  - 'background-color: #e5e5f0'
-  - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
-
 - class: tile-medium
   items:
   - name: Algo Cours (FR)
