@@ -262,14 +262,6 @@
   - 'background-image: url(https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png)'
   - 'background-size: 90%'
 
-- name: Redux
-  href: https://redux.epita.cf/
-  class: tile-small-wide invalid
-  icon: fas fa-user-friends
-  style:
-  - 'background-color: #1254a4'
-  - 'background-image: url(https://redux.epita.cf/img/logo.png)'
-
 - name: HyperAnnales
   href: https://annales.hyperion.tf/
   class: tile-small-wide text-dark
@@ -283,13 +275,6 @@
   icon: fas fa-user-friends
   style:
   - 'background-color: #fff'
-
-- name: EpiPortal
-  href: https://epiportal.com/
-  class: tile-small-wide text-dark invalid
-  icon: fas fa-user-friends
-  style:
-  - 'background-color: #fafafa'
 
 - name: Console Bocal
   href: https://console.bocal.org/

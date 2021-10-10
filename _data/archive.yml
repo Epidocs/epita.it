@@ -15,3 +15,18 @@
     style:
     - 'background-color: #e5e5f0'
     - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
+
+  - name: Redux
+    href: https://redux.epita.cf/
+    class: tile-small-wide invalid
+    icon: fas fa-user-friends
+    style:
+    - 'background-color: #1254a4'
+    - 'background-image: url(https://redux.epita.cf/img/logo.png)'
+
+  - name: EpiPortal
+    href: https://epiportal.com/
+    class: tile-small-wide text-dark invalid
+    icon: fas fa-user-friends
+    style:
+    - 'background-color: #fafafa'
