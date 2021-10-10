@@ -16,6 +16,13 @@
     - 'background-color: #e5e5f0'
     - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
 
+  - name: Map EPITA
+    icon: fas fa-user-friends
+    href: http://map.epita.eu/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
+
   - name: Redux
     href: https://redux.epita.cf/
     class: tile-small-wide invalid
