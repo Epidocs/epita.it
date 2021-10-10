@@ -57,7 +57,7 @@
     class: tile-medium
     style:
     - 'background-color: #191919'
-    - 'background-image: url(https://www.antre.fr/forum/styles/acidtech_tiger/theme/images/logo_right.jpg)'
+    - 'background-image: url(https://www.antre.fr/forum/styles/acidtech/theme/images/logo_right.jpg)'
     - 'background-size: cover'
 
   - name: Back to basics
