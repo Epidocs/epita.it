@@ -1579,3 +1579,14 @@ FROM https://metroui.org.ua/
   box-shadow: none !important;
   overflow: visible;
 }
+
+@media screen and (max-width: 339.98px) {
+  .tile-wide, .tile-large {
+    width: 150px;
+    height: 150px;
+  }
+  .tiles-grid .tile-wide, .tiles-grid .tile-large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
