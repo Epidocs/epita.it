@@ -41,7 +41,7 @@
       - 'background-image: url(https://epiquote.fr/static/favicon.png)'
       - 'background-size: auto 50%'
       - 'background-position-x: 60%'
-    
+
     - name: Wikia Epita
       href: https://epita.fandom.com/fr/
       class: tile-small-wide
@@ -73,12 +73,11 @@
   - name: BDE
     icon: fab fa-facebook
     href: https://fb.me/bdeepita/
-    class: tile-medium text-dark
+    class: tile-medium
     style:
     - 'background-color: #ffede1'
     - 'background-image: url(https://graph.facebook.com/bdeepita/picture?width=256)'
-    - 'background-size: 90%'
-    - 'background-position-y: 25%'
+    - 'background-size: cover'
 
   - name: Cristal
     href: https://www.cristal.je/
