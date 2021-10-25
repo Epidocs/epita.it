@@ -112,12 +112,12 @@
 
 - class: tile-medium
   items:
-  - name: Infinity Zeus
+  - name: tonnerre.link
     icon: fas fa-user-friends
-    href: https://zeus.infinity.study/
+    href: https://tonnerre.link/
     class: tile-small-wide
     style:
-    - 'background-color: #bd510a'
+    - 'background-color: #170e34'
 
   - name: Map EPITA
     icon: fas fa-user-friends
