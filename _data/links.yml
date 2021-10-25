@@ -111,6 +111,16 @@
   - 'background-size: auto'
 
 - class: tile-medium
+  name: Map EPITA
+  icon: fas fa-user-friends
+  href: https://epimap.fr/
+  style:
+  - 'background-color: #230071'
+  - 'background-image: url(https://epimap.fr/img/logo-epimap.svg)'
+  - 'background-size: 80%'
+  - 'background-position: 50%'
+
+- class: tile-medium
   items:
   - name: Infinity Zeus
     icon: fas fa-user-friends
@@ -118,19 +128,6 @@
     class: tile-small-wide
     style:
     - 'background-color: #bd510a'
-
-  - name: Map EPITA
-    icon: fas fa-user-friends
-    href: https://epimap.fr/
-    class: tile-small-wide
-    style:
-    - 'background-color: #230071'
-    - 'background-image: url(https://epimap.fr/img/logo-epimap.svg)'
-    - 'background-size: 80%'
-    - 'background-position: 20% 20%'
-
-- class: tile-medium
-  items:
   - name: Muffin Reader
     icon: fas fa-bullhorn
     href: https://news.deliciousmuffins.net/
@@ -138,13 +135,6 @@
     style:
     - 'background-color: #222222'
     - 'background-image: url(https://news.deliciousmuffins.net/static/muffinreader.png)'
-
-  - name: RTFN
-    icon: fas fa-bullhorn
-    href: https://rtfn.fr/
-    class: tile-small-wide text-dark
-    style:
-    - 'background-color: #fff'
 
 - class: tile-medium
   items:
