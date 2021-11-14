@@ -21,6 +21,16 @@ $ jekyll serve
 If you want to add links to the web portal, please edit [`_data/links.yml`](_data/links.yml).
 Please note that the order of items is important in the way links are displayed on the website.
 
+There are `.yml` files for each page.
+
+### Get an EPITA.it subdomain for your project
+
+If you are hosting a project and would like to use an EPITA.it subdomain for it, you can ask [@matiboux](https://github.com/matiboux) for one.
+
+For example, you can ask that I point `yourawesomeproject.epita.it` to Github Pages or to your web server so you can use it. We'll discuss your request and if okay, we'll set up that together.
+
+You can contact [@matiboux](https://github.com/matiboux) via an issue on Github, or privately via Telegram or Discord.
+
 
 ## License
 
