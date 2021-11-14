@@ -102,16 +102,17 @@
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
-- name: Zeus
-  href: https://zeus.3ie.fr/
-  class: tile-medium
-  style:
-  - 'background-color: #1d2e37'
-  - 'background-image: url(https://zeus.3ie.fr/assets/png/logo-zeus-blanc.png)'
-  - 'background-size: auto'
-
 - class: tile-medium
   items:
+  - name: Zeus
+    href: https://zeus.3ie.fr/
+    class: tile-small-wide
+    style:
+    - 'background-color: #1d2e37'
+    - 'background-image: url(https://zeus.3ie.fr/assets/png/logo-zeus-blanc.png)'
+    - 'background-size: auto'
+    - 'background-position-y: 25%'
+
   - name: Map EPITA
     icon: fas fa-user-friends
     href: https://epimap.fr/
