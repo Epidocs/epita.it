@@ -18,19 +18,27 @@
     - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
-    
+
 - title: S2 Projects
   items:
-  - name: Panic At Tortuga
-    href: https://lifeinvaders.github.io/website/
+  - name: Beyond Styx
+    href: https://beyondstyx.fr/
     class: tile-medium
     style:
-    - 'color: black'
-    - 'background-color: #D6C5A8'
-    - 'background-image: url(https://raw.githubusercontent.com/LifeInvaders/game/dev/Assets/Pictures/logoSquare.png)'
+    - 'background-color: #000000'
+    - 'background-image: url(https://i.imgur.com/w8fxQPw.png)'
+    - 'background-size: contain, cover'
+    - 'background-size: 85%'
+
+  - name: Hell Riders
+    href: http://hellriders.ml/
+    class: tile-medium
+    style:
+    - 'background-color: #000000'
+    - 'background-image: url(https://i.ibb.co/BVHYP0K/Hell-riders.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
-    
+
   - name: Hunter X Hunted
     href: https://smar.cf
     class: tile-medium
@@ -40,39 +48,31 @@
     - 'background-image: url(https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/master/logo_hunterxhunted.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
-    
-  - name: Beyond Styx
-    href: https://beyondstyx.fr/
+
+  - name: Panic At Tortuga
+    href: https://lifeinvaders.github.io/website/
     class: tile-medium
     style:
-    - 'background-color: #000000'
-    - 'background-image: url(https://i.imgur.com/w8fxQPw.png)'
-    - 'background-size: contain, cover'
-    - 'background-size: 85%'
-    
-  - name: The Hunter
-    href: https://projectthehunter.tk/
-    class: tile-medium
-    style:
-    - 'background-color: #191919'
-    - 'background-image: url(https://projectthehunter.tk/assets/img/Version_FR.png)'
+    - 'color: black'
+    - 'background-color: #D6C5A8'
+    - 'background-image: url(https://raw.githubusercontent.com/LifeInvaders/game/dev/Assets/Pictures/logoSquare.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
-    
-  - name: Hell Riders
-    href: http://hellriders.ml/
-    class: tile-medium
-    style:
-    - 'background-color: #000000'
-    - 'background-image: url(https://i.ibb.co/BVHYP0K/Hell-riders.png)'
-    - 'background-size: contain, cover'
-    - 'background-size: 95%'
-  
+
   - name: The Beaver Project
     href: https://thebeaverproject.tk
     class: tile-medium
     style:
     - 'background-color: #B400FF'
     - 'background-image: url(https://thebeaverproject.tk/logo512.png)'
+    - 'background-size: contain, cover'
+    - 'background-size: 95%'
+
+  - name: The Hunter
+    href: https://projectthehunter.tk/
+    class: tile-medium
+    style:
+    - 'background-color: #191919'
+    - 'background-image: url(https://projectthehunter.tk/assets/img/Version_FR.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
