@@ -9,19 +9,36 @@
 
 - title: Old links
   items:
+  - name: Chronos
+    href: http://chronos.epita.net/
+    class: tile-medium
+    style:
+    - 'background-color: #b77fa2'
+    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/chronos.gif)'
+    - 'background-size: 90%'
+
+  - class: tile-medium
+    items:
+    - name: iChronos
+      icon: fas fa-user-friends
+      href: https://ichronos.net/
+      class: tile-small-wide
+      style:
+      - 'background-color: #616161'
+
+    - name: Map EPITA
+      icon: fas fa-user-friends
+      href: http://map.epita.eu/
+      class: tile-small-wide text-dark
+      style:
+      - 'background-color: #fff'
+
   - name: Algo TD
     href: https://algo-td.infoprepa.epita.fr/
     class: tile-medium text-dark
     style:
     - 'background-color: #e5e5f0'
     - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
-
-  - name: Map EPITA
-    icon: fas fa-user-friends
-    href: http://map.epita.eu/
-    class: tile-small-wide text-dark
-    style:
-    - 'background-color: #fff'
 
   - name: Redux
     href: https://redux.epita.cf/
