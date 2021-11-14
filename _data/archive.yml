@@ -26,12 +26,19 @@
       style:
       - 'background-color: #616161'
 
-    - name: Map EPITA
+    - name: Infinity Zeus
       icon: fas fa-user-friends
-      href: http://map.epita.eu/
-      class: tile-small-wide text-dark
+      href: https://zeus.infinity.study/
+      class: tile-small-wide invalid
       style:
-      - 'background-color: #fff'
+      - 'background-color: #bd510a'
+
+  - name: Map EPITA
+    icon: fas fa-user-friends
+    href: http://map.epita.eu/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
 
   - name: Algo TD
     href: https://algo-td.infoprepa.epita.fr/
