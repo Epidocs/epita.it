@@ -115,7 +115,7 @@
   - name: Infinity Zeus
     icon: fas fa-user-friends
     href: https://zeus.infinity.study/
-    class: tile-small-wide
+    class: tile-small-wide invalid
     style:
     - 'background-color: #bd510a'
 
