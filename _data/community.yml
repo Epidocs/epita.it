@@ -191,6 +191,14 @@
     - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
     - 'background-size: 90%'
 
+  - name: Gotta Go Hack
+    href: https://www.gottagohack.fr/
+    class: tile-medium
+    style:
+    - 'background-color: #00c2cb'
+    - 'background-image: url(https://www.gottagohack.fr/favicon.ico)'
+    - 'background-size: 90%'
+
   - name: La Paillote
     icon: fab fa-facebook
     href: https://fb.me/lapaillote.apero
