@@ -4,18 +4,18 @@
     icon: fab fa-discord
     href: https://discord.gg/SR5jzVA
     class: tile-wide
+    background_image: https://cdn.discordapp.com/attachments/813321650266832927/827414228737589348/Usual_Icon.webp
     style:
     - 'background-color: #202225'
-    - 'background-image: url(https://cdn.discordapp.com/attachments/813321650266832927/827414228737589348/Usual_Icon.webp)'
 
 - title: Misc.
   items:
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
     class: tile-wide text-dark
+    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #FFFFFF'
-    - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
 
@@ -24,55 +24,55 @@
   - name: Beyond Styx
     href: https://beyondstyx.fr/
     class: tile-medium
+    background_image: https://i.imgur.com/w8fxQPw.png
     style:
     - 'background-color: #000000'
-    - 'background-image: url(https://i.imgur.com/w8fxQPw.png)'
     - 'background-size: contain, cover'
     - 'background-size: 85%'
 
   - name: Hell Riders
     href: http://hellriders.ml/
     class: tile-medium
+    background_image: https://i.ibb.co/BVHYP0K/Hell-riders.png
     style:
     - 'background-color: #000000'
-    - 'background-image: url(https://i.ibb.co/BVHYP0K/Hell-riders.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
 
   - name: Hunter X Hunted
     href: https://smar.cf
     class: tile-medium
+    background_image: https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/master/logo_hunterxhunted.png
     style:
 
     - 'background-color: #191919'
-    - 'background-image: url(https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/master/logo_hunterxhunted.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
 
   - name: Panic At Tortuga
     href: https://lifeinvaders.github.io/website/
     class: tile-medium
+    background_image: https://raw.githubusercontent.com/LifeInvaders/game/dev/Assets/Pictures/logoSquare.png
     style:
     - 'color: black'
     - 'background-color: #D6C5A8'
-    - 'background-image: url(https://raw.githubusercontent.com/LifeInvaders/game/dev/Assets/Pictures/logoSquare.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
 
   - name: The Beaver Project
     href: https://thebeaverproject.tk
     class: tile-medium
+    background_image: https://thebeaverproject.tk/logo512.png
     style:
     - 'background-color: #B400FF'
-    - 'background-image: url(https://thebeaverproject.tk/logo512.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
 
   - name: The Hunter
     href: https://projectthehunter.tk/
     class: tile-medium
+    background_image: https://projectthehunter.tk/assets/img/Version_FR.png
     style:
     - 'background-color: #191919'
-    - 'background-image: url(https://projectthehunter.tk/assets/img/Version_FR.png)'
     - 'background-size: contain, cover'
     - 'background-size: 95%'

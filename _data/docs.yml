@@ -4,26 +4,26 @@
     href: https://doc.cri.epita.fr/
     class: tile-wide
     icon: fas fa-star
+    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #2980b9'
-    - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
 
   - name: Epita ALED
     href: https://epita.litarvan.com/a/aled
     class: tile-medium
+    background_image: /static/ALED-icon.png
     style:
     - 'background-color: #1E1E1E'
-    - 'background-image: url(/static/ALED-icon.png)'
     - 'background-size: 75%'
 
   - name: kb.zoroark.guru
     href: https://kb.zoroark.guru/
     class: tile-medium
+    background_image: https://kb.zoroark.guru/favicon.png
     style:
     - 'background-color: #424242'
-    - 'background-image: url(https://kb.zoroark.guru/favicon.png)'
     - 'background-position-y: 10%'
     - 'background-size: 70%'
 
@@ -32,9 +32,9 @@
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
     class: tile-wide text-dark
+    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #ffffff'
-    - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
 
@@ -43,9 +43,9 @@
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
     class: tile-wide text-dark
+    background_image: https://epidocs.eu/assets/logo.png
     style:
     - 'background-color: #e9ecef'
-    - 'background-image: url(https://epidocs.eu/assets/logo.png)'
     - 'background-size: auto 90%'
     - 'background-position-x: 65%'
 
@@ -54,23 +54,23 @@
     # - name: Algostats
       # href: http://algostats.epidocs.eu/
       # class: tile-small-wide text-dark
+      # background_image:
       # style:
       # - 'background-color: #fff'
-      # - 'background-image: url()'
 
     # - name: Progstats
       # href: http://progstats.epidocs.eu/
       # class: tile-small-wide text-dark
+      # background_image:
       # style:
       # - 'background-color: #fff'
-      # - 'background-image: url()'
 
   - name: Epinotes
     href: https://epinotes.core2duo.fr/
     class: tile-medium
+    background_image: https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png
     style:
     - 'background-color: #131415'
-    - 'background-image: url(https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png)'
     - 'background-size: 90%'
 
   - name: HyperAnnales
@@ -94,9 +94,9 @@
   - name: Redux
     href: https://redux.epita.cf/
     class: tile-small-wide invalid
+    background_image: https://redux.epita.cf/img/logo.png
     style:
     - 'background-color: #1254a4'
-    - 'background-image: url(https://redux.epita.cf/img/logo.png)'
 
   - name: EpiPortal
     href: https://epiportal.com/

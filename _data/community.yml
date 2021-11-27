@@ -12,43 +12,43 @@
     icon: fab fa-discord
     href: https://discord.gg/bQ7Tpk2
     class: tile-medium
+    background_image: https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256
     style:
     - 'background-color: #80b2fa'
-    - 'background-image: url(https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256)'
 
   - name: Segfault
     icon: fab fa-facebook
     href: https://fb.me/Segfolt
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/Segfolt/picture?width=256
     style:
     - 'background-color: #dfe8ef'
-    - 'background-image: url(https://graph.facebook.com/Segfolt/picture?width=256)'
 
   - name: Disruptif
     icon: fab fa-facebook
     href: https://fb.me/Disruptifs
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/Disruptifs/picture?width=256
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/Disruptifs/picture?width=256)'
 
   - class: tile-medium
     items:
     - name: Epiquote
       href: https://epiquote.fr/
       class: tile-small-wide text-dark
+      background_image: https://epiquote.fr/static/favicon.png
       style:
       - 'background-color: #e7e7e7'
-      - 'background-image: url(https://epiquote.fr/static/favicon.png)'
       - 'background-size: auto 50%'
       - 'background-position-x: 60%'
 
     - name: Wikia Epita
       href: https://epita.fandom.com/fr/
       class: tile-small-wide
+      background_image: https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png
       style:
       - 'background-color: #002a32'
-      - 'background-image: url(https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png)'
       - 'background-position-x: right'
 
 - title: Associations & Clubs
@@ -56,18 +56,18 @@
   - name: ANTRE
     href: https://antre.fr/
     class: tile-medium
+    background_image: https://www.antre.fr/forum/styles/acidtech/theme/images/logo_right.jpg
     style:
     - 'background-color: #191919'
-    - 'background-image: url(https://www.antre.fr/forum/styles/acidtech/theme/images/logo_right.jpg)'
     - 'background-size: cover'
 
   - name: Back to basics
     icon: fab fa-facebook
     href: https://fb.me/btbepita/
     class: tile-medium text-dark
+    background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://backtobasics.axen.io/static/img/favicon.png)'
     - 'background-size: 90%'
     - 'background-position-y: top'
 
@@ -75,17 +75,17 @@
     icon: fab fa-facebook
     href: https://fb.me/bdeepita/
     class: tile-medium
+    background_image: https://graph.facebook.com/bdeepita/picture?width=256
     style:
     - 'background-color: #ffede1'
-    - 'background-image: url(https://graph.facebook.com/bdeepita/picture?width=256)'
     - 'background-size: cover'
 
   - name: Cristal
     href: https://www.cristal.je/
     class: tile-medium text-dark
+    background_image: https://www.cristal.je/wp-content/uploads/2021/03/cristal-logo-vect.svg
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://www.cristal.je/wp-content/uploads/2021/03/cristal-logo-vect.svg)'
     - 'background-size: 90%'
 
   - name: Cycom
@@ -93,51 +93,51 @@
     href: https://fb.me/AssoCycom
     # href: https://cycom.org/
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/AssoCycom/picture?width=256
+    # background_image: https://cycom.org/content/images/size/w600/2020/03/cycom_logo.png
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/AssoCycom/picture?width=256)'
-    # - 'background-image: url(https://cycom.org/content/images/size/w600/2020/03/cycom_logo.png)'
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
   - name: Ephemere
     href: http://club-ephemere.fr/
     class: tile-medium text-dark
+    background_image: https://live.staticflickr.com/775/buddyicons/100015017@N04_r.jpg
     style:
     - 'background-color: #f5f5f5'
-    - 'background-image: url(https://live.staticflickr.com/775/buddyicons/100015017@N04_r.jpg)'
 
   - name: EpiMac
     href: https://www.epimac.org/
     class: tile-medium
+    background_image: https://www.epimac.org/img/2.png
     style:
     - 'background-color: #353535'
-    - 'background-image: url(https://www.epimac.org/img/2.png)'
     - 'background-size: 90%'
 
   - name: Epimathia
     icon: fab fa-facebook
     href: https://fb.me/Epimathia/
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/Epimathia/picture?width=256
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/Epimathia/picture?width=256)'
 
   - name: Epiqueer
     href: https://epiqueer.fr/
     class: tile-medium
+    background_image: https://epiqueer.fr/img/epiqueer.png
     style:
     - 'background-color: #37a1de'
-    - 'background-image: url(https://epiqueer.fr/img/epiqueer.png)'
     - 'background-size: 90%'
 
   - name: Episolidaire
     icon: fab fa-facebook
     href: https://fb.me/episolidaire/
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/episolidaire/picture?width=256
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/episolidaire/picture?width=256)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
 
@@ -145,33 +145,33 @@
     icon: fab fa-facebook
     href: https://fb.me/Episport/
     class: tile-medium
+    background_image: https://graph.facebook.com/Episport/picture?width=256
     style:
     - 'background-color: #0f111d'
-    - 'background-image: url(https://graph.facebook.com/Episport/picture?width=256)'
 
   - name: Epitanime
     href: https://www.epitanime.com/
     class: tile-medium
+    background_image: https://www.epitanime.com/wp-content/uploads/2017/02/logo_flat_small.png
     style:
     - 'background-color: #0d47a1'
-    - 'background-image: url(https://www.epitanime.com/wp-content/uploads/2017/02/logo_flat_small.png)'
     - 'background-size: 60%'
 
   - name: Epiworld
     href: http://www.epiworld.org/
     class: tile-medium
+    background_image: https://cdn.matiboux.com/images/epita.it/epiworld.png
+    # background_image: http://www.epiworld.org/img/Logo-Epiworld-2.png
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/epiworld.png)'
-    # - 'background-image: url(http://www.epiworld.org/img/Logo-Epiworld-2.png)'
 
   - name: EPTV
     href: http://eptv.fr/
     class: tile-medium
+    background_image: https://cdn.matiboux.com/images/epita.it/eptv.png
+    # background_image: http://eptv.fr/eptv_logo_good_to_script.png
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/eptv.png)'
-    # - 'background-image: url(http://eptv.fr/eptv_logo_good_to_script.png)'
     - 'background-size: 90%'
 
   - name: Evotutek
@@ -179,41 +179,41 @@
     # href: https://evolutek.fr/
     href: https://fb.me/evolutek.ionis
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/evolutek.ionis/picture?width=256
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/evolutek.ionis/picture?width=256)'
 
   - name: GConfs
     href: https://gconfs.fr/
     class: tile-medium
+    background_image: https://gconfs.fr/static/img/gconfs_logo.png
     style:
     - 'background-color: #343a40'
-    - 'background-image: url(https://gconfs.fr/static/img/gconfs_logo.png)'
     - 'background-size: 90%'
 
   - name: Gotta Go Hack
     href: https://www.gottagohack.fr/
     class: tile-medium
+    background_image: https://www.gottagohack.fr/favicon.ico
     style:
     - 'background-color: #00c2cb'
-    - 'background-image: url(https://www.gottagohack.fr/favicon.ico)'
     - 'background-size: 90%'
 
   - name: La Paillote
     icon: fab fa-facebook
     href: https://fb.me/lapaillote.apero
     class: tile-medium
+    background_image: https://graph.facebook.com/lapaillote.apero/picture?width=256
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://graph.facebook.com/lapaillote.apero/picture?width=256)'
 
   - name: Lateb
     href: http://intra.lateb.eu/
     class: tile-medium text-dark
+    background_image: https://cdn.matiboux.com/images/epita.it/lateb.png
+    # background_image: http://intra.lateb.eu/images/favicon.png
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/lateb.png)'
-    # - 'background-image: url(http://intra.lateb.eu/images/favicon.png)'
     - 'background-size: auto 90%'
     - 'background-position-x: 80%'
 
@@ -221,43 +221,43 @@
     icon: fab fa-facebook
     href: https://fb.me/P%C3%B4le-Gastronomique-107151704029031/
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/107151704029031/picture?width=256
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/107151704029031/picture?width=256)'
     - 'background-size: 80%'
     - 'background-position-y: 25%'
 
   - name: Prologin
     href: https://prologin.org/
     class: tile-medium
+    background_image: https://prologin.org/static/img/logo_cube.png
     style:
     - 'background-color: #35479a'
-    - 'background-image: url(https://prologin.org/static/img/logo_cube.png)'
     - 'background-size: 60%'
 
   - name: Soul of Sound
     icon: fab fa-facebook
     href: https://fb.me/soulofsoundband
     class: tile-medium
+    background_image: https://graph.facebook.com/soulofsoundband/picture?width=256
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://graph.facebook.com/soulofsoundband/picture?width=256)'
 
   - name: Strataegyc
     icon: fab fa-facebook
     href: https://fb.me/Strataegyc/
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/Strataegyc/picture?width=256
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/Strataegyc/picture?width=256)'
 
   - name: The Stack
     icon: fab fa-facebook
     href: https://fb.me/Epitactic
     class: tile-medium text-dark
+    background_image: https://graph.facebook.com/Epitactic/picture?width=256
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://graph.facebook.com/Epitactic/picture?width=256)'
     - 'background-size: 75%'
     - 'background-position-y: 25%'
 
@@ -265,9 +265,9 @@
     icon: fab fa-facebook
     href: https://fb.me/unisson/
     class: tile-medium
+    background_image: https://graph.facebook.com/unisson/picture?width=256
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://graph.facebook.com/unisson/picture?width=256)'
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
@@ -275,16 +275,16 @@
     icon: fab fa-facebook
     href: https://fb.me/UnPlugEpita
     class: tile-medium
+    background_image: https://graph.facebook.com/UnPlugEpita/picture?width=256
     style:
     - 'background-color: #741a1a'
-    - 'background-image: url(https://graph.facebook.com/UnPlugEpita/picture?width=256)'
     - 'background-size: cover'
 
   - name: VJN
     icon: fab fa-facebook
     href: https://fb.me/vjnights/
     class: tile-medium
+    background_image: https://graph.facebook.com/vjnights/picture?width=256
     style:
     - 'background-color: #000'
-    - 'background-image: url(https://graph.facebook.com/vjnights/picture?width=256)'
     - 'background-size: 80%'

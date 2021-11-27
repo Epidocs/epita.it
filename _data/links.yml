@@ -1,25 +1,25 @@
 - name: EPITA.fr
   href: https://www.epita.fr/
   class: tile-wide
+  background_image: https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png
   style:
   - 'background-color: #03374e'
-  - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
   - 'background-size: auto 90%'
 
 - name: EPITA.net
   href: https://epita.net/
   class: tile-medium
+  background_image: https://epita.net/Epita.png
   style:
   - 'background-color: #223049'
-  - 'background-image: url(https://epita.net/Epita.png)'
   - 'background-size: 90%'
 
 - name: Intracom
   href: http://intracom.epita.fr/
   class: tile-medium
+  background_image: https://cdn.matiboux.com/images/epita.it/intracom.png
   style:
   - 'background-color: #ff6f00'
-  - 'background-image: url(https://cdn.matiboux.com/images/epita.it/intracom.png)'
   - 'background-size: 90%'
   - 'background-position-y: 25%'
 
@@ -28,9 +28,9 @@
   - name: Study Abroad
     href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
     class: tile-small-wide text-dark
+    background_image: https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png)'
     - 'background-size: auto 75%'
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
@@ -38,9 +38,9 @@
   - name: Odyssée
     href: http://odyssee.epita.fr/
     class: tile-small-wide text-dark
+    background_image: https://cdn.matiboux.com/images/epita.it/odyssee.jpg
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/odyssee.jpg)'
     - 'background-size: auto 75%'
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
@@ -48,9 +48,9 @@
 - name: CRI EPITA
   href: https://cri.epita.fr/
   class: tile-medium text-dark
+  background_image: https://s3.cri.epita.fr/cri-intranet/img/logo.png
   style:
   - 'background-color: #fff'
-  - 'background-image: url(https://s3.cri.epita.fr/cri-intranet/img/logo.png)'
   - 'background-size: 75%'
   # - 'background-position-x: 90%'
   - 'background-position-y: 20%'
@@ -58,26 +58,28 @@
 - name: Moodle
   href: https://moodle.cri.epita.fr/
   class: tile-wide text-dark
+  background_image: https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1594982425/moodle_logo_small
   style:
   - 'background-color: #fff'
-  - 'background-image: url(https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1594982425/moodle_logo_small)'
   - 'background-position-y: 45%'
   - 'background-size: 75%'
 
 - name: IonisX
   href: https://ionisx.com/
   class: tile-medium text-dark
+  background_image: https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png
   style:
   - 'background-color: #d09c01'
-  - 'background-image: url(https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png)'
   - 'background-size: 90%'
 
 - name: Assistants
   href: https://assistants.epita.fr/
   class: tile-medium
+  background_image:
+  - https://assistants.epita.fr/logos/acu2022_logo.svg
+  - https://assistants.epita.fr/lightnoise.png
   style:
   - 'background-color: #000000'
-  - 'background-image: url(https://assistants.epita.fr/logos/acu2022_logo.svg), url(https://assistants.epita.fr/lightnoise.png)'
   - 'background-position-y: top'
   - 'background-size: auto 90%, auto'
   - 'background-repeat: no-repeat, repeat'
@@ -87,18 +89,18 @@
   - name: Office
     href: https://www.office.com/?auth=2
     class: tile-small-wide
+    background_image: https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/113/2016/02/OfcLogoText-768x331.jpg
     style:
     - 'background-color: #ea3c00'
-    - 'background-image: url(https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/113/2016/02/OfcLogoText-768x331.jpg)'
     - 'background-size: 90%'
     - 'background-position-y: top'
 
   - name: Rocket.Chat
     href: http://rocketchat.cri.epita.fr/
     class: tile-small-wide
+    background_image: https://rocketchat.cri.epita.fr/assets/logo.png
     style:
     - 'background-color: #444'
-    - 'background-image: url(https://rocketchat.cri.epita.fr/assets/logo.png)'
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
@@ -107,9 +109,9 @@
   - name: Zeus
     href: https://zeus.3ie.fr/
     class: tile-small-wide
+    background_image: https://zeus.3ie.fr/assets/png/logo-zeus-blanc.png
     style:
     - 'background-color: #1d2e37'
-    - 'background-image: url(https://zeus.3ie.fr/assets/png/logo-zeus-blanc.png)'
     - 'background-size: auto'
     - 'background-position-y: 25%'
 
@@ -117,9 +119,9 @@
     icon: fas fa-user-friends
     href: https://epimap.fr/
     class: tile-small-wide
+    background_image: https://epimap.fr/img/logo-epimap.svg
     style:
     - 'background-color: #230071'
-    - 'background-image: url(https://epimap.fr/img/logo-epimap.svg)'
     - 'background-size: 80%'
     - 'background-position: 20% 20%'
 
@@ -129,9 +131,9 @@
     icon: fas fa-bullhorn
     href: https://news.deliciousmuffins.net/
     class: tile-small-wide
+    background_image: https://news.deliciousmuffins.net/static/muffinreader.png
     style:
     - 'background-color: #222222'
-    - 'background-image: url(https://news.deliciousmuffins.net/static/muffinreader.png)'
 
   - name: RTFN
     icon: fas fa-bullhorn
@@ -145,9 +147,9 @@
   - name: CRI's Gitlab
     href: https://gitlab.cri.epita.fr/
     class: tile-small-wide
+    background_image: https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg
     style:
     - 'background-color: #292961'
-    - 'background-image: url(https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg)'
     - 'background-position-y: top'
     - 'background-size: 75%'
 
@@ -168,18 +170,18 @@
   - name: Algo Cours (FR)
     href: https://algo.infoprepa.epita.fr/index.php/Epita:Algo:Cours
     class: tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png)'
     - 'background-position: 50% 15%'
     - 'background-size: 50%'
 
   - name: Algo Courses (EN)
     href: https://algo.infoprepa.epita.fr/english/index.php/Epita:Algo:Course
     class: tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png)'
     - 'background-position: 50% 15%'
     - 'background-size: 50%'
 
@@ -188,17 +190,17 @@
   - name: Pegasus Prepa
     href: https://prepa-epita.helvetius.net/pegasus
     class: tile-small-wide text-dark
+    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg)'
     - 'background-position-x: left'
 
   - name: Pegasus Ing
     href: https://inge-etud.epita.net/pegasus/
     class: tile-small-wide text-dark
+    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
     style:
     - 'background-color: #fff'
-    - 'background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg)'
     - 'background-position-x: left'
 
 - class: tile-medium
@@ -206,27 +208,27 @@
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
     class: tile-small-wide text-dark
+    background_image: https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png
     style:
     - 'background-color: #a2d416'
-    - 'background-image: url(https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png)'
     - 'background-size: auto 90%'
     - 'background-position-x: right'
 
   - name: Rosetta Stone
     href: https://he2.tellmemorecampus.com/
     class: tile-small-wide
+    background_image: https://resources.rosettastone.com/assets/ss/221270--8920100/App_Themes/Default/Global/0101UnidentifiedHomePage/Images/r/logo_RS.png
     style:
     - 'background-color: #262a2f'
-    - 'background-image: url(https://resources.rosettastone.com/assets/ss/221270--8920100/App_Themes/Default/Global/0101UnidentifiedHomePage/Images/r/logo_RS.png)'
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
 - name: Back to Basics
   href: https://backtobasics.axen.io/
   class: tile-medium text-dark
+  background_image: https://backtobasics.axen.io/static/img/favicon.png
   style:
   - 'background-color: #fff'
-  - 'background-image: url(https://backtobasics.axen.io/static/img/favicon.png)'
   - 'background-size: 90%'
   - 'background-position-y: top'
 
@@ -234,26 +236,26 @@
   href: https://www.epitaf.fr/
   class: tile-medium
   icon: fas fa-user-friends
+  background_image: https://www.epitaf.fr/logo.png
   style:
   - 'background-color: #141d27'
-  - 'background-image: url(https://www.epitaf.fr/logo.png)'
 
 - name: Past-Exams
   href: https://past-exams.epidocs.eu/
   class: tile-medium
   icon: fas fa-user-friends
+  background_image: https://epidocs.eu/assets/logo.png
   style:
   - 'background-color: #24292e'
-  - 'background-image: url(https://epidocs.eu/assets/logo.png)'
   - 'background-size: 90%'
 
 - name: Epinotes
   href: https://epinotes.core2duo.fr/
   class: tile-medium
   icon: fas fa-user-friends
+  background_image: https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png
   style:
   - 'background-color: #131415'
-  - 'background-image: url(https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png)'
   - 'background-size: 90%'
 
 - name: HyperAnnales
@@ -279,43 +281,43 @@
 - name: Logements
   href: https://logement.epita.fr/
   class: tile-small-wide text-dark
+  background_image: https://pbs.twimg.com/profile_images/982210316581814272/okLNcPgm_200x200.jpg
   style:
   - 'background-color: #fff'
-  - 'background-image: url(https://pbs.twimg.com/profile_images/982210316581814272/okLNcPgm_200x200.jpg)'
   - 'background-position-x: right'
 
 - name: LSE
   href: https://lse.epita.fr/
   class: tile-small-wide
+  background_image: https://lse.epita.fr/images/logoLSE.png
   style:
   - 'background-color: #141212'
-  - 'background-image: url(https://lse.epita.fr/images/logoLSE.png)'
   - 'background-size: auto 90%'
   - 'background-position-x: 75%'
 
 - name: LRDE
   href: https://www.lrde.epita.fr/
   class: tile-small-wide text-dark
+  background_image: https://www.lrde.epita.fr/skins/common/images/logo.png
   style:
   - 'background-color: #d5e6f7'
-  - 'background-image: url(https://www.lrde.epita.fr/skins/common/images/logo.png)'
   - 'background-position-x: right'
 
 - name: 3ie
   href: https://www.3ie.fr/
   class: tile-small-wide
+  background_image: https://www.3ie.fr/images/3ie-logo.svg
   style:
   - 'background-color: #00ffd2'
   - 'background-size: auto 90%'
-  - 'background-image: url(https://www.3ie.fr/images/3ie-logo.svg)'
 
 - name: Dyjix
   href: https://dyjix.eu/
   class: tile-small-wide text-dark
   icon: fas fa-user-friends
+  background_image: https://dyjix.eu/images/vesta_logo.png
   style:
   - 'background-color: #fff'
-  - 'background-image: url(https://dyjix.eu/images/vesta_logo.png)'
   - 'background-size: 70%'
   - 'background-position-x: 25%'
   - 'background-position-y: 25%'

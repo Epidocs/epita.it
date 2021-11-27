@@ -3,18 +3,18 @@
   - name: 2021
     relurl: 2021
     class: tile-medium
+    background_image: https://cdn.discordapp.com/icons/364120280072716309/da24989523fa2b5ffa995efebb6bf5b2.png?size=256
     style:
     - 'background-color: #202225'
-    - 'background-image: url(https://cdn.discordapp.com/icons/364120280072716309/da24989523fa2b5ffa995efebb6bf5b2.png?size=256)'
 
 - title: Old links
   items:
   - name: Chronos
     href: http://chronos.epita.net/
     class: tile-medium
+    background_image: https://cdn.matiboux.com/images/epita.it/chronos.gif
     style:
     - 'background-color: #b77fa2'
-    - 'background-image: url(https://cdn.matiboux.com/images/epita.it/chronos.gif)'
     - 'background-size: 90%'
 
   - class: tile-medium
@@ -52,17 +52,17 @@
   - name: Algo TD
     href: https://algo-td.infoprepa.epita.fr/
     class: tile-medium text-dark
+    background_image: https://algo-td.infoprepa.epita.fr/images/logo_final.jpg
     style:
     - 'background-color: #e5e5f0'
-    - 'background-image: url(https://algo-td.infoprepa.epita.fr/images/logo_final.jpg)'
 
   - name: Redux
     href: https://redux.epita.cf/
     class: tile-small-wide invalid
     icon: fas fa-user-friends
+    background_image: https://redux.epita.cf/img/logo.png
     style:
     - 'background-color: #1254a4'
-    - 'background-image: url(https://redux.epita.cf/img/logo.png)'
 
   - name: EpiPortal
     href: https://epiportal.com/

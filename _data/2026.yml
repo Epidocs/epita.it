@@ -4,17 +4,17 @@
     icon: fab fa-discord
     href: https://discord.gg/wJn9Ku98zp
     class: tile-wide
+    background_image: https://cdn.discordapp.com/attachments/727547922220187760/887563893877116928/2026.png
     style:
     - 'background-color: #202225'
-    - 'background-image: url(https://cdn.discordapp.com/attachments/727547922220187760/887563893877116928/2026.png)'
 
 - title: Misc.
   items:
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
     class: tile-wide text-dark
+    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #FFFFFF'
-    - 'background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
