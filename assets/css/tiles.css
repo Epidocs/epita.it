@@ -14,7 +14,7 @@ FROM https://metroui.org.ua/
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  color: #fff;
+  color: #eee;
   width: 150px;
   height: 150px;
   -webkit-box-shadow: inset 0 0 1px #FFFFCC;
@@ -27,6 +27,14 @@ FROM https://metroui.org.ua/
       -ms-user-select: none;
           user-select: none;
 }
+.tile-small.text-dark,
+.tile-small-wide.text-dark,
+.tile-medium.text-dark,
+.tile-wide.text-dark,
+.tile-large.text-dark,
+.tile-app.text-dark {
+  color: #222 !important;
+}
 .tile-small:hover, .tile-small:focus,
 .tile-small-wide:hover, .tile-small-wide:focus,
 .tile-medium:hover, .tile-medium:focus,
@@ -34,6 +42,14 @@ FROM https://metroui.org.ua/
 .tile-large:hover, .tile-large:focus,
 .tile-app:hover, .tile-app:focus {
   color: #fff;
+}
+.tile-small.text-dark:hover, .tile-small.text-dark:focus,
+.tile-small-wide.text-dark:hover, .tile-small-wide.text-dark:focus,
+.tile-medium.text-dark:hover, .tile-medium.text-dark:focus,
+.tile-wide.text-dark:hover, .tile-wide.text-dark:focus,
+.tile-large.text-dark:hover, .tile-large.text-dark:focus,
+.tile-app.text-dark:hover, .tile-app.text-dark:focus {
+  color: #111 !important;
 }
 .tile-small[data-cover],
 .tile-small-wide[data-cover],
