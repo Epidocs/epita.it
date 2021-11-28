@@ -32,7 +32,7 @@
 
   - name: Hell Riders
     href: http://hellriders.ml/
-    class: tile-medium
+    class: tile-medium text-dark
     background_image: https://i.ibb.co/BVHYP0K/Hell-riders.png
     style:
     - 'background-color: #000000'
@@ -44,17 +44,15 @@
     class: tile-medium
     background_image: https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/master/logo_hunterxhunted.png
     style:
-
     - 'background-color: #191919'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
 
   - name: Panic At Tortuga
     href: https://lifeinvaders.github.io/website/
-    class: tile-medium
+    class: tile-medium text-dark
     background_image: https://raw.githubusercontent.com/LifeInvaders/game/dev/Assets/Pictures/logoSquare.png
     style:
-    - 'color: black'
     - 'background-color: #D6C5A8'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
