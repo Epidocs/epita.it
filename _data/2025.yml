@@ -67,9 +67,9 @@
     - 'background-size: 95%'
 
   - name: The Hunter
-    href: https://projectthehunter.tk/
+    href: https://hellscrimson.github.io/ProjectTheHunter/
     class: tile-medium
-    background_image: https://projectthehunter.tk/assets/img/Version_FR.png
+    background_image: https://hellscrimson.github.io/ProjectTheHunter/assets/img/Version_FR.png
     style:
     - 'background-color: #191919'
     - 'background-size: contain, cover'
