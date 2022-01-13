@@ -310,14 +310,3 @@
   style:
   - 'background-color: #00ffd2'
   - 'background-size: auto 90%'
-
-- name: Dyjix
-  href: https://dyjix.eu/
-  class: tile-small-wide text-dark
-  icon: fas fa-user-friends
-  background_image: https://dyjix.eu/images/vesta_logo.png
-  style:
-  - 'background-color: #fff'
-  - 'background-size: 70%'
-  - 'background-position-x: 25%'
-  - 'background-position-y: 25%'
