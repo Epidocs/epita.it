@@ -144,7 +144,7 @@
 
 - class: tile-medium
   items:
-  - name: CRI's Gitlab
+  - name: Gitlab CRI
     href: https://gitlab.cri.epita.fr/
     class: tile-small-wide
     background_image: https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg
