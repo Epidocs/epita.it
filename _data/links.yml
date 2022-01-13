@@ -253,7 +253,7 @@
   href: https://epinotes.core2duo.fr/
   class: tile-medium
   icon: fas fa-user-friends
-  background_image: https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png
+  background_image: https://epinotes.fr/public/images/logos/epinotes_logo_7.png
   style:
   - 'background-color: #131415'
   - 'background-size: 90%'
