@@ -2,9 +2,10 @@
 	{% for section in include.data %}
 		{% if section.items %}
 			{% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
-			
+			{% if section.text %}<p class="small">{{ section.text }}</p>{% endif %}
+
 			{% include grid-loader.html grid = section.items %}
-			
+
 			{% unless forloop.last %}<hr />{% endunless %}
 		{% endif %}
 	{% endfor %}
