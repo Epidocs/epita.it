@@ -18,15 +18,6 @@
     - 'background-color: #1E1E1E'
     - 'background-size: 75%'
 
-  - name: kb.zoroark.guru
-    href: https://kb.zoroark.guru/
-    class: tile-medium
-    background_image: https://kb.zoroark.guru/favicon.png
-    style:
-    - 'background-color: #424242'
-    - 'background-position-y: 10%'
-    - 'background-size: 70%'
-
 - title: Guides
   items:
   - name: Guide de survie Projet S2 (FR)
