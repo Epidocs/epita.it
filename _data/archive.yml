@@ -60,6 +60,7 @@
   - name: kb.zoroark.guru
     href: https://kb.zoroark.guru/
     class: tile-small-wide
+    icon: fas fa-user-friends
     background_image: https://kb.zoroark.guru/favicon.png
     style:
     - 'background-color: #424242'
