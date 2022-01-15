@@ -86,8 +86,6 @@
     - 'background-size: auto 90%, auto'
     - 'background-repeat: no-repeat, repeat'
 
-# - class: tile-medium
-#   items:
   - name: Office
     href: https://www.office.com/?auth=2
     class: tile-small-wide
@@ -106,8 +104,6 @@
     - 'background-size: 90%'
     - 'background-position-y: 25%'
 
-# - class: tile-medium
-#   items:
   - name: Zeus
     href: https://zeus.3ie.fr/
     class: tile-small-wide
@@ -126,8 +122,6 @@
     - 'background-position-y: top'
     - 'background-size: 75%'
 
-# - class: tile-medium
-#   items:
   - name: Debug-Pro
     relurl: debugpro
     class: tile-small-wide text-dark
@@ -140,8 +134,6 @@
     style:
     - 'background-color: #f6f6f6'
 
-# - class: tile-medium
-#   items:
   - name: Algo Cours (FR)
     href: https://algo.infoprepa.epita.fr/index.php/Epita:Algo:Cours
     class: tile-small-wide text-dark
@@ -160,8 +152,6 @@
     - 'background-position: 50% 15%'
     - 'background-size: 50%'
 
-# - class: tile-medium
-#   items:
   - name: Pegasus Prepa
     href: https://prepa-epita.helvetius.net/pegasus
     class: tile-small-wide text-dark
@@ -178,8 +168,6 @@
     - 'background-color: #fff'
     - 'background-position-x: left'
 
-# - class: tile-medium
-#   items:
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
     class: tile-small-wide text-dark
