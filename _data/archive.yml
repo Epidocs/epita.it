@@ -1,4 +1,5 @@
-- title: Graduates
+- title: Graduates pages
+  text: Link to pages on EPITA.it for past year groups not visible in the navbar.
   items:
   - name: 2021
     relurl: 2021
@@ -25,6 +26,8 @@
     - 'background-color: #e5e5f0'
 
 - title: Old unofficial resources
+  text: |
+    <i class="fas fa-user-friends fa-fw"></i> = Community resource, not affiliated with EPITA.
   items:
   - name: iChronos
     icon: fas fa-user-friends
