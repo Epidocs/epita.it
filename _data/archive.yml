@@ -56,6 +56,15 @@
     style:
     - 'background-color: #e5e5f0'
 
+  - name: kb.zoroark.guru
+    href: https://kb.zoroark.guru/
+    class: tile-small-wide
+    background_image: https://kb.zoroark.guru/favicon.png
+    style:
+    - 'background-color: #424242'
+    - 'background-position: 5% 10%'
+    - 'background-size: auto 60%'
+
   - name: Redux
     href: https://redux.epita.cf/
     class: tile-small-wide invalid
