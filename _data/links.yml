@@ -241,6 +241,14 @@
     background_image: https://www.epitaf.fr/logo.png
     style:
     - 'background-color: #141d27'
+    
+  - name: Epitar
+    href: https://epitar.aureleoules.com
+    class: tile-medium
+    icon: fas fa-user-friends
+    background_image: https://epitar.aureleoules.com/favicon.png
+    style:
+    - 'background-color: #141d27'
 
   - name: Epinotes
     href: https://epinotes.core2duo.fr/
