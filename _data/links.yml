@@ -259,6 +259,16 @@
     - 'background-color: #131415'
     - 'background-size: 90%'
 
+  - name: Epibug
+    href: https://epibug.now.sh/
+    class: tile-small-wide text-dark
+    icon: fas fa-user-friends
+    background_image: https://epibug.now.sh/favicon.png
+    style:
+    - 'background-color: #eee'
+    - 'background-size: auto 40%'
+    - 'background-position: 95% 85%'
+
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
     class: tile-small-wide text-dark
