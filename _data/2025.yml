@@ -23,7 +23,7 @@
   items:
   - name: Beyond Styx
     href: https://beyondstyx.fr/
-    class: tile-medium
+    class: tile-medium invalid
     background_image: https://i.imgur.com/w8fxQPw.png
     style:
     - 'background-color: #000000'
@@ -32,7 +32,7 @@
 
   - name: Hell Riders
     href: http://hellriders.ml/
-    class: tile-medium text-dark
+    class: tile-medium text-dark invalid
     background_image: https://i.ibb.co/BVHYP0K/Hell-riders.png
     style:
     - 'background-color: #000000'
@@ -41,7 +41,7 @@
 
   - name: Hunter X Hunted
     href: https://smar.cf
-    class: tile-medium
+    class: tile-medium invalid
     background_image: https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/master/logo_hunterxhunted.png
     style:
     - 'background-color: #191919'
@@ -59,7 +59,7 @@
 
   - name: The Beaver Project
     href: https://thebeaverproject.tk
-    class: tile-medium
+    class: tile-medium invalid
     background_image: https://thebeaverproject.tk/logo512.png
     style:
     - 'background-color: #B400FF'
