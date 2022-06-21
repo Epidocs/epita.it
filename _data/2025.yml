@@ -40,8 +40,10 @@
     - 'background-size: 95%'
 
   - name: Hunter X Hunted
-    href: https://smar.cf
-    class: tile-medium invalid
+    # href: https://smar.cf # Invalid
+    href: https://github.com/Ronan-pdr/HunterXHunted
+    icon: fab fa-github
+    class: tile-medium
     background_image: https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/master/logo_hunterxhunted.png
     style:
     - 'background-color: #191919'
