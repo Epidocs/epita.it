@@ -57,9 +57,9 @@
       # - 'background-color: #fff'
 
   - name: Epinotes
-    href: https://epinotes.core2duo.fr/
+    href: https://epinotes.fr/
     class: tile-medium
-    background_image: https://epinotes.core2duo.fr/Images/epinotes_logo_7_epita_it.png
+    background_image: https://epinotes.fr/public/images/logos/epinotes_logo_7.png
     style:
     - 'background-color: #131415'
     - 'background-size: 90%'
