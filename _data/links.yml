@@ -212,7 +212,7 @@
   - name: RTFN
     icon: fas fa-bullhorn
     href: https://rtfn.fr/
-    class: tile-small-wide text-dark
+    class: tile-small-wide text-dark invalid
     style:
     - 'background-color: #fff'
 
