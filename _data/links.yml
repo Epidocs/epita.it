@@ -244,7 +244,7 @@
 
   - name: Epitar
     href: https://epitar.aureleoules.com
-    class: tile-medium invalid
+    class: tile-medium
     icon: fas fa-user-friends
     background_image: https://epitar.aureleoules.com/favicon.png
     style:
