@@ -317,12 +317,12 @@
     - 'background-position-y: 30%'
 
   - name: LSE
-    href: https://lse.epita.fr/
+    href: https://www.lse.epita.fr/
     class: tile-small-wide
-    background_image: https://lse.epita.fr/images/logoLSE.png
+    background_image: https://www.lse.epita.fr/images/logoLSE.png
     style:
     - 'background-color: #141212'
-    - 'background-size: auto 90%'
+    - 'background-size: auto 80%'
     - 'background-position-x: 75%'
 
   - name: LRDE
