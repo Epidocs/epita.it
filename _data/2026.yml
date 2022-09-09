@@ -18,3 +18,14 @@
     - 'background-color: #FFFFFF'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
+
+- title: S2 Projects
+  items : 
+  - name: CubeTools Explorer
+    href: https://forixm.github.io/CubeTools/WebSite 
+    class: tile-medium
+    background_image: https://github.com/ForixM/CubeTools/blob/main/WebSite/myicons/CubeToolsIcon.png
+    style:
+    - 'background-color: #000000'
+    - 'background-size: contain, cover'
+    - 'background-size: 95%'
