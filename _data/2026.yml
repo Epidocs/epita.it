@@ -29,3 +29,11 @@
     - 'background-color: #000000'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
+  - name: Kasimov
+    href: https://kasimov.tk
+    class: tile-medium
+    background_image: https://kasimov.tk/assets/img/icon.png
+    style:
+    - 'background-color: #000000'
+    - 'background-size: contain, cover'
+    - 'background-size: 95%'
