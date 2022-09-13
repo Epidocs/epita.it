@@ -17,7 +17,7 @@
     - 'background-size: 90%'
 
   - name: Intracom
-    href: http://intracom.epita.fr/
+    href: https://intracom-new.epita.fr/
     class: tile-medium
     background_image: https://cdn.matiboux.com/images/epita.it/intracom.png
     style:
