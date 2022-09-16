@@ -37,3 +37,11 @@
     - 'background-color: #000000'
     - 'background-size: contain, cover'
     - 'background-size: 95%'
+  - name: Switched
+    href: https://swarwerth.github.io/switched.github.io/
+    class: tile-medium
+    bakcground_image: https://swarwerth.github.io/switched.github.io/assets/img/Switched.png
+    style:
+    - 'background-color: #000000'
+    - 'background-size: contain, cover'
+    - 'background-size: 95%'
