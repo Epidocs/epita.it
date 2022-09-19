@@ -89,10 +89,11 @@
   - name: Office
     href: https://www.office.com/?auth=2
     class: tile-small-wide
-    background_image: https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/113/2016/02/OfcLogoText-768x331.jpg
+    background_image: https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/more-apps-consumer-861afc732e.png
     style:
-    - 'background-color: #ea3c00'
-    - 'background-size: 90%'
+    - 'background-color: #d83b01'
+    - 'background-size: auto 150%'
+    - 'background-position-x: 180%'
     - 'background-position-y: top'
 
   - name: Rocket.Chat
