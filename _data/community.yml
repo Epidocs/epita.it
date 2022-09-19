@@ -65,7 +65,8 @@
     icon: fab fa-facebook
     href: https://fb.me/btbepita/
     class: tile-medium text-dark
-    background_image: https://backtobasics.axen.io/static/img/favicon.png
+    background_image: https://graph.facebook.com/btbepita/picture?width=256
+    # background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
     - 'background-color: #fff'
     - 'background-size: 90%'
