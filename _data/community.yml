@@ -1,12 +1,12 @@
 - title: Communities
   items:
-  - name: EPIFUN
-    href: https://www.epifun.com/
-    class: tile-medium invalid
-    style:
-    - 'background-color: #41b6f3'
-    # - 'background-image: url(https://www.epifun.com/img/logo.png), url(https://www.epifun.com/img/background-toptitle.jpg)'
-    # - 'background-size: 90%, cover'
+  # - name: EPIFUN
+  #   href: https://www.epifun.com/
+  #   class: tile-medium invalid
+  #   style:
+  #   - 'background-color: #41b6f3'
+  #   # - 'background-image: url(https://www.epifun.com/img/logo.png), url(https://www.epifun.com/img/background-toptitle.jpg)'
+  #   # - 'background-size: 90%, cover'
 
   - name: EPITA International
     icon: fab fa-discord
