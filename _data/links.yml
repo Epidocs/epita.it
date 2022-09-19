@@ -218,14 +218,15 @@
   #   style:
   #   - 'background-color: #fff'
 
-  - name: Back to Basics
-    href: https://backtobasics.axen.io/
-    class: tile-medium text-dark invalid
-    background_image: https://backtobasics.axen.io/static/img/favicon.png
-    style:
-    - 'background-color: #fff'
-    - 'background-size: 90%'
-    - 'background-position-y: top'
+  # # 502 Bad Gateway
+  # - name: Back to Basics
+  #   href: https://backtobasics.axen.io/
+  #   class: tile-medium text-dark invalid
+  #   background_image: https://backtobasics.axen.io/static/img/favicon.png
+  #   style:
+  #   - 'background-color: #fff'
+  #   - 'background-size: 90%'
+  #   - 'background-position-y: top'
 
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
