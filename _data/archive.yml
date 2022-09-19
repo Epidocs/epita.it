@@ -60,7 +60,7 @@
   - name: tonnerre.link
     icon: fas fa-user-friends
     href: https://tonnerre.link/
-    class: tile-small-wide
+    class: tile-small-wide invalid
     style:
     - 'background-color: #170e34'
 
