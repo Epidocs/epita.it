@@ -33,12 +33,11 @@
   items:
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-wide text-dark
+    class: tile-medium
     background_image: https://epidocs.eu/assets/logo.png
     style:
-    - 'background-color: #e9ecef'
-    - 'background-size: auto 90%'
-    - 'background-position-x: 65%'
+    - 'background-color: #24292e'
+    - 'background-size: 90%'
 
   # - class: tile-medium
     # items:
