@@ -85,15 +85,15 @@
     style:
     - 'background-color: #fafafa'
 
-  - name: Redux
-    href: https://redux.epita.cf/
-    class: tile-small-wide invalid
-    background_image: https://redux.epita.cf/img/logo.png
-    style:
-    - 'background-color: #1254a4'
+  # - name: Redux
+  #   href: https://redux.epita.cf/
+  #   class: tile-small-wide invalid
+  #   background_image: https://redux.epita.cf/img/logo.png
+  #   style:
+  #   - 'background-color: #1254a4'
 
-  - name: EpiPortal
-    href: https://epiportal.com/
-    class: tile-small-wide text-dark invalid
-    style:
-    - 'background-color: #fafafa'
+  # - name: EpiPortal
+  #   href: https://epiportal.com/
+  #   class: tile-small-wide text-dark invalid
+  #   style:
+  #   - 'background-color: #fafafa'
