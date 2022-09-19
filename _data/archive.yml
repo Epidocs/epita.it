@@ -34,7 +34,8 @@
 
 - title: Old unofficial resources
   text: |
-    <i class="fas fa-user-friends fa-fw"></i> = Community resource, not affiliated with EPITA.
+    <i class="fas fa-user-friends fa-fw"></i> = Community resource, not affiliated with EPITA. <br />
+    <i class="fas fa-bullhorn fa-fw"></i> = Client for reading newsgroups, not affiliated with EPITA.
   items:
   - name: iChronos
     icon: fas fa-user-friends
@@ -56,6 +57,13 @@
     class: tile-small-wide invalid
     style:
     - 'background-color: #bd510a'
+
+  - name: RTFN
+    icon: fas fa-bullhorn
+    href: https://rtfn.fr/
+    class: tile-small-wide text-dark invalid
+    style:
+    - 'background-color: #fff'
 
   - name: tonnerre.link
     icon: fas fa-user-friends

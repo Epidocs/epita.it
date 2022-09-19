@@ -210,12 +210,13 @@
     style:
     - 'background-color: #222222'
 
-  - name: RTFN
-    icon: fas fa-bullhorn
-    href: https://rtfn.fr/
-    class: tile-small-wide text-dark invalid
-    style:
-    - 'background-color: #fff'
+  # # DNS_PROBE_FINISHED_NXDOMAIN
+  # - name: RTFN
+  #   icon: fas fa-bullhorn
+  #   href: https://rtfn.fr/
+  #   class: tile-small-wide text-dark invalid
+  #   style:
+  #   - 'background-color: #fff'
 
   - name: Back to Basics
     href: https://backtobasics.axen.io/
