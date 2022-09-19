@@ -341,3 +341,12 @@
     style:
     - 'background-color: #00ffd2'
     - 'background-size: auto 90%'
+
+  - name: LRE
+    href: https://www.lre.epita.fr/
+    class: tile-small-wide text-dark
+    background_image: https://www.lre.epita.fr/logo.png
+    style:
+    - 'background-color: #ffffff'
+    - 'background-size: auto 90%'
+    - 'background-position-x: 75%'
