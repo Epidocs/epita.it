@@ -347,7 +347,7 @@
   - name: LRE
     href: https://www.lre.epita.fr/
     class: tile-small-wide text-dark
-    background_image: https://www.lre.epita.fr/logo.png
+    background_image: https://www.lre.epita.fr/img/logo.png
     style:
     - 'background-color: #ffffff'
     - 'background-size: auto 90%'
