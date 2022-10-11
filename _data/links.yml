@@ -35,15 +35,15 @@
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
 
-  - name: Odyssée
-    href: http://odyssee.epita.fr/
-    class: tile-small-wide text-dark
-    background_image: https://cdn.matiboux.com/images/epita.it/odyssee.jpg
-    style:
-    - 'background-color: #fff'
-    - 'background-size: auto 75%'
-    - 'background-position-x: 90%'
-    - 'background-position-y: 25%'
+  # - name: Odyssée
+  #   href: http://odyssee.epita.fr/
+  #   class: tile-small-wide text-dark
+  #   background_image: https://cdn.matiboux.com/images/epita.it/odyssee.jpg
+  #   style:
+  #   - 'background-color: #fff'
+  #   - 'background-size: auto 75%'
+  #   - 'background-position-x: 90%'
+  #   - 'background-position-y: 25%'
 
 - title: Official resources for students
   items:
