@@ -205,7 +205,7 @@
   - name: Muffin Reader
     icon: fas fa-bullhorn
     href: https://news.deliciousmuffins.net/
-    class: tile-small-wide
+    class: tile-small-wide invalid # NET::ERR_CERT_DATE_INVALID
     background_image: https://news.deliciousmuffins.net/static/muffinreader.png
     style:
     - 'background-color: #222222'
