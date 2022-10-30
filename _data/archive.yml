@@ -67,7 +67,7 @@
 
   - name: Back to Basics
     href: https://backtobasics.axen.io/
-    class: tile-medium text-dark invalid
+    class: tile-small-wide text-dark invalid
     background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
     - 'background-color: #fff'
