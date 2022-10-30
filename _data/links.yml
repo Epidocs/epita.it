@@ -125,6 +125,7 @@
 
   - name: Debug-Pro
     relurl: debugpro
+    icon: fas fa-list-ul
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
