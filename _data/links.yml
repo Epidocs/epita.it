@@ -202,14 +202,6 @@
     - 'background-size: 80%'
     - 'background-position: 20% 20%'
 
-  - name: Muffin Reader
-    icon: fas fa-bullhorn
-    href: https://news.deliciousmuffins.net/
-    class: tile-small-wide invalid # NET::ERR_CERT_DATE_INVALID
-    background_image: https://news.deliciousmuffins.net/static/muffinreader.png
-    style:
-    - 'background-color: #222222'
-
   # # DNS_PROBE_FINISHED_NXDOMAIN
   # - name: RTFN
   #   icon: fas fa-bullhorn
