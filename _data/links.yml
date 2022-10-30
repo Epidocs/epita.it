@@ -3,10 +3,10 @@
   - name: EPITA.fr
     href: https://www.epita.fr/
     class: tile-wide
-    background_image: https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png
+    background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
     style:
     - 'background-color: #03374e'
-    - 'background-size: auto 90%'
+    - 'background-size: auto 80%'
 
   - name: EPITA.net
     href: https://epita.net/
@@ -28,10 +28,10 @@
   - name: Study Abroad
     href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
     class: tile-small-wide text-dark
-    background_image: https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png
+    background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
     style:
     - 'background-color: #fff'
-    - 'background-size: auto 75%'
+    - 'background-size: auto 60%'
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
 
