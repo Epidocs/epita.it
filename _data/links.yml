@@ -130,7 +130,7 @@
     - 'background-color: #f5f5ff'
 
   - name: Wiki Prog
-    href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
+    href: https://wiki-prog.infoprepa.epita.fr/
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f6f6f6'
