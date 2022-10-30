@@ -65,9 +65,17 @@
     style:
     - 'background-color: #fff'
 
+  - name: Muffin Reader
+    icon: fas fa-bullhorn
+    href: https://news.deliciousmuffins.net/
+    class: tile-small-wide invalid # DNS_PROBE_FINISHED_NXDOMAIN
+    background_image: https://news.deliciousmuffins.net/static/muffinreader.png
+    style:
+    - 'background-color: #222222'
+
   - name: Back to Basics
     href: https://backtobasics.axen.io/
-    class: tile-medium text-dark invalid
+    class: tile-small-wide text-dark invalid
     background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
     - 'background-color: #fff'

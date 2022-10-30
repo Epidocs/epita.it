@@ -3,10 +3,10 @@
   - name: EPITA.fr
     href: https://www.epita.fr/
     class: tile-wide
-    background_image: https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png
+    background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
     style:
     - 'background-color: #03374e'
-    - 'background-size: auto 90%'
+    - 'background-size: auto 80%'
 
   - name: EPITA.net
     href: https://epita.net/
@@ -28,10 +28,10 @@
   - name: Study Abroad
     href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
     class: tile-small-wide text-dark
-    background_image: https://www.epita.fr/wp-content/themes/epita/assets/img/logo-epita.png
+    background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
     style:
     - 'background-color: #fff'
-    - 'background-size: auto 75%'
+    - 'background-size: auto 60%'
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
 
@@ -125,12 +125,13 @@
 
   - name: Debug-Pro
     relurl: debugpro
+    icon: fas fa-list-ul
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
 
   - name: Wiki Prog
-    href: https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation
+    href: https://wiki-prog.infoprepa.epita.fr/
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f6f6f6'
@@ -202,13 +203,13 @@
     - 'background-size: 80%'
     - 'background-position: 20% 20%'
 
-  - name: Muffin Reader
+  - name: news.infinity.study
     icon: fas fa-bullhorn
-    href: https://news.deliciousmuffins.net/
-    class: tile-small-wide invalid # NET::ERR_CERT_DATE_INVALID
-    background_image: https://news.deliciousmuffins.net/static/muffinreader.png
+    href: https://news.infinity.study/
+    class: tile-small-wide
+    # background_image: https://news.infinity.study/sprite.svg#infinity
     style:
-    - 'background-color: #222222'
+    - 'background-color: #8c3f0d'
 
   # # DNS_PROBE_FINISHED_NXDOMAIN
   # - name: RTFN
