@@ -47,12 +47,12 @@
     - 'background-color: #212121'
     - 'background-size: 85%'
     - 'background-position-y: 10%'
-    
+
   - name: BattleFields Return of the Potato
     href: https://kolowy.github.io/S2VRweb/
     class: tile-medium
-    background_image: https://imgur.com/9g3m0Cx.png
+    background_image: https://raw.githubusercontent.com/kolowy/S2VRweb/master/src/images/patate.png
     style:
-    - 'background-color: #000000'
-    - 'background-size: contain, cover'
-    - 'background-size: 85%'
+    - 'background-color: #2e3440'
+    - 'background-size: 120%'
+    - 'background-position-y: 20%'
