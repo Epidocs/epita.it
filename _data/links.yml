@@ -202,6 +202,14 @@
     - 'background-size: 80%'
     - 'background-position: 20% 20%'
 
+  - name: news.infinity.study
+    icon: fas fa-bullhorn
+    href: https://news.infinity.study/
+    class: tile-small-wide
+    # background_image: https://news.infinity.study/sprite.svg#infinity
+    style:
+    - 'background-color: #8c3f0d'
+
   # # DNS_PROBE_FINISHED_NXDOMAIN
   # - name: RTFN
   #   icon: fas fa-bullhorn
