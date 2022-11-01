@@ -35,6 +35,16 @@
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
 
+  - name: EPITA Alumni
+    href: https://www.epita-alumni.org/fr/
+    class: tile-small-wide text-dark
+    background_image: https://www.epita-alumni.org/images/logos/logo.png?v=20210729
+    style:
+    - 'background-color: #fff'
+    - 'background-size: auto 60%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
+
   # - name: Odyssée
   #   href: http://odyssee.epita.fr/
   #   class: tile-small-wide text-dark
