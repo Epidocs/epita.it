@@ -135,12 +135,12 @@
   - name: Episolidaire
     icon: fab fa-facebook
     href: https://fb.me/episolidaire/
-    class: tile-medium text-dark
+    class: tile-medium
     background_image: https://graph.facebook.com/episolidaire/picture?width=256
     style:
-    - 'background-color: #fff'
-    - 'background-size: 80%'
-    - 'background-position-y: 25%'
+    - 'background-color: #3cb7bf'
+    - 'background-size: 95%'
+    - 'background-position-y: top'
 
   - name: Episport
     icon: fab fa-facebook
