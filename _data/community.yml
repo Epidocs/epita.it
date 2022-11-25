@@ -207,6 +207,8 @@
     background_image: https://graph.facebook.com/lapaillote.apero/picture?width=256
     style:
     - 'background-color: #000'
+    - 'background-size: 95%'
+    - 'background-position-y: top'
 
   - name: Lateb
     href: http://intra.lateb.eu/
