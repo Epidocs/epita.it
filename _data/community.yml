@@ -32,24 +32,22 @@
     style:
     - 'background-color: #fff'
 
-  - class: tile-medium
-    items:
-    - name: Epiquote
-      href: https://epiquote.fr/
-      class: tile-small-wide text-dark
-      background_image: https://epiquote.fr/static/favicon.png
-      style:
-      - 'background-color: #e7e7e7'
-      - 'background-size: auto 50%'
-      - 'background-position-x: 60%'
+  - name: Epiquote
+    href: https://epiquote.fr/
+    class: tile-small-wide text-dark
+    background_image: https://epiquote.fr/static/favicon.png
+    style:
+    - 'background-color: #e7e7e7'
+    - 'background-size: auto 50%'
+    - 'background-position-x: 60%'
 
-    - name: Wikia Epita
-      href: https://epita.fandom.com/fr/
-      class: tile-small-wide
-      background_image: https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png
-      style:
-      - 'background-color: #002a32'
-      - 'background-position-x: right'
+  - name: Wikia Epita
+    href: https://epita.fandom.com/fr/
+    class: tile-small-wide
+    background_image: https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png
+    style:
+    - 'background-color: #002a32'
+    - 'background-position-x: right'
 
 - title: Associations & Clubs
   items:
