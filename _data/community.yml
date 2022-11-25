@@ -200,6 +200,16 @@
     - 'background-color: #00c2cb'
     - 'background-size: 90%'
 
+  - name: Heritage Foyer
+    icon: fab fa-facebook
+    href: https://fb.me/heritage.foyer
+    class: tile-medium text-dark
+    background_image: https://graph.facebook.com/heritage.foyer/picture?width=256
+    style:
+    - 'background-color: #fff'
+    - 'background-size: 95%'
+    - 'background-position-y: top'
+
   - name: La Paillote
     icon: fab fa-facebook
     href: https://fb.me/lapaillote.apero
