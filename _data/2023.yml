@@ -115,13 +115,15 @@
     - 'background-color: #191919'
 
   - name: SCFE
-    href: https://salamanders.dev/
-    class: tile-medium invalid text-dark
+    # href: https://salamanders.dev/
+    href: https://utybo.github.io/scfe-website/
+    class: tile-medium text-dark
     # background_image: https://salamanders.dev/library/scfe.svg
+    background_image: https://utybo.github.io/scfe-website/library/scfe.svg
     style:
     - 'background-color: #fff'
-    # - 'background-size: 80%'
-    # - 'background-position-y: 25%'
+    - 'background-size: 80%'
+    - 'background-position-y: 25%'
 
   - name: Tales of the Apocalypse
     href: http://filiga.me/
