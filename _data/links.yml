@@ -51,7 +51,7 @@
     background_image: https://epita.signalement.net/images/logo.png
     style:
     - 'background-color: #fff'
-    - 'background-size: auto 60%'
+    - 'background-size: auto 50%'
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
 
