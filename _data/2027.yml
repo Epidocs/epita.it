@@ -18,3 +18,14 @@
     - 'background-color: #FFFFFF'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
+
+- title: S2 Projects
+  items:
+- name: Hephaistos
+    href: https://geometrical-optics.github.io/
+    class: tile-medium text-dark
+    background_image: https://github.com/Geometrical-Optics/Geometrical-Optics.github.io/blob/main/logoSized.png
+    style:
+    - 'background-color: #ffc107'
+    - 'background-size: 75%'
+    - 'background-position-y: 15%'
