@@ -8,6 +8,14 @@
     style:
     - 'background-color: #202225'
 
+  - name: Discord EPITA APPRENTISSAGE 2026
+    icon: fab fa-discord
+    href: https://discord.gg/vdWxE4T6Dh
+    class: tile-wide
+    background_image: https://cdn.discordapp.com/attachments/1008709312337678426/1115910629560156260/epita-apping-2026-blank.png
+    style:
+    - 'background-color: #202225'
+
 - title: Misc.
   items:
   - name: Guide de survie Projet S2 (FR)
