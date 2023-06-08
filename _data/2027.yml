@@ -32,10 +32,10 @@
   
   - name: Proxima's Quest
     href: https://godmelcorp.github.io/
-    class: tile-medium text-dark
-    background_image: https://github.com/Geometrical-Optics/Geometrical-Optics.github.io/blob/main/logoSized.png
+    class: tile-medium
+    background_image: https://godmelcorp.github.io/assets/img/LogoSite.png
     style:
-    - 'background-color: #ffc107'
-    - 'background-size: 75%'
+    - 'background-color: #2c2f3d'
+    - 'background-size: 80%'
     - 'background-position-y: 15%'
 
