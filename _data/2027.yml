@@ -39,3 +39,12 @@
     - 'background-size: 80%'
     - 'background-position-y: 15%'
 
+
+  - name: Senzo No Michi
+    href: https://senzo-no-michi.github.io/
+    class: tile-medium
+    background_image: https://senzo-no-michi.github.io/logo.png
+    style:
+    - 'background-color: #2c2f3d'
+    - 'background-size: 80%'
+    - 'background-position-y: 15%'
