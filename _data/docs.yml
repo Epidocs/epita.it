@@ -73,11 +73,11 @@
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
     class: tile-small-wide text-dark
-    background_image: https://static.hyperion.tf/hyperion/img/favicon.ico
+    background_image: https://static.hyperion.tf/hyperion/img/Logo_HA.png
     style:
-    - 'background-color: #eee'
-    - 'background-size: auto 40%'
-    - 'background-position: 95% 85%'
+    - 'background-color: #9e9e9e'
+    - 'background-size: 90% auto'
+    - 'background-position: 50% 20%'
 
   - name: Mastercorp
     href: http://mastercorp.epita.eu/
