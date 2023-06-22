@@ -48,3 +48,12 @@
     - 'background-color: #2c2f3d'
     - 'background-size: 80%'
     - 'background-position-y: 15%'
+
+  - name: ELAIM
+    href: https://sl4shh.github.io/elaim/
+    class: tile-medium
+    background_image: https://sl4shh.github.io/elaim/assets/img/logo2.png
+    style:
+    - 'background-color: #663399'
+    - 'background-size: 80%'
+    - 'background-position-y: 15%'
