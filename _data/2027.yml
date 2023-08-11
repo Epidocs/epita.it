@@ -57,3 +57,12 @@
     - 'background-color: #663399'
     - 'background-size: 80%'
     - 'background-position-y: 15%'
+ 
+  - name: Stuck
+    href: https://axxiar.github.io/Stuck/
+    class: tile-medium text-dark
+    background_image: https://raw.githubusercontent.com/Axxiar/Stuck/master/docs/assets/logo.png
+    style:
+    - 'background-color: #FFF'
+    - 'background-size: 80%'
+    - 'background-position-y: 15%'
