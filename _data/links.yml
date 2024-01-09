@@ -126,7 +126,7 @@
     - 'background-position-y: 25%'
 
   - name: Zeus
-    href: https://zeus.3ie.fr/
+    href: https://zeus.ionis-it.com/
     class: tile-small-wide
     background_image: https://zeus.3ie.fr/assets/png/logo-zeus-blanc.png
     style:
