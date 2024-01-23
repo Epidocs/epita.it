@@ -31,6 +31,37 @@
     background_image: https://algo-td.infoprepa.epita.fr/images/logo_final.jpg
     style:
     - 'background-color: #e5e5f0'
+    
+  - name: Wiki Prog
+    href: https://wiki-prog.infoprepa.epita.fr/
+    class: tile-small-wide text-dark
+    style:
+    - 'background-color: #f6f6f6'
+    - 'background-size: 90%'
+
+ - name: Algo Cours (FR)
+    href: https://algo.infoprepa.epita.fr/
+    class: tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-size: 90%'
+
+  - name: Algo Courses (EN)
+    href: https://algo.infoprepa.epita.fr/english/
+    class: tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-size: 90%'
+
+  - name: Rocket.Chat
+    href: http://rocketchat.cri.epita.fr/
+    class: tile-small-wide
+    background_image: https://rocketchat.cri.epita.fr/assets/logo.png
+    style:
+    - 'background-color: #444'
+    - 'background-size: 90%'
 
 - title: Old unofficial resources
   text: |
