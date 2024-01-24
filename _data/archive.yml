@@ -39,7 +39,7 @@
     - 'background-color: #f6f6f6'
     - 'background-size: 90%'
 
- - name: Algo Cours (FR)
+  - name: Algo Cours (FR)
     href: https://algo.infoprepa.epita.fr/
     class: tile-small-wide text-dark
     background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png

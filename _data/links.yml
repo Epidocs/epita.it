@@ -116,15 +116,6 @@
     - 'background-position-x: 180%'
     - 'background-position-y: top'
 
-#  - name: Rocket.Chat
-#    href: http://rocketchat.cri.epita.fr/
-#    class: tile-small-wide
-#    background_image: https://rocketchat.cri.epita.fr/assets/logo.png
-#    style:
-#    - 'background-color: #444'
-#    - 'background-size: 90%'
-#    - 'background-position-y: 25%'
-
   - name: Zeus
     href: https://zeus.ionis-it.com/
     class: tile-small-wide
@@ -149,30 +140,6 @@
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
-
-#  - name: Wiki Prog
-#    href: https://wiki-prog.infoprepa.epita.fr/
-#    class: tile-small-wide text-dark
-#    style:
-#    - 'background-color: #f6f6f6'
-
-# - name: Algo Cours (FR)
-#    href: https://algo.infoprepa.epita.fr/
-#    class: tile-small-wide text-dark
-#    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
-#    style:
-#    - 'background-color: #fff'
-#    - 'background-position: 50% 15%'
-#    - 'background-size: 50%'
-
-#  - name: Algo Courses (EN)
-#    href: https://algo.infoprepa.epita.fr/english/
-#    class: tile-small-wide text-dark
-#    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
-#    style:
-#    - 'background-color: #fff'
-#    - 'background-position: 50% 15%'
-#    - 'background-size: 50%'
 
   - name: Pegasus Prepa
     href: https://prepa-epita.helvetius.net/pegasus
@@ -202,7 +169,7 @@
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
     class: tile-small-wide
-    background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/1920px-Rosetta_Stone_logo.svg.png
+    background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/320px-Rosetta_Stone_logo.svg.png
     style:
     - 'background-color: #ffffff'
     - 'background-size: 90%'
