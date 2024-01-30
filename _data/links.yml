@@ -141,6 +141,24 @@
     style:
     - 'background-color: #f5f5ff'
 
+  - name: Algo Cours (FR)
+    href: https://algo.infoprepa.epita.fr/
+    class: tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-position: 50% 15%'
+    - 'background-size: 50%'
+
+  - name: Algo Courses (EN)
+    href: https://algo.infoprepa.epita.fr/english/
+    class: tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-position: 50% 15%'
+    - 'background-size: 50%'
+
   - name: Pegasus Prepa
     href: https://prepa-epita.helvetius.net/pegasus
     class: tile-small-wide text-dark
