@@ -32,6 +32,14 @@
     style:
     - 'background-color: #e5e5f0'
 
+  - name: Rocket.Chat
+    href: http://rocketchat.cri.epita.fr/
+    class: tile-small-wide
+    background_image: https://rocketchat.cri.epita.fr/assets/logo.png
+    style:
+    - 'background-color: #444'
+    - 'background-size: 90%'
+
 - title: Old unofficial resources
   text: |
     <i class="fas fa-user-friends fa-fw"></i> = Community resource, not affiliated with EPITA. <br />
