@@ -1,2 +1,29 @@
+# -- Generic rules:
+
+# Environment files
+.env.local
+.env.*.local
+
+# Temporary files
+._*
+*~
+*.cache
+*.log*
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# -- Application rules:
+
+# Node
+node_modules/
+
+# Astro
+.astro/
+dist/
+
+# Jekyll
 _site/
 .jekyll-cache/
