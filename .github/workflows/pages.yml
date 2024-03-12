@@ -1,0 +1,84 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Run on push events on primary branches
+  push:
+    branches:
+      - master
+  # Run on pull request events to primary branches
+  pull_request:
+    branches:
+      - master
+  # Run on manual triggers
+  workflow_dispatch:
+
+# Set GITHUB_TOKEN permissions for the workflow
+permissions:
+  contents: read
+
+# Restrict concurrent deployments
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+
+  # Build job
+  build:
+    name: Build site artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Configure pages
+      uses: actions/configure-pages@v4
+
+    - name: Build with Jekyll
+      uses: actions/jekyll-build-pages@v1
+      with:
+        source: ./
+        destination: ./_site
+
+    - name: Upload artifact
+      # Only run on:
+      # - Push events to `master`.
+      if: |
+        github.event_name == 'push' &&
+        github.ref == 'refs/heads/master'
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./_site
+
+  # Deployment job
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    # Dependencies
+    needs:
+      - build
+
+    # Only run on:
+    # - Push events to `master`.
+    if: |
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/master'
+
+    # Set GITHUB_TOKEN permissions for the job
+    permissions:
+      pages: write
+      id-token: write
+
+    # Set the deployment environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
