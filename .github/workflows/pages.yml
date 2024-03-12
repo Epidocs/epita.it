@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - master
+  # Run on pull request events to primary branches
+  pull_request:
+    branches:
+      - master
   # Run on manual triggers
   workflow_dispatch:
 
@@ -39,6 +43,11 @@ jobs:
         destination: ./_site
 
     - name: Upload artifact
+      # Only run on:
+      # - Push events to `master`.
+      if: |
+        github.event_name == 'push' &&
+        github.ref == 'refs/heads/master'
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./_site
@@ -52,6 +61,12 @@ jobs:
     # Dependencies
     needs:
       - build
+
+    # Only run on:
+    # - Push events to `master`.
+    if: |
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/master'
 
     # Set GITHUB_TOKEN permissions for the job
     permissions:
