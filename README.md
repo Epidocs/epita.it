@@ -36,7 +36,7 @@ You can contact [@matiboux](https://github.com/matiboux) via an issue on Github,
 
 **Creative Commons Attribution-NonCommercial 4.0 International License**
 ([*CC BY-NC 4.0*](https://creativecommons.org/licenses/by-nc/4.0))  
-Copyright (c) 2019-2022 Mathieu Guérin (Matiboux)
+Copyright (c) 2019-2024 Mathieu Guérin (Matiboux)
 
 *Disclaimer:* External resources are the property of their respective owners,
 and therefore are not subject to this license (e.g. images from external links).
