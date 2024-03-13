@@ -13,7 +13,7 @@ export interface Props
 	title: string
 	description?: string | undefined
 	author?: string | undefined
-	keywords?: string | undefined
+	keywords?: string | string[] | undefined
 	generator?: boolean
 	themeColor?: string | undefined
 	viewportScale?: number
@@ -87,7 +87,7 @@ const formatsToType = {
 		<meta name="title" content={title} />
 		{description && <meta name="description" content={description} />}
 		{author && <meta name="author" content={author} />}
-		{keywords && <meta name="keywords" content={keywords} />}
+		{keywords && <meta name="keywords" content={Array.isArray(keywords) ? keywords.join(', ') : keywords} />}
 		{generator && <meta name="generator" content={Astro.generator} />}
 		{themeColor && <meta name="theme-color" content={themeColor} />}
 

@@ -27,6 +27,7 @@ const baseProps: BaseProps = {
 		: (site.title || ''),
 	description: Astro.props.description || site.description,
 	author: Astro.props.author || site.author,
+	keywords: Astro.props.keywords || site.keywords,
 	themeColor: Astro.props.themeColor || site.themeColor,
 	favicon: Astro.props.favicon || undefined,
 }
