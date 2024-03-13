@@ -22,8 +22,10 @@
   "homepage": "https://github.com/matiboux/matiboux.me#readme",
   "dependencies": {
     "@astrojs/check": "^0.5.8",
+    "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.5.2",
     "sass": "^1.71.1",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
   },
   "devDependencies": {
