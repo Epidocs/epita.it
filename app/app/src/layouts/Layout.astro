@@ -1,6 +1,7 @@
 ---
 import Base from '~/layouts/Base.astro'
 import type { Props as BaseProps } from '~/layouts/Base.astro'
+import site from '~/site'
 
 export interface Props extends Omit<BaseProps, 'title'>
 {
@@ -10,19 +11,6 @@ export interface Props extends Omit<BaseProps, 'title'>
 const {
 	title,
 } = Astro.props
-
-interface Site
-{
-	title?: string
-	description?: string
-	author?: string
-	themeColor?: string
-}
-
-const site: Site = {
-	title: 'Example',
-	author: 'Matiboux',
-}
 
 if (site.title === undefined && Astro.props.title === undefined)
 {
