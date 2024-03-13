@@ -1,0 +1,108 @@
+---
+import type { ImageMetadata } from 'astro'
+
+import '~/styles/style.scss'
+
+export interface Props
+{
+	// HTML attributes
+	lang?: string
+	htmlClass?: string | undefined
+	htmlAttributes?: { [key: string]: string }
+	// Meta tags
+	title: string
+	description?: string | undefined
+	author?: string | undefined
+	keywords?: string | undefined
+	generator?: boolean
+	themeColor?: string | undefined
+	viewportScale?: number
+	favicon?: ImageMetadata | string | undefined
+	socialTitle?: string | true | undefined
+	socialDescription?: string | true | undefined
+	socialImage?: URL | undefined
+	socialUrl?: URL | undefined
+	socialType?: string | undefined
+	socialTwitterCard?: string | undefined
+	// Body attributes
+	bodyClass?: string | undefined
+	bodyAttributes?: { [key: string]: string }
+}
+
+const {
+	// HTML attributes
+	lang = Astro.currentLocale,
+	htmlClass = undefined,
+	htmlAttributes = {},
+	// Meta tags
+	title,
+	description = undefined,
+	author = undefined,
+	keywords = undefined,
+	generator = true,
+	themeColor = undefined,
+	viewportScale = 1,
+	favicon = undefined,
+	socialTitle = true,
+	socialDescription = true,
+	socialImage = undefined,
+	socialUrl = undefined,
+	socialType = 'website',
+	socialTwitterCard = 'summary_large_image',
+	// Body attributes
+	bodyClass = undefined,
+	bodyAttributes = {},
+} = Astro.props
+
+const formatsToType = {
+	'ico': 'image/x-icon',
+	'jpeg': 'image/jpeg',
+	'jpg': 'image/jpeg',
+	'png': 'image/png',
+	'tiff': 'image/tiff',
+	'webp': 'image/webp',
+	'gif': 'image/gif',
+	'svg': 'image/svg+xml',
+	'avif': 'image/avif',
+}
+---
+
+<!DOCTYPE html>
+<html lang={lang} class={htmlClass} {...htmlAttributes}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content={`width=device-width, initial-scale=${viewportScale}`} />
+
+		{favicon &&
+			<link rel="icon"
+				href={typeof favicon === 'string' ? favicon : favicon.src}
+				type={
+					(formatsToType as { [key: string]: undefined } & typeof formatsToType)
+					[typeof favicon === 'string' ? favicon.split('.').pop()! : favicon.format]
+				}
+			/>
+		}
+
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		{description && <meta name="description" content={description} />}
+		{author && <meta name="author" content={author} />}
+		{keywords && <meta name="keywords" content={keywords} />}
+		{generator && <meta name="generator" content={Astro.generator} />}
+		{themeColor && <meta name="theme-color" content={themeColor} />}
+
+		<!-- social media -->
+		{socialTitle && <meta property="og:title" content={typeof socialTitle === 'string' ? socialTitle : title} />}
+		{socialDescription && <meta property="og:description" content={typeof socialDescription === 'string' ? socialDescription : description} />}
+		{socialImage && <meta property="og:image" content={socialImage} />}
+		{socialUrl && <meta property="og:url" content={socialUrl} />}
+		{socialType && <meta property="og:type" content={socialType} />}
+		{socialTwitterCard && <meta name="twitter:card" content={socialTwitterCard} />}
+
+		<slot name="head" />
+	</head>
+
+	<body class={bodyClass} {...bodyAttributes}>
+		<slot />
+	</body>
+</html>

@@ -11,9 +11,8 @@ To contribute, you can fork this project, make changes and then open a pull requ
 
 ### Build instructions
 
-```bash
-$ gem install jekyll
-$ jekyll serve
+```sh
+docker compose up --build -d
 ```
 
 ### Add links

@@ -1,0 +1,22 @@
+version: '3.4'
+
+# Services definition for building & deploying
+
+services:
+
+  app:
+    # Build
+    image: ${IMAGES_PREFIX:-app}:${DOCKER_TAG:-latest}
+    build:
+      context: ./app
+      dockerfile: ./Dockerfile
+      target: app_prod
+      args:
+        GITHUB_REPOSITORY_URL: ${GITHUB_REPOSITORY_URL:-}
+        GITHUB_SHA: ${GITHUB_SHA:-}
+    # Deploy
+    ports:
+      # HTTP
+      - target: 80
+        published: ${HTTP_PORT:-80}
+        protocol: tcp

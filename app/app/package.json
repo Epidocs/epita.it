@@ -1,0 +1,32 @@
+{
+  "name": "epita.it",
+  "author": "Matiboux",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiboux/matiboux.me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matiboux/matiboux.me/issues"
+  },
+  "homepage": "https://github.com/matiboux/matiboux.me#readme",
+  "dependencies": {
+    "@astrojs/check": "^0.5.8",
+    "astro": "^4.5.2",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.26"
+  }
+}
