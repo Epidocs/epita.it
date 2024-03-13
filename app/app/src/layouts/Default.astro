@@ -5,6 +5,7 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import jqueryJs from 'jquery/dist/jquery.slim.min.js?url'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import bootstrapJs from 'bootstrap/dist/js/bootstrap.bundle.min.js?url'
 import '~/styles/tiles.css'
@@ -164,6 +165,7 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 </Layout>
 
 {!noScripts && (
+	<script src={jqueryJs}></script>
 	<script src={bootstrapJs}></script>
 	<script src={scriptJs}></script>
 )}
