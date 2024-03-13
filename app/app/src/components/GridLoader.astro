@@ -1,0 +1,51 @@
+---
+export interface Props
+{
+	gridClass?: string
+	grid?: Array<any>
+}
+---
+
+<div class:list={{
+	'tiles-grid': true,
+	...(Astro.props.gridClass ? { [Astro.props.gridClass]: true } : {}),
+}}>
+
+	{Astro.props.grid && Astro.props.grid.map((item: any) => (
+		<Fragment>
+			{item.items
+				? (
+					<Astro.self grid={item.items} gridClass={item.class} />
+				)
+				: (
+					<a
+						href={item.relurl || item.href}
+						class={item.class}
+						style={{
+							backgroundImage: item.background_image && (
+								(Array.isArray(item.background_image) ? item.background_image : [item.background_image])
+									.map((src: string) => `url(${src})`).join(', ')
+							),
+							...item.style.reduce(
+								(acc: any, rule: string) =>
+									{
+										const [key, value] = rule.split(':')
+										return key && value ? { ...acc, [key]: value } : acc
+									},
+								{},
+							),
+						}}
+					>
+						<span class="branding-bar">{item.name}</span>
+						{item.icon && (
+							<span class="branding-icon">
+								<i class={`${item.icon || 'fas fa-question'} fa-fw`}></i>
+							</span>
+						)}
+					</a>
+				)
+			}
+		</Fragment>
+	))}
+
+</div>
