@@ -87,7 +87,7 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="visibility: inherit;">
 				<div class="navbar-nav mr-auto">
 					{navbar.map((item: any) => (
 						item.children ? (
