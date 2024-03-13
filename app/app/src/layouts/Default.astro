@@ -15,6 +15,7 @@ import scriptJs from '~/scripts/script.js?url'
 
 import Layout from '~/layouts/Layout.astro'
 import type { Props as BaseProps } from '~/layouts/Layout.astro'
+import site from '~/site'
 import navbarYml from '~/data/navbar.yml?raw'
 import navbarplusYml from '~/data/navbarplus.yml?raw'
 
@@ -26,7 +27,6 @@ export interface Props extends BaseProps
 }
 
 const {
-	title = 'EPITA.it',
 	noScripts = false,
 	newsline = false,
 	textalignleft = false,
@@ -82,7 +82,7 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
-			<a class="navbar-brand" href="/">{title}</a>
+			<a class="navbar-brand" href="/">{site.title}</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
