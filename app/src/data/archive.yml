@@ -42,39 +42,39 @@
 
 - title: Old unofficial resources
   text: |
-    <i class="fas fa-user-friends fa-fw"></i> = Community resource, not affiliated with EPITA. <br />
-    <i class="fas fa-bullhorn fa-fw"></i> = Client for reading newsgroups, not affiliated with EPITA.
+    <span class="icon icon-[fa6-solid--user-friends] icon-fw"></span> = Community resource, not affiliated with EPITA. <br />
+    <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
   items:
   - name: iChronos
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-friends]
     href: https://ichronos.net/
     class: tile-small-wide
     style:
     - 'background-color: #616161'
 
   - name: Map EPITA
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-friends]
     href: http://map.epita.eu/
     class: tile-small-wide text-dark
     style:
     - 'background-color: #fff'
 
   - name: Infinity Zeus
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-friends]
     href: https://zeus.infinity.study/
     class: tile-small-wide invalid
     style:
     - 'background-color: #bd510a'
 
   - name: RTFN
-    icon: fas fa-bullhorn
+    icon: icon-[fa6-solid--bullhorn]
     href: https://rtfn.fr/
     class: tile-small-wide text-dark invalid
     style:
     - 'background-color: #fff'
 
   - name: Muffin Reader
-    icon: fas fa-bullhorn
+    icon: icon-[fa6-solid--bullhorn]
     href: https://news.deliciousmuffins.net/
     class: tile-small-wide invalid # DNS_PROBE_FINISHED_NXDOMAIN
     background_image: https://news.deliciousmuffins.net/static/muffinreader.png
@@ -91,7 +91,7 @@
     - 'background-position-y: top'
 
   - name: tonnerre.link
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-friends]
     href: https://tonnerre.link/
     class: tile-small-wide invalid
     style:
@@ -100,7 +100,7 @@
   - name: kb.zoroark.guru
     href: https://kb.zoroark.guru/
     class: tile-small-wide
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-friends]
     background_image: https://kb.zoroark.guru/favicon.png
     style:
     - 'background-color: #424242'
@@ -110,7 +110,7 @@
   - name: Redux
     href: https://redux.epita.cf/
     class: tile-small-wide invalid
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-friends]
     background_image: https://redux.epita.cf/img/logo.png
     style:
     - 'background-color: #1254a4'
@@ -118,6 +118,6 @@
   - name: EpiPortal
     href: https://epiportal.com/
     class: tile-small-wide text-dark invalid
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-friends]
     style:
     - 'background-color: #fafafa'

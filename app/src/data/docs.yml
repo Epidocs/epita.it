@@ -3,7 +3,7 @@
   - name: Documentation EPITA (CRI)
     href: https://doc.cri.epita.fr/
     class: tile-wide
-    icon: fas fa-star
+    icon: icon-[fa6-solid--star]
     background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #2980b9'

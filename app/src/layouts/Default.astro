@@ -58,7 +58,7 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title"><i class="fas fa-exclamation-triangle fa-fw"></i> The link to <b id="warn-invalid-brand"></b> is invalid</h5>
+				<h5 class="modal-title"><span class="icon icon-[fa6-solid--exclamation-triangle] icon-fw"></span> The link to <b id="warn-invalid-brand"></b> is invalid</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -104,9 +104,9 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 					))}
 				</div>
 				<div class="navbar-nav">
-					<a class="nav-item nav-link" href={githubRepositoryUrl}><i class="fas fa-code-branch fa-fw"></i> Github</a>
+					<a class="nav-item nav-link" href={githubRepositoryUrl}><span class="icon icon-[fa6-solid--code-branch] icon-fw"></span> Github</a>
 					<div class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-plus fa-fw"></i></a>
+						<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon icon-[fa6-solid--plus] icon-fw"></span></a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPlusDropdown">
 							{navbarplus.map((item: any) => (
 								<a class="dropdown-item" href={item.href}>{item.title}</a>
@@ -122,15 +122,15 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 		<div id="newsline">
 			<div class="container">
 				<div class="carousel-item active">
-					<i class="fas fa-folder-open fa-fw"></i>
+					<span class="icon icon-[fa6-solid--folder-open] icon-fw"></span>
 					Showcase your S2 project on your school year group page! Contribute on the <a href={githubRepositoryUrl}>Github repository</a>!
 				</div>
 				<div class="carousel-item">
-					<i class="fas fa-book fa-fw"></i>
+					<span class="icon icon-[fa6-solid--book] icon-fw"></span>
 					Need to study for your exams? Check out <a href="https://past-exams.epidocs.eu/">Past-Exams</a>!
 				</div>
 				<div id="addToHomeScreen" class="carousel-item">
-					<i class="fas fa-info-circle fa-fw"></i>
+					<span class="icon icon-[fa6-solid--info-circle] icon-fw"></span>
 					<b>Add to your home screen</b> for easier access!
 				</div>
 			</div>
@@ -148,7 +148,7 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 	<div id="footer">
 		<div class="container">
 			<p>
-				Made with <i class="fas fa-heart fa-fw text-danger"></i> by EPITA students.
+				Made with <span class="icon icon-[fa6-solid--heart] icon-fw text-danger"></span> by EPITA students.
 				<a href={`${githubRepositoryUrl}#license`}>
 					<img alt="CC BY-NC 4.0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc.svg" />
 				</a> <br />
