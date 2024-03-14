@@ -22,10 +22,10 @@
   - name: Chronos
     href: http://chronos.epita.net/
     class: tile-medium invalid
-    background_image: https://cdn.matiboux.com/images/epita.it/chronos.gif
+    # background_image: https://cdn.matiboux.com/images/epita.it/chronos.gif
     style:
     - 'background-color: #b77fa2'
-    - 'background-size: 90%'
+    # - 'background-size: 90%'
 
   - name: Algo TD
     href: https://algo-td.infoprepa.epita.fr/
@@ -37,10 +37,10 @@
   - name: Rocket.Chat
     href: http://rocketchat.cri.epita.fr/
     class: tile-small-wide invalid
-    background_image: https://rocketchat.cri.epita.fr/assets/logo.png
+    # background_image: https://rocketchat.cri.epita.fr/assets/logo.png
     style:
     - 'background-color: #444'
-    - 'background-size: 90%'
+    # - 'background-size: 90%'
 
 - title: Old unofficial resources
   text: |
@@ -81,7 +81,7 @@
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.deliciousmuffins.net/
     class: tile-small-wide invalid
-    background_image: https://news.deliciousmuffins.net/static/muffinreader.png
+    # background_image: https://news.deliciousmuffins.net/static/muffinreader.png
     style:
     - 'background-color: #222222'
 
@@ -97,11 +97,11 @@
   - name: Back to Basics
     href: https://backtobasics.axen.io/
     class: tile-small-wide text-dark invalid
-    background_image: https://backtobasics.axen.io/static/img/favicon.png
+    # background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
     - 'background-color: #fff'
-    - 'background-size: 90%'
-    - 'background-position-y: top'
+    # - 'background-size: 90%'
+    # - 'background-position-y: top'
 
   - name: tonnerre.link
     icon: icon-[fa6-solid--user-group]
@@ -124,7 +124,7 @@
     href: https://redux.epita.cf/
     class: tile-small-wide invalid
     icon: icon-[fa6-solid--user-group]
-    background_image: https://redux.epita.cf/img/logo.png
+    # background_image: https://redux.epita.cf/img/logo.png
     style:
     - 'background-color: #1254a4'
 
