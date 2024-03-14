@@ -134,6 +134,16 @@
     - 'background-position-y: top'
     - 'background-size: 75%'
 
+  - name: News EPITA
+    href: https://news.epita.fr/
+    class: tile-small-wide text-dark
+    background_image: https://forge-discourse.s3.cri.epita.fr/original/1X/9bec2d950081a9936635287e5a7a4a3f810b275d.png
+    style:
+    - 'background-color: #ffffff'
+    - 'background-position-x: 90%'
+    - 'background-position-y: top'
+    - 'background-size: auto 90%'
+
   - name: Debug-Pro
     relurl: debugpro
     icon: icon-[fa6-solid--list-ul]
