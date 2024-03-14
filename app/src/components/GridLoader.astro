@@ -24,7 +24,20 @@ export interface Props
 						style={{
 							backgroundImage: item.background_image && (
 								(Array.isArray(item.background_image) ? item.background_image : [item.background_image])
-									.map((src: string) => `url(${src})`).join(', ')
+									.map((src: string) =>
+										{
+											src = src.trim()
+											const matches = src.match(/^(data:[-\w]+\/[-+\w.]+(?:;[-\w=]+)*?(;base64)?(?:;[-\w=]+)*),(.+?)$/s)
+											// matches[1] = data+mediatype+parameters
+											// matches[2] = (;base64)?
+											// matches[3] = data
+											console.log('matches', matches)
+											return !matches || !matches[1] || !matches[3]
+												? `url(${encodeURI(src)})`
+												: matches[2]
+												? `url(${encodeURI(matches[1])},${encodeURI(matches[3])})`
+												: `url(${encodeURI(matches[1])};base64,${Buffer.from(matches[3]).toString('base64')})`
+										}).join(', ')
 							),
 							...item.style.reduce(
 								(acc: any, rule: string) =>
