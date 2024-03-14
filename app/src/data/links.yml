@@ -170,8 +170,9 @@
     background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
-    - 'background-position: 50% 15%'
-    - 'background-size: 50%'
+    - 'background-position-x: 15%'
+    - 'background-position-y: 15%'
+    - 'background-size: auto 60%'
 
   - name: Algo Courses (EN)
     href: https://algo.infoprepa.epita.fr/english/
@@ -179,8 +180,9 @@
     background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
-    - 'background-position: 50% 15%'
-    - 'background-size: 50%'
+    - 'background-position-x: 15%'
+    - 'background-position-y: 15%'
+    - 'background-size: auto 60%'
 
   - name: Pegasus Prepa
     href: https://prepa-epita.helvetius.net/pegasus
