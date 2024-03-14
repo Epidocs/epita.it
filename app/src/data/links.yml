@@ -217,8 +217,9 @@
     background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/320px-Rosetta_Stone_logo.svg.png
     style:
     - 'background-color: #ffffff'
-    - 'background-size: 90%'
-    - 'background-position-y: 25%'
+    - 'background-size: auto 60%'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 15%'
 
 - title: Unofficial resources for students
   text: |
