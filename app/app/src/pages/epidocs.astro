@@ -1,5 +1,11 @@
 ---
+import yaml from 'js-yaml'
+
 import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import epidocsYml from '~/data/epidocs.yml?raw'
+
+const epidocs = yaml.load(epidocsYml) as any
 
 const title = 'Epidocs'
 ---
@@ -11,6 +17,6 @@ const title = 'Epidocs'
 	<h1>Epidocs Projects</h1>
 	<p>Portal to Epidocs' projects</p>
 
-	<!-- {% include data-loader.html data = site.data.epidocs %} -->
+	<DataLoader data={epidocs} />
 
 </Default>

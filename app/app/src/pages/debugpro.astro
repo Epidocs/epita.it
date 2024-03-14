@@ -1,5 +1,11 @@
 ---
+import yaml from 'js-yaml'
+
 import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import debugproYml from '~/data/debugpro.yml?raw'
+
+const debugpro = yaml.load(debugproYml) as any
 
 const title = 'Debug-Pro'
 ---
@@ -11,6 +17,6 @@ const title = 'Debug-Pro'
 	<h1>Debug-Pro</h1>
 	<p>Portal to Debug-Pro websites of each promotion (Archi & Prog)</p>
 
-	<!-- {% include data-loader.html data = site.data.debugpro %} -->
+	<DataLoader data={debugpro} />
 
 </Default>

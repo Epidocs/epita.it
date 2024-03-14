@@ -1,5 +1,11 @@
 ---
+import yaml from 'js-yaml'
+
 import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import data2028Yml from '~/data/2028.yml?raw'
+
+const data2028 = yaml.load(data2028Yml) as any
 
 const title = '2028'
 ---
@@ -14,6 +20,6 @@ const title = '2028'
 		<i class="fab fa-discord fa-fw"></i> = Discord server
 	</p>
 
-	<!-- {% include data-loader.html data = site.data.2028 %} -->
+	<DataLoader data={data2028} />
 
 </Default>

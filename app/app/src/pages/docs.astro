@@ -1,5 +1,11 @@
 ---
+import yaml from 'js-yaml'
+
 import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import docsYml from '~/data/docs.yml?raw'
+
+const docs = yaml.load(docsYml) as any
 
 const title = 'Documentation'
 ---
@@ -12,6 +18,6 @@ const title = 'Documentation'
 	<p>Portal to documentation, guides and useful resources related to EPITA.</p>
 	<p class="small text-light"><i class="fas fa-star fa-fw"></i> = Official resource, from EPITA</p>
 
-	<!-- {% include data-loader.html data = site.data.docs %} -->
+	<DataLoader data={docs} />
 
 </Default>

@@ -1,5 +1,11 @@
 ---
+import yaml from 'js-yaml'
+
 import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import archiveYml from '~/data/archive.yml?raw'
+
+const archive = yaml.load(archiveYml) as any
 
 const title = 'Archive'
 ---
@@ -9,11 +15,11 @@ const title = 'Archive'
 >
 
 	<h1>Archive</h1>
-	<p>Portal to old links, archived services and projects.</p>
+	<p>Portal to old archive, archived services and projects.</p>
 	<p class="small text-light">
 		<i class="fas fa-user-friends fa-fw"></i> = Community resource, not affiliated with EPITA.
 	</p>
 
-	<!-- {% include data-loader.html data = site.data.archive %} -->
+	<DataLoader data={archive} />
 
 </Default>

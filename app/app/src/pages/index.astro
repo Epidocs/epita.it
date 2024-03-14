@@ -1,5 +1,11 @@
 ---
+import yaml from 'js-yaml'
+
 import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import linksYml from '~/data/links.yml?raw'
+
+const links = yaml.load(linksYml) as any
 ---
 
 <Default
@@ -9,6 +15,6 @@ import Default from '~/layouts/Default.astro'
 	<h1>EPITA.it</h1>
 	<p>Portal to services and projects related to EPITA.</p>
 
-	<!-- {% include data-loader.html data = site.data.links %} -->
+	<DataLoader data={links} />
 
 </Default>
