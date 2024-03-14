@@ -114,8 +114,9 @@
     background_image: https://zeus.ionis-it.com/assets/png/logo-zeus-blanc.png
     style:
     - 'background-color: #1d2e37'
-    - 'background-size: auto'
-    - 'background-position-y: 25%'
+    - 'background-size: auto 65%'
+    - 'background-position-x: 75%'
+    - 'background-position-y: 50%'
 
   - name: Gitlab CRI
     href: https://gitlab.cri.epita.fr/
