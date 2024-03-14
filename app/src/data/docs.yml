@@ -1,5 +1,16 @@
 - title: Documentation
   items:
+
+  - name: Forge Docs
+    href: https://docs.forge.epita.fr/
+    class: tile-wide
+    icon: icon-[fa6-solid--star]
+    background_image: https://docs.forge.epita.fr/assets/images/forge_logo_white-38d02f6ef9b56a34f60b46030ee8b0de.svg
+    style:
+    - 'background-color: #3d4e97'
+    - 'background-size: auto 80%'
+    - 'background-position-y: 45%'
+
   - name: Documentation EPITA (CRI)
     href: https://doc.cri.epita.fr/
     class: tile-wide
