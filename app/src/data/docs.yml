@@ -11,7 +11,7 @@
     - 'background-size: auto 80%'
     - 'background-position-y: 45%'
 
-- title: Guides
+- title: Community guides
   items:
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
@@ -22,7 +22,7 @@
     - 'background-size: 30%'
     - 'background-position-y: 30%'
 
-- title: Resources
+- title: Community resources
   items:
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
