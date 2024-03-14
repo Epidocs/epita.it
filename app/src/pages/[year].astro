@@ -1,0 +1,59 @@
+---
+import yaml from 'js-yaml'
+
+import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import data2021Yml from '~/data/2021.yml?raw'
+import data2022Yml from '~/data/2022.yml?raw'
+import data2023Yml from '~/data/2023.yml?raw'
+import data2024Yml from '~/data/2024.yml?raw'
+import data2025Yml from '~/data/2025.yml?raw'
+import data2026Yml from '~/data/2026.yml?raw'
+import data2027Yml from '~/data/2027.yml?raw'
+import data2028Yml from '~/data/2028.yml?raw'
+
+const dataMap = {
+	'2021': data2021Yml,
+	'2022': data2022Yml,
+	'2023': data2023Yml,
+	'2024': data2024Yml,
+	'2025': data2025Yml,
+	'2026': data2026Yml,
+	'2027': data2027Yml,
+	'2028': data2028Yml,
+}
+
+export function getStaticPaths()
+{
+	return [
+		{ params: { year: '2021' } },
+		{ params: { year: '2022' } },
+		{ params: { year: '2023' } },
+		{ params: { year: '2024' } },
+		{ params: { year: '2025' } },
+		{ params: { year: '2026' } },
+		{ params: { year: '2027' } },
+		{ params: { year: '2028' } },
+	]
+}
+
+const { year } = Astro.params
+
+const data = yaml.load(dataMap[year]) as any
+
+const title = year
+---
+
+<Default
+	title={title}
+>
+
+	<h1># {year}</h1>
+	<p>Portal to projects useful for the {year} year group</p>
+	<p class="small text-light">
+		<i class="icon icon-[fa-brands--discord] icon-fw"></i> = Discord server
+	</p>
+
+	<DataLoader data={data} />
+
+</Default>
