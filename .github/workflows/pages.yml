@@ -7,12 +7,16 @@ on:
       - master
     paths:
       - 'app/**'
+      - 'Dockerfile'
+      - 'docker-compose*.yml'
   # Run on pull request events to primary branches
   pull_request:
     branches:
       - master
     paths:
       - 'app/**'
+      - 'Dockerfile'
+      - 'docker-compose*.yml'
   # Run on manual triggers
   workflow_dispatch:
 
@@ -47,7 +51,7 @@ jobs:
       run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml run --rm app
 
     - name: Chown dist folder to $USER
-      run: sudo chown -R $USER:$USER ./app/dist
+      run: sudo chown -R $USER:$USER ./dist
 
     - name: Upload artifact
       # Only run on:
@@ -57,7 +61,7 @@ jobs:
         github.ref == 'refs/heads/master'
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./app/dist
+        path: ./dist
 
   # Deploy job
   deploy:
