@@ -121,6 +121,8 @@
     background_image: https://graph.facebook.com/Epimathia/picture?width=256
     style:
     - 'background-color: #fff'
+    - 'background-size: 80%'
+    - 'background-position-y: 40%'
 
   - name: Epiqueer
     href: https://epiqueer.fr/
