@@ -7,25 +7,14 @@
     background_image: https://cdn.discordapp.com/attachments/813321650266832927/827414228737589348/Usual_Icon.webp
     style:
     - 'background-color: #202225'
-    
+
   - name: Discord EPITA APPRENTISSAGE 2025
     icon: fab fa-discord
     href: https://discord.gg/EWrBYUYaU9
     class: tile-wide
     background_image: https://cdn.discordapp.com/attachments/1008709312337678426/1115910628876496927/epita-apping-2025-blank.png
     style:
-    - 'background-color: #202225'  
-  
-- title: Misc.
-  items:
-  - name: Guide de survie Projet S2 (FR)
-    href: https://s2guide.epita.it/
-    class: tile-wide text-dark
-    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
-    style:
-    - 'background-color: #FFFFFF'
-    - 'background-size: 30%'
-    - 'background-position-y: 30%'
+    - 'background-color: #202225'
 
 - title: S2 Projects
   items:
