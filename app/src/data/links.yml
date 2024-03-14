@@ -45,16 +45,6 @@
     - 'background-position-x: 90%'
     - 'background-position-y: 25%'
 
-  - name: EPITA Signalement
-    href: https://epita.signalement.net/
-    class: tile-small-wide text-dark
-    background_image: https://epita.signalement.net/images/logo.png
-    style:
-    - 'background-color: #fff'
-    - 'background-size: auto 50%'
-    - 'background-position-x: 90%'
-    - 'background-position-y: 25%'
-
   # - name: Odyssée
   #   href: http://odyssee.epita.fr/
   #   class: tile-small-wide text-dark
@@ -146,6 +136,16 @@
     - 'background-position-x: 85%'
     - 'background-position-y: top'
     - 'background-size: auto 90%'
+
+  - name: EPITA Signalement
+    href: https://epita.signalement.net/
+    class: tile-small-wide text-dark
+    background_image: https://epita.signalement.net/images/logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-size: auto 50%'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 25%'
 
   - name: Debug-Pro
     relurl: debugpro
