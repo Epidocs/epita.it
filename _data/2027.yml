@@ -21,7 +21,7 @@
 
 - title: S2 Projects
   items:
-  - name: Hephaistos
+  - name: Héphaïstos
     href: https://geometrical-optics.github.io/
     class: tile-medium text-dark
     background_image: https://raw.githubusercontent.com/Geometrical-Optics/Geometrical-Optics.github.io/main/logoSized.png
