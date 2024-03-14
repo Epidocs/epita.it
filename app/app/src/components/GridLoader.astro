@@ -29,7 +29,9 @@ export interface Props
 							...item.style.reduce(
 								(acc: any, rule: string) =>
 									{
-										const [key, value] = rule.split(':')
+										const colonIndex = rule.indexOf(':')
+										if (colonIndex < 0) return acc
+										const [key, value] = [ rule.slice(0, colonIndex), rule.slice(colonIndex + 1) ]
 										return key && value ? { ...acc, [key]: value } : acc
 									},
 								{},
