@@ -236,16 +236,6 @@
     - 'background-position-x: 50%'
     - 'background-position-y: 45%'
 
-  # # 502 Bad Gateway
-  # - name: Back to Basics
-  #   href: https://backtobasics.axen.io/
-  #   class: tile-medium text-dark invalid
-  #   background_image: https://backtobasics.axen.io/static/img/favicon.png
-  #   style:
-  #   - 'background-color: #fff'
-  #   - 'background-size: 90%'
-  #   - 'background-position-y: top'
-
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
     class: tile-medium
