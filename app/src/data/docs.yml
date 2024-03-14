@@ -11,16 +11,6 @@
     - 'background-size: auto 80%'
     - 'background-position-y: 45%'
 
-  - name: Documentation EPITA (CRI)
-    href: https://doc.cri.epita.fr/
-    class: tile-wide
-    icon: icon-[fa6-solid--star]
-    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
-    style:
-    - 'background-color: #2980b9'
-    - 'background-size: 30%'
-    - 'background-position-y: 30%'
-
   - name: Epita ALED
     href: https://epita.litarvan.com/a/aled
     class: tile-medium invalid
