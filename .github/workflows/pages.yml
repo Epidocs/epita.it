@@ -5,10 +5,14 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'app/**'
   # Run on pull request events to primary branches
   pull_request:
     branches:
       - master
+    paths:
+      - 'app/**'
   # Run on manual triggers
   workflow_dispatch:
 
@@ -18,7 +22,7 @@ permissions:
 
 # Restrict concurrent deployments
 concurrency:
-  group: "pages"
+  group: ${{ github.workflow }}
   cancel-in-progress: true
 
 jobs:
@@ -33,14 +37,17 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Configure pages
-      uses: actions/configure-pages@v4
+    - name: Build for production
+      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
+      env:
+        GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
+        GITHUB_SHA: ${{ github.sha }}
 
-    - name: Build with Jekyll
-      uses: actions/jekyll-build-pages@v1
-      with:
-        source: ./
-        destination: ./_site
+    - name: Copy application files
+      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml run --rm app
+
+    - name: Chown dist folder to $USER
+      run: sudo chown -R $USER:$USER ./app/dist
 
     - name: Upload artifact
       # Only run on:
@@ -50,9 +57,9 @@ jobs:
         github.ref == 'refs/heads/master'
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./_site
+        path: ./app/dist
 
-  # Deployment job
+  # Deploy job
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
