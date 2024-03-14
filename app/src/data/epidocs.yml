@@ -2,10 +2,11 @@
   items:
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-medium text-dark
-    # background_image:
+    class: tile-medium
+    background_image: https://epidocs.eu/assets/logo.png
     style:
-    - 'background-color: #e9ecef'
+    - 'background-color: #24292e'
+    - 'background-size: 90%'
 
   - name: MCQ Online
     href: https://mcq.epidocs.eu/
