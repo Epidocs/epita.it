@@ -266,11 +266,12 @@
     href: https://annales.hyperion.tf/
     class: tile-small-wide text-dark
     icon: icon-[fa6-solid--user-group]
-    background_image: https://static.hyperion.tf/hyperion/img/favicon.ico
+    background_image: https://static.hyperion.tf/hyperion/img/Logo_HA.png
     style:
-    - 'background-color: #eee'
-    - 'background-size: auto 40%'
-    - 'background-position: 95% 85%'
+    - 'background-color: #9e9e9e'
+    - 'background-size: auto 60%'
+    - 'background-position-x: 10%'
+    - 'background-position-y: 20%'
 
   - name: Mastercorp
     href: http://mastercorp.epita.eu/

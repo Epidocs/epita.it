@@ -62,8 +62,9 @@
     background_image: https://static.hyperion.tf/hyperion/img/Logo_HA.png
     style:
     - 'background-color: #9e9e9e'
-    - 'background-size: 90% auto'
-    - 'background-position: 50% 20%'
+    - 'background-size: auto 60%'
+    - 'background-position-x: 10%'
+    - 'background-position-y: 20%'
 
   - name: Mastercorp
     href: http://mastercorp.epita.eu/
