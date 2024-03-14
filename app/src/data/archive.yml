@@ -34,7 +34,7 @@
 
   - name: Rocket.Chat
     href: http://rocketchat.cri.epita.fr/
-    class: tile-small-wide
+    class: tile-small-wide invalid
     background_image: https://rocketchat.cri.epita.fr/assets/logo.png
     style:
     - 'background-color: #444'
