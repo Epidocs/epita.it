@@ -2,10 +2,11 @@
   items:
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-medium text-dark
-    # background_image:
+    class: tile-medium
+    background_image: https://epidocs.eu/assets/logo.png
     style:
-    - 'background-color: #e9ecef'
+    - 'background-color: #24292e'
+    - 'background-size: 90%'
 
   - name: MCQ Online
     href: https://mcq.epidocs.eu/
@@ -14,13 +15,13 @@
     style:
     - 'background-color: #fffff8'
 
-  # - name: Plannings
-    # href: https://plannings.epidocs.eu/
-    # class: tile-small-wide
-    # background_image:
-    # style:
-    # - 'background-color: #343a40'
-    # - 'background-size: 90%'
+  - name: Plannings
+    href: https://plannings.epidocs.eu/
+    class: tile-small-wide
+    background_image:
+    style:
+    - 'background-color: #343a40'
+    - 'background-size: 90%'
 
   # - name: Tips
     # href: https://tips.epidocs.eu/

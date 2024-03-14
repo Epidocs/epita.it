@@ -121,14 +121,17 @@
     background_image: https://graph.facebook.com/Epimathia/picture?width=256
     style:
     - 'background-color: #fff'
+    - 'background-size: 80%'
+    - 'background-position-y: 40%'
 
   - name: Epiqueer
     href: https://epiqueer.fr/
     class: tile-medium
-    background_image: https://epiqueer.fr/img/epiqueer.png
+    background_image: https://epiqueer.fr/large_logo.png
     style:
-    - 'background-color: #37a1de'
+    - 'background-color: #4054b2'
     - 'background-size: 90%'
+    - 'background-position-y: 45%'
 
   - name: Episolidaire
     icon: icon-[fa-brands--facebook]
@@ -193,10 +196,11 @@
   - name: Gotta Go Hack
     href: https://www.gottagohack.fr/
     class: tile-medium
-    background_image: https://www.gottagohack.fr/favicon.ico
+    background_image: https://www.gottagohack.fr/static/media/logo.393432ca58c7fb68941c.png
     style:
     - 'background-color: #00c2cb'
-    - 'background-size: 90%'
+    - 'background-size: 85%'
+    - 'background-position-y: 25%'
 
   - name: Heritage Foyer
     icon: icon-[fa-brands--facebook]

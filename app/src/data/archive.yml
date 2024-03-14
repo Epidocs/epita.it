@@ -17,13 +17,15 @@
 
 - title: Old official resources
   items:
+
+  # 502 Bad Gateway
   - name: Chronos
     href: http://chronos.epita.net/
-    class: tile-medium
-    background_image: https://cdn.matiboux.com/images/epita.it/chronos.gif
+    class: tile-medium invalid
+    # background_image: https://cdn.matiboux.com/images/epita.it/chronos.gif
     style:
     - 'background-color: #b77fa2'
-    - 'background-size: 90%'
+    # - 'background-size: 90%'
 
   - name: Algo TD
     href: https://algo-td.infoprepa.epita.fr/
@@ -32,19 +34,30 @@
     style:
     - 'background-color: #e5e5f0'
 
+  - name: Doc. EPITA (CRI)
+    href: https://doc.cri.epita.fr/
+    class: tile-small-wide invalid
+    # icon: icon-[fa6-solid--star]
+    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
+    style:
+    - 'background-color: #2980b9'
+    - 'background-size: auto 50%'
+    - 'background-position-y: 20%'
+
   - name: Rocket.Chat
     href: http://rocketchat.cri.epita.fr/
-    class: tile-small-wide
-    background_image: https://rocketchat.cri.epita.fr/assets/logo.png
+    class: tile-small-wide invalid
+    # background_image: https://rocketchat.cri.epita.fr/assets/logo.png
     style:
     - 'background-color: #444'
-    - 'background-size: 90%'
+    # - 'background-size: 90%'
 
 - title: Old unofficial resources
   text: |
     <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA. <br />
     <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
   items:
+
   - name: iChronos
     icon: icon-[fa6-solid--user-group]
     href: https://ichronos.net/
@@ -79,7 +92,7 @@
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.deliciousmuffins.net/
     class: tile-small-wide invalid
-    background_image: https://news.deliciousmuffins.net/static/muffinreader.png
+    # background_image: https://news.deliciousmuffins.net/static/muffinreader.png
     style:
     - 'background-color: #222222'
 
@@ -87,7 +100,7 @@
   - name: news.infinity.study
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.infinity.study/
-    class: tile-small-wide
+    class: tile-small-wide invalid
     # background_image: https://news.infinity.study/sprite.svg#infinity
     style:
     - 'background-color: #8c3f0d'
@@ -95,11 +108,20 @@
   - name: Back to Basics
     href: https://backtobasics.axen.io/
     class: tile-small-wide text-dark invalid
-    background_image: https://backtobasics.axen.io/static/img/favicon.png
+    # background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
     - 'background-color: #fff'
-    - 'background-size: 90%'
-    - 'background-position-y: top'
+    # - 'background-size: 90%'
+    # - 'background-position-y: top'
+
+  - name: Epita ALED
+    href: https://epita.litarvan.com/a/aled
+    class: tile-small-wide invalid
+    icon: icon-[fa6-solid--user-group]
+    # background_image: /static/ALED-icon.png
+    style:
+    - 'background-color: #1E1E1E'
+    # - 'background-size: 75%'
 
   - name: tonnerre.link
     icon: icon-[fa6-solid--user-group]
@@ -122,7 +144,7 @@
     href: https://redux.epita.cf/
     class: tile-small-wide invalid
     icon: icon-[fa6-solid--user-group]
-    background_image: https://redux.epita.cf/img/logo.png
+    # background_image: https://redux.epita.cf/img/logo.png
     style:
     - 'background-color: #1254a4'
 
@@ -132,3 +154,11 @@
     icon: icon-[fa6-solid--user-group]
     style:
     - 'background-color: #fafafa'
+
+  - name: Epitar
+    href: https://epitar.aureleoules.com
+    class: tile-small-wide invalid
+    icon: icon-[fa6-solid--user-group]
+    # background_image: https://epitar.aureleoules.com/favicon.png
+    style:
+    - 'background-color: #141d27'
