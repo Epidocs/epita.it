@@ -77,7 +77,7 @@ p img { height: 1rem }
 #main .container > .tiles-grid { margin-bottom: 1rem }
 #main .tiles-grid .invalid:before {
 	/* background: ; */
-	background-image: url({{ '/assets/missing.png' | relative_url }});
+	background-image: url('/assets/missing.png');
 	background-size: cover;
 	position: absolute;
 	width: 100%;
