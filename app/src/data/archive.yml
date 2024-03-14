@@ -132,3 +132,11 @@
     icon: icon-[fa6-solid--user-group]
     style:
     - 'background-color: #fafafa'
+
+  - name: Epitar
+    href: https://epitar.aureleoules.com
+    class: tile-small-wide invalid
+    icon: icon-[fa6-solid--user-group]
+    # background_image: https://epitar.aureleoules.com/favicon.png
+    style:
+    - 'background-color: #141d27'
