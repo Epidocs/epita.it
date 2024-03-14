@@ -17,10 +17,13 @@ docker compose up --build -d
 
 ### Add links
 
-If you want to add links to the web portal, please edit [`_data/links.yml`](_data/links.yml).
+If you want to add links to the web portal, please edit [`app/app/src/data/links.yml`](app/app/src/data/links.yml).
 Please note that the order of items is important in the way links are displayed on the website.
 
 There are `.yml` files for each page.
+
+
+## Hosting your own project
 
 ### Get an EPITA.it subdomain for your project
 
