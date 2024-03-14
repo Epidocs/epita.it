@@ -1,4 +1,4 @@
-- title: Graduates pages
+- title: Alumni pages
   text: Link to pages on EPITA.it for past year groups not visible in the navbar.
   items:
   - name: 2021
@@ -12,6 +12,13 @@
     relurl: 2022
     class: tile-medium
     background_image: https://cdn.discordapp.com/icons/352524741980061698/d497123ca9cd655542bba191b959efe1.webp?size=256
+    style:
+    - 'background-color: #202225'
+
+  - name: 2023
+    relurl: 2023
+    class: tile-medium
+    background_image: https://cdn.discordapp.com/icons/415982150714916874/736b61cdd84a2a979cafad2df9193c7e.webp?size=256
     style:
     - 'background-color: #202225'
 
