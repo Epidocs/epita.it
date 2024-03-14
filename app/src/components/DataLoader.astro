@@ -15,7 +15,7 @@ export interface Props
 				<Fragment>
 					{index > 0 && <hr />}
 					{section.title && <h2>{section.title}</h2>}
-					{section.text && <p class="small">{section.text}</p>}
+					{section.text && <p class="small" set:html={section.text} />}
 					<GridLoader grid={section.items} />
 				</Fragment>
 			)
