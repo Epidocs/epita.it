@@ -11,14 +11,6 @@
     - 'background-size: auto 80%'
     - 'background-position-y: 45%'
 
-  - name: Epita ALED
-    href: https://epita.litarvan.com/a/aled
-    class: tile-medium invalid
-    # background_image: /static/ALED-icon.png
-    style:
-    - 'background-color: #1E1E1E'
-    # - 'background-size: 75%'
-
 - title: Guides
   items:
   - name: Guide de survie Projet S2 (FR)

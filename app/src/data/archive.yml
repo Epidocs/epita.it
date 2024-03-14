@@ -57,6 +57,7 @@
     <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA. <br />
     <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
   items:
+
   - name: iChronos
     icon: icon-[fa6-solid--user-group]
     href: https://ichronos.net/
@@ -112,6 +113,14 @@
     - 'background-color: #fff'
     # - 'background-size: 90%'
     # - 'background-position-y: top'
+
+  - name: Epita ALED
+    href: https://epita.litarvan.com/a/aled
+    class: tile-small-wide invalid
+    # background_image: /static/ALED-icon.png
+    style:
+    - 'background-color: #1E1E1E'
+    # - 'background-size: 75%'
 
   - name: tonnerre.link
     icon: icon-[fa6-solid--user-group]
