@@ -136,7 +136,7 @@
 
   - name: Debug-Pro
     relurl: debugpro
-    icon: fas fa-list-ul
+    icon: icon-[fa6-solid--list-ul]
     class: tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
@@ -201,11 +201,11 @@
 
 - title: Unofficial resources for students
   text: |
-    <i class="fas fa-user-friends fa-fw"></i> = Community resource, not affiliated with EPITA. <br />
-    <i class="fas fa-bullhorn fa-fw"></i> = Client for reading newsgroups, not affiliated with EPITA.
+    <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA. <br />
+    <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
   items:
   - name: Map EPITA
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-group]
     href: https://epimap.fr/
     class: tile-small-wide
     background_image: https://epimap.fr/img/logo-epimap.svg
@@ -215,7 +215,7 @@
     - 'background-position: 20% 20%'
 
   - name: news.infinity.study
-    icon: fas fa-bullhorn
+    icon: icon-[fa6-solid--bullhorn]
     href: https://news.infinity.study/
     class: tile-small-wide
     # background_image: https://news.infinity.study/sprite.svg#infinity
@@ -224,7 +224,7 @@
 
   # # DNS_PROBE_FINISHED_NXDOMAIN
   # - name: RTFN
-  #   icon: fas fa-bullhorn
+  #   icon: icon-[fa6-solid--bullhorn]
   #   href: https://rtfn.fr/
   #   class: tile-small-wide text-dark invalid
   #   style:
@@ -243,7 +243,7 @@
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
     class: tile-medium
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-group]
     background_image: https://epidocs.eu/assets/logo.png
     style:
     - 'background-color: #24292e'
@@ -252,7 +252,7 @@
   - name: Epitaf
     href: https://www.epitaf.fr/
     class: tile-medium
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-group]
     background_image: https://www.epitaf.fr/logo.png
     style:
     - 'background-color: #141d27'
@@ -260,7 +260,7 @@
   - name: Epitar
     href: https://epitar.aureleoules.com
     class: tile-medium
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-group]
     background_image: https://epitar.aureleoules.com/favicon.png
     style:
     - 'background-color: #141d27'
@@ -268,7 +268,7 @@
   - name: Epinotes
     href: https://epinotes.fr/
     class: tile-medium
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-group]
     background_image: https://epinotes.fr/public/images/logos/epinotes_logo_7.png
     style:
     - 'background-color: #131415'
@@ -277,7 +277,7 @@
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
     class: tile-small-wide text-dark
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-group]
     background_image: https://static.hyperion.tf/hyperion/img/favicon.ico
     style:
     - 'background-color: #eee'
@@ -287,7 +287,7 @@
   - name: Mastercorp
     href: http://mastercorp.epita.eu/
     class: tile-small-wide text-dark
-    icon: fas fa-user-friends
+    icon: icon-[fa6-solid--user-group]
     style:
     - 'background-color: #fff'
 

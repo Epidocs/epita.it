@@ -1,7 +1,7 @@
 - title: Student Community
   items:
   - name: Discord EPITA 2027
-    icon: fab fa-discord
+    icon: icon-[fa-brands--discord]
     href: https://discord.gg/3ZJDy7h9pY
     class: tile-wide
     background_image: https://cdn.discordapp.com/attachments/1038902294936305684/1077634380681457755/d3ad8bbc61f4d7e3e3553bad7bf53ffd.webp
