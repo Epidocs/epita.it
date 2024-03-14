@@ -228,12 +228,13 @@
   - name: Epimap
     icon: icon-[fa6-solid--user-group]
     href: https://epimap.fr/
-    class: tile-small-wide
+    class: tile-medium
     background_image: https://epimap.fr/img/logo-epimap.svg
     style:
     - 'background-color: #230071'
     - 'background-size: 80%'
-    - 'background-position: 20% 20%'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 45%'
 
   # # 502 Bad Gateway
   # - name: Back to Basics
