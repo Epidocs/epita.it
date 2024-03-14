@@ -59,14 +59,14 @@
   text: |
     <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups.
   items:
-  - name: CRI EPITA
+  - name: CRI / Forge EPITA
     href: https://cri.epita.fr/
     class: tile-medium text-dark
     background_image: https://s3.cri.epita.fr/cri-intranet/img/logo.png
     style:
     - 'background-color: #fff'
     - 'background-size: 75%'
-    # - 'background-position-x: 90%'
+    - 'background-position-x: 50%'
     - 'background-position-y: 20%'
 
   - name: Moodle
