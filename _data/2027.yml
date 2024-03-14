@@ -24,12 +24,12 @@
   - name: Hephaistos
     href: https://geometrical-optics.github.io/
     class: tile-medium text-dark
-    background_image: https://github.com/Geometrical-Optics/Geometrical-Optics.github.io/blob/main/logoSized.png
+    background_image: https://raw.githubusercontent.com/Geometrical-Optics/Geometrical-Optics.github.io/main/logoSized.png
     style:
     - 'background-color: #ffc107'
     - 'background-size: 75%'
     - 'background-position-y: 15%'
-  
+
   - name: Proxima's Quest
     href: https://godmelcorp.github.io/
     class: tile-medium
@@ -57,7 +57,7 @@
     - 'background-color: #663399'
     - 'background-size: 80%'
     - 'background-position-y: 15%'
- 
+
   - name: Stuck
     href: https://axxiar.github.io/Stuck/
     class: tile-medium text-dark
