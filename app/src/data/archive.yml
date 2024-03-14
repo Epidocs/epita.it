@@ -87,7 +87,7 @@
   - name: news.infinity.study
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.infinity.study/
-    class: tile-small-wide
+    class: tile-small-wide invalid
     # background_image: https://news.infinity.study/sprite.svg#infinity
     style:
     - 'background-color: #8c3f0d'
