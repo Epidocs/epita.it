@@ -125,10 +125,11 @@
   - name: Epiqueer
     href: https://epiqueer.fr/
     class: tile-medium
-    background_image: https://epiqueer.fr/img/epiqueer.png
+    background_image: https://epiqueer.fr/large_logo.png
     style:
-    - 'background-color: #37a1de'
+    - 'background-color: #4054b2'
     - 'background-size: 90%'
+    - 'background-position-y: 45%'
 
   - name: Episolidaire
     icon: icon-[fa-brands--facebook]
