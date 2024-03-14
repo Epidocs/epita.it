@@ -1,0 +1,27 @@
+---
+import GridLoader from '~/components/GridLoader.astro'
+
+export interface Props
+{
+	data?: Array<any>
+}
+---
+
+{Astro.props.data && (
+	Astro.props.data.length > 0 && Astro.props.data[0].items
+	? (
+		Astro.props.data.map((section, index) => (
+			section.items && (
+				<Fragment>
+					{index > 0 && <hr />}
+					{section.title && <h2>{section.title}</h2>}
+					{section.text && <p class="small">{section.text}</p>}
+					<GridLoader grid={section.items} />
+				</Fragment>
+			)
+		))
+	)
+	: (
+		<GridLoader grid={Astro.props.data} />
+	)
+)}

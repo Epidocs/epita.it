@@ -1,0 +1,42 @@
+---
+import Base from '~/layouts/Base.astro'
+import type { Props as BaseProps } from '~/layouts/Base.astro'
+import site from '~/site'
+
+export interface Props extends Omit<BaseProps, 'title'>
+{
+	title?: BaseProps['title']
+}
+
+const {
+	title,
+} = Astro.props
+
+if (site.title === undefined && Astro.props.title === undefined)
+{
+	throw new Error('Title is undefined')
+}
+
+const baseProps: BaseProps = {
+	...Astro.props,
+	title: title
+		? (site.title
+			? `${title} – ${site.title}`
+			: title
+		)
+		: (site.title || ''),
+	description: Astro.props.description || site.description,
+	author: Astro.props.author || site.author,
+	keywords: Astro.props.keywords || site.keywords,
+	themeColor: Astro.props.themeColor || site.themeColor,
+	favicon: Astro.props.favicon || undefined,
+}
+---
+
+<Base {...baseProps}>
+
+	<slot slot="head" name="head" />
+
+	<slot />
+
+</Base>

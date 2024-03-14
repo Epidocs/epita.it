@@ -1,0 +1,26 @@
+---
+import yaml from 'js-yaml'
+
+import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import communityYml from '~/data/community.yml?raw'
+
+const community = yaml.load(communityYml) as any
+
+const title = 'Community'
+---
+
+<Default
+	title={title}
+>
+
+	<h1>Community & Clubs</h1>
+	<p>Portal to community groups and clubs related to EPITA</p>
+	<p class="small text-light">
+		<i class="fab fa-facebook fa-fw"></i> = Facebook page <br />
+		<i class="fab fa-discord fa-fw"></i> = Discord server
+	</p>
+
+	<DataLoader data={community} />
+
+</Default>
