@@ -8,9 +8,9 @@ services:
     # Build
     image: ${IMAGES_PREFIX:-app}-npm:${DOCKER_TAG:-latest}
     build:
-      context: ./app
+      context: .
       dockerfile: ./Dockerfile
       target: npm
     # Deploy
     volumes:
-      - ./app/app:/app
+      - ./app:/app

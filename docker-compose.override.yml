@@ -11,5 +11,5 @@ services:
       target: app_dev
     # Deploy override
     volumes:
-      - ./app/app:/app
+      - ./app:/app
       - /app/node_modules # Remove from bind-mount for better performance
