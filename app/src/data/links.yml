@@ -171,7 +171,7 @@
     background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
-    - 'background-position-x: 15%'
+    - 'background-position-x: 50%'
     - 'background-position-y: 15%'
     - 'background-size: auto 60%'
 
@@ -181,7 +181,7 @@
     background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
-    - 'background-position-x: 15%'
+    - 'background-position-x: 50%'
     - 'background-position-y: 15%'
     - 'background-size: auto 60%'
 
