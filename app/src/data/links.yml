@@ -232,14 +232,6 @@
     style:
     - 'background-color: #8c3f0d'
 
-  # # DNS_PROBE_FINISHED_NXDOMAIN
-  # - name: RTFN
-  #   icon: icon-[fa6-solid--bullhorn]
-  #   href: https://rtfn.fr/
-  #   class: tile-small-wide text-dark invalid
-  #   style:
-  #   - 'background-color: #fff'
-
   # # 502 Bad Gateway
   # - name: Back to Basics
   #   href: https://backtobasics.axen.io/
