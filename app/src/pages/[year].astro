@@ -12,17 +12,6 @@ import data2026Yml from '~/data/2026.yml?raw'
 import data2027Yml from '~/data/2027.yml?raw'
 import data2028Yml from '~/data/2028.yml?raw'
 
-const dataMap = {
-	'2021': data2021Yml,
-	'2022': data2022Yml,
-	'2023': data2023Yml,
-	'2024': data2024Yml,
-	'2025': data2025Yml,
-	'2026': data2026Yml,
-	'2027': data2027Yml,
-	'2028': data2028Yml,
-}
-
 export function getStaticPaths()
 {
 	return [
@@ -37,9 +26,20 @@ export function getStaticPaths()
 	]
 }
 
-const { year } = Astro.params
+const dataMap = {
+	'2021': data2021Yml,
+	'2022': data2022Yml,
+	'2023': data2023Yml,
+	'2024': data2024Yml,
+	'2025': data2025Yml,
+	'2026': data2026Yml,
+	'2027': data2027Yml,
+	'2028': data2028Yml,
+}
 
-const data = yaml.load(dataMap[year]) as any
+const year = Astro.params.year as keyof typeof dataMap
+
+const data = dataMap[year] ? (yaml.load(dataMap[year]) as any) : null
 
 const title = year
 ---
