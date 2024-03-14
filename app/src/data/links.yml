@@ -66,6 +66,8 @@
   #   - 'background-position-y: 25%'
 
 - title: Official resources for students
+  text: |
+    <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups.
   items:
   - name: CRI EPITA
     href: https://cri.epita.fr/
@@ -134,6 +136,17 @@
     - 'background-position-y: top'
     - 'background-size: 75%'
 
+  - name: News EPITA
+    icon: icon-[fa6-solid--bullhorn]
+    href: https://news.epita.fr/
+    class: tile-small-wide text-dark
+    background_image: https://forge-discourse.s3.cri.epita.fr/original/1X/9bec2d950081a9936635287e5a7a4a3f810b275d.png
+    style:
+    - 'background-color: #ffffff'
+    - 'background-position-x: 85%'
+    - 'background-position-y: top'
+    - 'background-size: auto 90%'
+
   - name: Debug-Pro
     relurl: debugpro
     icon: icon-[fa6-solid--list-ul]
@@ -201,8 +214,7 @@
 
 - title: Unofficial resources for students
   text: |
-    <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA. <br />
-    <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
+    <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA.
   items:
   - name: Map EPITA
     icon: icon-[fa6-solid--user-group]
@@ -213,22 +225,6 @@
     - 'background-color: #230071'
     - 'background-size: 80%'
     - 'background-position: 20% 20%'
-
-  - name: news.infinity.study
-    icon: icon-[fa6-solid--bullhorn]
-    href: https://news.infinity.study/
-    class: tile-small-wide
-    # background_image: https://news.infinity.study/sprite.svg#infinity
-    style:
-    - 'background-color: #8c3f0d'
-
-  # # DNS_PROBE_FINISHED_NXDOMAIN
-  # - name: RTFN
-  #   icon: icon-[fa6-solid--bullhorn]
-  #   href: https://rtfn.fr/
-  #   class: tile-small-wide text-dark invalid
-  #   style:
-  #   - 'background-color: #fff'
 
   # # 502 Bad Gateway
   # - name: Back to Basics

@@ -66,6 +66,7 @@
     style:
     - 'background-color: #bd510a'
 
+  # DNS_PROBE_FINISHED_NXDOMAIN
   - name: RTFN
     icon: icon-[fa6-solid--bullhorn]
     href: https://rtfn.fr/
@@ -73,13 +74,23 @@
     style:
     - 'background-color: #fff'
 
+  # DNS_PROBE_FINISHED_NXDOMAIN
   - name: Muffin Reader
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.deliciousmuffins.net/
-    class: tile-small-wide invalid # DNS_PROBE_FINISHED_NXDOMAIN
+    class: tile-small-wide invalid
     background_image: https://news.deliciousmuffins.net/static/muffinreader.png
     style:
     - 'background-color: #222222'
+
+  # DNS_PROBE_FINISHED_NXDOMAIN
+  - name: news.infinity.study
+    icon: icon-[fa6-solid--bullhorn]
+    href: https://news.infinity.study/
+    class: tile-small-wide
+    # background_image: https://news.infinity.study/sprite.svg#infinity
+    style:
+    - 'background-color: #8c3f0d'
 
   - name: Back to Basics
     href: https://backtobasics.axen.io/
