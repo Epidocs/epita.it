@@ -32,22 +32,6 @@
     - 'background-color: #24292e'
     - 'background-size: 90%'
 
-  # - class: tile-medium
-    # items:
-    # - name: Algostats
-      # href: http://algostats.epidocs.eu/
-      # class: tile-small-wide text-dark
-      # background_image:
-      # style:
-      # - 'background-color: #fff'
-
-    # - name: Progstats
-      # href: http://progstats.epidocs.eu/
-      # class: tile-small-wide text-dark
-      # background_image:
-      # style:
-      # - 'background-color: #fff'
-
   - name: Epinotes
     href: https://epinotes.fr/
     class: tile-medium
