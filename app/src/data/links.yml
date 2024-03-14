@@ -157,8 +157,12 @@
   - name: Wiki Prog
     href: https://wiki-prog.infoprepa.epita.fr/
     class: tile-small-wide text-dark
+    background_image: https://wiki-prog.infoprepa.epita.fr/skins/common/images/LogoLSE-small.html
     style:
     - 'background-color: #f6f6f6'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 30%'
+    - 'background-size: auto 65%'
 
   - name: Algo Cours (FR)
     href: https://algo.infoprepa.epita.fr/
