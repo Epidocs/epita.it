@@ -17,9 +17,11 @@
 
 - title: Old official resources
   items:
+
+  # 502 Bad Gateway
   - name: Chronos
     href: http://chronos.epita.net/
-    class: tile-medium
+    class: tile-medium invalid
     background_image: https://cdn.matiboux.com/images/epita.it/chronos.gif
     style:
     - 'background-color: #b77fa2'
