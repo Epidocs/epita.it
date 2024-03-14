@@ -117,6 +117,7 @@
   - name: Epita ALED
     href: https://epita.litarvan.com/a/aled
     class: tile-small-wide invalid
+    icon: icon-[fa6-solid--user-group]
     # background_image: /static/ALED-icon.png
     style:
     - 'background-color: #1E1E1E'
