@@ -102,7 +102,7 @@
 
   - name: "SALADE, TOMATE, CADDY !!!"
     href: https://theobviouscorp.com/stc.html
-    class: tile-medium
+    class: tile-medium invalid
     background_image: https://theobviouscorp.com/img/stc/STC_SQUARE_LOGO.png
     style:
     - 'background-color: #1681de'
