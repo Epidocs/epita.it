@@ -15,13 +15,13 @@
     style:
     - 'background-color: #fffff8'
 
-  # - name: Plannings
-    # href: https://plannings.epidocs.eu/
-    # class: tile-small-wide
-    # background_image:
-    # style:
-    # - 'background-color: #343a40'
-    # - 'background-size: 90%'
+  - name: Plannings
+    href: https://plannings.epidocs.eu/
+    class: tile-small-wide
+    background_image:
+    style:
+    - 'background-color: #343a40'
+    - 'background-size: 90%'
 
   # - name: Tips
     # href: https://tips.epidocs.eu/
