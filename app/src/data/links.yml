@@ -225,7 +225,7 @@
   text: |
     <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA.
   items:
-  - name: Map EPITA
+  - name: Epimap
     icon: icon-[fa6-solid--user-group]
     href: https://epimap.fr/
     class: tile-small-wide
