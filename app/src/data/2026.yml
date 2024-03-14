@@ -29,12 +29,12 @@
 
   - name: Kasimov
     href: https://kasimov.tk
-    class: tile-medium
-    background_image: https://kasimov.tk/assets/img/icon.png
+    class: tile-medium invalid
+    # background_image: https://kasimov.tk/assets/img/icon.png
     style:
     - 'background-color: #212529'
-    - 'background-size: 80%'
-    - 'background-position-y: 15%'
+    # - 'background-size: 80%'
+    # - 'background-position-y: 15%'
 
   - name: Switched
     href: https://swarwerth.github.io/switched.github.io/
