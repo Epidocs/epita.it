@@ -207,8 +207,9 @@
     background_image: https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png
     style:
     - 'background-color: #a2d416'
-    - 'background-size: auto 90%'
-    - 'background-position-x: right'
+    - 'background-size: auto 85%'
+    - 'background-position-x: 95%'
+    - 'background-position-y: 50%'
 
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
