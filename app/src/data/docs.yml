@@ -48,13 +48,6 @@
       # style:
       # - 'background-color: #fff'
 
-  - name: Epitar
-    href: https://epitar.aureleoules.com
-    class: tile-medium
-    background_image: https://epitar.aureleoules.com/favicon.png
-    style:
-    - 'background-color: #141d27'
-
   - name: Epinotes
     href: https://epinotes.fr/
     class: tile-medium
