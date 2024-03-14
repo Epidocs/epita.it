@@ -22,7 +22,7 @@ permissions:
 
 # Restrict concurrent deployments
 concurrency:
-  group: ${{ github.workflow }}
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
