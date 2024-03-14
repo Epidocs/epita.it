@@ -326,7 +326,7 @@
     style:
     - 'background-color: #ffffff'
     - 'background-size: auto 90%'
-    - 'background-position-x: 75%'
+    - 'background-position-x: 70%'
 
   - name: LSE
     href: https://www.lse.epita.fr/
@@ -335,7 +335,7 @@
     style:
     - 'background-color: #141212'
     - 'background-size: auto 80%'
-    - 'background-position-x: 75%'
+    - 'background-position-x: 70%'
 
   - name: LRDE
     href: https://www.lrde.epita.fr/
@@ -343,7 +343,8 @@
     background_image: https://www.lrde.epita.fr/skins/common/images/logo.png
     style:
     - 'background-color: #d5e6f7'
-    - 'background-position-x: right'
+    - 'background-size: auto 100%'
+    - 'background-position-x: 70%'
 
   - name: 3ie
     href: https://www.3ie.fr/
