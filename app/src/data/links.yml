@@ -171,6 +171,26 @@
     style:
     - 'background-color: #f5f5ff'
 
+  - name: Projet Voltaire
+    href: https://www.projet-voltaire.fr/
+    class: tile-small-wide text-dark
+    background_image: https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png
+    style:
+    - 'background-color: #a2d416'
+    - 'background-size: auto 85%'
+    - 'background-position-x: 95%'
+    - 'background-position-y: 50%'
+
+  - name: Rosetta Stone
+    href: https://login.rosettastone.com/
+    class: tile-small-wide text-dark
+    background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/320px-Rosetta_Stone_logo.svg.png
+    style:
+    - 'background-color: #ffffff'
+    - 'background-size: auto 60%'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 15%'
+
   - name: Wiki Prog
     href: https://wiki-prog.infoprepa.epita.fr/
     class: tile-small-wide text-dark
@@ -200,26 +220,6 @@
     - 'background-position-x: 50%'
     - 'background-position-y: 15%'
     - 'background-size: auto 60%'
-
-  - name: Projet Voltaire
-    href: https://www.projet-voltaire.fr/
-    class: tile-small-wide text-dark
-    background_image: https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png
-    style:
-    - 'background-color: #a2d416'
-    - 'background-size: auto 85%'
-    - 'background-position-x: 95%'
-    - 'background-position-y: 50%'
-
-  - name: Rosetta Stone
-    href: https://login.rosettastone.com/
-    class: tile-small-wide text-dark
-    background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/320px-Rosetta_Stone_logo.svg.png
-    style:
-    - 'background-color: #ffffff'
-    - 'background-size: auto 60%'
-    - 'background-position-x: 50%'
-    - 'background-position-y: 15%'
 
 - title: Unofficial resources for students
   text: |
