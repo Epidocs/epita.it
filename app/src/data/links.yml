@@ -164,7 +164,7 @@
     - 'background-position-y: 20%'
 
   - name: Debug-Pro
-    relurl: debugpro
+    relurl: /debugpro
     icon: icon-[fa6-solid--list-ul]
     class: tile-small-wide text-dark
     style:
