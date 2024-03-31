@@ -1,5 +1,13 @@
 - title: Communities
   items:
+  - name: EPITA International
+    icon: icon-[fa-brands--discord]
+    href: https://discord.gg/bQ7Tpk2
+    class: tile-medium
+    background_image: https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256
+    style:
+    - 'background-color: #80b2fa'
+
   - name: EPIFUN
     href: https://www.epifun.fr/
     class: tile-medium
@@ -8,14 +16,6 @@
     - 'background-image: url(https://www.epifun.fr/img/epifun-logo.webp)'
     - 'background-size: 90%'
     - 'background-position-y: 45%'
-
-  - name: EPITA International
-    icon: icon-[fa-brands--discord]
-    href: https://discord.gg/bQ7Tpk2
-    class: tile-medium
-    background_image: https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256
-    style:
-    - 'background-color: #80b2fa'
 
   - name: Segfault
     icon: icon-[fa-brands--facebook]
