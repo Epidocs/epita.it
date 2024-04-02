@@ -261,6 +261,15 @@
     - 'background-color: #131415'
     - 'background-size: 90%'
 
+  - name: Pastpapers
+    href: https://pastpapers.fr/
+    class: tile-medium text-dark
+    icon: icon-[fa6-solid--user-group]
+    background_image: https://pastpapers.fr/assets/pastpapers_cover_simple.png
+    style:
+    - 'background-color: #fafafa'
+    - 'background-size: 160%'
+
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
     class: tile-small-wide text-dark
