@@ -2,9 +2,9 @@
   items:
   - name: Discord EPITA 2028
     icon: icon-[fa-brands--discord]
-    href: https://discord.gg/AbqK9R2mPW
+    href: https://discord.gg/EuXuGTxyc8
     class: tile-wide
-    background_image: ../assets/2028-discord-logo.png
+    background_image: ../assets/2029-discord-logo.png
     style:
     - 'background-color: #202225'
 
