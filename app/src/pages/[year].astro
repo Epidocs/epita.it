@@ -11,6 +11,7 @@ import data2025Yml from '~/data/2025.yml?raw'
 import data2026Yml from '~/data/2026.yml?raw'
 import data2027Yml from '~/data/2027.yml?raw'
 import data2028Yml from '~/data/2028.yml?raw'
+import data2029Yml from '~/data/2029.yml?raw'
 
 export function getStaticPaths()
 {
@@ -23,6 +24,7 @@ export function getStaticPaths()
 		{ params: { year: '2026' } },
 		{ params: { year: '2027' } },
 		{ params: { year: '2028' } },
+		{ params: { year: '2029' } },
 	]
 }
 
@@ -35,6 +37,7 @@ const dataMap = {
 	'2026': data2026Yml,
 	'2027': data2027Yml,
 	'2028': data2028Yml,
+	'2029': data2029Yml,
 }
 
 const year = Astro.params.year as keyof typeof dataMap
