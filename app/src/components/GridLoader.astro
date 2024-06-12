@@ -30,6 +30,33 @@ async function prepareItems(items: any)
 							.map(async (src: string) =>
 								{
 									src = src.trim()
+
+									if (src.startsWith('url('))
+									{
+										return src
+									}
+
+									if (src.startsWith('http:') || src.startsWith('https:') || src.startsWith('data:'))
+									{
+										return `url(${encodeURI(src)})`
+									}
+
+									if (src.startsWith('.') || src.startsWith('/'))
+									{
+										try
+										{
+											// Try to import local file
+											const url = (await import(src + '?url')).default
+											console.log('url', url)
+											return `url(${encodeURI(url)})`
+										}
+										catch (error)
+										// Ignore error
+										{}
+
+										return `url(${encodeURI(src)})`
+									}
+
 									const matches = src.match(/^(data:[-\w]+\/[-+\w.]+(?:;[-\w=]+)*?(;base64)?(?:;[-\w=]+)*),(.+?)$/s)
 									// matches[1] = data+mediatype+parameters
 									// matches[2] = (;base64)?
