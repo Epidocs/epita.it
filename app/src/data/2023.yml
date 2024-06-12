@@ -4,7 +4,7 @@
     icon: icon-[fa-brands--discord]
     href: https://discordapp.com/invite/r3vn4U6
     class: tile-wide
-    background_image: /src/assets/2023-discord-logo.webp
+    background_image: /assets/2023-discord-logo.webp
     style:
     - 'background-color: #202225'
 
