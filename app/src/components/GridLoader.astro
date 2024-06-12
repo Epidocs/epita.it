@@ -31,13 +31,20 @@ export interface Props
 											// matches[1] = data+mediatype+parameters
 											// matches[2] = (;base64)?
 											// matches[3] = data
-											console.log('matches', matches)
-											return !matches || !matches[1] || !matches[3]
-												? `url(${encodeURI(src)})`
-												: matches[2]
-												? `url(${encodeURI(matches[1])},${encodeURI(matches[3])})`
-												: `url(${encodeURI(matches[1])};base64,${Buffer.from(matches[3]).toString('base64')})`
-										}).join(', ')
+
+											if (!matches || !matches[1] || !matches[3])
+											{
+												return `url(${encodeURI(src)})`
+											}
+
+											if (matches[2])
+											{
+												return `url(${encodeURI(matches[1])},${encodeURI(matches[3])})`
+											}
+
+											return `url(${encodeURI(matches[1])};base64,${Buffer.from(matches[3]).toString('base64')})`
+										})
+									.join(', ')
 							),
 							...item.style.reduce(
 								(acc: any, rule: string) =>
