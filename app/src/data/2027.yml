@@ -4,7 +4,7 @@
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/3ZJDy7h9pY
     class: tile-wide
-    background_image: /src/assets/2027-discord-logo.png
+    background_image: /assets/2027-discord-logo.png
     style:
     - 'background-color: #202225'
 
