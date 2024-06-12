@@ -4,6 +4,57 @@ export interface Props
 	gridClass?: string
 	grid?: Array<any>
 }
+
+async function prepareItems(items: any)
+{
+	if (!items)
+	{
+		return undefined
+	}
+
+	return await Promise.all(items.map(async (item: any) =>
+		{
+			if (item.items)
+			{
+				return item
+			}
+
+			if (item.background_image)
+			{
+				item.background_image =
+					(await Promise.all(
+						(Array.isArray(item.background_image)
+							? item.background_image
+							: [item.background_image]
+						)
+							.map(async (src: string) =>
+								{
+									src = src.trim()
+									const matches = src.match(/^(data:[-\w]+\/[-+\w.]+(?:;[-\w=]+)*?(;base64)?(?:;[-\w=]+)*),(.+?)$/s)
+									// matches[1] = data+mediatype+parameters
+									// matches[2] = (;base64)?
+									// matches[3] = data
+
+									if (!matches || !matches[1] || !matches[3])
+									{
+										return `url(${encodeURI(src)})`
+									}
+
+									if (matches[2])
+									{
+										return `url(${encodeURI(matches[1])},${encodeURI(matches[3])})`
+									}
+
+									return `url(${encodeURI(matches[1])};base64,${Buffer.from(matches[3]).toString('base64')})`
+								})
+					)).join(', ')
+			}
+
+			return item
+		}))
+}
+
+const items = Astro.props.grid ? await prepareItems(Astro.props.grid) : []
 ---
 
 <div class:list={{
@@ -11,7 +62,7 @@ export interface Props
 	...(Astro.props.gridClass ? { [Astro.props.gridClass]: true } : {}),
 }}>
 
-	{Astro.props.grid && Astro.props.grid.map((item: any) => (
+	{items.map((item: any) => (
 		<Fragment>
 			{item.items
 				? (
@@ -22,30 +73,7 @@ export interface Props
 						href={item.relurl || item.href}
 						class={item.class}
 						style={{
-							backgroundImage: item.background_image && (
-								(Array.isArray(item.background_image) ? item.background_image : [item.background_image])
-									.map((src: string) =>
-										{
-											src = src.trim()
-											const matches = src.match(/^(data:[-\w]+\/[-+\w.]+(?:;[-\w=]+)*?(;base64)?(?:;[-\w=]+)*),(.+?)$/s)
-											// matches[1] = data+mediatype+parameters
-											// matches[2] = (;base64)?
-											// matches[3] = data
-
-											if (!matches || !matches[1] || !matches[3])
-											{
-												return `url(${encodeURI(src)})`
-											}
-
-											if (matches[2])
-											{
-												return `url(${encodeURI(matches[1])},${encodeURI(matches[3])})`
-											}
-
-											return `url(${encodeURI(matches[1])};base64,${Buffer.from(matches[3]).toString('base64')})`
-										})
-									.join(', ')
-							),
+							backgroundImage: item.background_image,
 							...item.style.reduce(
 								(acc: any, rule: string) =>
 									{
