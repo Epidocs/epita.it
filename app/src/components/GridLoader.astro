@@ -9,7 +9,7 @@ async function prepareItems(items: any)
 {
 	if (!items)
 	{
-		return undefined
+		return items
 	}
 
 	return await Promise.all(items.map(async (item: any) =>
