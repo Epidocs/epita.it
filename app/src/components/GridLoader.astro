@@ -36,13 +36,21 @@ async function prepareItems(items: any)
 										return src
 									}
 
-									if (src.startsWith('http:') || src.startsWith('https:') || src.startsWith('data:'))
+									if (
+										src.startsWith('http:') ||
+										src.startsWith('https:') ||
+										src.startsWith('data:') ||
+										src.startsWith('.') ||
+										src.startsWith('/')
+									)
 									{
 										return `url(${encodeURI(src)})`
 									}
 
-									if (src.startsWith('.') || src.startsWith('/'))
+									if (src.startsWith('~'))
 									{
+										src = `/src${src.slice(1)}`
+
 										try
 										{
 											// Try to import local file
