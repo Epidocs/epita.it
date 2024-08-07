@@ -4,7 +4,7 @@
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/SR5jzVA
     class: tile-wide
-    background_image: https://cdn.discordapp.com/attachments/813321650266832927/827414228737589348/Usual_Icon.webp
+    background_image: /assets/2025-discord-logo.png
     style:
     - 'background-color: #202225'
 
@@ -12,7 +12,7 @@
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/EWrBYUYaU9
     class: tile-wide
-    background_image: https://cdn.discordapp.com/attachments/1008709312337678426/1115910628876496927/epita-apping-2025-blank.png
+    background_image: /assets/2025-apping-discord-logo.png
     style:
     - 'background-color: #202225'
 

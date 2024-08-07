@@ -7,6 +7,13 @@
     background_image: /assets/2027-discord-logo.png
     style:
     - 'background-color: #202225'
+  - name: Discord EPITA APPRENTISSAGE 2027
+    icon: icon-[fa-brands--discord]
+    href: https://discord.gg/B3PPqaD5jg
+    class: tile-wide
+    background_image: /assets/2027-apping-discord-logo.png
+    style:
+    - 'background-color: #202225'
 
 - title: S2 Projects
   items:
