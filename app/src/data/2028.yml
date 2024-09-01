@@ -19,14 +19,15 @@
     - 'background-size: 30%'
     - 'background-position-y: 30%'
 
+
   - name: Treashunt
-    href: https://feove.github.io/IborenWebsite/
-    class: tile-medium text-dark
-    background_image: https://raw.githubusercontent.com/feove/IborenWebsite/main/media/logo_v1.png
-    style:
-    - 'background-color: #FFFFFF'
-    - 'background-size: 80%'
-    - 'background-position-y: 15%'
+  href: https://feove.github.io/IborenWebsite/
+  class: tile-medium text-dark
+  background_image: https://raw.githubusercontent.com/feove/IborenWebsite/main/media/logo_v0.png
+  style:
+  - 'background-color: #2c2f3d'
+  - 'background-size: 80%'
+  - 'background-position-y: 15%'
 
 
-      
+   
