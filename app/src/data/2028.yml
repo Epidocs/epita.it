@@ -19,6 +19,8 @@
     - 'background-size: 30%'
     - 'background-position-y: 30%'
 
+- title: S2 Projects
+  items:
   - name: Treashunt
     href: https://feove.github.io/IborenWebsite/
     class: tile-medium text-dark 
