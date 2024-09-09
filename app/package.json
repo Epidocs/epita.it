@@ -29,7 +29,7 @@
     "@iconify/tailwind": "^0.1.4",
     "@popperjs/core": "^2.11.8",
     "astro": "^4.5.2",
-    "bootstrap": "^4.6.2",
+    "bootstrap": "^5.0.0",
     "jquery": "^3.7.1",
     "js-yaml": "^4.1.0",
     "sass": "^1.71.1",
