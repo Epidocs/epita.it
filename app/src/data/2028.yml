@@ -23,9 +23,9 @@
   items:
   - name: Treashunt
     href: https://feove.github.io/IborenWebsite/
-    class: tile-medium text-dark 
+    class: tile-wide text-dark
     background_image: https://raw.githubusercontent.com/feove/IborenWebsite/main/media/white-background.gif
     style:
     - 'background-color: #FFFFFF'
     - 'background-size: 100%'
-    - 'background-position-y: 0%'
+    - 'background-position-y: 5%'
