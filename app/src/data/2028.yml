@@ -30,5 +30,11 @@
     - 'background-size: 85%'
     - 'background-position-y: 15%'
 
-
-      
+  - name: Castle Of Demise
+    href: https://jean-voila.github.io/sqrt100/
+    class: tile-medium text-dark
+    background_image:  https://github.com/jean-voila/sqrt100/blob/main/COD_Docs/src/assets/sqrtLogo.png?raw=true
+    style:
+    - 'background-color: #FFFFFF'
+    - 'background-size: 85%'
+    - 'background-position-y: 15%'
