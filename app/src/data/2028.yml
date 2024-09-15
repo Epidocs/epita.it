@@ -30,8 +30,6 @@
     - 'background-size: auto 100%'
     - 'background-position-x: right'
     - 'background-position-y: 5%'
-    - 'background-size: 85%'
-    - 'background-position-y: 15%'
 
   - name: Castle Of Demise
     href: https://jean-voila.github.io/sqrt100/
