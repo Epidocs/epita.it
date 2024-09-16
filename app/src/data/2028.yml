@@ -23,12 +23,13 @@
   items:
   - name: Treashunt
     href: https://feove.github.io/IborenWebsite/
-    class: tile-medium text-dark 
-    background_image: https://raw.githubusercontent.com/feove/IborenWebsite/main/media/logo_v1.png
+    class: tile-medium text-dark
+    background_image: https://raw.githubusercontent.com/feove/IborenWebsite/main/media/white-background.gif
     style:
     - 'background-color: #FFFFFF'
-    - 'background-size: 85%'
-    - 'background-position-y: 15%'
+    - 'background-size: auto 100%'
+    - 'background-position-x: right'
+    - 'background-position-y: 5%'
 
   - name: Castle Of Demise
     href: https://jean-voila.github.io/sqrt100/
@@ -38,3 +39,4 @@
     - 'background-color: #FFFFFF'
     - 'background-size: 85%'
     - 'background-position-y: 15%'
+
