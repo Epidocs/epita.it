@@ -1,7 +1,7 @@
 ---
+import site from '~/site'
 import Base from '~/layouts/Base.astro'
 import type { Props as BaseProps } from '~/layouts/Base.astro'
-import site from '~/site'
 
 export interface Props extends Omit<BaseProps, 'title'>
 {
@@ -25,10 +25,10 @@ const baseProps: BaseProps = {
 			: title
 		)
 		: (site.title || ''),
-	description: Astro.props.description || site.description,
-	author: Astro.props.author || site.author,
-	keywords: Astro.props.keywords || site.keywords,
-	themeColor: Astro.props.themeColor || site.themeColor,
+	description: Astro.props.description || site.description || undefined,
+	author: Astro.props.author || site.author || undefined,
+	keywords: Astro.props.keywords || site.keywords || undefined,
+	themeColor: Astro.props.themeColor || site.themeColor || undefined,
 	favicon: Astro.props.favicon || undefined,
 }
 ---
