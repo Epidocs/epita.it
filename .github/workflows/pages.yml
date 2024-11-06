@@ -8,14 +8,18 @@ on:
       - master
       - dev
     paths:
+      - '.github/workflows/pages.yml'
       - 'app/**'
+      - 'docker-compose*.yml'
 
   # Run on pull request events to primary branches
   pull_request:
     branches:
       - master
     paths:
+      - '.github/workflows/pages.yml'
       - 'app/**'
+      - 'docker-compose*.yml'
 
   # Run on manual triggers
   workflow_dispatch:
