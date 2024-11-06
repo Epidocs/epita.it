@@ -23,6 +23,15 @@ on:
 
   # Run on manual triggers
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Workflow environment'
+        required: true
+        type: choice
+        options:
+          - development
+          - production
+        default: 'production'
 
 # Set GITHUB_TOKEN permissions for the workflow
 permissions:
@@ -40,9 +49,6 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
-    outputs:
-      artifact_uploaded: ${{ steps.artifact_upload.outputs.artifact_id && true || false }}
 
     steps:
 
@@ -62,13 +68,12 @@ jobs:
       run: sudo chown -R $USER:$USER ./app/dist
 
     - name: Upload artifact
-      id: artifact_upload
       # Only run on:
       # - Push events to `master`.
-      # - Manual triggers on `master`.
+      # - Manual triggers on `production` environment.
       if: |
-        (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
-        github.ref == 'refs/heads/master'
+        (github.event_name == 'push' && github.ref == 'refs/heads/master') ||
+        (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production')
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./app/dist
@@ -83,8 +88,12 @@ jobs:
     needs:
       - build
 
-    # Only run if the build job uploaded an artifact
-    if: needs.build.outputs.artifact_uploaded == true
+    # Only run on:
+    # - Push events to `master`.
+    # - Manual triggers on `production` environment.
+    if: |
+      (github.event_name == 'push' && github.ref == 'refs/heads/master') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production')
 
     # Set GITHUB_TOKEN permissions for the job
     permissions:
