@@ -1,0 +1,20 @@
+---
+import { githubRepositoryUrl } from '~/config'
+---
+
+<div id="footer">
+	<div class="container">
+		<p>
+			Made with <span class="icon icon-[fa6-solid--heart] icon-fw text-danger"></span> by EPITA students.
+			<a href={`${githubRepositoryUrl}#license`}>
+				<img alt="CC BY-NC 4.0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc.svg" />
+			</a> <br />
+			We use cookies for analytics purposes.
+		</p>
+		<ul>
+			<li><a href={githubRepositoryUrl} class="btn btn-primary btn-sm">Contribuez sur Github</a></li>
+			<li><a href="https://epidocs.eu/" class="btn btn-info btn-sm">Géré par Epidocs</a></li>
+			<!-- <li><a href="/tos" class="btn btn-primary btn-sm">Conditions générales</a></li> -->
+		</ul>
+	</div>
+</div>
