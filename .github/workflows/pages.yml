@@ -1,22 +1,22 @@
 name: Deploy to GitHub Pages
 
 on:
+
   # Run on push events on primary branches
   push:
     branches:
       - master
+      - dev
     paths:
       - 'app/**'
-      - 'Dockerfile'
-      - 'docker-compose*.yml'
+
   # Run on pull request events to primary branches
   pull_request:
     branches:
       - master
     paths:
       - 'app/**'
-      - 'Dockerfile'
-      - 'docker-compose*.yml'
+
   # Run on manual triggers
   workflow_dispatch:
 
@@ -26,14 +26,14 @@ permissions:
 
 # Restrict concurrent deployments
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  group: ${{ github.workflow }}
   cancel-in-progress: true
 
 jobs:
 
   # Build job
   build:
-    name: Build site artifact
+    name: Build
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -51,21 +51,22 @@ jobs:
       run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml run --rm app
 
     - name: Chown dist folder to $USER
-      run: sudo chown -R $USER:$USER ./dist
+      run: sudo chown -R $USER:$USER ./app/dist
 
     - name: Upload artifact
       # Only run on:
       # - Push events to `master`.
+      # - Manual triggers on `master`.
       if: |
-        github.event_name == 'push' &&
+        (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
         github.ref == 'refs/heads/master'
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./dist
+        path: ./app/dist
 
   # Deploy job
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -75,8 +76,9 @@ jobs:
 
     # Only run on:
     # - Push events to `master`.
+    # - Manual triggers on `master`.
     if: |
-      github.event_name == 'push' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
       github.ref == 'refs/heads/master'
 
     # Set GITHUB_TOKEN permissions for the job
@@ -86,7 +88,7 @@ jobs:
 
     # Set the deployment environment
     environment:
-      name: github-pages
+      name: production
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
