@@ -4,10 +4,8 @@ import yaml from 'js-yaml'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import jqueryJs from 'jquery/dist/jquery.slim.min.js?url'
 import popperJs from '@popperjs/core/dist/umd/popper.min.js?url'
-import bootstrapJs from 'bootstrap/dist/js/bootstrap.bundle.min.js?url'
 import '~/styles/tiles.css'
 import '~/styles/style.css'
 import scriptJs from '~/scripts/script.js?url'
@@ -166,6 +164,5 @@ const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 {!noScripts && (
 	<script src={jqueryJs}></script>
 	<script src={popperJs}></script>
-	<script src={bootstrapJs}></script>
 	<script src={scriptJs}></script>
 )}
