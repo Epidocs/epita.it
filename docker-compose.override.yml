@@ -1,5 +1,3 @@
-version: '3.4'
-
 # Services definition override for development
 
 services:
@@ -10,6 +8,23 @@ services:
     build:
       target: app_dev
     # Deploy override
-    volumes:
-      - ./app:/app
-      - /app/node_modules # Remove from bind-mount for better performance
+    develop:
+      watch:
+        # Docker image
+        - action: rebuild
+          path: ./app/Dockerfile
+        # Application build files
+        - action: rebuild
+          path: ./app/app/package.json
+        - action: rebuild
+          path: ./app/app/package-lock.json
+        # Application configuration
+        - action: sync+restart
+          path: ./app/app/astro.config.mjs
+          target: /app/astro.config.mjs
+        # Application source code
+        - action: sync
+          path: ./app/app
+          target: /app
+          ignore:
+            - node_modules/
