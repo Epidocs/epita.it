@@ -41,9 +41,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
-    outputs:
-      artifact_uploaded: ${{ steps.artifact_upload.outputs.artifact_id && true || false }}
-
     steps:
 
     - name: Checkout
@@ -62,7 +59,6 @@ jobs:
       run: sudo chown -R $USER:$USER ./app/dist
 
     - name: Upload artifact
-      id: artifact_upload
       # Only run on:
       # - Push events to `master`.
       # - Manual triggers on `master`.
@@ -83,8 +79,12 @@ jobs:
     needs:
       - build
 
-    # Only run if the build job uploaded an artifact
-    if: needs.build.outputs.artifact_uploaded == true
+    # Only run on:
+    # - Push events to `master`.
+    # - Manual triggers on `master`.
+    if: |
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
+      github.ref == 'refs/heads/master'
 
     # Set GITHUB_TOKEN permissions for the job
     permissions:
