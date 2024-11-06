@@ -18,3 +18,20 @@ import { githubRepositoryUrl } from '~/config'
 		</ul>
 	</div>
 </div>
+
+<style lang="scss">
+#footer {
+	background: rgba(0, 0, 0, .1);
+	padding: 20px;
+	flex-shrink: 0;
+}
+@media (min-width: 992px) {
+	#footer .container {
+		max-width: 960px;
+	}
+}
+#footer ul { padding: 0 }
+#footer ul > li { display: inline-block }
+#footer ul > li + li { margin-left: 5px }
+#footer ul > li + li:before { content: '|'; margin-right: 10px }
+</style>

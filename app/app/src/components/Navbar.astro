@@ -47,3 +47,26 @@ const navbarplus = yaml.load(navbarplusYml) as any
 		</div>
 	</div>
 </nav>
+
+<style lang="scss">
+#navbar {
+	background: #183048;
+	display: initial; /* Toggles off `display: flex` from Bootstrap */
+}
+#navbar .dropdown-menu {
+    background: #285078;
+}
+#navbar .dropdown-menu .dropdown-item {
+    color: #fff;
+}
+#navbar .dropdown-menu .dropdown-item:hover,
+#navbar .dropdown-menu .dropdown-item:focus {
+    background: #306090;
+}
+#navbar .dropdown-menu .dropdown-item:active {
+    background: #3870a8;
+}
+#navbar .dropdown-menu .dropdown-item.active {
+    background: #4080c0;
+}
+</style>
