@@ -63,11 +63,11 @@ const baseProps: BaseProps = {
 	<script src={scriptJs}></script>
 )}
 
-<style lang="scss">
-:global(html), :global(body) {
+<style lang="scss" is:global>
+html, body {
 	height: 100%;
 }
-:global(body) {
+body {
 	font-family: 'Roboto', sans-serif;
 	background: #204060;
 	display: flex;
@@ -78,12 +78,12 @@ const baseProps: BaseProps = {
 	color: #fff;
 }
 
-:global(a) { color: #50a0f0 }
-:global(a:hover) { color: #4080c0 }
+a { color: #50a0f0 }
+a:hover { color: #4080c0 }
 
-:global(p img) { height: 1rem }
+p img { height: 1rem }
 
-:global(*:last-child) { margin-bottom: 0 }
+*:last-child { margin-bottom: 0 }
 
 #main {
 	max-width: 960px;
@@ -95,15 +95,15 @@ const baseProps: BaseProps = {
 #main.smallscreen {
 	text-align: center;
 }
-#main :global(h1) { font-size: 4em; font-weight: bold }
-#main.smallscreen :global(h1) { font-size: 3em }
-#main.smallscreen :global(.tiles-grid) {
+#main h1 { font-size: 4em; font-weight: bold }
+#main.smallscreen h1 { font-size: 3em }
+#main.smallscreen .tiles-grid {
 	margin: 0 auto;
 	text-align: initial;
 }
 
-#main .container :global(> .tiles-grd) { margin-bottom: 1rem }
-#main :global(.tiles-grid .invalid:before) {
+#main .container > .tiles-grd { margin-bottom: 1rem }
+#main .tiles-grid .invalid:before {
 	/* background: ; */
 	background-image: url('/assets/missing.png');
 	background-size: cover;
@@ -113,12 +113,12 @@ const baseProps: BaseProps = {
 	content: '';
 	opacity: .2;
 }
-#main :global(.tiles-grid .tile-small .branding-icon),
-#main :global(.tiles-grid .tile-small-wide .branding-icon),
-#main :global(.tiles-grid .tile-medium .branding-icon),
-#main :global(.tiles-grid .tile-wide .branding-icon),
-#main :global(.tiles-grid .tile-large .branding-icon),
-#main :global(.tiles-grid .tile-app .branding-icon) {
+#main .tiles-grid .tile-small .branding-icon,
+#main .tiles-grid .tile-small-wide .branding-icon,
+#main .tiles-grid .tile-medium .branding-icon,
+#main .tiles-grid .tile-wide .branding-icon,
+#main .tiles-grid .tile-large .branding-icon,
+#main .tiles-grid .tile-app .branding-icon {
 	position: absolute;
 	left: 0;
 	top: 0;
