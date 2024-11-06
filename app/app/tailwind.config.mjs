@@ -6,7 +6,18 @@ export default {
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
 	],
 	theme: {
-		extend: {},
+		container: {
+			center: true,
+			padding: {
+				DEFAULT: '15px',
+			},
+		},
+		screens: {
+			sm: '540px',
+			md: '720px',
+			lg: '960px',
+			xl: '1140px',
+		},
 	},
 	plugins: [
 		addDynamicIconSelectors(),
