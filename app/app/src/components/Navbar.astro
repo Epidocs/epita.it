@@ -16,7 +16,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 			{site.title}
 		</a>
 		<button class="navbar-toggler" type="button">
-			<span class="icon icon-[fa6-solid--bars] icon-fw"></span>
+			<span class="icon icon-[mdi--menu] icon-fw"></span>
 		</button>
 		<div class="navbar-collapse">
 			<div class="navbar-nav">
@@ -92,8 +92,8 @@ const navbarplus = yaml.load(navbarplusYml) as any
 
 	.navbar-toggler {
 		@apply lg:hidden;
-		@apply px-2.5 py-0.5;
-		@apply text-xl text-white hover:text-white;
+		@apply px-2 py-0;
+		@apply text-2xl text-white hover:text-white;
 		@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
 		@apply border border-solid border-white rounded;
 		@apply border-opacity-10 hover:border-opacity-25 active:border-opacity-50;
