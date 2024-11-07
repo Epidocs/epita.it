@@ -25,9 +25,9 @@
 	}
 
 	&.btn-primary {
-		@apply bg-blue-500 text-white;
-		@apply hover:bg-blue-600;
-		@apply active:bg-blue-700;
+		@apply bg-blue-600 text-white;
+		@apply hover:bg-blue-700;
+		@apply active:bg-blue-800;
 	}
 
 	&.btn-info {
