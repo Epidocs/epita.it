@@ -33,7 +33,7 @@ const site: Site = {
 	],
 	themeColor: '#183048',
 	lang: 'en',
-	gtag: 'UA-140860210-2',
+	// gtag: 'UA-140860210-2',
 }
 
 export default site
