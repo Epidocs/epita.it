@@ -23,12 +23,15 @@ const navbarplus = yaml.load(navbarplusYml) as any
 				{navbar.map((item: any) => (
 					item.children ? (
 						<div class="nav-item dropdown">
-							<a href="#" class:list={[ 'nav-link dropdown-toggle', { active: item.children.some((subitem: any) => Astro.url.pathname === subitem.href) }]}>
+							<a href="#" class:list={[
+								'nav-link dropdown-toggle',
+								{ active: item.children.some((subitem: any) => Astro.url.pathname === subitem.href) },
+							]}>
 								{item.title}
 							</a>
 							<div class="dropdown-menu">
 								{item.children.map((subitem: any) => (
-									<a href={subitem.href} class:list={['dropdown-item', { active: Astro.url.pathname === subitem.href }]}>
+									<a href={subitem.href} class:list={[ 'dropdown-item', { active: Astro.url.pathname === subitem.href } ]}>
 										{subitem.title}
 									</a>
 								))}
@@ -47,8 +50,12 @@ const navbarplus = yaml.load(navbarplusYml) as any
 					Github
 				</a>
 				<div class="nav-item dropdown">
-					<a href="#" class:list={[ 'nav-link dropdown-toggle', { active: navbarplus.some((item: any) => Astro.url.pathname === item.href) }]}
-						><span class="icon icon-[fa6-solid--plus] icon-fw"></span></a>
+					<a href="#" class:list={[
+						'nav-link dropdown-toggle dropdown-toggle-icon',
+						{ active: navbarplus.some((item: any) => Astro.url.pathname === item.href) },
+					]}>
+						<span class="icon icon-[fa6-solid--plus] icon-fw"></span>
+					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						{navbarplus.map((item: any) => (
 							<a href={item.href} class:list={['dropdown-item', { active: Astro.url.pathname === item.href }]}>
@@ -123,12 +130,16 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	.dropdown-toggle {
 		@apply text-inherit whitespace-nowrap;
 
-		&:after {
+		&::after {
 			@apply inline-block;
 			@apply ml-1 align-[0.25rem];
 			@apply content-[""];
 			@apply border-x-4 border-t-4 border-b-0 border-solid;
 			@apply border-[initial] border-x-transparent;
+		}
+
+		&.dropdown-toggle-icon::after {
+			@apply ml-0;
 		}
 	}
 
