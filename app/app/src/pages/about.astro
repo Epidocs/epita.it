@@ -1,5 +1,6 @@
 ---
 import Default from '~/layouts/Default.astro'
+import matibouxSvg from '~/assets/matiboux.svg?url'
 
 const title = 'About'
 ---
@@ -18,7 +19,7 @@ const title = 'About'
 
 	<h2>Team</h2>
 	<div class="media">
-		<img src="{{ 'static/matiboux.svg' | relative_url }}" class="align-self-start mr-3" alt="Matiboux" width="90px" />
+		<img src={matibouxSvg} class="align-self-start mr-3" alt="Matiboux" width="90px" />
 		<div class="media-body">
 			<h5>Matiboux <small>– Mathieu Guérin</small></h5>
 			<p>I'm an EPITA student and developer. I work on EPITA.it and other projects.</p>
