@@ -47,7 +47,7 @@ const baseProps: BaseProps = {
 	{newsline && <Newsline />}
 
 	<div id="main" class:list={[ 'main', { 'main-text-left': textalignleft }]}>
-		<div class="container">
+		<div class="container-fluid">
 
 			<slot />
 
@@ -89,14 +89,14 @@ a:hover { color: #4080c0 }
 <style lang="scss">
 .main {
 	@apply flex-grow flex-shrink-0;
-	@apply w-full mx-auto pt-6 pb-8;
+	@apply pt-6 pb-8;
 
 	&:not(.main-text-left) {
 		@apply text-center sm:text-left;
 	}
 
-	> .container {
-		@apply max-w-screen-lg;
+	> .container-fluid {
+		@apply w-full max-w-screen-lg mx-auto px-4;
 	}
 }
 </style>

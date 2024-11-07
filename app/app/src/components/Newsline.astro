@@ -3,7 +3,7 @@ import { githubRepositoryUrl } from '~/config'
 ---
 
 <div id="newsline" class="newsline">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="carousel-item">
 			<span class="icon icon-[fa6-solid--folder-open] icon-fw"></span>
 			Showcase your S2 project on your school year group page! Contribute on the <a href={githubRepositoryUrl}>Github repository</a>!
@@ -21,8 +21,11 @@ import { githubRepositoryUrl } from '~/config'
 
 <style lang="scss">
 .newsline {
-	@apply bg-[#1c3854];
-	@apply px-4 py-2;
+	@apply bg-[#1c3854] py-2;
+
+	> .container-fluid {
+		@apply w-full max-w-screen-lg mx-auto px-4;
+	}
 }
 
 .carousel-item {

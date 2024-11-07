@@ -11,7 +11,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 ---
 
 <nav id="navbar" class="navbar">
-	<div class="container">
+	<div class="container-fluid">
 		<a class="navbar-brand" href="/">
 			{site.title}
 		</a>
@@ -71,16 +71,11 @@ const navbarplus = yaml.load(navbarplusYml) as any
 
 <style lang="scss">
 .navbar {
-	@apply relative;
-	@apply bg-[#183048];
-	@apply flex flex-wrap items-center justify-between;
-	@apply lg:flex-nowrap;
-	@apply px-4 py-2;
-	@apply text-white;
+	@apply relative bg-[#183048] py-2 text-white;
 
-	.container {
-		@apply flex flex-wrap items-center justify-between;
-		@apply lg:flex-nowrap;
+	> .container-fluid {
+		@apply flex flex-wrap lg:flex-nowrap items-center justify-between;
+		@apply w-full max-w-screen-lg mx-auto px-4;
 	}
 
 	.navbar-brand {
