@@ -1,4 +1,5 @@
 ---
+import { githubRepositoryUrl } from '~/config'
 import Default from '~/layouts/Default.astro'
 import matibouxSvg from '~/assets/matiboux.svg?url'
 
@@ -30,7 +31,9 @@ const title = 'About'
 			</div>
 		</div>
 	</div>
-	<a href="{{ site.github.repository_url }}/graphs/contributors" class="btn btn-info btn-sm"><i class="icon icon-[fa-brands--github] icon-fw"></i> See all contributors to EPITA.it</a>
+	<a href={`${githubRepositoryUrl}/graphs/contributors`} class="btn btn-info btn-sm">
+		<i class="icon icon-[fa-brands--github] icon-fw"></i> See all contributors to EPITA.it
+	</a>
 
 </Default>
 
