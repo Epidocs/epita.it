@@ -29,7 +29,7 @@ const baseProps: BaseProps = {
 	author: Astro.props.author || site.author || undefined,
 	keywords: Astro.props.keywords || site.keywords || undefined,
 	themeColor: Astro.props.themeColor || site.themeColor || undefined,
-	favicon: Astro.props.favicon || undefined,
+	favicon: Astro.props.favicon || site.favicon || undefined,
 }
 ---
 

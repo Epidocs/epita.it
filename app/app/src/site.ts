@@ -5,6 +5,7 @@ interface Site
 	author?: string
 	keywords?: string[]
 	themeColor?: string
+	favicon?: string
 	lang?: string
 	gtag?: string
 }
@@ -31,6 +32,7 @@ const site: Site = {
 		'students',
 		'EPITA',
 	],
+	favicon: '/assets/icon-48.png',
 	themeColor: '#183048',
 	lang: 'en',
 	// gtag: 'UA-140860210-2',
