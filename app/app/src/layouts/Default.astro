@@ -7,6 +7,7 @@ import jqueryJs from 'jquery/dist/jquery.slim.min.js?url'
 import popperJs from '@popperjs/core/dist/umd/popper.min.js?url'
 import scriptJs from '~/scripts/script.js?url'
 import bodyHeightJs from '~/scripts/body-height.ts?url'
+import invalidLinksJs from '~/scripts/invalid-links.ts?url'
 
 import Layout from '~/layouts/Layout.astro'
 import type { Props as BaseProps } from '~/layouts/Layout.astro'
@@ -63,6 +64,7 @@ const baseProps: BaseProps = {
 	<script src={popperJs}></script>
 	<script src={scriptJs}></script>
 	<script src={bodyHeightJs}></script>
+	<script src={invalidLinksJs}></script>
 )}
 
 <style lang="scss" is:global>

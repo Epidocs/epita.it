@@ -83,18 +83,4 @@ $(document).ready(function() {
 		// Display ad about the web app in the newsline carousel
 		$('#addToHomeScreen').addClass('carousel-item').removeClass('d-none');
 	}
-
-	// Handle clicks on Tiles Grid invalid links to warn the user
-	$('.tiles-grid').on('click', 'a.invalid', function(e) {
-		e.preventDefault();
-
-		const brand = $(this).find('.branding-bar').text();
-		const href = $(this).attr('href');
-		const target = $(this).attr('target');
-
-		$('#warn-invalid-brand').text(brand);
-		$('#warn-invalid-href').text(href);
-		$('#warn-invalid-link').attr({ 'href': href, 'target': target });
-		$('#warn-invalid-modal').modal();
-	});
 });
