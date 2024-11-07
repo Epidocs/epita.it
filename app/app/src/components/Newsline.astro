@@ -12,7 +12,7 @@ const {
 ---
 
 {newsline && (
-	<div id="newsline">
+	<div id="newsline" class="newsline">
 		<div class="container">
 			<div class="carousel-item">
 				<span class="icon icon-[fa6-solid--folder-open] icon-fw"></span>
@@ -31,8 +31,17 @@ const {
 )}
 
 <style lang="scss">
-#newsline {
-	background: #1c3854;
-	padding: .75rem 1rem;
+.newsline {
+	@apply bg-[#1c3854];
+	@apply px-4 py-2;
+}
+
+.carousel-item {
+	@apply relative hidden;
+	@apply py-1;
+
+	&.active {
+		@apply block;
+	}
 }
 </style>
