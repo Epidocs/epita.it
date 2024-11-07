@@ -21,16 +21,16 @@ const navbarplus = yaml.load(navbarplusYml) as any
 		<div class="navbar-collapse">
 			<div class="navbar-nav">
 				{navbar.map((item: any) => (
-					item.children ? (
+					item.items ? (
 						<div class="nav-item dropdown">
 							<a href="#" class:list={[
 								'nav-link dropdown-toggle',
-								{ active: item.children.some((subitem: any) => Astro.url.pathname === subitem.href) },
+								{ active: item.items.some((subitem: any) => Astro.url.pathname === subitem.href) },
 							]}>
 								{item.title}
 							</a>
 							<div class="dropdown-menu">
-								{item.children.map((subitem: any) => (
+								{item.items.map((subitem: any) => (
 									<a href={subitem.href} class:list={[ 'dropdown-item', { active: Astro.url.pathname === subitem.href } ]}>
 										{subitem.title}
 									</a>
