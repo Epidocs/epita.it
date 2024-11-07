@@ -23,13 +23,50 @@ const title = 'About'
 		<div class="media-body">
 			<h5>Matiboux <small>– Mathieu Guérin</small></h5>
 			<p>I'm an EPITA student and developer. I work on EPITA.it and other projects.</p>
-			<p>
+			<div>
 				<a href="mailto:mathieu.guerin@epita.fr" class="btn btn-dark btn-sm mb-1"><span class="icon icon-[fa6-solid--envelope] icon-fw"></span> Email @epita.fr</a>
 				<a href="https://github.com/matiboux" class="btn btn-dark btn-sm mb-1"><i class="icon icon-[fa-brands--github] icon-fw"></i> Github</a>
 				<a href="https://matiboux.me/" class="btn btn-dark btn-sm mb-1"><span class="icon icon-[fa6-solid--globe] icon-fw"></span> Matiboux.me</a>
-			</p>
+			</div>
 		</div>
 	</div>
 	<a href="{{ site.github.repository_url }}/graphs/contributors" class="btn btn-info btn-sm"><i class="icon icon-[fa-brands--github] icon-fw"></i> See all contributors to EPITA.it</a>
 
 </Default>
+
+<style lang="scss">
+.media {
+	@apply flex items-start mb-4;
+
+	> img {
+		@apply self-start mr-4 align-middle border-0;
+	}
+
+	> .media-body {
+		@apply flex-1;
+
+		h5 {
+			@apply mb-2 text-xl font-medium;
+		}
+
+		p {
+			@apply mb-2;
+		}
+	}
+}
+
+.btn {
+	@apply inline-block px-2 py-1 rounded-md cursor-pointer;
+	@apply border border-black border-opacity-10;
+	@apply bg-gray-700 text-white;
+	@apply hover:bg-gray-800;
+	@apply active:bg-gray-900;
+	@apply text-sm;
+
+	&.btn-info {
+		@apply bg-cyan-600 text-white;
+		@apply hover:bg-cyan-700;
+		@apply active:bg-cyan-800;
+	}
+}
+</style>
