@@ -1,18 +1,4 @@
 $(document).ready(function() {
-	// Activate newsline carousel
-	// $('#newsline').carousel(); // Carousel from Bootstrap is glitched
-	$allCarouselItems = $('#newsline .carousel-item');
-	$randomCarouselItem = $allCarouselItems.eq(Math.floor(Math.random() * $allCarouselItems.length));
-	$allCarouselItems.removeClass('active');
-	$randomCarouselItem.addClass('active');
-	var carouselInterval = 10000; // ms
-	setInterval(function() {
-		$current = $('#newsline .carousel-item.active');
-		$current.removeClass('active');
-		$next = $current.nextAll('.carousel-item').first();
-		if($next.length <= 0) $next = $('.carousel-item').first();
-		$next.addClass('active');
-	}, carouselInterval);
 
 	// Handle display behavior on small screens
 	var checkScreenSize = function() {
