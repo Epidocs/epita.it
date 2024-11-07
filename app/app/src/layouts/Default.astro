@@ -43,7 +43,7 @@ const baseProps: BaseProps = {
 
 	<Navbar />
 
-	<Newsline newsline={newsline} />
+	{newsline && <Newsline />}
 
 	<div id="main" class={textalignleft ? 'text-left' : undefined}>
 		<div class="container">
