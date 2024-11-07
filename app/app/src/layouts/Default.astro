@@ -97,10 +97,14 @@ p img { height: 1rem }
 <style lang="scss">
 .main {
 	@apply flex-grow flex-shrink-0;
-	@apply w-full max-w-screen-lg mx-auto pt-6 pb-8;
+	@apply w-full mx-auto pt-6 pb-8;
 
 	&:not(.main-text-left) {
 		@apply text-center sm:text-left;
+	}
+
+	> .container {
+		@apply max-w-screen-lg;
 	}
 }
 </style>
