@@ -10,36 +10,51 @@ const navbar = yaml.load(navbarYml) as any
 const navbarplus = yaml.load(navbarplusYml) as any
 ---
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<nav id="navbar" class="navbar">
 	<div class="container">
-		<a class="navbar-brand" href="/">{site.title}</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+		<a class="navbar-brand" href="/">
+			{site.title}
+		</a>
+		<button class="navbar-toggler" type="button">
+			<span class="icon icon-[fa6-solid--bars] icon-fw"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="visibility: inherit;">
-			<div class="navbar-nav mr-auto">
+		<div class="navbar-collapse">
+			<div class="navbar-nav">
 				{navbar.map((item: any) => (
 					item.children ? (
 						<div class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{item.title}</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPlusDropdown">
+							<a class="nav-link dropdown-toggle" href="#">
+								{item.title}
+							</a>
+							<div class="dropdown-menu">
 								{item.children.map((subitem: any) => (
-									<a class="dropdown-item" href={subitem.href}>{subitem.title}</a>
+									<a class="dropdown-item" href={subitem.href}>
+										{subitem.title}
+									</a>
 								))}
 							</div>
 						</div>
 					) : (
-						<a class="nav-item nav-link" href={item.href}>{item.title}</a>
+						<a class="nav-item nav-link" href={item.href}>
+							{item.title}
+						</a>
 					)
 				))}
 			</div>
 			<div class="navbar-nav">
-				<a class="nav-item nav-link" href={githubRepositoryUrl}><span class="icon icon-[fa6-solid--code-branch] icon-fw"></span> Github</a>
+				<a class="nav-item nav-link" href={githubRepositoryUrl || '#'}>
+					<span class="icon icon-[fa6-solid--code-branch] icon-fw"></span>
+					Github
+				</a>
 				<div class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon icon-[fa6-solid--plus] icon-fw"></span></a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPlusDropdown">
+					<a class="nav-link dropdown-toggle" href="#">
+						<span class="icon icon-[fa6-solid--plus] icon-fw"></span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
 						{navbarplus.map((item: any) => (
-							<a class="dropdown-item" href={item.href}>{item.title}</a>
+							<a class="dropdown-item" href={item.href}>
+								{item.title}
+							</a>
 						))}
 					</div>
 				</div>
@@ -49,24 +64,129 @@ const navbarplus = yaml.load(navbarplusYml) as any
 </nav>
 
 <style lang="scss">
-#navbar {
-	background: #183048;
-	display: initial; /* Toggles off `display: flex` from Bootstrap */
+.navbar {
+	@apply relative;
+	@apply bg-[#183048];
+	@apply flex flex-wrap items-center justify-between;
+	@apply lg:flex-nowrap;
+	@apply px-4 py-2;
+	@apply text-white;
+
+	.container {
+		@apply flex flex-wrap items-center justify-between;
+		@apply lg:flex-nowrap;
+	}
+
+	.navbar-brand {
+		@apply inline-block;
+		@apply py-1.5 mr-4;
+		@apply text-xl text-white hover:text-white hover:no-underline;
+		@apply whitespace-nowrap;
+	}
+
+	.navbar-toggler {
+		@apply lg:hidden;
+		@apply px-2.5 py-0.5;
+		@apply text-xl text-white hover:text-white;
+		@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
+		@apply border border-solid border-white rounded;
+		@apply border-opacity-10 hover:border-opacity-25 active:border-opacity-50;
+	}
+
+	.navbar-collapse {
+		@apply flex-1 basis-full lg:flex-auto;
+		@apply hidden lg:flex items-start justify-between;
+
+		&.show {
+			@apply block;
+		}
+	}
+
+	.navbar-nav {
+		@apply flex flex-col lg:flex-row items-start;
+
+		.nav-link {
+			@apply block;
+			@apply px-0 lg:px-2 py-2;
+			@apply text-white hover:text-white;
+			@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
+
+			&.active {
+				@apply text-opacity-100;
+			}
+		}
+	}
 }
-#navbar .dropdown-menu {
-    background: #285078;
-}
-#navbar .dropdown-menu .dropdown-item {
-    color: #fff;
-}
-#navbar .dropdown-menu .dropdown-item:hover,
-#navbar .dropdown-menu .dropdown-item:focus {
-    background: #306090;
-}
-#navbar .dropdown-menu .dropdown-item:active {
-    background: #3870a8;
-}
-#navbar .dropdown-menu .dropdown-item.active {
-    background: #4080c0;
+
+.dropdown {
+	@apply relative;
+
+	.dropdown-toggle {
+		@apply whitespace-nowrap;
+
+		&:after {
+			@apply inline-block;
+			@apply ml-1 align-[0.25rem];
+			@apply content-[""];
+			@apply border-x-4 border-t-4 border-b-0 border-solid;
+			@apply border-x-transparent;
+		}
+	}
+
+	.dropdown-menu {
+		@apply absolute top-full left-0 float-left;
+		@apply bg-[#285078] bg-clip-padding;
+		@apply hidden min-w-[10rem] z-[1000];
+		@apply mt-1 py-2;
+		@apply text-white;
+		@apply list-none;
+		@apply border border-solid border-black border-opacity-15 rounded;
+
+		&.dropdown-menu-right {
+			@apply left-auto right-0;
+		}
+
+		&.show {
+			@apply block;
+		}
+
+		.dropdown-item {
+			@apply bg-[#4080c0] bg-opacity-0 hover:bg-opacity-25 active:bg-opacity-50;
+			@apply block;
+			@apply w-full;
+			@apply px-5 py-1;
+			@apply text-white hover:text-white;
+			@apply text-opacity-75 hover:text-opacity-90 active:text-opacity-100;
+			@apply whitespace-nowrap;
+			@apply border-0;
+
+			&.active {
+				@apply bg-opacity-100;
+				@apply text-opacity-100;
+			}
+		}
+	}
 }
 </style>
+
+<script lang="ts">
+const navbarTogglers = document.querySelectorAll('.navbar .navbar-toggler')
+for (const navbarToggler of navbarTogglers)
+{
+	navbarToggler.addEventListener('click', () =>
+	{
+		const navbarCollapse = navbarToggler.parentElement.querySelector('.navbar-collapse')
+		navbarCollapse?.classList.toggle('show')
+	})
+}
+
+const dropdownTogglers = document.querySelectorAll('.navbar .dropdown-toggle')
+for (const dropdownToggler of dropdownTogglers)
+{
+	dropdownToggler.addEventListener('click', () =>
+	{
+		const dropdownMenu = dropdownToggler.parentElement.querySelector('.dropdown-menu')
+		dropdownMenu?.classList.toggle('show')
+	})
+}
+</script>
