@@ -108,7 +108,7 @@ p img { height: 1rem }
 
 <style lang="scss" is:global>
 .main {
-	h1, h2, h3, p {
+	h1, h2, h3, p, ul {
 		@apply mb-4;
 	}
 
@@ -126,6 +126,14 @@ p img { height: 1rem }
 
 	p.small {
 		@apply text-sm;
+	}
+
+	ul {
+		@apply pl-3 list-disc list-inside;
+	}
+
+	code {
+		@apply bg-black bg-opacity-5 px-1 py-0.5 text-inherit rounded;
 	}
 
 	hr {
