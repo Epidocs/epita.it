@@ -27,7 +27,6 @@
     "@iconify-json/fa-brands": "^1.1.8",
     "@iconify-json/fa6-solid": "^1.1.20",
     "@iconify/tailwind": "^0.1.4",
-    "@popperjs/core": "^2.11.8",
     "astro": "^4.16.9",
     "jquery": "^3.7.1",
     "js-yaml": "^4.1.0",
