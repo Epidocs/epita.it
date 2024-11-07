@@ -1,13 +1,16 @@
 ---
 ---
 
-<div id="warn-invalid-modal" class="modal" tabindex="-1" role="dialog">
-	<div class="modal-dialog" role="document">
+<div id="warn-invalid-modal" class="modal">
+	<div class="modal-wrapper">
 		<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title"><span class="icon icon-[fa6-solid--triangle-exclamation] icon-fw"></span> The link to <b id="warn-invalid-brand"></b> is invalid</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
+			<h5 class="modal-title">
+				<span class="icon icon-[fa6-solid--triangle-exclamation] icon-fw"></span>
+				The link to <b id="warn-invalid-brand"></b> is invalid
+			</h5>
+			<button type="button" class="modal-close" data-dismiss="modal">
+				<span class="icon icon-[fa6-solid--xmark] icon-fw"></span>
 			</button>
 		</div>
 		<div class="modal-body">
@@ -20,22 +23,121 @@
 			<p>Do you really want to continue to <code id="warn-invalid-href"></code>?</p>
 		</div>
 		<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			<a href="#" id="warn-invalid-link" class="btn btn-primary" target="_blank">Yes, continue anyway</a>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+				Close
+			</button>
+			<a href="#" id="warn-invalid-link" class="btn btn-primary" target="_blank">
+				Yes, continue anyway
+			</a>
 		</div>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
-@media (min-width: 768px) { #warn-invalid-modal .modal-dialog { max-width: 700px } }
-#warn-invalid-modal .modal-header,
-#warn-invalid-modal .modal-body { color: #212529 } /* Default black color from Bootstrap */
-#warn-invalid-modal code {
-	background-color: rgba(0,0,0,.05);
-	padding: 2px 4px;
-	color: inherit;
-	border-radius: 3px;
+:global(body):has(.modal.show) {
+	@apply overflow-hidden;
+
+	&:global(.has-scrollbar) {
+		&, .modal {
+			padding-right: var(--scrollbar-width, 0);
+		}
+	}
 }
-/* #warn-invalid-modal h5 { font-size:  } */
+
+.modal {
+	@apply fixed inset-0 hidden z-[1050] overflow-hidden;
+	@apply bg-black bg-opacity-50;
+	@apply w-full h-full outline-none;
+
+	&.show {
+		@apply block;
+	}
+
+	.modal-wrapper {
+		@apply relative;
+		@apply m-2 sm:mx-auto sm:my-6;
+		@apply w-auto max-w-screen-md;
+		@apply pointer-events-none;
+	}
+
+	.modal-content {
+		@apply relative flex flex-col w-full;
+		@apply bg-white bg-clip-padding;
+		@apply border border-black border-opacity-20 rounded-md;
+		@apply pointer-events-auto outline-0 overflow-hidden;
+
+		.modal-header {
+			@apply flex items-start justify-between p-4;
+			@apply border-b border-black border-opacity-10;
+
+			.modal-close {
+				@apply -m-4 p-4;
+			}
+		}
+
+		.modal-title {
+			@apply m-0 text-xl;
+		}
+
+		.modal-body {
+			@apply relative flex-1 basis-auto p-4;
+		}
+
+		.modal-footer {
+			@apply flex flex-wrap items-center justify-end p-3;
+			@apply border-t border-black border-opacity-10;
+
+			> * {
+				@apply m-1;
+			}
+		}
+	}
+}
+
+.btn {
+	@apply inline-block px-3 py-1 rounded-md cursor-pointer;
+	@apply border border-black border-opacity-10;
+	@apply bg-gray-200 text-gray-800;
+	@apply hover:bg-gray-300 hover:text-gray-900;
+	@apply active:bg-gray-400 active:text-black;
+
+	&.btn-primary {
+		@apply bg-blue-500 text-white;
+		@apply hover:bg-blue-600;
+		@apply active:bg-blue-700;
+	}
+}
+
+.modal-header {
+	@apply text-black;
+}
+
+.modal-body {
+	@apply text-gray-800;
+
+	p, ul {
+		@apply mb-2;
+	}
+
+	ul {
+		@apply list-disc list-inside;
+	}
+
+	code {
+		@apply bg-black bg-opacity-5 px-1 py-0.5 text-inherit rounded;
+	}
+}
 </style>
+
+<script lang="ts">
+const modalDismissers = document.querySelectorAll('.modal [data-dismiss="modal"]')
+for (const modalDismisser of modalDismissers)
+{
+	modalDismisser.addEventListener('click', () =>
+	{
+		const modal = modalDismisser.closest('.modal')
+		modal.classList.toggle('show')
+	})
+}
+</script>
