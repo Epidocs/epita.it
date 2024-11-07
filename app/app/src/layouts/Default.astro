@@ -99,15 +99,16 @@ p img { height: 1rem }
 	margin: 0 auto;
 	padding: 20px 0;
 	flex: 1 0;
-}
-#main.smallscreen {
-	text-align: center;
-}
-#main h1 { font-size: 4em; font-weight: bold }
-#main.smallscreen h1 { font-size: 3em }
-#main.smallscreen .tiles-grid {
-	margin: 0 auto;
-	text-align: initial;
+
+	@apply text-center sm:text-left;
+
+	h1 {
+		@apply text-[3em] sm:text-[4em] font-bold;
+	}
+
+	.tiles-grid {
+		@apply justify-center sm:justify-start;
+	}
 }
 
 #main .container > .tiles-grd { margin-bottom: 1rem }
