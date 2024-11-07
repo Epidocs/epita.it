@@ -49,7 +49,7 @@ const baseProps: BaseProps = {
 
 	{newsline && <Newsline />}
 
-	<div id="main" class:list={[ 'main', { 'text-left': textalignleft }]}>
+	<div id="main" class:list={[ 'main', { 'main-text-left': textalignleft }]}>
 		<div class="container">
 
 			<slot />
@@ -98,10 +98,9 @@ p img { height: 1rem }
 .main {
 	@apply flex-grow flex-shrink-0;
 	@apply w-full max-w-screen-lg mx-auto pt-6 pb-8;
-	@apply sm:text-left;
 
-	&:not(.text-left) {
-		@apply text-center;
+	&:not(.main-text-left) {
+		@apply text-center sm:text-left;
 	}
 }
 </style>
