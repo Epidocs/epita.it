@@ -2,10 +2,10 @@
 import { githubRepositoryUrl } from '~/config'
 ---
 
-<div id="footer">
+<div id="footer" class="footer">
 	<div class="container">
 		<p>
-			Made with <span class="icon icon-[fa6-solid--heart] icon-fw text-danger"></span> by EPITA students.
+			Made with <span class="icon icon-[fa6-solid--heart] icon-fw icon-red"></span> by EPITA students.
 			<a href={`${githubRepositoryUrl}#license`}>
 				<img alt="CC BY-NC 4.0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc.svg" />
 			</a> <br />
@@ -20,18 +20,37 @@ import { githubRepositoryUrl } from '~/config'
 </div>
 
 <style lang="scss">
-#footer {
-	background: rgba(0, 0, 0, .1);
-	padding: 20px;
-	flex-shrink: 0;
-}
-@media (min-width: 992px) {
-	#footer .container {
-		max-width: 960px;
+.footer {
+	@apply flex-shrink-0 bg-black bg-opacity-10 p-4;
+
+	> .container {
+		@apply max-w-screen-lg;
+	}
+
+	.icon-red {
+		@apply text-red-600;
+	}
+
+	p {
+		@apply mb-2;
+
+		img {
+			@apply inline-block h-4;
+		}
+	}
+
+	ul {
+		li {
+			@apply inline-block;
+
+			+ li {
+				@apply ml-1;
+
+				&::before {
+					@apply content-["|"] mr-2;
+				}
+			}
+		}
 	}
 }
-#footer ul { padding: 0 }
-#footer ul > li { display: inline-block }
-#footer ul > li + li { margin-left: 5px }
-#footer ul > li + li:before { content: '|'; margin-right: 10px }
 </style>
