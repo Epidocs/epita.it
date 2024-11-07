@@ -178,8 +178,9 @@ const navbarplus = yaml.load(navbarplusYml) as any
 const navbarTogglers = document.querySelectorAll('.navbar .navbar-toggler')
 for (const navbarToggler of navbarTogglers)
 {
-	navbarToggler.addEventListener('click', () =>
+	navbarToggler.addEventListener('click', (event) =>
 	{
+		event.preventDefault()
 		const navbarCollapse = navbarToggler.parentElement.querySelector('.navbar-collapse')
 		navbarCollapse?.classList.toggle('show')
 	})
@@ -188,8 +189,9 @@ for (const navbarToggler of navbarTogglers)
 const dropdownTogglers = document.querySelectorAll('.navbar .dropdown-toggle')
 for (const dropdownToggler of dropdownTogglers)
 {
-	dropdownToggler.addEventListener('click', () =>
+	dropdownToggler.addEventListener('click', (event) =>
 	{
+		event.preventDefault()
 		const dropdownMenu = dropdownToggler.parentElement.querySelector('.dropdown-menu')
 		dropdownMenu?.classList.toggle('show')
 	})

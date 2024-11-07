@@ -108,8 +108,9 @@
 const modalDismissers = document.querySelectorAll('.modal [data-dismiss="modal"]')
 for (const modalDismisser of modalDismissers)
 {
-	modalDismisser.addEventListener('click', () =>
+	modalDismisser.addEventListener('click', (event) =>
 	{
+		event.preventDefault()
 		const modal = modalDismisser.closest('.modal')
 		modal.classList.toggle('show')
 	})
