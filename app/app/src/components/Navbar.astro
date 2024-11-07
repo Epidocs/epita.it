@@ -48,8 +48,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 				</a>
 				<div class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#">
-						<span class="icon icon-[fa6-solid--plus] icon-fw"></span>
-					</a>
+						><span class="icon icon-[fa6-solid--plus] icon-fw"></span></a>
 					<div class="dropdown-menu dropdown-menu-right">
 						{navbarplus.map((item: any) => (
 							<a class="dropdown-item" href={item.href}>
@@ -122,14 +121,14 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	@apply relative;
 
 	.dropdown-toggle {
-		@apply whitespace-nowrap;
+		@apply text-inherit whitespace-nowrap;
 
 		&:after {
 			@apply inline-block;
 			@apply ml-1 align-[0.25rem];
 			@apply content-[""];
 			@apply border-x-4 border-t-4 border-b-0 border-solid;
-			@apply border-x-transparent;
+			@apply border-[initial] border-x-transparent;
 		}
 	}
 
