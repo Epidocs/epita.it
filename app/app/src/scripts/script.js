@@ -1,11 +1,4 @@
 $(document).ready(function() {
-	// Get current URL path and assign 'active' class
-	var pathname = window.location.pathname;
-	var $link = $('#navbar .navbar-nav a[href="' + pathname + '"]');
-	$link.addClass('active');
-	if($link.hasClass('dropdown-item'))
-		$link.parents('.nav-item').find('.nav-link').addClass('active');
-
 	// Activate newsline carousel
 	// $('#newsline').carousel(); // Carousel from Bootstrap is glitched
 	$allCarouselItems = $('#newsline .carousel-item');

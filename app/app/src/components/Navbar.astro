@@ -23,19 +23,19 @@ const navbarplus = yaml.load(navbarplusYml) as any
 				{navbar.map((item: any) => (
 					item.children ? (
 						<div class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#">
+							<a href="#" class:list={[ 'nav-link dropdown-toggle', { active: item.children.some((subitem: any) => Astro.url.pathname === subitem.href) }]}>
 								{item.title}
 							</a>
 							<div class="dropdown-menu">
 								{item.children.map((subitem: any) => (
-									<a class="dropdown-item" href={subitem.href}>
+									<a href={subitem.href} class:list={['dropdown-item', { active: Astro.url.pathname === subitem.href }]}>
 										{subitem.title}
 									</a>
 								))}
 							</div>
 						</div>
 					) : (
-						<a class="nav-item nav-link" href={item.href}>
+						<a href={item.href} class:list={['nav-item nav-link', { active: Astro.url.pathname === item.href }]}>
 							{item.title}
 						</a>
 					)
@@ -47,11 +47,11 @@ const navbarplus = yaml.load(navbarplusYml) as any
 					Github
 				</a>
 				<div class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#">
+					<a href="#" class:list={[ 'nav-link dropdown-toggle', { active: navbarplus.some((item: any) => Astro.url.pathname === item.href) }]}
 						><span class="icon icon-[fa6-solid--plus] icon-fw"></span></a>
 					<div class="dropdown-menu dropdown-menu-right">
 						{navbarplus.map((item: any) => (
-							<a class="dropdown-item" href={item.href}>
+							<a href={item.href} class:list={['dropdown-item', { active: Astro.url.pathname === item.href }]}>
 								{item.title}
 							</a>
 						))}
