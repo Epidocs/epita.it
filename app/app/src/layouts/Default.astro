@@ -49,7 +49,7 @@ const baseProps: BaseProps = {
 
 	{newsline && <Newsline />}
 
-	<div id="main" class={textalignleft ? 'text-left' : undefined}>
+	<div id="main" class:list={[ 'main', { 'text-left': textalignleft }]}>
 		<div class="container">
 
 			<slot />
@@ -91,21 +91,45 @@ a:hover { color: #4080c0 }
 
 p img { height: 1rem }
 
-*:last-child { margin-bottom: 0 }
+*:last-child { margin-bottom: 0 !important }
 </style>
 
 <style lang="scss">
-#main {
+.main {
 	@apply flex-grow flex-shrink-0;
-	@apply w-full max-w-screen-lg mx-auto py-4;
-	@apply text-center sm:text-left;
+	@apply w-full max-w-screen-lg mx-auto pt-6 pb-8;
+	@apply sm:text-left;
+
+	&:not(.text-left) {
+		@apply text-center;
+	}
 }
 </style>
 
 <style lang="scss" is:global>
-#main {
+.main {
+	h1, h2, h3, p {
+		@apply mb-4;
+	}
+
 	h1 {
-		@apply text-[3em] sm:text-[4em] font-bold;
+		@apply text-5xl sm:text-6xl font-bold;
+	}
+
+	h2 {
+		@apply text-3xl font-medium;
+	}
+
+	h3 {
+		@apply text-2xl font-medium;
+	}
+
+	p.small {
+		@apply text-sm;
+	}
+
+	hr {
+		@apply my-4 border-t border-white border-opacity-10;
 	}
 
 	.container > .tiles-grid { margin-bottom: 1rem }
