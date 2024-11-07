@@ -66,14 +66,4 @@ $(document).ready(function() {
 			});
 		}
 	});
-
-	if (window.matchMedia('(display-mode: standalone)').matches) {
-		// From the web app
-		// Open all external links in a new tab
-		$('a:external').attr('target', '_blank');
-	}
-	else {
-		// Display ad about the web app in the newsline carousel
-		$('#addToHomeScreen').addClass('carousel-item').removeClass('d-none');
-	}
 });
