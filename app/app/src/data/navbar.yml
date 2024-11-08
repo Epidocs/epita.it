@@ -8,6 +8,7 @@
   href: /docs
 
 - title: Year groups
+  unpack: true
   items:
 
   # - title: 2021

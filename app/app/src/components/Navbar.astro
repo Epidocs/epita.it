@@ -22,21 +22,30 @@ const navbarplus = yaml.load(navbarplusYml) as any
 			<div class="navbar-nav">
 				{navbar.map((item: any) => (
 					item.items ? (
-						<div class="nav-item dropdown">
-							<a href="#" class:list={[
-								'nav-link dropdown-toggle',
-								{ active: item.items.some((subitem: any) => Astro.url.pathname === subitem.href) },
-							]}>
-								{item.title}
-							</a>
-							<div class="dropdown-menu">
-								{item.items.map((subitem: any) => (
-									<a href={subitem.href} class:list={[ 'dropdown-item', { active: Astro.url.pathname === subitem.href } ]}>
+						<>
+							{item.unpack && (
+								item.items.map((subitem: any) => (
+									<a href={subitem.href} class:list={[ 'nav-item nav-link nav-unpack', { active: Astro.url.pathname === subitem.href } ]}>
 										{subitem.title}
 									</a>
-								))}
+								))
+							)}
+							<div class="nav-item dropdown">
+								<a href="#" class:list={[
+									'nav-link dropdown-toggle nav-pack',
+									{ active: item.items.some((subitem: any) => Astro.url.pathname === subitem.href) },
+								]}>
+									{item.title}
+								</a>
+								<div class="dropdown-menu">
+									{item.items.map((subitem: any) => (
+										<a href={subitem.href} class:list={[ 'dropdown-item', { active: Astro.url.pathname === subitem.href } ]}>
+											{subitem.title}
+										</a>
+									))}
+								</div>
 							</div>
-						</div>
+						</>
 					) : (
 						<a href={item.href} class:list={['nav-item nav-link', { active: Astro.url.pathname === item.href }]}>
 							{item.title}
@@ -114,6 +123,14 @@ const navbarplus = yaml.load(navbarplusYml) as any
 
 			&.active {
 				@apply text-opacity-100;
+			}
+
+			&.nav-unpack {
+				@apply block md:hidden lg:block;
+			}
+
+			&.nav-pack {
+				@apply hidden md:block lg:hidden;
 			}
 		}
 	}
