@@ -1,21 +1,12 @@
-name: Deploy to GitHub Pages
+name: Deploy CD
 
 on:
 
-  # Run on push events on primary branches
+  # Run on push on primary branches
   push:
     branches:
       - master
-      - dev
-    paths:
-      - '.github/workflows/deploy.yml'
-      - 'app/**'
-      - 'docker-compose*.yml'
-
-  # Run on pull request events to primary branches
-  pull_request:
-    branches:
-      - master
+      - main
     paths:
       - '.github/workflows/deploy.yml'
       - 'app/**'
@@ -23,21 +14,12 @@ on:
 
   # Run on manual triggers
   workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Workflow environment'
-        required: true
-        type: choice
-        options:
-          - development
-          - production
-        default: 'production'
 
 # Set GITHUB_TOKEN permissions for the workflow
 permissions:
   contents: read
 
-# Restrict concurrent deployments
+# Set workflow concurrency rules
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
@@ -56,10 +38,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build for production
-      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
       env:
         GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
         GITHUB_SHA: ${{ github.sha }}
+      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
 
     - name: Copy application files
       run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml run --rm app
@@ -68,12 +50,6 @@ jobs:
       run: sudo chown -R $USER:$USER ./app/dist
 
     - name: Upload artifact
-      # Only run on:
-      # - Push events to `master`.
-      # - Manual triggers on `production` environment.
-      if: |
-        (github.event_name == 'push' && github.ref == 'refs/heads/master') ||
-        (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production')
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./app/dist
@@ -88,19 +64,12 @@ jobs:
     needs:
       - build
 
-    # Only run on:
-    # - Push events to `master`.
-    # - Manual triggers on `production` environment.
-    if: |
-      (github.event_name == 'push' && github.ref == 'refs/heads/master') ||
-      (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production')
-
     # Set GITHUB_TOKEN permissions for the job
     permissions:
       pages: write
       id-token: write
 
-    # Set the deployment environment
+    # Set deployment environment
     environment:
       name: production
       url: ${{ steps.deployment.outputs.page_url }}
