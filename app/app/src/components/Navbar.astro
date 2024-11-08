@@ -83,7 +83,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	@apply relative bg-[#183048] py-2 text-white;
 
 	> .container-fluid {
-		@apply flex flex-wrap lg:flex-nowrap items-center justify-between;
+		@apply flex flex-wrap navbar-sm:flex-nowrap items-center justify-between;
 		@apply w-full max-w-screen-lg mx-auto px-4;
 	}
 
@@ -95,7 +95,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	}
 
 	.navbar-toggler {
-		@apply lg:hidden;
+		@apply navbar-sm:hidden;
 		@apply px-2 py-0;
 		@apply text-2xl text-white hover:text-white;
 		@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
@@ -104,8 +104,8 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	}
 
 	.navbar-collapse {
-		@apply flex-1 basis-full lg:flex-auto;
-		@apply hidden lg:flex items-start justify-between;
+		@apply flex-1 basis-full navbar-sm:flex-auto;
+		@apply hidden navbar-sm:flex items-start justify-between;
 
 		&.show {
 			@apply block;
@@ -113,11 +113,11 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	}
 
 	.navbar-nav {
-		@apply flex flex-col lg:flex-row items-start;
+		@apply flex flex-col navbar-sm:flex-row items-start;
 
 		.nav-link {
 			@apply block;
-			@apply px-0 lg:px-2 py-2;
+			@apply px-0 navbar-sm:px-2 py-2;
 			@apply text-white hover:text-white;
 			@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
 

@@ -9,6 +9,7 @@ export default {
 		screens: {
 			sm: '540px',
 			md: '720px',
+			'navbar-sm': '840px',
 			lg: '960px',
 			xl: '1140px',
 		},
