@@ -111,11 +111,13 @@
 
   - name: EpiMac
     href: https://www.epimac.org/
-    class: tile-medium
+    class: tile-medium text-dark
     background_image: https://www.epimac.org/img/2.png
     style:
-    - 'background-color: #353535'
-    - 'background-size: 90%'
+    - 'background: url(https://www.epimac.org/static/media/logo.b888e9e52a034ae046fd0a91bd79bad8.svg), linear-gradient(143deg, #55c2f966, #f2f2f2 50%, #e9b1ff66)'
+    - 'background-size: 60%, 400%'
+    - 'background-position: 50% 25%, center'
+    - 'background-repeat: no-repeat, no-repeat'
 
   - name: Epimathia
     icon: icon-[fa-brands--facebook]
