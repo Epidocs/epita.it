@@ -3,10 +3,6 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import '~/styles/tiles.css'
-import bodyHeightJs from '~/scripts/body-height.ts?url'
-import standaloneAppJs from '~/scripts/standalone-app.ts?url'
-import carouselJs from '~/scripts/carousel.ts?url'
-import invalidLinksJs from '~/scripts/invalid-links.ts?url'
 
 import Layout from '~/layouts/Layout.astro'
 import type { Props as BaseProps } from '~/layouts/Layout.astro'
@@ -59,10 +55,10 @@ const baseProps: BaseProps = {
 </Layout>
 
 {!noScripts && (
-	<script src={bodyHeightJs}></script>
-	<script src={standaloneAppJs}></script>
-	<script src={carouselJs}></script>
-	<script src={invalidLinksJs}></script>
+	<script src="../scripts/body-height.ts"></script>
+	<script src="../scripts/standalone-app.ts"></script>
+	<script src="../scripts/carousel.ts"></script>
+	<script src="../scripts/invalid-links.ts"></script>
 )}
 
 <style lang="scss" is:global>
