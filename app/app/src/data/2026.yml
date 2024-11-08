@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2026
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/wJn9Ku98zp
@@ -18,6 +19,7 @@
 
 - title: S2 Projects
   items:
+
   - name: CubeTools Explorer
     href: https://forixm.github.io/CubeTools/WebSite
     class: tile-medium text-dark

@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2028
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/AbqK9R2mPW
@@ -21,6 +22,7 @@
 
 - title: S2 Projects
   items:
+
   - name: Treashunt
     href: https://feove.github.io/IborenWebsite/
     class: tile-medium text-dark
@@ -39,4 +41,3 @@
     - 'background-color: #FFFFFF'
     - 'background-size: 85%'
     - 'background-position-y: 15%'
-

@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2029
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/EuXuGTxyc8
@@ -10,6 +11,7 @@
 
 - title: Misc.
   items:
+
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
     class: tile-wide text-dark

@@ -1,5 +1,6 @@
 - title: SUP
   items:
+
   - name: Archi S1 (EN)
     href: http://www.debug-pro.com/epita/archi/s1/en
     class: tile-medium text-dark
@@ -22,6 +23,7 @@
 
 - title: SPE
   items:
+
   - class: tile-medium
     items:
     - name: Archi S3 (FR)
@@ -61,4 +63,3 @@
     class: tile-medium
     style:
     - 'background-color: #2f97b6'
-
