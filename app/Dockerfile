@@ -84,7 +84,11 @@ ENV GITHUB_SHA=${GITHUB_SHA}
 
 # Build application
 ARG BUILD_CHECK=true
-RUN [ "${BUILD_CHECK}" == "true" ] && npm run build || npm run build-only
+RUN if [ "${BUILD_CHECK}" = "true" ]; then \
+		npm run build; \
+	else \
+		npm run build-only; \
+	fi
 
 
 # --
