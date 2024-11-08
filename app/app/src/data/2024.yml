@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2024
     icon: icon-[fa-brands--discord]
     href: https://discordapp.com/invite/TUHpqPn
@@ -10,6 +11,7 @@
 
 - title: S2 Projects
   items:
+
   - name: INVICTUS Warriors
     href: https://thunderblast-games.itch.io/invictus-warriors
     class: tile-medium

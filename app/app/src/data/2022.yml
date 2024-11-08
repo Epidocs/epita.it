@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2022
     icon: icon-[fa-brands--discord]
     href: https://discordapp.com/invite/geJBr2J
@@ -10,6 +11,7 @@
 
 - title: S2 Projects
   items:
+
   - name: DITH
     href: https://dith.hyperion.tf
     class: tile-medium invalid

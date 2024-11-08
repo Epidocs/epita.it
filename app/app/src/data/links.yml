@@ -1,5 +1,6 @@
 - title: Official EPITA resources
   items:
+
   - name: EPITA.fr
     href: https://www.epita.fr/
     class: tile-wide
@@ -59,6 +60,7 @@
   text: |
     <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups.
   items:
+
   - name: CRI / Forge EPITA
     href: https://cri.epita.fr/
     class: tile-medium text-dark
@@ -224,6 +226,7 @@
   text: |
     <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA.
   items:
+
   - name: Epimap
     icon: icon-[fa6-solid--user-group]
     href: https://epimap.fr/
@@ -281,6 +284,7 @@
 
 - title: Other links
   items:
+
   - name: Console Bocal
     href: https://console.bocal.org/
     class: tile-small-wide text-dark

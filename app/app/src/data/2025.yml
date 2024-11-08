@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2025
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/SR5jzVA
@@ -18,6 +19,7 @@
 
 - title: S2 Projects
   items:
+
   - name: Beyond Styx
     href: https://beyondstyx.fr/
     class: tile-medium invalid

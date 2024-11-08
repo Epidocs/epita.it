@@ -1,5 +1,6 @@
 - title: Communities
   items:
+
   - name: EPITA International
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/bQ7Tpk2
@@ -52,6 +53,7 @@
 
 - title: Associations & Clubs
   items:
+
   - name: ANTRE
     href: https://antre.fr/
     class: tile-medium

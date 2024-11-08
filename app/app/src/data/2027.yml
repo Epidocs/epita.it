@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2027
     icon: icon-[fa-brands--discord]
     href: https://discord.gg/3ZJDy7h9pY
@@ -17,6 +18,7 @@
 
 - title: S2 Projects
   items:
+
   - name: Héphaïstos
     href: https://geometrical-optics.github.io/
     class: tile-medium text-dark

@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2021
     icon: icon-[fa-brands--discord]
     href: https://discordapp.com/invite/WbhavjX
@@ -10,6 +11,7 @@
 
 - title: S2 Projects
   items:
+
   - name: Block'n'roll
     href: https://guccitaps.github.io/index.html
     class: tile-medium

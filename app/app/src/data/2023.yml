@@ -1,5 +1,6 @@
 - title: Student Community
   items:
+
   - name: Discord EPITA 2023
     icon: icon-[fa-brands--discord]
     href: https://discordapp.com/invite/r3vn4U6
@@ -19,6 +20,7 @@
 
 - title: S2 Projects
   items:
+
   - name: Blast
     href: https://g00pix.github.io/ProjetBlast/
     class: tile-medium

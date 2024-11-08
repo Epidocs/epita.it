@@ -13,6 +13,7 @@
 
 - title: Community guides
   items:
+
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
     class: tile-wide text-dark
@@ -24,6 +25,7 @@
 
 - title: Community resources
   items:
+
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
     class: tile-medium
