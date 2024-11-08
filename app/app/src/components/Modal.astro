@@ -104,7 +104,7 @@
 }
 </style>
 
-<script lang="ts">
+<script>
 const modalDismissers = document.querySelectorAll('.modal [data-dismiss="modal"]')
 for (const modalDismisser of modalDismissers)
 {
@@ -112,7 +112,7 @@ for (const modalDismisser of modalDismissers)
 	{
 		event.preventDefault()
 		const modal = modalDismisser.closest('.modal')
-		modal.classList.toggle('show')
+		modal?.classList.toggle('show')
 	})
 }
 </script>
