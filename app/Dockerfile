@@ -83,8 +83,8 @@ ARG GITHUB_SHA=""
 ENV GITHUB_SHA=${GITHUB_SHA}
 
 # Build application
-ARG BUILD_ONLY=false
-RUN [ "${BUILD_ONLY}" == "true" ] && npm run build-only || npm run build
+ARG BUILD_CHECK=true
+RUN [ "${BUILD_CHECK}" == "true" ] && npm run build || npm run build-only
 
 
 # --

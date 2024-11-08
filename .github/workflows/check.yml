@@ -41,7 +41,7 @@ jobs:
       env:
         GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
         GITHUB_SHA: ${{ github.sha }}
-        BUILD_ONLY: "false"
+        BUILD_CHECK: "true"
       run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
 
     - name: Copy application files
