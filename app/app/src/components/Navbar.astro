@@ -1,0 +1,218 @@
+---
+import yaml from 'js-yaml'
+
+import site from '~/site'
+import { githubRepositoryUrl } from '~/config'
+import navbarYml from '~/data/navbar.yml?raw'
+import navbarplusYml from '~/data/navbarplus.yml?raw'
+
+const navbar = yaml.load(navbarYml) as any
+const navbarplus = yaml.load(navbarplusYml) as any
+---
+
+<nav id="navbar" class="navbar">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">
+			{site.title}
+		</a>
+		<button class="navbar-toggler" type="button">
+			<span class="icon icon-[mdi--menu] icon-fw"></span>
+		</button>
+		<div class="navbar-collapse">
+			<div class="navbar-nav">
+				{navbar.map((item: any) => (
+					item.items ? (
+						<>
+							{item.unpack && (
+								item.items.map((subitem: any) => (
+									<a href={subitem.href} class:list={[ 'nav-item nav-link nav-unpacked', { active: Astro.url.pathname === subitem.href } ]}>
+										{subitem.title}
+									</a>
+								))
+							)}
+							<div class="nav-item dropdown nav-packed">
+								<a href="#" class:list={[
+									'nav-link dropdown-toggle',
+									{ active: item.items.some((subitem: any) => Astro.url.pathname === subitem.href) },
+								]}>
+									{item.title}
+								</a>
+								<div class="dropdown-menu">
+									{item.items.map((subitem: any) => (
+										<a href={subitem.href} class:list={[ 'dropdown-item', { active: Astro.url.pathname === subitem.href } ]}>
+											{subitem.title}
+										</a>
+									))}
+								</div>
+							</div>
+						</>
+					) : (
+						<a href={item.href} class:list={['nav-item nav-link', { active: Astro.url.pathname === item.href }]}>
+							{item.title}
+						</a>
+					)
+				))}
+			</div>
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href={githubRepositoryUrl || '#'}>
+					<span class="icon icon-[fa6-solid--code-branch] icon-fw"></span>
+					Github
+				</a>
+				<div class="nav-item dropdown">
+					<a href="#" class:list={[
+						'nav-link dropdown-toggle dropdown-toggle-icon',
+						{ active: navbarplus.some((item: any) => Astro.url.pathname === item.href) },
+					]}>
+						<span class="icon icon-[fa6-solid--plus] icon-fw"></span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						{navbarplus.map((item: any) => (
+							<a href={item.href} class:list={['dropdown-item', { active: Astro.url.pathname === item.href }]}>
+								{item.title}
+							</a>
+						))}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<style lang="scss">
+.navbar {
+	@apply relative bg-[#183048] py-2 text-white;
+
+	> .container-fluid {
+		@apply flex flex-wrap navbar-md:flex-nowrap items-center justify-between;
+		@apply w-full max-w-screen-navbar-sm navbar-md:max-w-screen-navbar-lg mx-auto px-4;
+	}
+
+	.navbar-brand {
+		@apply inline-block;
+		@apply py-1.5 mr-4;
+		@apply text-xl text-white hover:text-white hover:no-underline;
+		@apply whitespace-nowrap;
+	}
+
+	.navbar-toggler {
+		@apply navbar-md:hidden;
+		@apply px-2 py-0;
+		@apply text-2xl text-white hover:text-white;
+		@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
+		@apply border border-solid border-white rounded;
+		@apply border-opacity-10 hover:border-opacity-25 active:border-opacity-50;
+	}
+
+	.navbar-collapse {
+		@apply flex-1 basis-full navbar-md:flex-auto;
+		@apply hidden navbar-md:flex items-start justify-between;
+
+		&.show {
+			@apply block;
+		}
+	}
+
+	.navbar-nav {
+		@apply flex flex-col navbar-md:flex-row items-start;
+
+		.nav-item {
+			&.nav-unpacked {
+				@apply block navbar-md:hidden navbar-lg:block;
+			}
+
+			&.nav-packed {
+				@apply hidden navbar-md:block navbar-lg:hidden;
+			}
+		}
+
+		.nav-link {
+			@apply block;
+			@apply px-0 navbar-md:px-2 py-2;
+			@apply text-white hover:text-white;
+			@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
+
+			&.active {
+				@apply text-opacity-100;
+			}
+		}
+	}
+}
+
+.dropdown {
+	@apply relative;
+
+	.dropdown-toggle {
+		@apply text-inherit whitespace-nowrap;
+
+		&::after {
+			@apply inline-block;
+			@apply ml-1 align-[0.25rem];
+			@apply content-[""];
+			@apply border-x-4 border-t-4 border-b-0 border-solid;
+			@apply border-[initial] border-x-transparent;
+		}
+
+		&.dropdown-toggle-icon::after {
+			@apply ml-0;
+		}
+	}
+
+	.dropdown-menu {
+		@apply absolute top-full left-0 float-left;
+		@apply bg-[#285078] bg-clip-padding;
+		@apply hidden min-w-[10rem] z-[1000];
+		@apply mt-1 py-2;
+		@apply text-white;
+		@apply list-none;
+		@apply border border-solid border-black border-opacity-15 rounded;
+
+		&.dropdown-menu-right {
+			@apply left-auto right-0;
+		}
+
+		&.show {
+			@apply block;
+		}
+
+		.dropdown-item {
+			@apply bg-[#4080c0] bg-opacity-0 hover:bg-opacity-25 active:bg-opacity-50;
+			@apply block;
+			@apply w-full;
+			@apply px-5 py-1;
+			@apply text-white hover:text-white;
+			@apply text-opacity-75 hover:text-opacity-90 active:text-opacity-100;
+			@apply whitespace-nowrap;
+			@apply border-0;
+
+			&.active {
+				@apply bg-opacity-100;
+				@apply text-opacity-100;
+			}
+		}
+	}
+}
+</style>
+
+<script lang="ts">
+const navbarTogglers = document.querySelectorAll('.navbar .navbar-toggler')
+for (const navbarToggler of navbarTogglers)
+{
+	navbarToggler.addEventListener('click', (event) =>
+	{
+		event.preventDefault()
+		const navbarCollapse = navbarToggler.parentElement.querySelector('.navbar-collapse')
+		navbarCollapse?.classList.toggle('show')
+	})
+}
+
+const dropdownTogglers = document.querySelectorAll('.navbar .dropdown-toggle')
+for (const dropdownToggler of dropdownTogglers)
+{
+	dropdownToggler.addEventListener('click', (event) =>
+	{
+		event.preventDefault()
+		const dropdownMenu = dropdownToggler.parentElement.querySelector('.dropdown-menu')
+		dropdownMenu?.classList.toggle('show')
+	})
+}
+</script>

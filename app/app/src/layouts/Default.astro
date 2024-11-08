@@ -1,22 +1,20 @@
 ---
-import yaml from 'js-yaml'
-
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import jqueryJs from 'jquery/dist/jquery.slim.min.js?url'
-import popperJs from '@popperjs/core/dist/umd/popper.min.js?url'
-import bootstrapJs from 'bootstrap/dist/js/bootstrap.bundle.min.js?url'
 import '~/styles/tiles.css'
-import '~/styles/style.css'
-import scriptJs from '~/scripts/script.js?url'
+import bodyHeightJs from '~/scripts/body-height.ts?url'
+import standaloneAppJs from '~/scripts/standalone-app.ts?url'
+import carouselJs from '~/scripts/carousel.ts?url'
+import invalidLinksJs from '~/scripts/invalid-links.ts?url'
 
 import Layout from '~/layouts/Layout.astro'
 import type { Props as BaseProps } from '~/layouts/Layout.astro'
-import site from '~/site'
-import navbarYml from '~/data/navbar.yml?raw'
-import navbarplusYml from '~/data/navbarplus.yml?raw'
+import Head from '../components/Head.astro'
+import Modal from '../components/Modal.astro'
+import Navbar from '../components/Navbar.astro'
+import Newsline from '../components/Newsline.astro'
+import Footer from '~/components/Footer.astro'
 
 export interface Props extends BaseProps
 {
@@ -34,138 +32,141 @@ const {
 const baseProps: BaseProps = {
 	...Astro.props,
 }
-
-const navbar = yaml.load(navbarYml) as any
-const navbarplus = yaml.load(navbarplusYml) as any
-
-const githubRepositoryUrl = process.env.GITHUB_REPOSITORY_URL || null as string | null
-const githubSha = process.env.GITHUB_SHA || null as string | null
-const build = githubSha ? githubSha.slice(0, 7) : 'dev'
 ---
 
 <Layout {...baseProps}>
 
 	<Fragment name="head">
-		<link rel="icon" sizes="48x48" href={`/assets/icon-48.png?v=${build}`} />
-		<link rel="icon" sizes="192x192" href={`/assets/icon-192.png?v=${build}`} />
-		<link rel="icon" sizes="512x512" href={`/assets/icon-512.png?v=${build}`} />
-		<link rel="apple-touch-icon" href={`/assets/apple-icon.png?v=${build}`} />
-		<link rel="manifest" href="/manifest.json" />
+		<Head />
 	</Fragment>
 
-	<div id="warn-invalid-modal" class="modal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title"><span class="icon icon-[fa6-solid--triangle-exclamation] icon-fw"></span> The link to <b id="warn-invalid-brand"></b> is invalid</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<p>Beware! This link has been tagged as invalid. This means:</p>
-				<ul>
-					<li>the link could be dead or broken</li>
-					<li>the link could have been taken over</li>
-					<li>the link could point to irrelevant information</li>
-				</ul>
-				<p>Do you really want to continue to <code id="warn-invalid-href"></code>?</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<a href="#" id="warn-invalid-link" class="btn btn-primary" target="_blank">Yes, continue anyway</a>
-			</div>
-			</div>
-		</div>
-	</div>
+	<Modal />
 
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-		<div class="container">
-			<a class="navbar-brand" href="/">{site.title}</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="visibility: inherit;">
-				<div class="navbar-nav mr-auto">
-					{navbar.map((item: any) => (
-						item.children ? (
-							<div class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{item.title}</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPlusDropdown">
-									{item.children.map((subitem: any) => (
-										<a class="dropdown-item" href={subitem.href}>{subitem.title}</a>
-									))}
-								</div>
-							</div>
-						) : (
-							<a class="nav-item nav-link" href={item.href}>{item.title}</a>
-						)
-					))}
-				</div>
-				<div class="navbar-nav">
-					<a class="nav-item nav-link" href={githubRepositoryUrl}><span class="icon icon-[fa6-solid--code-branch] icon-fw"></span> Github</a>
-					<div class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarPlusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon icon-[fa6-solid--plus] icon-fw"></span></a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPlusDropdown">
-							{navbarplus.map((item: any) => (
-								<a class="dropdown-item" href={item.href}>{item.title}</a>
-							))}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+	<Navbar />
 
-	{newsline && (
-		<div id="newsline">
-			<div class="container">
-				<div class="carousel-item">
-					<span class="icon icon-[fa6-solid--folder-open] icon-fw"></span>
-					Showcase your S2 project on your school year group page! Contribute on the <a href={githubRepositoryUrl}>Github repository</a>!
-				</div>
-				<div class="carousel-item active">
-					<span class="icon icon-[fa6-solid--book] icon-fw"></span>
-					Need to study for your exams? Check out <a href="https://past-exams.epidocs.eu/">Past-Exams</a>!
-				</div>
-				<div id="addToHomeScreen" class="carousel-item">
-					<span class="icon icon-[fa6-solid--circle-info] icon-fw"></span>
-					<b>Add to your home screen</b> for easier access!
-				</div>
-			</div>
-		</div>
-	)}
+	{newsline && <Newsline />}
 
-	<div id="main" class={textalignleft ? 'text-left' : undefined}>
-		<div class="container">
+	<div id="main" class:list={[ 'main', { 'main-text-left': textalignleft }]}>
+		<div class="container-fluid">
 
 			<slot />
 
 		</div>
 	</div>
 
-	<div id="footer">
-		<div class="container">
-			<p>
-				Made with <span class="icon icon-[fa6-solid--heart] icon-fw text-danger"></span> by EPITA students.
-				<a href={`${githubRepositoryUrl}#license`}>
-					<img alt="CC BY-NC 4.0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc.svg" />
-				</a> <br />
-				We use cookies for analytics purposes.
-			</p>
-			<ul>
-				<li><a href={githubRepositoryUrl} class="btn btn-primary btn-sm">Contribuez sur Github</a></li>
-				<li><a href="https://epidocs.eu/" class="btn btn-info btn-sm">Géré par Epidocs</a></li>
-				<!-- <li><a href="/tos" class="btn btn-primary btn-sm">Conditions générales</a></li> -->
-			</ul>
-		</div>
-	</div>
+	<Footer />
 
 </Layout>
 
 {!noScripts && (
-	<script src={jqueryJs}></script>
-	<script src={popperJs}></script>
-	<script src={bootstrapJs}></script>
-	<script src={scriptJs}></script>
+	<script src={bodyHeightJs}></script>
+	<script src={standaloneAppJs}></script>
+	<script src={carouselJs}></script>
+	<script src={invalidLinksJs}></script>
 )}
+
+<style lang="scss" is:global>
+html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #204060;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+	overflow-x: hidden;
+	color: #fff;
+}
+
+a { color: #50a0f0 }
+a:hover { color: #4080c0 }
+
+*:last-child { margin-bottom: 0 !important }
+</style>
+
+<style lang="scss">
+.main {
+	@apply flex-grow flex-shrink-0;
+	@apply pt-6 pb-8;
+
+	&:not(.main-text-left) {
+		@apply text-center sm:text-left;
+	}
+
+	> .container-fluid {
+		@apply w-full max-w-screen-lg mx-auto px-4;
+	}
+}
+</style>
+
+<style lang="scss" is:global>
+.main {
+	h1, h2, h3, p, ul {
+		@apply mb-4;
+	}
+
+	h1 {
+		@apply text-5xl sm:text-6xl font-bold;
+	}
+
+	h2 {
+		@apply text-3xl font-medium;
+	}
+
+	h3 {
+		@apply text-2xl font-medium;
+	}
+
+	p.small {
+		@apply text-sm;
+	}
+
+	ul {
+		@apply pl-3 list-disc list-inside;
+	}
+
+	code {
+		@apply bg-black bg-opacity-5 px-1 py-0.5 text-inherit rounded;
+	}
+
+	hr {
+		@apply my-4 border-t border-white border-opacity-10;
+	}
+
+	.container > .tiles-grid { margin-bottom: 1rem }
+
+	.tiles-grid {
+		@apply justify-center sm:justify-start;
+
+		.invalid:before {
+			/* background: ; */
+			background-image: url('/assets/missing.png');
+			background-size: cover;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			content: '';
+			opacity: .2;
+		}
+
+		.tile-small, .tile-small-wide, .tile-medium, .tile-wide, .tile-large, .tile-app {
+			.branding-icon {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				padding: 5px 5px 0;
+				text-align: right;
+				font-size: 1rem;
+				font-weight: 500;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				z-index: 2;
+			}
+		}
+	}
+}
+</style>

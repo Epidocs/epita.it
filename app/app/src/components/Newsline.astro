@@ -1,0 +1,39 @@
+---
+import { githubRepositoryUrl } from '~/config'
+---
+
+<div id="newsline" class="newsline">
+	<div class="container-fluid">
+		<div class="carousel-item">
+			<span class="icon icon-[fa6-solid--folder-open] icon-fw"></span>
+			Showcase your S2 project on your school year group page! Contribute on the <a href={githubRepositoryUrl}>Github repository</a>!
+		</div>
+		<div class="carousel-item active">
+			<span class="icon icon-[fa6-solid--book] icon-fw"></span>
+			Need to study for your exams? Check out <a href="https://past-exams.epidocs.eu/">Past-Exams</a>!
+		</div>
+		<div id="addToHomeScreen" class="carousel-item">
+			<span class="icon icon-[fa6-solid--circle-info] icon-fw"></span>
+			<b>Add to your home screen</b> for easier access!
+		</div>
+	</div>
+</div>
+
+<style lang="scss">
+.newsline {
+	@apply bg-[#1c3854] py-2;
+
+	> .container-fluid {
+		@apply w-full max-w-screen-lg mx-auto px-4;
+	}
+}
+
+.carousel-item {
+	@apply relative hidden;
+	@apply py-1;
+
+	&.active {
+		@apply block;
+	}
+}
+</style>

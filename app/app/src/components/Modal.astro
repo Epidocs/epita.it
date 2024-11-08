@@ -1,0 +1,118 @@
+---
+---
+
+<div id="warn-invalid-modal" class="modal">
+	<div class="modal-wrapper">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">
+					<span class="icon icon-[fa6-solid--triangle-exclamation] icon-fw"></span>
+					The link to <b id="warn-invalid-brand"></b> is invalid
+				</h5>
+				<button type="button" class="modal-close" data-dismiss="modal">
+					<span class="icon icon-[mdi--times] icon-fw"></span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>Beware! This link has been tagged as invalid. This could mean:</p>
+				<ul>
+					<li>the link is dead or broken</li>
+					<li>the link has been taken over</li>
+					<li>the link points to now irrelevant information</li>
+				</ul>
+				<p>Do you really want to continue to <code id="warn-invalid-href"></code>?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+					Close
+				</button>
+				<a href="#" id="warn-invalid-link" class="btn btn-primary" target="_blank">
+					Yes, continue anyway
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style lang="scss">
+:global(body):has(.modal.show) {
+	@apply overflow-hidden;
+
+	&:global(.has-scrollbar) {
+		&, .modal {
+			padding-right: var(--scrollbar-width, 0);
+		}
+	}
+}
+
+.modal {
+	@apply fixed inset-0 hidden z-[1050] overflow-hidden;
+	@apply bg-black bg-opacity-50;
+	@apply w-full h-full outline-none;
+
+	&.show {
+		@apply block;
+	}
+
+	.modal-wrapper {
+		@apply relative;
+		@apply m-2 sm:mx-auto sm:my-6;
+		@apply w-auto max-w-screen-md;
+		@apply pointer-events-none;
+	}
+
+	.modal-content {
+		@apply relative flex flex-col w-full;
+		@apply bg-white bg-clip-padding;
+		@apply border border-black border-opacity-20 rounded-md;
+		@apply pointer-events-auto outline-0 overflow-hidden;
+
+		.modal-header {
+			@apply flex items-start justify-between p-4 font-medium;
+			@apply border-b border-black border-opacity-10;
+
+			.modal-close {
+				@apply -m-4 p-4;
+			}
+		}
+
+		.modal-title {
+			@apply m-0 text-xl;
+		}
+
+		.modal-body {
+			@apply relative flex-1 basis-auto p-4;
+		}
+
+		.modal-footer {
+			@apply flex flex-wrap items-center justify-end p-3;
+			@apply border-t border-black border-opacity-10;
+
+			> * {
+				@apply m-1;
+			}
+		}
+	}
+}
+
+.modal-header {
+	@apply text-black;
+}
+
+.modal-body {
+	@apply text-gray-800;
+}
+</style>
+
+<script lang="ts">
+const modalDismissers = document.querySelectorAll('.modal [data-dismiss="modal"]')
+for (const modalDismisser of modalDismissers)
+{
+	modalDismisser.addEventListener('click', (event) =>
+	{
+		event.preventDefault()
+		const modal = modalDismisser.closest('.modal')
+		modal.classList.toggle('show')
+	})
+}
+</script>

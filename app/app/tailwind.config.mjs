@@ -5,11 +5,16 @@ export default {
 	content: [
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
 	],
-	corePlugins: {
-		preflight: false,
-	},
 	theme: {
-		extend: {},
+		screens: {
+			sm: '540px',
+			'navbar-sm': '640px',
+			md: '720px',
+			'navbar-md': '840px',
+			lg: '960px',
+			'navbar-lg': '960px',
+			xl: '1140px',
+		},
 	},
 	plugins: [
 		addDynamicIconSelectors(),

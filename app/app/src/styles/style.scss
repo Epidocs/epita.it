@@ -6,3 +6,33 @@
 	width: 1.25em;
 	text-align: center;
 }
+
+.btn {
+	@apply inline-block px-3 py-1 rounded-md cursor-pointer;
+	@apply border border-black border-opacity-10;
+	@apply bg-gray-200 text-gray-800;
+	@apply hover:bg-gray-300 hover:text-gray-900;
+	@apply active:bg-gray-400 active:text-black;
+
+	&.btn-sm {
+		@apply px-2 py-1 text-sm;
+	}
+
+	&.btn-dark {
+		@apply bg-gray-700 text-white;
+		@apply hover:bg-gray-800;
+		@apply active:bg-gray-900;
+	}
+
+	&.btn-primary {
+		@apply bg-blue-600 text-white;
+		@apply hover:bg-blue-700;
+		@apply active:bg-blue-800;
+	}
+
+	&.btn-info {
+		@apply bg-cyan-600 text-white;
+		@apply hover:bg-cyan-700;
+		@apply active:bg-cyan-800;
+	}
+}

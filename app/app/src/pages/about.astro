@@ -1,5 +1,7 @@
 ---
+import { githubRepositoryUrl } from '~/config'
 import Default from '~/layouts/Default.astro'
+import matibouxSvg from '~/assets/matiboux.svg?url'
 
 const title = 'About'
 ---
@@ -18,17 +20,41 @@ const title = 'About'
 
 	<h2>Team</h2>
 	<div class="media">
-		<img src="{{ 'static/matiboux.svg' | relative_url }}" class="align-self-start mr-3" alt="Matiboux" width="90px" />
+		<img src={matibouxSvg} class="align-self-start mr-3" alt="Matiboux" width="90px" />
 		<div class="media-body">
 			<h5>Matiboux <small>– Mathieu Guérin</small></h5>
 			<p>I'm an EPITA student and developer. I work on EPITA.it and other projects.</p>
-			<p>
-				<a href="mailto:mathieu.guerin@epita.fr" class="btn btn-dark btn-sm mb-1"><span class="icon icon-[fa6-solid--envelope] icon-fw"></span> Email @epita.fr</a>
-				<a href="https://github.com/matiboux" class="btn btn-dark btn-sm mb-1"><i class="icon icon-[fa-brands--github] icon-fw"></i> Github</a>
-				<a href="https://matiboux.me/" class="btn btn-dark btn-sm mb-1"><span class="icon icon-[fa6-solid--globe] icon-fw"></span> Matiboux.me</a>
-			</p>
+			<div>
+				<a href="mailto:mathieu.guerin@epita.fr" class="btn btn-dark btn-sm"><span class="icon icon-[fa6-solid--envelope] icon-fw"></span> Email @epita.fr</a>
+				<a href="https://github.com/matiboux" class="btn btn-dark btn-sm"><i class="icon icon-[fa-brands--github] icon-fw"></i> Github</a>
+				<a href="https://matiboux.me/" class="btn btn-dark btn-sm"><span class="icon icon-[fa6-solid--globe] icon-fw"></span> Matiboux.me</a>
+			</div>
 		</div>
 	</div>
-	<a href="{{ site.github.repository_url }}/graphs/contributors" class="btn btn-info btn-sm"><i class="icon icon-[fa-brands--github] icon-fw"></i> See all contributors to EPITA.it</a>
+	<a href={`${githubRepositoryUrl}/graphs/contributors`} class="btn btn-info btn-sm">
+		<i class="icon icon-[fa-brands--github] icon-fw"></i> See all contributors to EPITA.it
+	</a>
 
 </Default>
+
+<style lang="scss">
+.media {
+	@apply flex items-start mb-4;
+
+	> img {
+		@apply self-start mr-4 align-middle border-0;
+	}
+
+	> .media-body {
+		@apply flex-1;
+
+		h5 {
+			@apply mb-2 text-xl font-medium;
+		}
+
+		p {
+			@apply mb-2;
+		}
+	}
+}
+</style>
