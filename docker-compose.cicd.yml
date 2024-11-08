@@ -7,6 +7,8 @@ services:
     image: ${IMAGES_PREFIX:-app}-cicd:${DOCKER_TAG:-latest}
     build:
       target: app_prod_build
+      args:
+        BUILD_CHECK: ${BUILD_CHECK:-true}
     # Deploy override
     volumes:
       - ./app/dist:/tmp/dist
