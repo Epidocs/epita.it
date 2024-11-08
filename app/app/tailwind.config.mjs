@@ -8,9 +8,11 @@ export default {
 	theme: {
 		screens: {
 			sm: '540px',
+			'navbar-sm': '640px',
 			md: '720px',
-			'navbar-sm': '840px',
+			'navbar-md': '840px',
 			lg: '960px',
+			'navbar-lg': '960px',
 			xl: '1140px',
 		},
 	},

@@ -83,8 +83,8 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	@apply relative bg-[#183048] py-2 text-white;
 
 	> .container-fluid {
-		@apply flex flex-wrap navbar-sm:flex-nowrap items-center justify-between;
-		@apply w-full max-w-screen-lg mx-auto px-4;
+		@apply flex flex-wrap navbar-md:flex-nowrap items-center justify-between;
+		@apply w-full max-w-screen-navbar-sm navbar-md:max-w-screen-navbar-lg mx-auto px-4;
 	}
 
 	.navbar-brand {
@@ -95,7 +95,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	}
 
 	.navbar-toggler {
-		@apply navbar-sm:hidden;
+		@apply navbar-md:hidden;
 		@apply px-2 py-0;
 		@apply text-2xl text-white hover:text-white;
 		@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
@@ -104,8 +104,8 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	}
 
 	.navbar-collapse {
-		@apply flex-1 basis-full navbar-sm:flex-auto;
-		@apply hidden navbar-sm:flex items-start justify-between;
+		@apply flex-1 basis-full navbar-md:flex-auto;
+		@apply hidden navbar-md:flex items-start justify-between;
 
 		&.show {
 			@apply block;
@@ -113,21 +113,21 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	}
 
 	.navbar-nav {
-		@apply flex flex-col navbar-sm:flex-row items-start;
+		@apply flex flex-col navbar-md:flex-row items-start;
 
 		.nav-item {
 			&.nav-unpacked {
-				@apply block navbar-sm:hidden lg:block;
+				@apply block navbar-md:hidden navbar-lg:block;
 			}
 
 			&.nav-packed {
-				@apply hidden navbar-sm:block lg:hidden;
+				@apply hidden navbar-md:block navbar-lg:hidden;
 			}
 		}
 
 		.nav-link {
 			@apply block;
-			@apply px-0 navbar-sm:px-2 py-2;
+			@apply px-0 navbar-md:px-2 py-2;
 			@apply text-white hover:text-white;
 			@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
 
