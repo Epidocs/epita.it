@@ -38,10 +38,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build for production
-      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
       env:
         GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
         GITHUB_SHA: ${{ github.sha }}
+      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
 
     - name: Copy application files
       run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml run --rm app
