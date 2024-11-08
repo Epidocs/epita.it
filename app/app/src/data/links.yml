@@ -82,7 +82,7 @@
 
   - name: IonisX
     href: https://ionisx.com/
-    class: tile-medium text-dark
+    class: tile-medium text-dark invalid
     background_image: https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png
     style:
     - 'background-color: #d09c01'
