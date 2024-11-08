@@ -25,14 +25,14 @@ const navbarplus = yaml.load(navbarplusYml) as any
 						<>
 							{item.unpack && (
 								item.items.map((subitem: any) => (
-									<a href={subitem.href} class:list={[ 'nav-item nav-link nav-unpack', { active: Astro.url.pathname === subitem.href } ]}>
+									<a href={subitem.href} class:list={[ 'nav-item nav-link nav-unpacked', { active: Astro.url.pathname === subitem.href } ]}>
 										{subitem.title}
 									</a>
 								))
 							)}
-							<div class="nav-item dropdown">
+							<div class="nav-item dropdown nav-packed">
 								<a href="#" class:list={[
-									'nav-link dropdown-toggle nav-pack',
+									'nav-link dropdown-toggle',
 									{ active: item.items.some((subitem: any) => Astro.url.pathname === subitem.href) },
 								]}>
 									{item.title}
@@ -115,6 +115,16 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	.navbar-nav {
 		@apply flex flex-col navbar-sm:flex-row items-start;
 
+		.nav-item {
+			&.nav-unpacked {
+				@apply block navbar-sm:hidden lg:block;
+			}
+
+			&.nav-packed {
+				@apply hidden navbar-sm:block lg:hidden;
+			}
+		}
+
 		.nav-link {
 			@apply block;
 			@apply px-0 navbar-sm:px-2 py-2;
@@ -123,14 +133,6 @@ const navbarplus = yaml.load(navbarplusYml) as any
 
 			&.active {
 				@apply text-opacity-100;
-			}
-
-			&.nav-unpack {
-				@apply block md:hidden lg:block;
-			}
-
-			&.nav-pack {
-				@apply hidden md:block lg:hidden;
 			}
 		}
 	}
