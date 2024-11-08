@@ -200,7 +200,7 @@ for (const navbarToggler of navbarTogglers)
 	navbarToggler.addEventListener('click', (event) =>
 	{
 		event.preventDefault()
-		const navbarCollapse = navbarToggler.parentElement.querySelector('.navbar-collapse')
+		const navbarCollapse = navbarToggler.parentElement?.querySelector('.navbar-collapse')
 		navbarCollapse?.classList.toggle('show')
 	})
 }
@@ -211,7 +211,7 @@ for (const dropdownToggler of dropdownTogglers)
 	dropdownToggler.addEventListener('click', (event) =>
 	{
 		event.preventDefault()
-		const dropdownMenu = dropdownToggler.parentElement.querySelector('.dropdown-menu')
+		const dropdownMenu = dropdownToggler.parentElement?.querySelector('.dropdown-menu')
 		dropdownMenu?.classList.toggle('show')
 	})
 }
