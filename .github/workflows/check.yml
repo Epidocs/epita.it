@@ -1,0 +1,53 @@
+name: Check CI
+
+on:
+  # Run on pull requests to primary branches
+  pull_request:
+    branches:
+      - master
+      - main
+      - dev
+    paths:
+      - '.github/workflows/check.yml'
+      - 'app/**'
+      - 'docker-compose*.yml'
+
+  # Run on manual triggers
+  workflow_dispatch:
+
+# Set GITHUB_TOKEN permissions
+permissions:
+  contents: read
+
+# Set workflow concurrency rules
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  # Build job
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build for production
+      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
+      env:
+        GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
+        GITHUB_SHA: ${{ github.sha }}
+
+    - name: Copy application files
+      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml run --rm app
+
+    - name: Check application files
+      run: |
+        [ -d ./app/dist ] && [ $(ls -1 ./app/dist | wc -l) -gt 0 ] \
+          && echo "Application files found" \
+          || ( echo "No application files found" && exit 1 )
