@@ -3,6 +3,10 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import '~/styles/tiles.css'
+import bodyHeightJs from '~/scripts/body-height.ts?url'
+import standaloneAppJs from '~/scripts/standalone-app.js?url'
+import carouselJs from '~/scripts/carousel.ts?raw'
+import invalidLinksJs from '~/scripts/invalid-links.js?raw'
 
 import Layout from '~/layouts/Layout.astro'
 import type { Props as BaseProps } from '~/layouts/Layout.astro'
@@ -55,10 +59,15 @@ const baseProps: BaseProps = {
 </Layout>
 
 {!noScripts && (
-	<script is:inline src="/scripts/body-height.ts"></script>
-	<script is:inline src="/scripts/standalone-app.ts"></script>
-	<script is:inline src="/scripts/carousel.ts"></script>
-	<script is:inline src="/scripts/invalid-links.ts"></script>
+	<script src={bodyHeightJs}></script>
+	<script src={standaloneAppJs}></script>
+	<script src={carouselJs}></script>
+	<script src={invalidLinksJs}></script>
+	<script src="~/scripts/invalid-links.js"></script>
+	<script src="../scripts/invalid-links.js"></script>
+	<script is:inline src="/scripts/invalid-links.js"></script>
+	<script is:inline src="~/scripts/invalid-links.js"></script>
+	<script is:inline src="../scripts/invalid-links.js"></script>
 )}
 
 <style lang="scss" is:global>
