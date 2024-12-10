@@ -33,6 +33,15 @@
 - title: Old official resources
   items:
 
+  # 404 Not Found
+  - name: IonisX
+    href: https://ionisx.com/
+    class: tile-medium text-dark invalid
+    # background_image: https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png
+    style:
+    - 'background-color: #d09c01'
+    - 'background-size: 90%'
+
   # 502 Bad Gateway
   - name: Chronos
     href: http://chronos.epita.net/
