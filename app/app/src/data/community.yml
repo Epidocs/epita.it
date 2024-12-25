@@ -2,7 +2,7 @@
   items:
 
   - name: EPITA International
-    icon: icon-[fa-brands--discord]
+    icon: icon-[fa6-brands--discord]
     href: https://discord.gg/bQ7Tpk2
     class: tile-medium
     background_image: https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256
@@ -19,7 +19,7 @@
     - 'background-position-y: 45%'
 
   - name: Segfault
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Segfolt
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/Segfolt/picture?width=256
@@ -27,7 +27,7 @@
     - 'background-color: #dfe8ef'
 
   - name: Disruptif
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Disruptifs
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/Disruptifs/picture?width=256
@@ -63,7 +63,7 @@
     - 'background-size: cover'
 
   - name: Back to basics
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/btbepita/
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/btbepita/picture?width=256
@@ -74,7 +74,7 @@
     - 'background-position-y: top'
 
   - name: BDE
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/bdeepita/
     class: tile-medium
     background_image: https://graph.facebook.com/bdeepita/picture?width=256
@@ -91,7 +91,7 @@
     - 'background-size: 90%'
 
   - name: Cycom
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/AssoCycom
     # href: https://cycom.org/
     class: tile-medium text-dark
@@ -120,7 +120,7 @@
     - 'background-repeat: no-repeat, no-repeat'
 
   - name: Epimathia
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Epimathia/
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/Epimathia/picture?width=256
@@ -139,7 +139,7 @@
     - 'background-position-y: 45%'
 
   - name: Episolidaire
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/episolidaire/
     class: tile-medium
     background_image: https://graph.facebook.com/episolidaire/picture?width=256
@@ -149,7 +149,7 @@
     - 'background-position-y: top'
 
   - name: Episport
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Episport/
     class: tile-medium
     background_image: https://graph.facebook.com/Episport/picture?width=256
@@ -182,7 +182,7 @@
     - 'background-size: 90%'
 
   - name: Evotutek
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     # href: https://evolutek.fr/
     href: https://fb.me/evolutek.ionis
     class: tile-medium text-dark
@@ -208,7 +208,7 @@
     - 'background-position-y: 25%'
 
   - name: Heritage Foyer
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/heritage.foyer
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/heritage.foyer/picture?width=256
@@ -218,7 +218,7 @@
     - 'background-position-y: top'
 
   - name: La Paillote
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/lapaillote.apero
     class: tile-medium
     background_image: https://graph.facebook.com/lapaillote.apero/picture?width=256
@@ -238,7 +238,7 @@
     - 'background-position-x: 80%'
 
   - name: Pôle Gastronomique
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/P%C3%B4le-Gastronomique-107151704029031/
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/107151704029031/picture?width=256
@@ -256,7 +256,7 @@
     - 'background-size: 60%'
 
   - name: Soul of Sound
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/soulofsoundband
     class: tile-medium
     background_image: https://graph.facebook.com/soulofsoundband/picture?width=256
@@ -264,7 +264,7 @@
     - 'background-color: #000'
 
   - name: Strataegyc
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Strataegyc/
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/Strataegyc/picture?width=256
@@ -272,7 +272,7 @@
     - 'background-color: #fff'
 
   - name: The Stack
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Epitactic
     class: tile-medium text-dark
     background_image: https://graph.facebook.com/Epitactic/picture?width=256
@@ -282,7 +282,7 @@
     - 'background-position-y: 25%'
 
   - name: Unisson
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/unisson/
     class: tile-medium
     background_image: https://graph.facebook.com/unisson/picture?width=256
@@ -292,7 +292,7 @@
     - 'background-position-y: 25%'
 
   - name: UnPlug
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/UnPlugEpita
     class: tile-medium
     background_image: https://graph.facebook.com/UnPlugEpita/picture?width=256
@@ -301,7 +301,7 @@
     - 'background-size: cover'
 
   - name: VJN
-    icon: icon-[fa-brands--facebook]
+    icon: icon-[fa6-brands--facebook]
     href: https://fb.me/vjnights/
     class: tile-medium
     background_image: https://graph.facebook.com/vjnights/picture?width=256

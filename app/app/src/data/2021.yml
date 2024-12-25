@@ -2,7 +2,7 @@
   items:
 
   - name: Discord EPITA 2021
-    icon: icon-[fa-brands--discord]
+    icon: icon-[fa6-brands--discord]
     href: https://discordapp.com/invite/WbhavjX
     class: tile-wide
     background_image: /assets/2021-discord-logo.png
