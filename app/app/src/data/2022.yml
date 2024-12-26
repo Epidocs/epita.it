@@ -2,7 +2,7 @@
   items:
 
   - name: Discord EPITA 2022
-    icon: icon-[fa-brands--discord]
+    icon: icon-[fa6-brands--discord]
     href: https://discordapp.com/invite/geJBr2J
     class: tile-wide
     background_image: https://cdn.discordapp.com/icons/352524741980061698/d497123ca9cd655542bba191b959efe1.webp?size=256

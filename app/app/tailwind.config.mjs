@@ -24,7 +24,7 @@ export default {
 		'icon-[fa6-solid--list-ul]',
 		'icon-[fa6-solid--star]',
 		'icon-[fa6-solid--user-group]',
-		'icon-[fa-brands--discord]',
-		'icon-[fa-brands--facebook]',
+		'icon-[fa6-brands--discord]',
+		'icon-[fa6-brands--facebook]',
 	],
 }

@@ -2,7 +2,7 @@
   items:
 
   - name: Discord EPITA 2026
-    icon: icon-[fa-brands--discord]
+    icon: icon-[fa6-brands--discord]
     href: https://discord.gg/wJn9Ku98zp
     class: tile-wide
     background_image: /assets/2026-discord-logo.png
@@ -10,7 +10,7 @@
     - 'background-color: #202225'
 
   - name: Discord EPITA APPRENTISSAGE 2026
-    icon: icon-[fa-brands--discord]
+    icon: icon-[fa6-brands--discord]
     href: https://discord.gg/vdWxE4T6Dh
     class: tile-wide
     background_image: /assets/2026-apping-discord-logo.png

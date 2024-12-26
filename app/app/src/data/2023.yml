@@ -2,7 +2,7 @@
   items:
 
   - name: Discord EPITA 2023
-    icon: icon-[fa-brands--discord]
+    icon: icon-[fa6-brands--discord]
     href: https://discordapp.com/invite/r3vn4U6
     class: tile-wide
     background_image: /assets/2023-discord-logo.webp
