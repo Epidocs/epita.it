@@ -239,14 +239,6 @@
     - 'background-color: #24292e'
     - 'background-size: 90%'
 
-  - name: Epitaf
-    href: https://www.epitaf.fr/
-    class: tile-medium
-    icon: icon-[fa6-solid--user-group]
-    background_image: https://www.epitaf.fr/logo.png
-    style:
-    - 'background-color: #141d27'
-
   - name: Epinotes
     href: https://epinotes.fr/
     class: tile-medium
