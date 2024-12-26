@@ -186,3 +186,12 @@
     # background_image: https://epitar.aureleoules.com/favicon.png
     style:
     - 'background-color: #141d27'
+
+  # Cloudflare block page
+  - name: Epitaf
+    href: https://www.epitaf.fr/
+    class: tile-small-wide invalid
+    icon: icon-[fa6-solid--user-group]
+    # background_image: https://www.epitaf.fr/logo.png
+    style:
+    - 'background-color: #141d27'
