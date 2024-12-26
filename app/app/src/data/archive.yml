@@ -82,10 +82,11 @@
     <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
   items:
 
+  # Unresolved domain name
   - name: iChronos
     icon: icon-[fa6-solid--user-group]
     href: https://ichronos.net/
-    class: tile-small-wide
+    class: tile-small-wide invalid
     style:
     - 'background-color: #616161'
 
