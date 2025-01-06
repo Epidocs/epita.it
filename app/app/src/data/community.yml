@@ -138,6 +138,16 @@
     - 'background-size: 90%'
     - 'background-position-y: 45%'
 
+  - name: EPIRS
+    icon: icon-[fa6-brands--discord]
+    href: https://discord.gg/mrax8W3ZCk
+    class: tile-medium text-dark
+    background_image: https://raw.githubusercontent.com/epita-rs/epita-rs.github.io/refs/heads/main/logo.jpg?size=256 
+    style:
+    - 'background-color: #fff'
+    - 'background-size: 200%'
+    - 'background-position-y: 50%'
+
   - name: Episolidaire
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/episolidaire/
