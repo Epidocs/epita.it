@@ -308,3 +308,12 @@
     style:
     - 'background-color: #000'
     - 'background-size: 80%'
+  - name: EPIRS
+    icon: icon-[fa6-brands--discord]
+    href: https://discord.gg/mrax8W3ZCk
+    class: tile-medium text-dark
+    background_image: https://raw.githubusercontent.com/epita-rs/epita-rs.github.io/refs/heads/main/logo.jpg?size=256 
+    style:
+    - 'background-color: #fff'
+    - 'background-size: 200%'
+    - 'background-position-y: 50%'
