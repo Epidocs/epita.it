@@ -1,21 +1,28 @@
 name: Check CI
 
 on:
+
   # Run on pull requests to primary branches
   pull_request:
     branches:
-      - master
+      # Production
       - main
+      - master
+      # Development
       - dev
     paths:
+      # CI files
       - '.github/workflows/check.yml'
+      - 'docker-compose.yml'
+      - 'docker-compose.cicd.yml'
+      - '.env'
+      # Application files
       - 'app/**'
-      - 'docker-compose*.yml'
 
   # Run on manual triggers
   workflow_dispatch:
 
-# Set GITHUB_TOKEN permissions
+# Set GITHUB_TOKEN permissions for the workflow
 permissions:
   contents: read
 
@@ -30,25 +37,40 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
 
-    - name: Checkout
-      uses: actions/checkout@v4
+      # Steps dependencies
 
-    - name: Build for production
-      env:
-        GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
-        GITHUB_SHA: ${{ github.sha }}
-        BUILD_CHECK: "true"
-      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml build
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Copy application files
-      run: docker compose -f docker-compose.yml -f docker-compose.cicd.yml run --rm app
+      # Execution steps
 
-    - name: Check application files
-      run: |
-        [ -d ./app/dist ] && [ $(ls -1 ./app/dist | wc -l) -gt 0 ] \
-          && echo "Application files found" \
-          || ( echo "No application files found" && exit 1 )
+      - name: Build for production
+        env:
+          GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          BUILD_CHECK: "true" # Run type checks
+        run: |
+          # docker compose build
+          docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+              --env-file .env \
+              build
+
+      - name: Copy application files
+        run: |
+          # docker compose up
+          docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+              --env-file .env \
+              up
+
+      - name: Check application files
+        run: |
+          # Check application files
+          [ -d ./app/dist ] && [ $(ls -1 ./app/dist | wc -l) -gt 0 ] \
+            && echo "Application files found" \
+            || ( echo "No application files found" && exit 1 )

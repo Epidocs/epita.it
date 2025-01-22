@@ -4,7 +4,7 @@ services:
 
   app:
     # Build override
-    image: ${IMAGES_PREFIX:-app}-dev:${DOCKER_TAG:-latest}
+    image: ${IMAGES_PREFIX:-app}-dev:${IMAGES_TAG:-latest}
     build:
       target: app_dev
     # Deploy override
