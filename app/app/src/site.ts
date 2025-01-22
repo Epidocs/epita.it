@@ -1,4 +1,4 @@
-interface Site
+export interface Site
 {
 	title?: string
 	description?: string
@@ -7,10 +7,9 @@ interface Site
 	themeColor?: string
 	favicon?: string
 	lang?: string
-	gtag?: string
 }
 
-const site: Site = {
+export const site: Site = {
 	title: 'EPITA.it',
 	description: 'Portail vers des services en lien avec l\'EPITA',
 	author: 'Matiboux',
@@ -36,10 +35,4 @@ const site: Site = {
 	themeColor: '#183048',
 	lang: 'en',
 	// gtag: 'UA-140860210-2',
-}
-
-export default site
-
-export type {
-	Site,
 }
