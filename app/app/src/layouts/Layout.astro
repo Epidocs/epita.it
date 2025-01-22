@@ -1,5 +1,5 @@
 ---
-import site from '~/site'
+import { site } from '~/site'
 import Base from '~/layouts/Base.astro'
 import type { Props as BaseProps } from '~/layouts/Base.astro'
 
@@ -8,28 +8,17 @@ export interface Props extends Omit<BaseProps, 'title'>
 	title?: BaseProps['title']
 }
 
-const {
-	title,
-} = Astro.props
-
-if (site.title === undefined && Astro.props.title === undefined)
-{
-	throw new Error('Title is undefined')
-}
-
 const baseProps: BaseProps = {
 	...Astro.props,
-	title: title
-		? (site.title
-			? `${title} – ${site.title}`
-			: title
-		)
+	title: Astro.props.title
+		? (site.title ? `${Astro.props.title} – ${site.title}` : Astro.props.title)
 		: (site.title || ''),
 	description: Astro.props.description || site.description || undefined,
 	author: Astro.props.author || site.author || undefined,
 	keywords: Astro.props.keywords || site.keywords || undefined,
 	themeColor: Astro.props.themeColor || site.themeColor || undefined,
 	favicon: Astro.props.favicon || site.favicon || undefined,
+	lang: Astro.props.lang || site.lang || undefined,
 }
 ---
 
