@@ -45,6 +45,4 @@ dist/
 
 # -- Specific to gitignore:
 
-# Build configuration files (allow)
-!Dockerfile
-!Makefile
+# N/A
