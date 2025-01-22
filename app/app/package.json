@@ -23,17 +23,17 @@
   "homepage": "https://github.com/matiboux/matiboux.me#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/tailwind": "^5.1.4",
-    "@fontsource/roboto": "^5.1.0",
+    "@astrojs/tailwind": "^5.1.5",
+    "@fontsource/roboto": "^5.1.1",
     "@iconify-json/fa6-brands": "^1.2.5",
     "@iconify-json/fa6-solid": "^1.2.3",
-    "@iconify-json/mdi": "^1.2.2",
+    "@iconify-json/mdi": "^1.2.3",
     "@iconify/tailwind": "^1.2.0",
-    "astro": "^5.1.1",
+    "astro": "^5.1.8",
     "js-yaml": "^4.1.0",
-    "sass": "^1.83.0",
+    "sass": "^1.83.4",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
