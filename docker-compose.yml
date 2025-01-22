@@ -11,7 +11,7 @@ services:
 
   app:
     # Build
-    image: ${IMAGES_PREFIX:-app}:${DOCKER_TAG:-latest}
+    image: ${IMAGES_PREFIX:-app}:${IMAGES_TAG:-latest}
     build:
       context: ./app
       dockerfile: ./Dockerfile
