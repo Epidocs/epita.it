@@ -6,7 +6,7 @@
 # --
 # Upstream images
 
-FROM node:20-slim AS node_upstream
+FROM node:22-slim AS node_upstream
 FROM nginx:alpine AS nginx_upstream
 
 
