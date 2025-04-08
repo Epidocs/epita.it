@@ -10,24 +10,30 @@ export interface Props
 	htmlClass?: string | undefined
 	htmlAttributes?: { [key: string]: string }
 	// Meta tags
-	title: string
+	title?: string | undefined
 	description?: string | undefined
 	author?: string | undefined
 	keywords?: string | string[] | undefined
-	generator?: boolean
+	generator?: boolean | undefined
 	themeColor?: string | undefined
-	viewportScale?: number
+	viewportScale?: number | undefined
 	favicon?: ImageMetadata | string | undefined
 	socialTitle?: string | true | undefined
 	socialDescription?: string | true | undefined
-	socialImage?: URL | undefined
-	socialUrl?: URL | undefined
+	socialImage?: URL | string | undefined
+	socialUrl?: URL | string | true | undefined
 	socialType?: string | undefined
 	socialTwitterCard?: string | undefined
 	// Body attributes
 	bodyClass?: string | undefined
 	bodyAttributes?: { [key: string]: string }
 }
+
+const title = Astro.props.title
+const description = Astro.props.description
+const socialTitle = Astro.props.socialTitle === true ? Astro.props.title : Astro.props.socialTitle
+const socialDescription = Astro.props.socialDescription === true ? Astro.props.description : Astro.props.socialDescription
+const socialUrl = Astro.props.socialUrl === true ? Astro.site : Astro.props.socialUrl
 
 const formatsToType = {
 	'ico': 'image/x-icon',
@@ -43,10 +49,17 @@ const formatsToType = {
 ---
 
 <!DOCTYPE html>
-<html lang={Astro.props.lang} class={Astro.props.htmlClass} {...Astro.props.htmlAttributes}>
+<html
+	lang={Astro.props.lang}
+	class={Astro.props.htmlClass}
+	{...Astro.props.htmlAttributes}
+>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content={`width=device-width, initial-scale=${Astro.props.viewportScale}`} />
+
+		{Astro.props.viewportScale !== undefined &&
+			<meta name="viewport" content={`width=device-width, initial-scale=${Astro.props.viewportScale}`} />
+		}
 
 		{Astro.props.favicon &&
 			<link rel="icon"
@@ -58,26 +71,55 @@ const formatsToType = {
 			/>
 		}
 
-		<title>{Astro.props.title}</title>
-		<meta name="title" content={Astro.props.title} />
-		{Astro.props.description && <meta name="description" content={Astro.props.description} />}
-		{Astro.props.author && <meta name="author" content={Astro.props.author} />}
-		{Astro.props.keywords && <meta name="keywords" content={Array.isArray(Astro.props.keywords) ? Astro.props.keywords.join(', ') : Astro.props.keywords} />}
-		{Astro.props.generator && <meta name="generator" content={Astro.generator} />}
-		{Astro.props.themeColor && <meta name="theme-color" content={Astro.props.themeColor} />}
+		{title && (
+			<title>{title}</title>
+			<meta name="title" content={title} />
+		)}
+		{description &&
+			<meta name="description" content={description} />
+		}
+		{Astro.props.author &&
+			<meta name="author" content={Astro.props.author} />
+		}
+		{Astro.props.keywords &&
+			<meta name="keywords" content={
+				Array.isArray(Astro.props.keywords) ? Astro.props.keywords.join(', ') : Astro.props.keywords
+			} />
+		}
+		{Astro.props.generator &&
+			<meta name="generator" content={Astro.generator} />
+		}
+		{Astro.props.themeColor &&
+			<meta name="theme-color" content={Astro.props.themeColor} />
+		}
 
 		<!-- Social media -->
-		{Astro.props.socialTitle && <meta property="og:title" content={typeof Astro.props.socialTitle === 'string' ? Astro.props.socialTitle : Astro.props.title} />}
-		{Astro.props.socialDescription && <meta property="og:description" content={typeof Astro.props.socialDescription === 'string' ? Astro.props.socialDescription : Astro.props.description} />}
-		{Astro.props.socialImage && <meta property="og:image" content={Astro.props.socialImage} />}
-		{Astro.props.socialUrl && <meta property="og:url" content={Astro.props.socialUrl} />}
-		{Astro.props.socialType && <meta property="og:type" content={Astro.props.socialType} />}
-		{Astro.props.socialTwitterCard && <meta name="twitter:card" content={Astro.props.socialTwitterCard} />}
+		{socialTitle &&
+			<meta property="og:title" content={socialTitle} />
+		}
+		{socialDescription &&
+			<meta property="og:description" content={socialDescription} />
+		}
+		{Astro.props.socialImage &&
+			<meta property="og:image" content={Astro.props.socialImage} />
+		}
+		{socialUrl &&
+			<meta property="og:url" content={socialUrl} />
+		}
+		{Astro.props.socialType &&
+			<meta property="og:type" content={Astro.props.socialType} />
+		}
+		{Astro.props.socialTwitterCard &&
+			<meta name="twitter:card" content={Astro.props.socialTwitterCard} />
+		}
 
 		<slot name="head" />
 	</head>
 
-	<body class={Astro.props.bodyClass} {...Astro.props.bodyAttributes}>
+	<body
+		class={Astro.props.bodyClass}
+		{...Astro.props.bodyAttributes}
+	>
 		<slot />
 	</body>
 </html>
