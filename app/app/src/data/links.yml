@@ -248,6 +248,15 @@
     - 'background-color: #131415'
     - 'background-size: 90%'
 
+  - name: Devoups
+    href: https://devou.ps/
+    class: tile-medium
+    icon: icon-[fa6-solid--user-group]
+    background_image: https://devou.ps/img/logo.svg
+    style:
+    - 'background-color: #111827'
+    - 'background-size: 70%'
+
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
     class: tile-small-wide text-dark
