@@ -20,8 +20,10 @@
     - 'background-color: #FFFFFF'
     - 'background-size: 30%'
     - 'background-position-y: 30%'
+
 - title: S2 Projects
   items:
+ 
   - name: HorizonBreak
     href: https://horizonweb.vercel.app/
     class: tile-medium text-dark
