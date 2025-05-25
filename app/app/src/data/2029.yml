@@ -1,0 +1,35 @@
+- title: Student Community
+  items:
+
+  - name: Discord EPITA 2029
+    icon: icon-[fa6-brands--discord]
+    href: https://discord.gg/D8HQU6v59w
+    class: tile-wide
+    background_image: /assets/2029-discord-logo.png
+    style:
+    - 'background-color: #202225'
+
+- title: Misc.
+  items:
+
+  - name: Guide de survie Projet S2 (FR)
+    href: https://s2guide.epita.it/
+    class: tile-wide text-dark
+    background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
+    style:
+    - 'background-color: #FFFFFF'
+    - 'background-size: 30%'
+    - 'background-position-y: 30%'
+
+- title: S2 Projects
+  items:
+ 
+  - name: HorizonBreak
+    href: https://horizonweb.vercel.app/
+    class: tile-medium text-dark
+    background_image: https://horizonweb.vercel.app/logo.jpeg
+    style: 
+    - 'background-color: #FFFFFF'
+    - 'background-size: auto 100%'
+    # - 'background-position-x: right'
+    # - 'background-position-y: 5%'

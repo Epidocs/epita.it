@@ -1,0 +1,26 @@
+# Services definition for building & deploying
+
+x-common:
+
+  app:
+    environment: &app_environment
+      GITHUB_REPOSITORY_URL: ${GITHUB_REPOSITORY_URL:-}
+      GITHUB_SHA: ${GITHUB_SHA:-}
+
+services:
+
+  app:
+    # Build
+    image: ${IMAGES_PREFIX:-app}:${IMAGES_TAG:-latest}
+    build:
+      context: ./app
+      dockerfile: ./Dockerfile
+      target: app_prod
+      args:
+        PORT: ${HTTP_DOCKER_PORT:-8080}
+        <<: [ *app_environment ]
+    # Deploy
+    environment:
+      <<: [ *app_environment ]
+    ports:
+      - "${HTTP_PORT:-80}:${HTTP_DOCKER_PORT:-8080}" # HTTP

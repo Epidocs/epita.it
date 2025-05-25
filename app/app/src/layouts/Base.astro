@@ -1,0 +1,125 @@
+---
+import type { ImageMetadata } from 'astro'
+
+import '~/styles/style.scss'
+
+export interface Props
+{
+	// HTML attributes
+	lang?: string | undefined
+	htmlClass?: string | undefined
+	htmlAttributes?: { [key: string]: string }
+	// Meta tags
+	title?: string | undefined
+	description?: string | undefined
+	author?: string | undefined
+	keywords?: string | string[] | undefined
+	generator?: boolean | undefined
+	themeColor?: string | undefined
+	viewportScale?: number | undefined
+	favicon?: ImageMetadata | string | undefined
+	socialTitle?: string | true | undefined
+	socialDescription?: string | true | undefined
+	socialImage?: URL | string | undefined
+	socialUrl?: URL | string | true | undefined
+	socialType?: string | undefined
+	socialTwitterCard?: string | undefined
+	// Body attributes
+	bodyClass?: string | undefined
+	bodyAttributes?: { [key: string]: string }
+}
+
+const title = Astro.props.title
+const description = Astro.props.description
+const socialTitle = Astro.props.socialTitle === true ? Astro.props.title : Astro.props.socialTitle
+const socialDescription = Astro.props.socialDescription === true ? Astro.props.description : Astro.props.socialDescription
+const socialUrl = Astro.props.socialUrl === true ? Astro.site : Astro.props.socialUrl
+
+const formatsToType = {
+	'ico': 'image/x-icon',
+	'jpeg': 'image/jpeg',
+	'jpg': 'image/jpeg',
+	'png': 'image/png',
+	'tiff': 'image/tiff',
+	'webp': 'image/webp',
+	'gif': 'image/gif',
+	'svg': 'image/svg+xml',
+	'avif': 'image/avif',
+}
+---
+
+<!DOCTYPE html>
+<html
+	lang={Astro.props.lang}
+	class={Astro.props.htmlClass}
+	{...Astro.props.htmlAttributes}
+>
+	<head>
+		<meta charset="utf-8" />
+
+		{Astro.props.viewportScale !== undefined &&
+			<meta name="viewport" content={`width=device-width, initial-scale=${Astro.props.viewportScale}`} />
+		}
+
+		{Astro.props.favicon &&
+			<link rel="icon"
+				href={typeof Astro.props.favicon === 'string' ? Astro.props.favicon : Astro.props.favicon.src}
+				type={
+					(formatsToType as { [key: string]: undefined } & typeof formatsToType)
+					[typeof Astro.props.favicon === 'string' ? Astro.props.favicon.split('.').pop()! : Astro.props.favicon.format]
+				}
+			/>
+		}
+
+		{title && (
+			<title>{title}</title>
+			<meta name="title" content={title} />
+		)}
+		{description &&
+			<meta name="description" content={description} />
+		}
+		{Astro.props.author &&
+			<meta name="author" content={Astro.props.author} />
+		}
+		{Astro.props.keywords &&
+			<meta name="keywords" content={
+				Array.isArray(Astro.props.keywords) ? Astro.props.keywords.join(', ') : Astro.props.keywords
+			} />
+		}
+		{Astro.props.generator &&
+			<meta name="generator" content={Astro.generator} />
+		}
+		{Astro.props.themeColor &&
+			<meta name="theme-color" content={Astro.props.themeColor} />
+		}
+
+		<!-- Social media -->
+		{socialTitle &&
+			<meta property="og:title" content={socialTitle} />
+		}
+		{socialDescription &&
+			<meta property="og:description" content={socialDescription} />
+		}
+		{Astro.props.socialImage &&
+			<meta property="og:image" content={Astro.props.socialImage} />
+		}
+		{socialUrl &&
+			<meta property="og:url" content={socialUrl} />
+		}
+		{Astro.props.socialType &&
+			<meta property="og:type" content={Astro.props.socialType} />
+		}
+		{Astro.props.socialTwitterCard &&
+			<meta name="twitter:card" content={Astro.props.socialTwitterCard} />
+		}
+
+		<slot name="head" />
+	</head>
+
+	<body
+		class={Astro.props.bodyClass}
+		{...Astro.props.bodyAttributes}
+	>
+		<slot />
+	</body>
+</html>

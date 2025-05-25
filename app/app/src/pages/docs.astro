@@ -1,0 +1,23 @@
+---
+import yaml from 'js-yaml'
+
+import Default from '~/layouts/Default.astro'
+import DataLoader from '~/components/DataLoader.astro'
+import docsYml from '~/data/docs.yml?raw'
+
+const docs = yaml.load(docsYml) as any
+
+const title = 'Documentation'
+---
+
+<Default
+	title={title}
+>
+
+	<h1>Documentation & Resources</h1>
+	<p>Portal to documentation, guides and useful resources related to EPITA.</p>
+	<p class="small text-light"><span class="icon icon-[fa6-solid--star] icon-fw"></span> = Official resource, from EPITA</p>
+
+	<DataLoader data={docs} />
+
+</Default>

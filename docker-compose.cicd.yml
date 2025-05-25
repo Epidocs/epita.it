@@ -1,0 +1,15 @@
+# Services definition override for CI/CD
+
+services:
+
+  app:
+    # Build override
+    image: ${IMAGES_PREFIX:-app}-cicd:${IMAGES_TAG:-latest}
+    build:
+      target: app_prod_build
+      args:
+        BUILD_CHECK: ${BUILD_CHECK:-true}
+    # Deploy override
+    volumes:
+      - ./app/dist:/tmp/dist
+    command: [ "sh", "-c", "rm -rf /tmp/dist/* && cp -r /app/dist/* /tmp/dist" ]

@@ -11,17 +11,19 @@ To contribute, you can fork this project, make changes and then open a pull requ
 
 ### Build instructions
 
-```bash
-$ gem install jekyll
-$ jekyll serve
+```sh
+docker compose up --build -d
 ```
 
 ### Add links
 
-If you want to add links to the web portal, please edit [`_data/links.yml`](_data/links.yml).
+If you want to add links to the web portal, please edit [`app/src/data/links.yml`](app/src/data/links.yml).
 Please note that the order of items is important in the way links are displayed on the website.
 
 There are `.yml` files for each page.
+
+
+## Hosting your own project
 
 ### Get an EPITA.it subdomain for your project
 
@@ -36,7 +38,7 @@ You can contact [@matiboux](https://github.com/matiboux) via an issue on Github,
 
 **Creative Commons Attribution-NonCommercial 4.0 International License**
 ([*CC BY-NC 4.0*](https://creativecommons.org/licenses/by-nc/4.0))  
-Copyright (c) 2019-2022 Mathieu Guérin (Matiboux)
+Copyright (c) 2019-2024 Mathieu Guérin (Matiboux)
 
 *Disclaimer:* External resources are the property of their respective owners,
 and therefore are not subject to this license (e.g. images from external links).

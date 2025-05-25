@@ -1,0 +1,136 @@
+---
+export interface Props
+{
+	gridClass?: string
+	grid?: Array<any>
+}
+
+async function prepareItems(items: any)
+{
+	if (!items)
+	{
+		return items
+	}
+
+	return await Promise.all(items.map(async (item: any) =>
+		{
+			if (item.items)
+			{
+				return item
+			}
+
+			if (item.background_image)
+			{
+				item.background_image =
+					(await Promise.all(
+						(Array.isArray(item.background_image)
+							? item.background_image
+							: [item.background_image]
+						)
+							.map(async (src: string) =>
+								{
+									src = src.trim()
+
+									if (src.startsWith('url('))
+									{
+										return src
+									}
+
+									if (
+										src.startsWith('http:') ||
+										src.startsWith('https:') ||
+										src.startsWith('data:') ||
+										src.startsWith('.') ||
+										src.startsWith('/')
+									)
+									{
+										return `url(${encodeURI(src)})`
+									}
+
+									if (src.startsWith('~'))
+									{
+										src = `/src${src.slice(1)}`
+
+										try
+										{
+											// Try to import local file
+											const url = (await import(src + '?url')).default
+											console.log('url', url)
+											return `url(${encodeURI(url)})`
+										}
+										catch (error)
+										// Ignore error
+										{}
+
+										return `url(${encodeURI(src)})`
+									}
+
+									const matches = src.match(/^(data:[-\w]+\/[-+\w.]+(?:;[-\w=]+)*?(;base64)?(?:;[-\w=]+)*),(.+?)$/s)
+									// matches[1] = data+mediatype+parameters
+									// matches[2] = (;base64)?
+									// matches[3] = data
+
+									if (!matches || !matches[1] || !matches[3])
+									{
+										return `url(${encodeURI(src)})`
+									}
+
+									if (matches[2])
+									{
+										return `url(${encodeURI(matches[1])},${encodeURI(matches[3])})`
+									}
+
+									return `url(${encodeURI(matches[1])};base64,${Buffer.from(matches[3]).toString('base64')})`
+								})
+					)).join(', ')
+			}
+
+			return item
+		}))
+}
+
+const items = Astro.props.grid ? await prepareItems(Astro.props.grid) : []
+---
+
+<div class:list={{
+	'tiles-grid': true,
+	...(Astro.props.gridClass ? { [Astro.props.gridClass]: true } : {}),
+}}>
+
+	{items.map((item: any) => (
+		<Fragment>
+			{item.items
+				? (
+					<Astro.self grid={item.items} gridClass={item.class} />
+				)
+				: (
+					<a
+						href={item.relurl || item.href}
+						class={item.class}
+						style={{
+							backgroundImage: item.background_image,
+							...item.style.reduce(
+								(acc: any, rule: string) =>
+									{
+										const colonIndex = rule.indexOf(':')
+										if (colonIndex < 0) return acc
+										const [key, value] = [ rule.slice(0, colonIndex), rule.slice(colonIndex + 1) ]
+										return key && value ? { ...acc, [key]: value } : acc
+									},
+								{},
+							),
+						}}
+					>
+						<span class="branding-bar">{item.name}</span>
+						{item.icon && (
+							<span class="branding-icon">
+								<span class={`${item.icon || 'icon-[fa6-solid--question]'} icon-fw`}></span>
+							</span>
+						)}
+					</a>
+				)
+			}
+		</Fragment>
+	))}
+
+</div>

@@ -1,0 +1,30 @@
+# Services definition override for development
+
+services:
+
+  app:
+    # Build override
+    image: ${IMAGES_PREFIX:-app}-dev:${IMAGES_TAG:-latest}
+    build:
+      target: app_dev
+    # Deploy override
+    develop:
+      watch:
+        # Docker image
+        - action: rebuild
+          path: ./app/Dockerfile
+        # Application build files
+        - action: rebuild
+          path: ./app/app/package.json
+        - action: rebuild
+          path: ./app/app/package-lock.json
+        # Application configuration
+        - action: sync+restart
+          path: ./app/app/astro.config.mjs
+          target: /app/astro.config.mjs
+        # Application source code
+        - action: sync
+          path: ./app/app
+          target: /app
+          ignore:
+            - node_modules/

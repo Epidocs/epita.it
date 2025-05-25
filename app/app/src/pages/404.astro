@@ -1,0 +1,24 @@
+---
+import Default from '~/layouts/Default.astro'
+
+const title = '404 Not Found'
+---
+
+<Default
+	title={title}
+>
+
+	<h1>EPITA.it</h1>
+	<h2 class="text-warning">404 Not Found</h2>
+
+	<a href="/" class="btn btn-primary btn-sm">
+		<span class="icon icon-[fa6-solid--house] icon-fw"></span> Retour à l'accueil
+	</a>
+
+</Default>
+
+<style lang="scss">
+.text-warning {
+	@apply text-orange-500;
+}
+</style>
