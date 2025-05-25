@@ -64,3 +64,12 @@
     - 'background-color: #FFF'
     - 'background-size: 80%'
     - 'background-position-y: 15%'
+
+  - name: Hermita
+    href: https://hermita-game.github.io
+    class: tile-medium text-dark
+    background_image: https://hermita-game.github.io/design/island.png
+    style:
+    - 'background-color: #9cc3f7'
+    - 'background-size: 100%'
+    - 'background-position-y: 25%'
