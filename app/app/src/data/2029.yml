@@ -34,6 +34,16 @@
     # - 'background-position-x: right'
     # - 'background-position-y: 5%'
 
+  - name: SubWay Out
+    href: https://head4che-prod.github.io/subway-out
+    class: tile-medium text-light
+    background_image: https://head4che.co/assets/subwayout.png
+    style: 
+    - 'background-color: #2F4C99'
+    - 'background-position-y: center'
+    - 'background-size: 95% auto'
+    - 'background-repeat: no-repeat'
+
   - name: Unlockis
     href: https://unlockis.fr/
     class: tile-medium text-dark
