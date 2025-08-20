@@ -33,15 +33,18 @@
     "@iconify-json/fa6-brands": "^1.2.5",
     "@iconify-json/fa6-solid": "^1.2.3",
     "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/twemoji": "^1.2.4",
     "@iconify/tailwind": "^1.2.0",
-    "astro": "^5.12.8",
+    "astro": "^5.12.9",
     "js-yaml": "^4.1.0",
-    "sass": "^1.83.4",
+    "sass": "^1.90.0",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3"
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.54.2",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.10.7"
+    "@types/node": "^22.17.1",
+    "vitest": "^3.2.4"
   }
 }
