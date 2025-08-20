@@ -38,20 +38,18 @@ The site will be available at [http://localhost:8080](http://localhost:8080).
 
 ## Contributing
 
-To contribute, you can fork this project, make changes and then open a pull request.
+To report a bug or suggest a feature, please see [the existing issues](https://github.com/Epidocs/epita.it/issues) on GitHub or open a new issue.
 
-### Build instructions
+To contribute directly, you can fork this project, make your changes, and then open a pull request! Use the instructions above to run the site locally for development and test your changes.
 
-```sh
-docker compose up --build -d
-```
 
 ### Add links
 
-If you want to add links to the web portal, please edit [`app/src/data/links.yml`](app/src/data/links.yml).
-Please note that the order of items is important in the way links are displayed on the website.
+Links in the web portal are managed in YAML files, located in [`app/app/src/data/`](app/app/src/data/). You can add links to a specific page by editing the corresponding `.yml` file.
 
-There are `.yml` files for each page.
+For example, if you want to update links on the home page, you can edit [`app/app/src/data/links.yml`](app/app/src/data/links.yml).
+
+Please note the order of items determines how links are displayed on the website.
 
 
 ## Hosting your own project
