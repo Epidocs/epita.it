@@ -58,6 +58,8 @@ const baseProps: BaseProps = {
 {!noScripts && <Scripts />}
 
 <style lang="scss" is:global>
+@reference "tailwindcss/theme";
+
 html, body {
 	height: 100%;
 }
@@ -79,6 +81,8 @@ a:hover { color: #4080c0 }
 </style>
 
 <style lang="scss">
+@reference "tailwindcss/theme";
+
 .main {
 	@apply flex-grow flex-shrink-0;
 	@apply pt-6 pb-8;
@@ -98,6 +102,8 @@ a:hover { color: #4080c0 }
 </style>
 
 <style lang="scss" is:global>
+@reference "tailwindcss/theme";
+
 .main {
 	h1, h2, h3, p, ul {
 		@apply mb-4;
