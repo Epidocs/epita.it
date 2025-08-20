@@ -78,7 +78,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 </nav>
 
 <style lang="scss">
-@reference "tailwindcss/theme";
+@reference "~/styles/tailwind.css";
 
 .navbar {
 	@apply relative bg-[#183048] py-2 text-white;
@@ -98,10 +98,10 @@ const navbarplus = yaml.load(navbarplusYml) as any
 	.navbar-toggler {
 		@apply navbar-md:hidden;
 		@apply px-2 py-0;
-		@apply text-2xl text-white hover:text-white;
-		@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
-		@apply border border-solid border-white rounded;
-		@apply border-opacity-10 hover:border-opacity-25 active:border-opacity-50;
+		@apply text-2xl hover:text-white;
+		@apply text-white/50 hover:text-white/75 active:text-white/90;
+		@apply border border-solid rounded;
+		@apply border-white/10 hover:border-white/25 active:border-white/50;
 	}
 
 	.navbar-collapse {
@@ -129,11 +129,10 @@ const navbarplus = yaml.load(navbarplusYml) as any
 		.nav-link {
 			@apply block;
 			@apply px-0 navbar-md:px-2 py-2;
-			@apply text-white hover:text-white;
-			@apply text-opacity-50 hover:text-opacity-75 active:text-opacity-90;
+			@apply text-white/50 hover:text-white/75 active:text-white/90;
 
 			&.active {
-				@apply text-opacity-100;
+				@apply text-white/100;
 			}
 		}
 	}
@@ -165,7 +164,7 @@ const navbarplus = yaml.load(navbarplusYml) as any
 		@apply mt-1 py-2;
 		@apply text-white;
 		@apply list-none;
-		@apply border border-solid border-black border-opacity-15 rounded;
+		@apply border border-solid border-black/15 rounded;
 
 		&.dropdown-menu-right {
 			@apply left-auto right-0;
@@ -176,18 +175,18 @@ const navbarplus = yaml.load(navbarplusYml) as any
 		}
 
 		.dropdown-item {
-			@apply bg-[#4080c0] bg-opacity-0 hover:bg-opacity-25 active:bg-opacity-50;
+			--bg-color: #4080c0;
+			@apply bg-(--bg-color)/0 hover:bg-(--bg-color)/25 active:bg-(--bg-color)/50;
 			@apply block;
 			@apply w-full;
 			@apply px-5 py-1;
-			@apply text-white hover:text-white;
-			@apply text-opacity-75 hover:text-opacity-90 active:text-opacity-100;
+			@apply text-white/75 hover:text-white/90 active:text-white/100;
 			@apply whitespace-nowrap;
 			@apply border-0;
 
 			&.active {
-				@apply bg-opacity-100;
-				@apply text-opacity-100;
+				@apply bg-(--bg-color)/100;
+				@apply text-white/100;
 			}
 		}
 	}

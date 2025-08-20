@@ -20,10 +20,10 @@ import { githubRepositoryUrl } from '~/site'
 </div>
 
 <style lang="scss">
-@reference "tailwindcss/theme";
+@reference "~/styles/tailwind.css";
 
 .footer {
-	@apply flex-shrink-0 bg-black bg-opacity-10 pt-6 pb-8;
+	@apply flex-shrink-0 bg-black/10 pt-6 pb-8;
 
 	> .container-fluid {
 		@apply w-full max-w-screen-lg mx-auto px-4;
