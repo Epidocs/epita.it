@@ -1,4 +1,4 @@
-# Services definition override for CI/CD
+# Services definition for running CLI commands
 
 services:
 
@@ -9,16 +9,20 @@ services:
     environment:
       UID: ${DOCKER_UID:-${UID:-1000}}
       VOLUMES: |
-        /dist
+        /app
     volumes:
-      - ./app/dist:/dist
+      - ./app/app:/app
 
   app:
+    # Extend
+    extends:
+      file: ./docker-compose.yml
+      service: app
     # Build override
-    image: ${IMAGES_PREFIX:-app}-cicd:${IMAGES_TAG:-latest}
+    image: ${IMAGES_PREFIX:-app}-cli:${IMAGES_TAG:-latest}
     build:
-      target: app_prod_build
-      args:
+      target: app_cli
+      args: !override
         UID: ${DOCKER_UID:-${UID:-1000}}
     # Deploy override
     depends_on:
@@ -26,6 +30,8 @@ services:
         condition: service_completed_successfully
     user: ${DOCKER_UID:-${UID:-1000}}
     environment: !reset null
-    command: [ 'sh', '-c', 'rm -rf /dist/* && cp -r /app/dist/* /dist' ]
+    tmpfs:
+      - /tmp:mode=1777,exec,uid=${DOCKER_UID:-${UID:-1000}},gid=0
     volumes:
-      - ./app/dist:/dist
+      - ./app/app:/app
+    ports: !reset null

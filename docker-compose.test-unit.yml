@@ -1,0 +1,21 @@
+# Services overrides for testing
+
+services:
+
+  app:
+    # Extend
+    extends:
+      file: ./docker-compose.yml
+      service: app
+    # Build override
+    image: ${IMAGES_PREFIX:-app}-test-unit:${IMAGES_TAG:-latest}
+    build:
+      target: app_test_unit
+      args:
+        UID: ${DOCKER_UID:-${UID:-1000}}
+    # Deploy override
+    user: ${DOCKER_UID:-${UID:-1000}}
+    environment:
+      CI: ${CI:-}
+    tmpfs:
+      - /tmp:mode=1777,uid=${DOCKER_UID:-${UID:-1000}},gid=0

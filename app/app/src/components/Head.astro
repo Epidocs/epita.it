@@ -1,9 +1,9 @@
 ---
-import { build } from '~/config'
+import { site } from '~/site'
 ---
 
-<link rel="icon" sizes="48x48" href={`/assets/icon-48.png?v=${build}`} />
-<link rel="icon" sizes="192x192" href={`/assets/icon-192.png?v=${build}`} />
-<link rel="icon" sizes="512x512" href={`/assets/icon-512.png?v=${build}`} />
-<link rel="apple-touch-icon" href={`/assets/apple-icon.png?v=${build}`} />
+<link rel="icon" sizes="48x48" href={`/assets/icon-48.png?v=${site.version}`} />
+<link rel="icon" sizes="192x192" href={`/assets/icon-192.png?v=${site.version}`} />
+<link rel="icon" sizes="512x512" href={`/assets/icon-512.png?v=${site.version}`} />
+<link rel="apple-touch-icon" href={`/assets/apple-icon.png?v=${site.version}`} />
 <link rel="manifest" href="/manifest.json" />

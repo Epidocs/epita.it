@@ -1,0 +1,47 @@
+---
+import { Fragment } from 'astro/jsx-runtime'
+
+import { i18nFactory, locales } from '~/i18n'
+const _ = i18nFactory(Astro.currentLocale as any)
+
+const {
+	type: elementType,
+	...otherProps
+} = Astro.props
+
+const ElementType = elementType || Fragment
+
+for (const key in Astro.slots)
+{
+	if (Astro.slots.has(key))
+	{
+		const content = await Astro.slots.render(key)
+		otherProps[key] = content
+	}
+}
+
+const [ i18nKeys, i18nArgs ] = Object.entries(otherProps).reduce<[
+	Record<string, string>,
+	Record<string, string>,
+]>(
+	([ keys, args ], [ key, value ]) =>
+	{
+		if (locales.has(key as any))
+		{
+			keys[key] = value
+		}
+		else
+		{
+			args[key] = value
+		}
+
+		return [ keys, args ]
+	},
+	[ {}, {} ], // [ keys, args ]
+)
+
+---
+
+<ElementType>
+	{_(i18nKeys as any, i18nArgs)}
+</ElementType>

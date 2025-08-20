@@ -1,5 +1,5 @@
 ---
-import { githubRepositoryUrl } from '~/config'
+import { githubRepositoryUrl } from '~/site'
 import Default from '~/layouts/Default.astro'
 import matibouxSvg from '~/assets/matiboux.svg?url'
 
@@ -38,6 +38,8 @@ const title = 'About'
 </Default>
 
 <style lang="scss">
+@reference "~/styles/tailwind.css";
+
 .media {
 	@apply flex items-start mb-4;
 

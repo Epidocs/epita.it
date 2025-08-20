@@ -2,41 +2,49 @@
   "name": "epita.it",
   "author": "Matiboux",
   "license": "UNLICENSED",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "check": "astro check --tsconfig tsconfig.prod.json",
     "build-only": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "build": "pnpm run check && pnpm run build-only",
+    "astro": "astro",
+    "astro:sync": "astro sync",
+    "astro:preview": "astro preview",
+    "test:vitest": "vitest run",
+    "test:playwright": "playwright test",
+    "deps:update": "pnpx npm-check-updates -t semver -u && pnpm i"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matiboux/matiboux.me.git"
+    "url": "git+https://github.com/Epidocs/epita.it.git"
   },
   "bugs": {
-    "url": "https://github.com/matiboux/matiboux.me/issues"
+    "url": "https://github.com/Epidocs/epita.it/issues"
   },
-  "homepage": "https://github.com/matiboux/matiboux.me#readme",
+  "homepage": "https://github.com/Epidocs/epita.it#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/tailwind": "^5.1.5",
-    "@fontsource/roboto": "^5.1.1",
-    "@iconify-json/fa6-brands": "^1.2.5",
-    "@iconify-json/fa6-solid": "^1.2.3",
+    "@fontsource/roboto": "^5.2.6",
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@iconify-json/fa6-solid": "^1.2.4",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify/tailwind": "^1.2.0",
-    "astro": "^5.12.8",
+    "@iconify-json/twemoji": "^1.2.4",
+    "@iconify/tailwind4": "^1.0.6",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.2",
     "js-yaml": "^4.1.0",
-    "sass": "^1.83.4",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3"
+    "sass": "^1.90.0",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.55.0",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.10.7"
+    "@types/node": "^22.17.2",
+    "vitest": "^3.2.4"
   }
 }

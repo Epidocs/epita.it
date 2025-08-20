@@ -1,0 +1,40 @@
+@layer theme, base, components, utilities;
+
+/* Tailwind CSS */
+/* You may optionally disable the preflight styles import. */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Iconify Plugin for Tailwind CSS. */
+@plugin "@iconify/tailwind4";
+
+/* Tailwind CSS legacy configuration */
+/* Uncomment the `@config` line below to use your legacy configuration file.
+   This may be useful when upgrading from Tailwind CSS v3. Eventually, you should migrate to the
+   new custom theme configuration in the `@theme` block below. */
+/* @config "../../tailwind.config.mjs"; */
+
+/* Custom theme configuration */
+@theme {
+	/* Custom theme variables */
+	/* Set your custom theme variables below.
+	   See the documentation for more information: https://tailwindcss.com/docs/theme */
+
+	/* Breakpoints (screens) */
+	--breakpoint-sm: 540px;
+	--breakpoint-navbar-sm: 640px;
+	--breakpoint-md: 720px;
+	--breakpoint-navbar-md: 840px;
+	--breakpoint-lg: 960px;
+	--breakpoint-navbar-lg: 960px;
+	--breakpoint-xl: 1140px;
+}
+
+/* Tailwind CSS safe list */
+@source inline("icon-[fa6-solid--bullhorn]");
+@source inline("icon-[fa6-solid--list-ul]");
+@source inline("icon-[fa6-solid--star]");
+@source inline("icon-[fa6-solid--user-group]");
+@source inline("icon-[fa6-brands--discord]");
+@source inline("icon-[fa6-brands--facebook]");

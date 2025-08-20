@@ -1,3 +1,5 @@
+import { GITHUB_REPOSITORY_URL, GITHUB_SHA, VERSION_TAG } from 'astro:env/client'
+
 import type { Props as BaseProps } from '~/layouts/Base.astro'
 
 export interface Site
@@ -5,6 +7,7 @@ export interface Site
 	lang?: BaseProps['lang']
 	title?: BaseProps['title']
 	description?: BaseProps['description']
+	version?: BaseProps['version']
 	author?: BaseProps['author']
 	keywords?: BaseProps['keywords']
 	generator?: BaseProps['generator']
@@ -23,6 +26,7 @@ export const site: Site = {
 	lang: 'en',
 	title: 'EPITA.it',
 	description: 'Portail vers des services en lien avec l\'EPITA',
+	version: GITHUB_SHA || VERSION_TAG || 'dev',
 	author: 'Matiboux',
 	keywords: [
 		'Epidocs',
@@ -49,3 +53,8 @@ export const site: Site = {
 	socialDescription: true,
 	// gtag: 'UA-140860210-2',
 }
+
+export const githubRepositoryUrl: string = (
+	GITHUB_REPOSITORY_URL
+	|| 'https://github.com/Epidocs/epita.it'
+)
