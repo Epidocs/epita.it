@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matiboux/matiboux.me.git"
+    "url": "git+https://github.com/Epidocs/epita.it.git"
   },
   "bugs": {
-    "url": "https://github.com/matiboux/matiboux.me/issues"
+    "url": "https://github.com/Epidocs/epita.it/issues"
   },
-  "homepage": "https://github.com/matiboux/matiboux.me#readme",
+  "homepage": "https://github.com/Epidocs/epita.it#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/tailwind": "^5.1.5",
