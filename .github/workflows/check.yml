@@ -1,5 +1,13 @@
 name: Check CI
 
+# GitHub variables:
+# - VERSION_TAG
+# - ASTRO_SITE_URL
+# - ASTRO_BASE_PATH
+# - ASTRO_ASSETS_PREFIX
+
+# GitHub secrets: N/A
+
 on:
 
   # Run on pull requests to primary branches
@@ -8,13 +16,17 @@ on:
       # Production
       - main
       - master
+      # Staging
+      - staging
       # Development
       - dev
     paths:
-      # CI files
+      # CI/CD files
       - '.github/workflows/check.yml'
       - 'docker-compose.yml'
       - 'docker-compose.cicd.yml'
+      - 'docker-compose.test-unit.yml'
+      - 'docker-compose.test-e2e.yml'
       - '.env'
       # Application files
       - 'app/**'
@@ -22,7 +34,7 @@ on:
   # Run on manual triggers
   workflow_dispatch:
 
-# Set GITHUB_TOKEN permissions for the workflow
+# Set default GITHUB_TOKEN permissions for the workflow
 permissions:
   contents: read
 
@@ -37,7 +49,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
 
@@ -48,29 +60,276 @@ jobs:
 
       # Execution steps
 
+      - name: Pull dependencies
+        run: |
+          # docker compose pull --ignore-buildable
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+            --env-file .env \
+            pull --ignore-buildable
+
       - name: Build for production
         env:
+          # Build configuration
+          BUILD_CHECK: 'true' # Run type checks
+          # Deployment configuration
           GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
           GITHUB_SHA: ${{ github.sha }}
-          BUILD_CHECK: "true" # Run type checks
+          VERSION_TAG: ${{ vars.VERSION_TAG }}
+          # Astro configuration
+          ASTRO_SITE_URL: ${{ vars.ASTRO_SITE_URL }}
+          ASTRO_BASE_PATH: ${{ vars.ASTRO_BASE_PATH }}
+          ASTRO_ASSETS_PREFIX: ${{ vars.ASTRO_ASSETS_PREFIX }}
+          # Application configuration
+          # Add env vars for your application here.
         run: |
           # docker compose build
+          echo '::group::Build details'
+          export DOCKER_UID="$(id -u)"
           docker compose \
-              -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
-              --env-file .env \
-              build
+            -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+            --env-file .env \
+            build
+          echo '::endgroup::'
 
       - name: Copy application files
         run: |
           # docker compose up
+          export DOCKER_UID="$(id -u)"
           docker compose \
-              -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
-              --env-file .env \
-              up
+            -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+            --env-file .env \
+            up
 
       - name: Check application files
         run: |
           # Check application files
           [ -d ./app/dist ] && [ $(ls -1 ./app/dist | wc -l) -gt 0 ] \
-            && echo "Application files found" \
-            || ( echo "No application files found" && exit 1 )
+            && echo 'Application files found' \
+            || ( echo 'No application files found' && exit 1 )
+
+  # Test Unit job
+  test-unit:
+    name: Test Unit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+
+      # Steps dependencies
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Execution steps
+
+      - name: Pull dependencies
+        run: |
+          # docker compose pull --ignore-buildable
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+            --env-file .env \
+            pull --ignore-buildable
+
+      - name: Build for unit tests
+        env:
+          # Deployment configuration
+          GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          VERSION_TAG: ${{ vars.VERSION_TAG }}
+          # Astro configuration
+          ASTRO_SITE_URL: ${{ vars.ASTRO_SITE_URL }}
+          ASTRO_BASE_PATH: ${{ vars.ASTRO_BASE_PATH }}
+          ASTRO_ASSETS_PREFIX: ${{ vars.ASTRO_ASSETS_PREFIX }}
+          # Application configuration
+          # Add env vars for your application here.
+        run: |
+          # docker compose build
+          echo '::group::Build details'
+          export DOCKER_UID="$(id -u)"
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+            --env-file .env \
+            build
+          echo '::endgroup::'
+
+      - name: Start unit tests
+        run: |
+          # docker compose up
+          export DOCKER_UID="$(id -u)"
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+            --env-file .env \
+            up -d
+
+      - name: List unit tests services
+        run: |
+          # Set DOCKER_SERVICES environment variable
+          DOCKER_SERVICES="$(
+            docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+              --env-file .env \
+              config --services
+          )"
+          echo "Set DOCKER_SERVICES to '${DOCKER_SERVICES}'"
+          echo 'DOCKER_SERVICES<<GITHUB_ENV_EOF' >> $GITHUB_ENV
+          echo "${DOCKER_SERVICES}" >> $GITHUB_ENV
+          echo 'GITHUB_ENV_EOF' >> $GITHUB_ENV
+
+      - name: Wait for unit tests to finish
+        env:
+          DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
+        run: |
+          # docker compose wait
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+            --env-file .env \
+            wait $DOCKER_SERVICES \
+            || exit 0
+
+      - name: Print unit tests logs
+        env:
+          DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
+        run: |
+          # docker compose logs
+          for SERVICE in $DOCKER_SERVICES; do
+            echo "::group::Docker logs for service '${SERVICE}'"
+            docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+              --env-file .env \
+              logs --no-log-prefix $SERVICE
+            echo '::endgroup::'
+          done
+
+          # Check services exit codes
+          echo '::group::Check services exit codes'
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+            --env-file .env \
+            ps -a
+          NON_ZERO_EXIT_CODES=$(
+            docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+              --env-file .env \
+              ps -a --format '{{.ExitCode}}' \
+            | grep -v '^0$' \
+            || true
+          )
+          if [ -n "${NON_ZERO_EXIT_CODES}" ]; then
+            # Non-zero exit code found
+            exit 1
+          fi
+          echo '::endgroup::'
+
+  # Test E2E job
+  test-e2e:
+    name: Test E2E
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+
+      # Steps dependencies
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Execution steps
+
+      - name: Pull dependencies
+        run: |
+          # docker compose pull --ignore-buildable
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
+            --env-file .env \
+            pull --ignore-buildable
+
+      - name: Build for E2E tests
+        env:
+          # Deployment configuration
+          GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          VERSION_TAG: ${{ vars.VERSION_TAG }}
+          # Astro configuration
+          ASTRO_SITE_URL: ${{ vars.ASTRO_SITE_URL }}
+          ASTRO_BASE_PATH: ${{ vars.ASTRO_BASE_PATH }}
+          ASTRO_ASSETS_PREFIX: ${{ vars.ASTRO_ASSETS_PREFIX }}
+          # Application configuration
+          # Add env vars for your application here.
+        run: |
+          # docker compose build
+          echo '::group::Build details'
+          export DOCKER_UID="$(id -u)"
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
+            --env-file .env \
+            build
+          echo '::endgroup::'
+
+      - name: Start E2E tests
+        run: |
+          # docker compose up
+          export DOCKER_UID="$(id -u)"
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
+            --env-file .env \
+            up -d
+
+      - name: List E2E tests services
+        run: |
+          # Set DOCKER_SERVICES environment variable
+          DOCKER_SERVICES="$(
+            docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
+              --env-file .env \
+              config --services
+          )"
+          echo "Set DOCKER_SERVICES to '${DOCKER_SERVICES}'"
+          echo 'DOCKER_SERVICES<<GITHUB_ENV_EOF' >> $GITHUB_ENV
+          echo "${DOCKER_SERVICES}" >> $GITHUB_ENV
+          echo 'GITHUB_ENV_EOF' >> $GITHUB_ENV
+
+      - name: Wait for E2E tests to finish
+        env:
+          DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
+        run: |
+          # docker compose wait
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
+            --env-file .env \
+            wait $DOCKER_SERVICES \
+            || exit 0
+
+      - name: Print E2E tests logs
+        env:
+          DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
+        run: |
+          # docker compose logs
+          for SERVICE in $DOCKER_SERVICES; do
+            echo "::group::Docker logs for service '${SERVICE}'"
+            docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
+              --env-file .env \
+              logs --no-log-prefix $SERVICE
+            echo '::endgroup::'
+          done
+
+          # Check services exit codes
+          echo '::group::Check services exit codes'
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+            --env-file .env \
+            ps -a
+          NON_ZERO_EXIT_CODES=$(
+            docker compose \
+              -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
+              --env-file .env \
+              ps -a --format '{{.ExitCode}}' \
+            | grep -v '^0$' \
+            || true
+          )
+          if [ -n "${NON_ZERO_EXIT_CODES}" ]; then
+            # Non-zero exit code found
+            exit 1
+          fi
+          echo '::endgroup::'
