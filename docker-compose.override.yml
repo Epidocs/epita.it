@@ -7,7 +7,10 @@ services:
     image: ${IMAGES_PREFIX:-app}-dev:${IMAGES_TAG:-latest}
     build:
       target: app_dev
+      args:
+        UID: ${DOCKER_UID:-${UID:-1000}}
     # Deploy override
+    user: ${DOCKER_UID:-${UID:-1000}}
     develop:
       watch:
         # Docker image
@@ -15,16 +18,8 @@ services:
           path: ./app/Dockerfile
         # Application build files
         - action: rebuild
-          path: ./app/app/package.json
-        - action: rebuild
-          path: ./app/app/package-lock.json
-        # Application configuration
-        - action: sync+restart
-          path: ./app/app/astro.config.mjs
-          target: /app/astro.config.mjs
+          path: ./app/app/pnpm-lock.yaml
         # Application source code
         - action: sync
           path: ./app/app
           target: /app
-          ignore:
-            - node_modules/
