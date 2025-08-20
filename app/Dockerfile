@@ -154,7 +154,7 @@ CMD [ "sh", "-c", "pnpm run test:playwright --output /tmp/playwright/test-result
 # --
 # Dev image
 
-FROM app_base AS app_dev
+FROM app_build_base AS app_dev
 
 ARG UID
 
@@ -186,13 +186,13 @@ ENV PORT=${PORT}
 EXPOSE ${PORT}
 
 # Start development server
-CMD [ "sh", "-c", "npm run dev -- --host --port \"${PORT}\"" ]
+CMD [ "sh", "-c", "pnpm run dev -- --host --port \"${PORT}\"" ]
 
 
 # --
 # Prod build image
 
-FROM app_base AS app_prod_build
+FROM app_build_base AS app_prod_build
 
 ARG UID
 
@@ -227,9 +227,9 @@ ENV ASTRO_ASSETS_PREFIX=${ASTRO_ASSETS_PREFIX}
 # Build application
 ARG BUILD_CHECK='true'
 RUN if [ "${BUILD_CHECK}" = 'true' ]; then \
-		npm run build; \
+		pnpm run build; \
 	else \
-		npm run build-only; \
+		pnpm run build-only; \
 	fi
 
 
