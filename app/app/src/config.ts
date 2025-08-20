@@ -1,5 +1,4 @@
 import type { AstroConfig } from 'astro'
-import { GITHUB_REPOSITORY_URL } from 'astro:env/client'
 
 import en from './i18n/locales/en'
 import fr from './i18n/locales/fr'
@@ -42,8 +41,3 @@ export const i18n = {
 		fallbackType: 'rewrite',
 	},
 } as const satisfies I18nConfig
-
-export const githubRepositoryUrl: string = (
-	GITHUB_REPOSITORY_URL
-	|| 'https://github.com/Epidocs/epita.it'
-)

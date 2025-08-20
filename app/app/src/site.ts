@@ -1,4 +1,4 @@
-import { GITHUB_SHA, VERSION_TAG } from 'astro:env/client'
+import { GITHUB_REPOSITORY_URL, GITHUB_SHA, VERSION_TAG } from 'astro:env/client'
 
 import type { Props as BaseProps } from '~/layouts/Base.astro'
 
@@ -53,3 +53,8 @@ export const site: Site = {
 	socialDescription: true,
 	// gtag: 'UA-140860210-2',
 }
+
+export const githubRepositoryUrl: string = (
+	GITHUB_REPOSITORY_URL
+	|| 'https://github.com/Epidocs/epita.it'
+)
