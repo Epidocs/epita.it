@@ -8,5 +8,6 @@
 /* If you'd like to use a legacy configuration file, add this:
 @config "../../tailwind.config.mjs";
 */
+@config "../../tailwind.config.mjs";
 
 @plugin "@iconify/tailwind4";
