@@ -54,13 +54,15 @@ Please note the order of items determines how links are displayed on the website
 
 ## Hosting your own project
 
+EPITA.it does not offer hosting services, but can help you find resources to build and publish your project.
+
 ### Get an EPITA.it subdomain for your project
 
-If you are hosting a project and would like to use an EPITA.it subdomain for it, you can ask [@matiboux](https://github.com/matiboux) for one.
+You can request to use an EPITA.it subdomain for your project, given that it is related to EPITA or the EPITA community.
 
-For example, you can ask that I point `yourawesomeproject.epita.it` to Github Pages or to your web server so you can use it for your project. We'll discuss your request and if okay, we'll set that up together.
+For example, you can request a subdomain like `yourawesomeproject.epita.it` and have it point to your web server or service provider (like GitHub Pages) for serving your project.
 
-You can contact [@matiboux](https://github.com/matiboux) via an issue on Github, or privately via Telegram or Discord.
+To make this request, you can open an issue here or contact [@matiboux](https://github.com/matiboux) directly via Telegram or Discord. We'll discuss your request, project, and help you move forward if everything looks good!
 
 
 ## License
