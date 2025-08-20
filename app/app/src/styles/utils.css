@@ -1,0 +1,9 @@
+@layer components {
+	.icon-align {
+		@apply align-[-0.125em];
+	}
+
+	.icon-fw {
+		@apply w-5 text-center;
+	}
+}
