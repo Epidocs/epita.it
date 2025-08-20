@@ -31,7 +31,7 @@
 	--breakpoint-xl: 1140px;
 }
 
-/* Safe list */
+/* Tailwind CSS safe list */
 @source inline("icon-[fa6-solid--bullhorn]");
 @source inline("icon-[fa6-solid--list-ul]");
 @source inline("icon-[fa6-solid--star]");
