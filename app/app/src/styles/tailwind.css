@@ -1,24 +1,27 @@
-@import "tailwindcss";
-/* If you'd like to disable Preflight, use this instead:
 @layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/utilities.css" layer(utilities);
-*/
 
-/* If you'd like to use a legacy configuration file, add this:
-@config "../../tailwind.config.mjs";
-*/
+/* Tailwind CSS */
+/* You may optionally disable the preflight styles import. */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
 
 /* Iconify Plugin for Tailwind CSS. */
 @plugin "@iconify/tailwind4";
 
-/* Custom theme. */
+/* Tailwind CSS legacy configuration */
+/* Uncomment the `@config` line below to use your legacy configuration file.
+   This may be useful when upgrading from Tailwind CSS v3. Eventually, you should migrate to the
+   new custom theme configuration in the `@theme` block below. */
+/* @config "../../tailwind.config.mjs"; */
+
+/* Custom theme configuration */
 @theme {
-	/* Custom theme variables.
-	See the documentation for more information:
-	https://tailwindcss.com/docs/theme
-	*/
-	/* Breakpoints (screens). */
+	/* Custom theme variables */
+	/* Set your custom theme variables below.
+	   See the documentation for more information: https://tailwindcss.com/docs/theme */
+
+	/* Breakpoints (screens) */
 	--breakpoint-sm: 540px;
 	--breakpoint-navbar-sm: 640px;
 	--breakpoint-md: 720px;
@@ -28,7 +31,7 @@
 	--breakpoint-xl: 1140px;
 }
 
-/* Safe list. */
+/* Safe list */
 @source inline("icon-[fa6-solid--bullhorn]");
 @source inline("icon-[fa6-solid--list-ul]");
 @source inline("icon-[fa6-solid--star]");
