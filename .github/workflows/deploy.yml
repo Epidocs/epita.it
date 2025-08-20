@@ -1,5 +1,13 @@
 name: Deploy CD
 
+# GitHub variables:
+# - VERSION_TAG
+# - ASTRO_SITE_URL
+# - ASTRO_BASE_PATH
+# - ASTRO_ASSETS_PREFIX
+
+# GitHub secrets: N/A
+
 on:
 
   # Run on push on production branches
@@ -9,7 +17,7 @@ on:
       - main
       - master
     paths:
-      # CI files
+      # CI/CD files
       - '.github/workflows/deploy.yml'
       - 'docker-compose.yml'
       - 'docker-compose.cicd.yml'
@@ -20,7 +28,7 @@ on:
   # Run on manual triggers
   workflow_dispatch:
 
-# Set GITHUB_TOKEN permissions for the workflow
+# Set default GITHUB_TOKEN permissions for the workflow
 permissions:
   contents: read
 
@@ -35,41 +43,55 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
 
-      # Steps dependencies
+      # Dependency steps
 
       - name: Checkout
         uses: actions/checkout@v4
 
       # Execution steps
 
+      - name: Pull dependencies
+        run: |
+          # docker compose pull --ignore-buildable
+          docker compose \
+            -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+            --env-file .env \
+            pull --ignore-buildable
+
       - name: Build for production
         env:
+          # Build configuration
+          BUILD_CHECK: 'false' # Skip type checks
+          # Deployment configuration
           GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
           GITHUB_SHA: ${{ github.sha }}
-          BUILD_CHECK: "false" # Skip type checks
+          VERSION_TAG: ${{ vars.VERSION_TAG }}
+          # Astro configuration
+          ASTRO_SITE_URL: ${{ vars.ASTRO_SITE_URL }}
+          ASTRO_BASE_PATH: ${{ vars.ASTRO_BASE_PATH }}
+          ASTRO_ASSETS_PREFIX: ${{ vars.ASTRO_ASSETS_PREFIX }}
+          # Application configuration
+          # Add env vars for your application here.
         run: |
           # docker compose build
+          export DOCKER_UID="$(id -u)"
           docker compose \
-              -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
-              --env-file .env \
-              build
+            -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+            --env-file .env \
+            build
 
       - name: Copy application files
         run: |
           # docker compose up
+          export DOCKER_UID="$(id -u)"
           docker compose \
-              -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
-              --env-file .env \
-              up
-
-      - name: Chown dist folder to $USER
-        run: |
-          # chown -R $USER:$USER ./app/dist
-          sudo chown -R $USER:$USER ./app/dist
+            -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
+            --env-file .env \
+            up
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -88,8 +110,8 @@ jobs:
 
     # Set GITHUB_TOKEN permissions for the job
     permissions:
-      pages: write
       id-token: write
+      pages: write
 
     # Set deployment environment
     environment:
@@ -97,6 +119,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+
+      # Execution steps
 
       - name: Deploy to GitHub Pages
         id: deployment
