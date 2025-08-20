@@ -28,23 +28,23 @@
   "homepage": "https://github.com/Epidocs/epita.it#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@fontsource/roboto": "^5.1.1",
-    "@iconify-json/fa6-brands": "^1.2.5",
-    "@iconify-json/fa6-solid": "^1.2.3",
+    "@fontsource/roboto": "^5.2.6",
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@iconify-json/fa6-solid": "^1.2.4",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/twemoji": "^1.2.4",
     "@iconify/tailwind4": "^1.0.6",
-    "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.12.9",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.2",
     "js-yaml": "^4.1.0",
     "sass": "^1.90.0",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.12",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.54.2",
+    "@playwright/test": "^1.55.0",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.17.1",
+    "@types/node": "^22.17.2",
     "vitest": "^3.2.4"
   }
 }
