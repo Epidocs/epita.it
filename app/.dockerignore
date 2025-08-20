@@ -1,7 +1,7 @@
 # -- Generic rules:
 
 # Environment files
-.env*.local
+.env*.local*
 
 # Temporary files
 ._*
@@ -34,11 +34,18 @@ Thumbs.db
 
 # Node.js
 node_modules/
+.pnpm-store/
 dist/
 
 # Astro
 .astro/
 .vite/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
 
 # Application environment files
 */**/.env*
