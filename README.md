@@ -67,9 +67,8 @@ To make this request, you can open an issue here or contact [@matiboux](https://
 
 ## License
 
-**Creative Commons Attribution-NonCommercial 4.0 International License**
-([*CC BY-NC 4.0*](https://creativecommons.org/licenses/by-nc/4.0))  
-Copyright (c) 2019-2024 Mathieu Guérin (Matiboux)
+Copyright (c) 2019-2025 [Matiboux](https://github.com/matiboux) ([matiboux.me](https://matiboux.me))
 
-*Disclaimer:* External resources are the property of their respective owners,
-and therefore are not subject to this license (e.g. images from external links).
+Licensed under the [Creative Commons BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/). You can see a copy in the [LICENSE](LICENSE) file.
+
+_Disclaimer:_ External resources are the property of their respective owners, and therefore are not subject to this license (e.g. images from external links).
