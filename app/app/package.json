@@ -10,13 +10,13 @@
     "start": "astro dev",
     "check": "astro check --tsconfig tsconfig.prod.json",
     "build-only": "astro build",
-    "build": "npm run check && npm run build-only",
+    "build": "pnpm run check && pnpm run build-only",
     "astro": "astro",
     "astro:sync": "astro sync",
     "astro:preview": "astro preview",
     "test:vitest": "vitest run",
     "test:playwright": "playwright test",
-    "deps:update": "pnpx -- npm-check-updates -t semver -u && pnpm i"
+    "deps:update": "pnpx npm-check-updates -t semver -u && pnpm i"
   },
   "repository": {
     "type": "git",
