@@ -78,8 +78,8 @@
 
 - title: Old unofficial resources
   text: |
-    <span class="icon icon-[fa6-solid--user-group] icon-fw"></span> = Community resource, not affiliated with EPITA. <br />
-    <span class="icon icon-[fa6-solid--bullhorn] icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
+    <span class="icon icon-[fa6-solid--user-group] icon-align icon-fw"></span> = Community resource, not affiliated with EPITA. <br />
+    <span class="icon icon-[fa6-solid--bullhorn] icon-align icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
   items:
 
   # Unresolved domain name
