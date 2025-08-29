@@ -167,12 +167,12 @@
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
     class: tile-small-wide text-dark
-    background_image: https://www.projet-voltaire.fr/pv-wp/wp-content/uploads/2016/09/logo-projet-voltaire-nav.png
+    background_image: https://ressources.dane.ac-versailles.fr/IMG/logo/projetvoltaire-2.jpg
     style:
-    - 'background-color: #a2d416'
+    - 'background-color: #c7d600'
     - 'background-size: auto 85%'
-    - 'background-position-x: 95%'
-    - 'background-position-y: 50%'
+    - 'background-position-x: 100%'
+    - 'background-position-y: 0%'
 
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
