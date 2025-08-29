@@ -297,11 +297,11 @@
   - name: LRE
     href: https://www.lre.epita.fr/
     class: tile-small-wide text-dark
-    background_image: https://www.lre.epita.fr/img/logo.png
+    background_image: https://www.lre.epita.fr/static/logo.svg
     style:
     - 'background-color: #ffffff'
-    - 'background-size: auto 90%'
-    - 'background-position-x: 70%'
+    - 'background-size: auto 80%'
+    - 'background-position-x: 75%'
 
   - name: LSE
     href: https://www.lse.epita.fr/
