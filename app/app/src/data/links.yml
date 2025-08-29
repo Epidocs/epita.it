@@ -117,7 +117,7 @@
     background_image: https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg
     style:
     - 'background-color: #292961'
-    - 'background-position-y: top'
+    - 'background-position-y: 15%'
     - 'background-size: 75%'
 
   - name: News EPITA
