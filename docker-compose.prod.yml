@@ -3,5 +3,9 @@
 services:
 
   app:
+    # Extend
+    extends:
+      file: ./docker-compose.yml
+      service: app
     # Deploy override
     restart: unless-stopped

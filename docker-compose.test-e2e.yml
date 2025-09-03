@@ -10,7 +10,7 @@ services:
     # Build override
     image: ${IMAGES_PREFIX:-app}-test-e2e:${IMAGES_TAG:-latest}
     build:
-      target: app_test_e2e
+      target: test_e2e
       args:
         UID: ${DOCKER_UID:-${UID:-1000}}
     # Deploy override
