@@ -10,7 +10,7 @@ services:
     # Build override
     image: ${IMAGES_PREFIX:-app}-test-unit:${IMAGES_TAG:-latest}
     build:
-      target: app_test_unit
+      target: test_unit
       args:
         UID: ${DOCKER_UID:-${UID:-1000}}
     # Deploy override
