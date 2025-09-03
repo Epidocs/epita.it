@@ -14,6 +14,10 @@ services:
       - ./app/dist:/dist
 
   app:
+    # Extend
+    extends:
+      file: ./docker-compose.yml
+      service: app
     # Build override
     image: ${IMAGES_PREFIX:-app}-cicd:${IMAGES_TAG:-latest}
     build:
