@@ -23,12 +23,12 @@
 
 - title: S2 Projects
   items:
- 
+
   - name: HorizonBreak
     href: https://horizonweb.vercel.app/
     class: tile-medium text-dark
     background_image: https://horizonweb.vercel.app/logo.jpeg
-    style: 
+    style:
     - 'background-color: #FFFFFF'
     - 'background-size: auto 100%'
     # - 'background-position-x: right'
@@ -38,7 +38,7 @@
     href: https://head4che-prod.github.io/subway-out
     class: tile-medium text-light
     background_image: https://head4che.co/assets/subwayout.png
-    style: 
+    style:
     - 'background-color: #2F4C99'
     - 'background-position-y: center'
     - 'background-size: 95% auto'
@@ -48,6 +48,14 @@
     href: https://unlockis.fr/
     class: tile-medium text-dark
     background_image: https://unlockis.fr/img/logo.png
-    style: 
+    style:
     - 'background-color: #FFFFFF'
+    - 'background-size: auto 100%'
+
+
+  - name: Bloodline Heritage
+    href: https://blood-heritage.github.io/
+    class: tile-medium text-dark
+    background_image: https://raw.githubusercontent.com/Blood-Heritage/Blood-Heritage.github.io/refs/heads/siteweb_ams/Icons/GameImage/giovani.png
+    style:
     - 'background-size: auto 100%'
