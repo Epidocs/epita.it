@@ -93,12 +93,12 @@
     href: https://assistants.epita.fr/
     class: tile tile-medium
     background_image:
-    - https://assistants.epita.fr/logos/yaka2026_logo.svg
+    - https://assistants.epita.fr/logos/current.svg
     - https://assistants.epita.fr/lightnoise.png
     style:
     - 'background-color: #000000'
     - 'background-size: 80%'
-    - 'background-position-y: 20%'
+    - 'background-position-y: 15%'
 
   - name: Office
     href: https://www.office.com/?auth=2
