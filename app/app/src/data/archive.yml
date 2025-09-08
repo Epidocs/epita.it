@@ -4,28 +4,28 @@
 
   - name: 2021
     relurl: /2021
-    class: tile-medium
+    class: tile tile-medium
     background_image: /assets/2021-discord-logo.png
     style:
     - 'background-color: #202225'
 
   - name: 2022
     relurl: /2022
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://cdn.discordapp.com/icons/352524741980061698/d497123ca9cd655542bba191b959efe1.webp?size=256
     style:
     - 'background-color: #202225'
 
   - name: 2023
     relurl: /2023
-    class: tile-medium
+    class: tile tile-medium
     background_image: /assets/2023-discord-logo.webp
     style:
     - 'background-color: #202225'
 
   - name: 2024
     relurl: /2024
-    class: tile-medium
+    class: tile tile-medium
     background_image: /assets/2024-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -36,7 +36,7 @@
   # 404 Not Found
   - name: IonisX
     href: https://ionisx.com/
-    class: tile-medium text-dark invalid
+    class: tile tile-medium text-dark invalid
     # background_image: https://cdn.ionisx.com/images/logoIONISx.a4f6bdf1.png
     style:
     - 'background-color: #d09c01'
@@ -44,7 +44,7 @@
 
   - name: Algo TD
     href: https://algo-td.infoprepa.epita.fr/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://algo-td.infoprepa.epita.fr/images/logo_final.jpg
     style:
     - 'background-color: #e5e5f0'
@@ -52,7 +52,7 @@
   # 502 Bad Gateway
   - name: Chronos
     href: http://chronos.epita.net/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     # background_image: https://cdn.matiboux.com/images/epita.it/chronos.gif
     style:
     - 'background-color: #b77fa2'
@@ -60,7 +60,7 @@
 
   - name: Doc. EPITA (CRI)
     href: https://doc.cri.epita.fr/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     # icon: icon-[fa6-solid--star]
     background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
@@ -70,7 +70,7 @@
 
   - name: Rocket.Chat
     href: http://rocketchat.cri.epita.fr/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     # background_image: https://rocketchat.cri.epita.fr/assets/logo.png
     style:
     - 'background-color: #444'
@@ -86,21 +86,21 @@
   - name: iChronos
     icon: icon-[fa6-solid--user-group]
     href: https://ichronos.net/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     style:
     - 'background-color: #616161'
 
   - name: Map EPITA
     icon: icon-[fa6-solid--user-group]
     href: http://map.epita.eu/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     style:
     - 'background-color: #fff'
 
   - name: Infinity Zeus
     icon: icon-[fa6-solid--user-group]
     href: https://zeus.infinity.study/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     style:
     - 'background-color: #bd510a'
 
@@ -108,7 +108,7 @@
   - name: RTFN
     icon: icon-[fa6-solid--bullhorn]
     href: https://rtfn.fr/
-    class: tile-small-wide text-dark invalid
+    class: tile tile-small-wide text-dark invalid
     style:
     - 'background-color: #fff'
 
@@ -116,7 +116,7 @@
   - name: Muffin Reader
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.deliciousmuffins.net/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     # background_image: https://news.deliciousmuffins.net/static/muffinreader.png
     style:
     - 'background-color: #222222'
@@ -125,14 +125,14 @@
   - name: news.infinity.study
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.infinity.study/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     # background_image: https://news.infinity.study/sprite.svg#infinity
     style:
     - 'background-color: #8c3f0d'
 
   - name: Back to Basics
     href: https://backtobasics.axen.io/
-    class: tile-small-wide text-dark invalid
+    class: tile tile-small-wide text-dark invalid
     # background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
     - 'background-color: #fff'
@@ -141,7 +141,7 @@
 
   - name: Epita ALED
     href: https://epita.litarvan.com/a/aled
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     icon: icon-[fa6-solid--user-group]
     # background_image: /static/ALED-icon.png
     style:
@@ -151,13 +151,13 @@
   - name: tonnerre.link
     icon: icon-[fa6-solid--user-group]
     href: https://tonnerre.link/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     style:
     - 'background-color: #170e34'
 
   - name: kb.zoroark.guru
     href: https://kb.zoroark.guru/
-    class: tile-small-wide
+    class: tile tile-small-wide
     icon: icon-[fa6-solid--user-group]
     background_image: https://kb.zoroark.guru/favicon.png
     style:
@@ -167,7 +167,7 @@
 
   - name: Redux
     href: https://redux.epita.cf/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     icon: icon-[fa6-solid--user-group]
     # background_image: https://redux.epita.cf/img/logo.png
     style:
@@ -175,14 +175,14 @@
 
   - name: EpiPortal
     href: https://epiportal.com/
-    class: tile-small-wide text-dark invalid
+    class: tile tile-small-wide text-dark invalid
     icon: icon-[fa6-solid--user-group]
     style:
     - 'background-color: #fafafa'
 
   - name: Epitar
     href: https://epitar.aureleoules.com
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     icon: icon-[fa6-solid--user-group]
     # background_image: https://epitar.aureleoules.com/favicon.png
     style:
@@ -191,7 +191,7 @@
   # Cloudflare block page
   - name: Epitaf
     href: https://www.epitaf.fr/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     icon: icon-[fa6-solid--user-group]
     # background_image: https://www.epitaf.fr/logo.png
     style:
