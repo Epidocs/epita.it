@@ -287,12 +287,12 @@
   - name: EPITA Studapart
     href: https://logement.epita.fr/
     class: tile-small-wide text-dark
-    background_image: https://s3-eu-west-1.amazonaws.com/tpd/logos/56e5a90f0000ff00058a24db/0x0.png
+    background_image: https://media.studapart.com/logos_thumb/5e2b08e0b572e.png
     style:
     - 'background-color: #fff'
-    - 'background-size: 25%'
-    - 'background-position-y: 12%'
-    - 'background-position-x: 9%'
+    - 'background-size: 100%'
+    - 'background-position-y: 10%'
+    - 'background-position-x: 50%'
 
   - name: LRE
     href: https://www.lre.epita.fr/
