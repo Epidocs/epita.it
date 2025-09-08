@@ -4,14 +4,14 @@
   - name: Discord EPITA 2027
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/3ZJDy7h9pY
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2027-discord-logo.png
     style:
     - 'background-color: #202225'
   - name: Discord EPITA APPRENTISSAGE 2027
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/B3PPqaD5jg
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2027-apping-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -21,7 +21,7 @@
 
   - name: Héphaïstos
     href: https://geometrical-optics.github.io/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://raw.githubusercontent.com/Geometrical-Optics/Geometrical-Optics.github.io/main/logoSized.png
     style:
     - 'background-color: #ffc107'
@@ -30,7 +30,7 @@
 
   - name: Proxima's Quest
     href: https://godmelcorp.github.io/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://godmelcorp.github.io/assets/img/LogoSite.png
     style:
     - 'background-color: #2c2f3d'
@@ -40,7 +40,7 @@
 
   - name: Senzo No Michi
     href: https://senzo-no-michi.github.io/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://senzo-no-michi.github.io/logo.png
     style:
     - 'background-color: #2c2f3d'
@@ -49,7 +49,7 @@
 
   - name: ELAIM
     href: https://sl4shh.github.io/elaim/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://sl4shh.github.io/elaim/assets/img/logo2.png
     style:
     - 'background-color: #663399'
@@ -58,7 +58,7 @@
 
   - name: Stuck
     href: https://axxiar.github.io/Stuck/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://raw.githubusercontent.com/Axxiar/Stuck/master/docs/assets/logo.png
     style:
     - 'background-color: #FFF'
@@ -67,7 +67,7 @@
 
   - name: Hermita
     href: https://hermita-game.github.io
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://hermita-game.github.io/design/island.png
     style:
     - 'background-color: #9cc3f7'

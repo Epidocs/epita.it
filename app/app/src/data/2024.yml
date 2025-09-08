@@ -4,7 +4,7 @@
   - name: Discord EPITA 2024
     icon: icon-[fa6-brands--discord]
     href: https://discordapp.com/invite/TUHpqPn
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2024-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -14,7 +14,7 @@
 
   - name: INVICTUS Warriors
     href: https://thunderblast-games.itch.io/invictus-warriors
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://img.itch.zone/aW1nLzM1MTYwNjAucG5n/original/OyjrGW.png
     style:
     - 'background-color: #343a40'

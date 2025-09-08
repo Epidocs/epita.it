@@ -4,7 +4,7 @@
   - name: Discord EPITA 2028
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/AbqK9R2mPW
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2028-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -12,7 +12,7 @@
   - name: Discord EPITA APPRENTISSAGE 2028
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/sSbyxkMXNa
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2028-discord-app-logo.png
     style:
     - 'background-color: #202225'
@@ -21,7 +21,7 @@
   items:
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
-    class: tile-wide text-dark
+    class: tile tile-wide text-dark
     background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #FFFFFF'
@@ -33,7 +33,7 @@
 
   - name: Treashunt
     href: https://feove.github.io/IborenWebsite/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://raw.githubusercontent.com/feove/IborenWebsite/main/media/white-background.gif
     style:
     - 'background-color: #FFFFFF'
@@ -43,7 +43,7 @@
 
   - name: Castle Of Demise
     href: https://jean-voila.github.io/sqrt100/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image:  https://github.com/jean-voila/sqrt100/blob/main/COD_Docs/src/assets/sqrtLogo.png?raw=true
     style:
     - 'background-color: #FFFFFF'

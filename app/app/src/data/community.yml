@@ -4,14 +4,14 @@
   - name: EPITA International
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/bQ7Tpk2
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://cdn.discordapp.com/icons/566912125130244126/33528bb6f3d990317d656d2adf555dd1.png?size=256
     style:
     - 'background-color: #80b2fa'
 
   - name: EPIFUN
     href: https://www.epifun.fr/
-    class: tile-medium
+    class: tile tile-medium
     style:
     - 'background-color: #0a84ff'
     - 'background-image: url(https://www.epifun.fr/img/epifun-logo.webp)'
@@ -21,7 +21,7 @@
   - name: Segfault
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Segfolt
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/Segfolt/picture?width=256
     style:
     - 'background-color: #dfe8ef'
@@ -29,14 +29,14 @@
   - name: Disruptif
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Disruptifs
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/Disruptifs/picture?width=256
     style:
     - 'background-color: #fff'
 
   - name: Epiquote
     href: https://epiquote.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://epiquote.fr/static/favicon.png
     style:
     - 'background-color: #e7e7e7'
@@ -45,7 +45,7 @@
 
   - name: Wikia Epita
     href: https://epita.fandom.com/fr/
-    class: tile-small-wide
+    class: tile tile-small-wide
     background_image: https://static.wikia.nocookie.net/qube-assets/f2/3715/favicons/apple-touch-icon.png
     style:
     - 'background-color: #002a32'
@@ -56,7 +56,7 @@
 
   - name: ANTRE
     href: https://antre.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://www.antre.fr/forum/styles/acidtech/theme/images/logo_right.jpg
     style:
     - 'background-color: #191919'
@@ -65,7 +65,7 @@
   - name: Back to basics
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/btbepita/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/btbepita/picture?width=256
     # background_image: https://backtobasics.axen.io/static/img/favicon.png
     style:
@@ -76,7 +76,7 @@
   - name: BDE
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/bdeepita/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/bdeepita/picture?width=256
     style:
     - 'background-color: #ffede1'
@@ -84,7 +84,7 @@
 
   - name: Cristal
     href: https://www.cristal.je/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://www.cristal.je/wp-content/uploads/2021/03/cristal-logo-vect.svg
     style:
     - 'background-color: #fff'
@@ -94,7 +94,7 @@
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/AssoCycom
     # href: https://cycom.org/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/AssoCycom/picture?width=256
     # background_image: https://cycom.org/content/images/size/w600/2020/03/cycom_logo.png
     style:
@@ -104,14 +104,14 @@
 
   - name: Ephemere
     href: http://club-ephemere.fr/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://live.staticflickr.com/775/buddyicons/100015017@N04_r.jpg
     style:
     - 'background-color: #f5f5f5'
 
   - name: EpiMac
     href: https://www.epimac.org/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://www.epimac.org/img/2.png
     style:
     - 'background: url(https://www.epimac.org/static/media/logo.b888e9e52a034ae046fd0a91bd79bad8.svg), linear-gradient(143deg, #55c2f966, #f2f2f2 50%, #e9b1ff66)'
@@ -122,7 +122,7 @@
   - name: Epimathia
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Epimathia/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/Epimathia/picture?width=256
     style:
     - 'background-color: #fff'
@@ -131,7 +131,7 @@
 
   - name: Epiqueer
     href: https://epiqueer.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://epiqueer.fr/large_logo.png
     style:
     - 'background-color: #4054b2'
@@ -141,8 +141,8 @@
   - name: EPIRS
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/mrax8W3ZCk
-    class: tile-medium text-dark
-    background_image: https://raw.githubusercontent.com/epita-rs/epita-rs.github.io/refs/heads/main/logo.jpg?size=256 
+    class: tile tile-medium text-dark
+    background_image: https://raw.githubusercontent.com/epita-rs/epita-rs.github.io/refs/heads/main/logo.jpg?size=256
     style:
     - 'background-color: #fff'
     - 'background-size: 200%'
@@ -151,7 +151,7 @@
   - name: Episolidaire
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/episolidaire/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/episolidaire/picture?width=256
     style:
     - 'background-color: #3cb7bf'
@@ -161,14 +161,14 @@
   - name: Episport
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Episport/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/Episport/picture?width=256
     style:
     - 'background-color: #0f111d'
 
   - name: Epitanime
     href: https://www.epitanime.com/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://www.epitanime.com/wp-content/uploads/2017/02/logo_flat_small.png
     style:
     - 'background-color: #0d47a1'
@@ -176,7 +176,7 @@
 
   - name: Epiworld
     href: http://www.epiworld.org/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://cdn.matiboux.com/images/epita.it/epiworld.png
     # background_image: http://www.epiworld.org/img/Logo-Epiworld-2.png
     style:
@@ -184,7 +184,7 @@
 
   - name: EPTV
     href: http://eptv.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://cdn.matiboux.com/images/epita.it/eptv.png
     # background_image: http://eptv.fr/eptv_logo_good_to_script.png
     style:
@@ -195,14 +195,14 @@
     icon: icon-[fa6-brands--facebook]
     # href: https://evolutek.fr/
     href: https://fb.me/evolutek.ionis
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/evolutek.ionis/picture?width=256
     style:
     - 'background-color: #fff'
 
   - name: GConfs
     href: https://gconfs.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://gconfs.fr/static/img/gconfs_logo.png
     style:
     - 'background-color: #343a40'
@@ -210,7 +210,7 @@
 
   - name: Gotta Go Hack
     href: https://www.gottagohack.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://www.gottagohack.fr/static/media/logo.393432ca58c7fb68941c.png
     style:
     - 'background-color: #00c2cb'
@@ -220,7 +220,7 @@
   - name: Heritage Foyer
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/heritage.foyer
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/heritage.foyer/picture?width=256
     style:
     - 'background-color: #fff'
@@ -230,7 +230,7 @@
   - name: La Paillote
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/lapaillote.apero
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/lapaillote.apero/picture?width=256
     style:
     - 'background-color: #000'
@@ -239,7 +239,7 @@
 
   - name: Lateb
     href: http://intra.lateb.eu/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://cdn.matiboux.com/images/epita.it/lateb.png
     # background_image: http://intra.lateb.eu/images/favicon.png
     style:
@@ -250,7 +250,7 @@
   - name: Pôle Gastronomique
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/P%C3%B4le-Gastronomique-107151704029031/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/107151704029031/picture?width=256
     style:
     - 'background-color: #fff'
@@ -259,7 +259,7 @@
 
   - name: Prologin
     href: https://prologin.org/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://prologin.org/static/img/logo_cube.png
     style:
     - 'background-color: #35479a'
@@ -268,7 +268,7 @@
   - name: Soul of Sound
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/soulofsoundband
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/soulofsoundband/picture?width=256
     style:
     - 'background-color: #000'
@@ -276,7 +276,7 @@
   - name: Strataegyc
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Strataegyc/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/Strataegyc/picture?width=256
     style:
     - 'background-color: #fff'
@@ -284,7 +284,7 @@
   - name: The Stack
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/Epitactic
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://graph.facebook.com/Epitactic/picture?width=256
     style:
     - 'background-color: #fff'
@@ -294,7 +294,7 @@
   - name: Unisson
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/unisson/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/unisson/picture?width=256
     style:
     - 'background-color: #000'
@@ -304,7 +304,7 @@
   - name: UnPlug
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/UnPlugEpita
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/UnPlugEpita/picture?width=256
     style:
     - 'background-color: #741a1a'
@@ -313,7 +313,7 @@
   - name: VJN
     icon: icon-[fa6-brands--facebook]
     href: https://fb.me/vjnights/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://graph.facebook.com/vjnights/picture?width=256
     style:
     - 'background-color: #000'

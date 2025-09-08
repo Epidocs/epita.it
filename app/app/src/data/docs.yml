@@ -3,7 +3,7 @@
 
   - name: Forge Docs
     href: https://docs.forge.epita.fr/
-    class: tile-wide
+    class: tile tile-wide
     icon: icon-[fa6-solid--star]
     background_image: https://docs.forge.epita.fr/assets/images/forge_logo_white-38d02f6ef9b56a34f60b46030ee8b0de.svg
     style:
@@ -16,7 +16,7 @@
 
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
-    class: tile-wide text-dark
+    class: tile tile-wide text-dark
     background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #ffffff'
@@ -28,7 +28,7 @@
 
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://epidocs.eu/assets/logo.png
     style:
     - 'background-color: #24292e'
@@ -36,7 +36,7 @@
 
   - name: Epinotes
     href: https://epinotes.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://epinotes.fr/public/images/logos/epinotes_logo_7.png
     style:
     - 'background-color: #131415'
@@ -44,7 +44,7 @@
 
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://static.hyperion.tf/hyperion/img/Logo_HA.png
     style:
     - 'background-color: #9e9e9e'
@@ -54,12 +54,12 @@
 
   - name: Mastercorp
     href: http://mastercorp.epita.eu/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     style:
     - 'background-color: #fff'
 
   - name: awesome-epita
     href: https://github.com/ItsAnas/awesome-epita
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     style:
     - 'background-color: #fafafa'

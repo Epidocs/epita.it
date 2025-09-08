@@ -3,7 +3,7 @@
 
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://epidocs.eu/assets/logo.png
     style:
     - 'background-color: #24292e'
@@ -11,14 +11,14 @@
 
   - name: MCQ Online
     href: https://mcq.epidocs.eu/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     # background_image:
     style:
     - 'background-color: #fffff8'
 
   - name: Plannings
     href: https://plannings.epidocs.eu/
-    class: tile-small-wide
+    class: tile tile-small-wide
     background_image:
     style:
     - 'background-color: #343a40'
@@ -26,7 +26,7 @@
 
   # - name: Tips
     # href: https://tips.epidocs.eu/
-    # class: tile-small-wide
+    # class: tile tile-small-wide
     # background_image:
     # style:
     # - 'background-color: #343a40'
@@ -36,14 +36,14 @@
 
   - name: Algostats
     href: http://algostats.epidocs.eu/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     # background_image:
     style:
     - 'background-color: #fff'
 
   - name: Progstats
     href: http://progstats.epidocs.eu/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     # background_image:
     style:
     - 'background-color: #fff'
@@ -52,7 +52,7 @@
   items:
   - name: Epidocs.eu
     href: https://epidocs.eu/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://epidocs.eu/assets/logo.png
     style:
     - 'background-color: #606090'
@@ -60,7 +60,7 @@
 
   - name: EPITA.it
     href: https://epita.it/
-    class: tile-medium
+    class: tile tile-medium
     background_image: /assets/icon-192.png
     style:
     - 'background-color: #183048'
