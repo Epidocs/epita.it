@@ -4,7 +4,7 @@
   - name: Discord EPITA 2029
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/D8HQU6v59w
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2029-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -14,7 +14,7 @@
 
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
-    class: tile-wide text-dark
+    class: tile tile-wide text-dark
     background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #FFFFFF'
@@ -23,12 +23,12 @@
 
 - title: S2 Projects
   items:
- 
+
   - name: HorizonBreak
     href: https://horizonweb.vercel.app/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://horizonweb.vercel.app/logo.jpeg
-    style: 
+    style:
     - 'background-color: #FFFFFF'
     - 'background-size: auto 100%'
     # - 'background-position-x: right'
@@ -36,9 +36,9 @@
 
   - name: SubWay Out
     href: https://head4che-prod.github.io/subway-out
-    class: tile-medium text-light
+    class: tile tile-medium text-light
     background_image: https://head4che.co/assets/subwayout.png
-    style: 
+    style:
     - 'background-color: #2F4C99'
     - 'background-position-y: center'
     - 'background-size: 95% auto'
@@ -46,8 +46,16 @@
 
   - name: Unlockis
     href: https://unlockis.fr/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://unlockis.fr/img/logo.png
-    style: 
+    style:
     - 'background-color: #FFFFFF'
+    - 'background-size: auto 100%'
+
+
+  - name: Bloodline Heritage
+    href: https://blood-heritage.github.io/
+    class: tile tile-medium text-dark
+    background_image: https://raw.githubusercontent.com/Blood-Heritage/Blood-Heritage.github.io/refs/heads/siteweb_ams/Icons/GameImage/giovani.png
+    style:
     - 'background-size: auto 100%'

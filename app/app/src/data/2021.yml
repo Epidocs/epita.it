@@ -4,7 +4,7 @@
   - name: Discord EPITA 2021
     icon: icon-[fa6-brands--discord]
     href: https://discordapp.com/invite/WbhavjX
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2021-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -14,7 +14,7 @@
 
   - name: Block'n'roll
     href: https://guccitaps.github.io/index.html
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://guccitaps.github.io/Image/logojeu.png
     style:
     - 'background-color: #4c668f'

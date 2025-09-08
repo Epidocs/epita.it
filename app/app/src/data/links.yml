@@ -3,7 +3,7 @@
 
   - name: EPITA.fr
     href: https://www.epita.fr/
-    class: tile-wide
+    class: tile tile-wide
     background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
     style:
     - 'background-color: #03374e'
@@ -11,7 +11,7 @@
 
   - name: EPITA.net
     href: https://epita.net/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://epita.net/Epita.png
     style:
     - 'background-color: #223049'
@@ -19,7 +19,7 @@
 
   - name: Intracom
     href: https://intracom.epita.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://intracom.epita.fr/assets/img/logo-intracomwhite_u10.svg
     style:
     - 'background-color: #095c80'
@@ -28,7 +28,7 @@
 
   - name: Study Abroad
     href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
     style:
     - 'background-color: #fff'
@@ -38,7 +38,7 @@
 
   - name: EPITA Alumni
     href: https://www.epita-alumni.org/fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://www.epita-alumni.org/images/logos/logo.png?v=20210729
     style:
     - 'background-color: #fff'
@@ -48,7 +48,7 @@
 
   # - name: Odyssée
   #   href: http://odyssee.epita.fr/
-  #   class: tile-small-wide text-dark
+  #   class: tile tile-small-wide text-dark
   #   background_image: https://cdn.matiboux.com/images/epita.it/odyssee.jpg
   #   style:
   #   - 'background-color: #fff'
@@ -63,7 +63,7 @@
 
   - name: CRI / Forge EPITA
     href: https://cri.epita.fr/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://s3.cri.epita.fr/cri-intranet/img/logo.png
     style:
     - 'background-color: #fff'
@@ -73,16 +73,25 @@
 
   - name: Moodle
     href: https://moodle.epita.fr/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1594982425/moodle_logo_small
     style:
     - 'background-color: #fff'
     - 'background-position-y: 45%'
     - 'background-size: 90%'
 
+  - name: Auriga
+    href: https://auriga.epita.fr
+    class: tile tile-medium text-dark
+    background_image: https://auriga.epita.fr/assets/icons/logo_auriga_main_menu.svg
+    style:
+    - 'background-color: #fff'
+    - 'background-size: 80%'
+    - 'background-position-y: 50%'
+
   - name: Assistants
     href: https://assistants.epita.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image:
     - https://assistants.epita.fr/logos/yaka2026_logo.svg
     - https://assistants.epita.fr/lightnoise.png
@@ -93,7 +102,7 @@
 
   - name: Office
     href: https://www.office.com/?auth=2
-    class: tile-small-wide
+    class: tile tile-small-wide
     background_image: https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/more-apps-consumer-861afc732e.png
     style:
     - 'background-color: #d83b01'
@@ -103,7 +112,7 @@
 
   - name: Zeus
     href: https://zeus.ionis-it.com/
-    class: tile-small-wide
+    class: tile tile-small-wide
     background_image: https://zeus.ionis-it.com/assets/png/logo-zeus-blanc.png
     style:
     - 'background-color: #1d2e37'
@@ -113,7 +122,7 @@
 
   - name: Gitlab CRI
     href: https://gitlab.cri.epita.fr/
-    class: tile-small-wide
+    class: tile tile-small-wide
     background_image: https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg
     style:
     - 'background-color: #292961'
@@ -123,7 +132,7 @@
   - name: News EPITA
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.epita.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://forge-discourse.s3.cri.epita.fr/original/1X/9bec2d950081a9936635287e5a7a4a3f810b275d.png
     style:
     - 'background-color: #ffffff'
@@ -131,25 +140,9 @@
     - 'background-position-y: top'
     - 'background-size: auto 90%'
 
-  - name: Pegasus Prepa
-    href: https://prepa-epita.helvetius.net/pegasus
-    class: tile-small-wide text-dark
-    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
-    style:
-    - 'background-color: #fff'
-    - 'background-position-x: left'
-
-  - name: Pegasus Ing
-    href: https://inge-etud.epita.net/pegasus/
-    class: tile-small-wide text-dark
-    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
-    style:
-    - 'background-color: #fff'
-    - 'background-position-x: left'
-
   - name: EPITA Signalement
     href: https://epita.signalement.net/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://epita.signalement.net/images/logo.png
     style:
     - 'background-color: #fff'
@@ -160,13 +153,13 @@
   - name: Debug-Pro
     relurl: /debugpro
     icon: icon-[fa6-solid--list-ul]
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
 
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://ressources.dane.ac-versailles.fr/IMG/logo/projetvoltaire-2.jpg
     style:
     - 'background-color: #c7d600'
@@ -176,7 +169,7 @@
 
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/320px-Rosetta_Stone_logo.svg.png
     style:
     - 'background-color: #ffffff'
@@ -186,7 +179,7 @@
 
   - name: Wiki Prog
     href: https://wiki-prog.infoprepa.epita.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://wiki-prog.infoprepa.epita.fr/skins/common/images/LogoLSE-small.html
     style:
     - 'background-color: #f6f6f6'
@@ -196,7 +189,7 @@
 
   - name: Algo Cours (FR)
     href: https://algo.infoprepa.epita.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
@@ -206,13 +199,29 @@
 
   - name: Algo Courses (EN)
     href: https://algo.infoprepa.epita.fr/english/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
     style:
     - 'background-color: #fff'
     - 'background-position-x: 50%'
     - 'background-position-y: 15%'
     - 'background-size: auto 60%'
+
+  - name: Pegasus Prepa
+    href: https://prepa-epita.helvetius.net/pegasus
+    class: tile tile-small-wide text-dark
+    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: left'
+
+  - name: Pegasus Ing
+    href: https://inge-etud.epita.net/pegasus/
+    class: tile tile-small-wide text-dark
+    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: left'
 
 - title: Unofficial resources for students
   text: |
@@ -222,7 +231,7 @@
   - name: Epimap
     icon: icon-[fa6-solid--user-group]
     href: https://epimap.fr/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://epimap.fr/img/logo-epimap.svg
     style:
     - 'background-color: #230071'
@@ -232,7 +241,7 @@
 
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
-    class: tile-medium
+    class: tile tile-medium
     icon: icon-[fa6-solid--user-group]
     background_image: https://epidocs.eu/assets/logo.png
     style:
@@ -241,7 +250,7 @@
 
   - name: Epinotes
     href: https://epinotes.fr/
-    class: tile-medium
+    class: tile tile-medium
     icon: icon-[fa6-solid--user-group]
     background_image: https://epinotes.fr/public/images/logos/epinotes_logo_7.png
     style:
@@ -250,7 +259,7 @@
 
   - name: Devoups
     href: https://devou.ps/
-    class: tile-medium
+    class: tile tile-medium
     icon: icon-[fa6-solid--user-group]
     background_image: https://devou.ps/img/logo.svg
     style:
@@ -259,7 +268,7 @@
 
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     icon: icon-[fa6-solid--user-group]
     background_image: https://static.hyperion.tf/hyperion/img/Logo_HA.png
     style:
@@ -270,7 +279,7 @@
 
   - name: Mastercorp
     href: http://mastercorp.epita.eu/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     icon: icon-[fa6-solid--user-group]
     style:
     - 'background-color: #fff'
@@ -280,13 +289,13 @@
 
   - name: Console Bocal
     href: https://console.bocal.org/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     style:
     - 'background-color: #e7e7e7'
 
   - name: EPITA Studapart
     href: https://logement.epita.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://media.studapart.com/logos_thumb/5e2b08e0b572e.png
     style:
     - 'background-color: #fff'
@@ -296,7 +305,7 @@
 
   - name: LRE
     href: https://www.lre.epita.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://www.lre.epita.fr/static/logo.svg
     style:
     - 'background-color: #ffffff'
@@ -305,7 +314,7 @@
 
   - name: LSE
     href: https://www.lse.epita.fr/
-    class: tile-small-wide
+    class: tile tile-small-wide
     background_image: https://www.lse.epita.fr/images/logoLSE.png
     style:
     - 'background-color: #141212'
@@ -314,7 +323,7 @@
 
   - name: LRDE
     href: https://www.lrde.epita.fr/
-    class: tile-small-wide text-dark
+    class: tile tile-small-wide text-dark
     background_image: https://www.lrde.epita.fr/skins/common/images/logo.png
     style:
     - 'background-color: #d5e6f7'
@@ -323,7 +332,7 @@
 
   - name: 3ie
     href: https://www.3ie.fr/
-    class: tile-small-wide invalid
+    class: tile tile-small-wide invalid
     # background_image: https://www.3ie.fr/images/3ie-logo.svg
     style:
     - 'background-color: #00ffd2'

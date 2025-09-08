@@ -4,7 +4,7 @@
   - name: Discord EPITA 2025
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/SR5jzVA
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2025-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -12,7 +12,7 @@
   - name: Discord EPITA APPRENTISSAGE 2025
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/EWrBYUYaU9
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2025-apping-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -22,7 +22,7 @@
 
   - name: Beyond Styx
     href: https://beyondstyx.fr/
-    class: tile-medium invalid
+    class: tile tile-medium invalid
     background_image: https://i.imgur.com/w8fxQPw.png
     style:
     - 'background-color: #000000'
@@ -31,7 +31,7 @@
 
   - name: Hell Riders
     href: http://hellriders.ml/
-    class: tile-medium text-dark invalid
+    class: tile tile-medium text-dark invalid
     background_image: https://i.ibb.co/BVHYP0K/Hell-riders.png
     style:
     - 'background-color: #000000'
@@ -42,7 +42,7 @@
     # href: https://smar.cf # Invalid
     href: https://github.com/Ronan-pdr/HunterXHunted
     icon: icon-[fa6-brands--github]
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://raw.githubusercontent.com/Ronan-pdr/HunterXHunted/master/logo_hunterxhunted.png
     style:
     - 'background-color: #191919'
@@ -51,7 +51,7 @@
 
   - name: Panic At Tortuga
     href: https://lifeinvaders.github.io/website/
-    class: tile-medium text-dark
+    class: tile tile-medium text-dark
     background_image: https://raw.githubusercontent.com/LifeInvaders/game/dev/Assets/Pictures/logoSquare.png
     style:
     - 'background-color: #D6C5A8'
@@ -60,7 +60,7 @@
 
   - name: The Beaver Project
     href: https://thebeaverproject.tk
-    class: tile-medium invalid
+    class: tile tile-medium invalid
     background_image: https://thebeaverproject.tk/logo512.png
     style:
     - 'background-color: #B400FF'
@@ -69,7 +69,7 @@
 
   - name: The Hunter
     href: https://hellscrimson.github.io/ProjectTheHunter/
-    class: tile-medium
+    class: tile tile-medium
     background_image: https://hellscrimson.github.io/ProjectTheHunter/assets/img/Version_FR.png
     style:
     - 'background-color: #191919'

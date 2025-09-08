@@ -4,7 +4,7 @@
   - name: Discord EPITA 2030
     icon: icon-[fa6-brands--discord]
     href: https://discord.gg/6bsJgjYcQM
-    class: tile-wide
+    class: tile tile-wide
     background_image: /assets/2030-discord-logo.png
     style:
     - 'background-color: #202225'
@@ -14,7 +14,7 @@
 
   - name: Guide de survie Projet S2 (FR)
     href: https://s2guide.epita.it/
-    class: tile-wide text-dark
+    class: tile tile-wide text-dark
     background_image: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
     style:
     - 'background-color: #FFFFFF'

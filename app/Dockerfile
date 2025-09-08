@@ -19,7 +19,7 @@ FROM bitnami/nginx:1.29 AS nginx_upstream
 # --
 # Base image
 
-FROM node_upstream AS app_base
+FROM node_upstream AS node_base
 
 # Set app directory
 WORKDIR /app
@@ -29,9 +29,9 @@ ENV HOME=/tmp
 
 
 # --
-# Build base image
+# Build binary base image
 
-FROM app_base AS app_build_base
+FROM node_base AS node_build_base
 
 # Install pnpm
 RUN --mount=type=cache,target=~/.npm \
@@ -39,22 +39,31 @@ RUN --mount=type=cache,target=~/.npm \
 
 
 # --
-# Build dev image
+# Build base image
 
-FROM app_build_base AS app_build_dev
+FROM node_build_base AS deps_base
 
-# Copy app build configuration
+# Copy build configuration
 COPY --link ./app/package.json ./app/pnpm-lock.yaml ./
 
-# Install app development dependencies
+
+# --
+# Build dev image
+
+FROM deps_base AS deps_dev
+
+# Install development dependencies
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
 	pnpm install --frozen-lockfile
+
+# Create Astro runtime directory
+RUN mkdir -p ./.astro
 
 
 # --
 # CLI image
 
-FROM app_build_base AS app_cli
+FROM node_build_base AS app_cli
 
 ARG UID
 
@@ -90,7 +99,7 @@ CMD [ "--help" ]
 # --
 # Test base image
 
-FROM app_build_base AS app_test_base
+FROM node_build_base AS test_base
 
 # Build arguments
 ARG UID
@@ -100,13 +109,13 @@ ENV APP_ENV=test
 ENV NODE_ENV=development
 
 # Copy app development dependencies
-COPY --link --from=app_build_dev --chown="${UID}:0" /app/node_modules ./node_modules
+COPY --link --from=deps_dev --chown="${UID}:0" /app/node_modules ./node_modules
 
 
 # --
 # Test unit image
 
-FROM app_test_base AS app_test_unit
+FROM test_base AS test_unit
 
 # Build arguments
 ARG UID
@@ -123,7 +132,7 @@ CMD [ "sh", "-c", "pnpm run test:vitest" ]
 # --
 # Test E2E image
 
-FROM app_test_base AS app_test_e2e
+FROM test_base AS test_e2e
 
 # Build arguments
 ARG UID
@@ -154,20 +163,20 @@ CMD [ "sh", "-c", "pnpm run test:playwright --output /tmp/playwright/test-result
 # --
 # Dev image
 
-FROM app_build_base AS app_dev
+FROM node_build_base AS app_dev
 
 ARG UID
 
 # Set runtime environment
 ENV APP_ENV=dev
-ENV NODE_ENV=development
 
-# Copy app development dependencies
-COPY --link --from=app_build_dev --chown="${UID}:0" /app/node_modules ./node_modules
+# Copy development dependencies
+ENV NODE_ENV=development
+COPY --link --from=deps_dev --chown="${UID}:0" /app/.astro ./.astro
+COPY --link --from=deps_dev --chown="${UID}:0" /app/node_modules ./node_modules
 
 # Copy source code
 COPY --link --chown="${UID}:0" ./app .
-RUN mkdir -p ./.astro && chown -R "${UID}:0" ./.astro
 
 # Create user 'user' in group 'root'
 RUN USERNAME="$(getent passwd "${UID}" | cut -d: -f1)"; \
@@ -186,22 +195,22 @@ ENV PORT=${PORT}
 EXPOSE ${PORT}
 
 # Start development server
-CMD [ "sh", "-c", "pnpm run dev -- --host --port \"${PORT}\"" ]
+CMD [ "sh", "-c", "pnpm run dev --host --port \"${PORT}\"" ]
 
 
 # --
 # Prod build image
 
-FROM app_build_base AS app_prod_build
+FROM node_build_base AS app_prod_build
 
 ARG UID
 
 # Set runtime environment
 ENV APP_ENV=prod
-ENV NODE_ENV=production
 
-# Copy app development dependencies
-COPY --link --from=app_build_dev --chown="${UID}:0" /app/node_modules ./node_modules
+# Copy development dependencies
+ENV NODE_ENV=development
+COPY --link --from=deps_dev --chown="${UID}:0" /app/node_modules ./node_modules
 
 # Copy source code
 COPY --link --chown="${UID}:0" ./app .
