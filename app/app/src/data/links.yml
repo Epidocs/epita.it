@@ -171,8 +171,8 @@
     style:
     - 'background-color: #c7d600'
     - 'background-size: auto 85%'
-    - 'background-position-x: 100%'
-    - 'background-position-y: 0%'
+    - 'background-position-x: 105%'
+    - 'background-position-y: 15%'
 
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
