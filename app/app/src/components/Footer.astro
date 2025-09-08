@@ -4,29 +4,40 @@ import { githubRepositoryUrl } from '~/site'
 
 <div id="footer" class="footer">
 	<div class="container-fluid">
-		<p class="mb-2">
-			Made with <span class="icon icon-[fa6-solid--heart] icon-align icon-fw text-red-600"></span> by EPITA students.
+		<p>
+			Made with <span class="icon icon-[fa6-solid--heart] icon-align icon-fw icon-red"></span> by EPITA students.
 			<a href={`${githubRepositoryUrl}#license`}>
-				<img class="inline-block h-4" alt="CC BY-NC 4.0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc.svg" />
+				<img alt="CC BY-NC 4.0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc.svg" />
 			</a> <br />
 			We use cookies for analytics purposes.
 		</p>
 		<ul>
-			<li><a href={githubRepositoryUrl} class="btn btn-primary btn-sm" style="color: white;">Contribute in Github</a></li>
-			<li><a href="https://epidocs.eu/" class="btn btn-info btn-sm" style="color: white;">Administered by Epidocs</a></li>
+			<li><a href={githubRepositoryUrl} class="btn btn-primary btn-sm">Contribute in Github</a></li>
+			<li><a href="https://epidocs.eu/" class="btn btn-info btn-sm">Administered by Epidocs</a></li>
 		</ul>
 	</div>
 </div>
 
 <style lang="scss">
 @reference "~/styles/tailwind.css";
-@reference "~/styles/utils.css";
 
 .footer {
 	@apply flex-shrink-0 bg-black/10 pt-6 pb-8;
 
 	> .container-fluid {
 		@apply w-full max-w-screen-lg mx-auto px-4;
+	}
+
+	.icon-red {
+		@apply text-red-600;
+	}
+
+	p {
+		@apply mb-2;
+
+		img {
+			@apply inline-block h-4;
+		}
 	}
 
 	ul {
