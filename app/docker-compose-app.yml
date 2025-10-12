@@ -1,0 +1,38 @@
+# Services definition for building & deploying
+
+x-common:
+
+  app-build-context: &app-build-context
+    # Build context
+    context: .
+    dockerfile: ./Dockerfile
+
+  app-environment: &app-environment
+    # Deployment
+    GITHUB_REPOSITORY_URL: ${GITHUB_REPOSITORY_URL:-}
+    GITHUB_SHA: ${GITHUB_SHA:-}
+    VERSION_TAG: ${VERSION_TAG:-}
+    # Astro
+    ASTRO_SITE_URL: ${ASTRO_SITE_URL:-}
+    ASTRO_BASE_PATH: ${ASTRO_BASE_PATH:-}
+    ASTRO_ASSETS_PREFIX: ${ASTRO_ASSETS_PREFIX:-}
+    # Application
+    # (Add env vars for your application here.)
+
+services:
+
+  app:
+    # Build
+    image: ${IMAGES_PREFIX:-app}:${IMAGES_TAG:-latest}
+    build:
+      <<: [ *app-build-context ]
+      target: app_prod
+      args:
+        PORT: ${HTTP_DOCKER_PORT:-8080}
+        BUILD_CHECK: ${BUILD_CHECK:-true}
+        <<: [ *app-environment ]
+    # Deploy
+    environment:
+      <<: [ *app-environment ]
+    ports:
+      - ${HTTP_PORT:-8080}:${HTTP_DOCKER_PORT:-8080} # HTTP

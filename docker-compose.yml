@@ -1,35 +1,9 @@
 # Services definition for building & deploying
 
-x-common:
-
-  app:
-    environment: &app_environment
-      # Deployment configuration
-      GITHUB_REPOSITORY_URL: ${GITHUB_REPOSITORY_URL:-}
-      GITHUB_SHA: ${GITHUB_SHA:-}
-      VERSION_TAG: ${VERSION_TAG:-}
-      # Astro configuration
-      ASTRO_SITE_URL: ${ASTRO_SITE_URL:-}
-      ASTRO_BASE_PATH: ${ASTRO_BASE_PATH:-}
-      ASTRO_ASSETS_PREFIX: ${ASTRO_ASSETS_PREFIX:-}
-      # Application configuration
-      # Add env vars for your application here.
-
 services:
 
   app:
-    # Build
-    image: ${IMAGES_PREFIX:-app}:${IMAGES_TAG:-latest}
-    build:
-      context: ./app
-      dockerfile: ./Dockerfile
-      target: app_prod
-      args:
-        PORT: ${HTTP_DOCKER_PORT:-8080}
-        BUILD_CHECK: ${BUILD_CHECK:-true}
-        <<: [ *app_environment ]
-    # Deploy
-    environment:
-      <<: [ *app_environment ]
-    ports:
-      - ${HTTP_PORT:-8080}:${HTTP_DOCKER_PORT:-8080} # HTTP
+    # Extend
+    extends:
+      file: ./app/docker-compose-app.yml
+      service: app

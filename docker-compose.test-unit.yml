@@ -1,5 +1,10 @@
 # Services overrides for testing
 
+x-common:
+
+  app-test-environment: &app-test-environment
+    CI: ${CI:-}
+
 services:
 
   app:
@@ -16,6 +21,6 @@ services:
     # Deploy override
     user: ${DOCKER_UID:-${UID:-1000}}
     environment:
-      CI: ${CI:-}
+      <<: [ *app-test-environment ]
     tmpfs:
-      - /tmp:mode=1777,uid=${DOCKER_UID:-${UID:-1000}},gid=0
+      - /tmp:mode=1777,exec,uid=${DOCKER_UID:-${UID:-1000}},gid=0
