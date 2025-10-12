@@ -24,32 +24,31 @@ Thumbs.db
 .idea/
 
 # Other
-*.suo
-*.ntvs*
 *.njsproj
+*.ntvs*
 *.sln
+*.suo
 *.sw?
 
 # -- Application rules:
 
 # Node.js
-node_modules/
 .pnpm-store/
 dist/
+node_modules/
 
 # Astro
 .astro/
 .vite/
 
 # Playwright
-test-results/
-playwright-report/
 blob-report/
+playwright-report/
 playwright/.cache/
+test-results/
 
-# Application environment files
-*/**/.env*
+# -- Service rules:
 
-# -- Specific to gitignore:
-
-# N/A
+# All services
+/*/data/
+/*/**/.env*

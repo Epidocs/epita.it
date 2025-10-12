@@ -1,60 +1,59 @@
 # -- Generic rules:
 
 # Environment files
-.env*.local*
+**/.env*.local*
 
 # Temporary files
-._*
-*.cache
-*.log*
-*.swp
-*~
+**/._*
+**/*.cache
+**/*.log*
+**/*.swp
+**/*~
 
 # System files
-.DS_Store
-Thumbs.db
+**/.DS_Store
+**/Thumbs.db
 
 # -- Editor rules:
 
 # VS Code
-.vscode/**/*
-!.vscode/extensions.json
+**/.vscode/
 
 # Jetbrains
-.idea/
+**/.idea/
 
 # Other
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+**/*.njsproj
+**/*.ntvs*
+**/*.sln
+**/*.suo
+**/*.sw?
 
 # -- Application rules:
 
 # Node.js
-node_modules/
-.pnpm-store/
-dist/
+**/.pnpm-store/
+**/dist/
+**/node_modules/
 
 # Astro
-.astro/
-.vite/
+**/.astro/
+**/.vite/
 
 # Playwright
-test-results/
-playwright-report/
-blob-report/
-playwright/.cache/
+**/blob-report/
+**/playwright-report/
+**/playwright/.cache/
+**/test-results/
 
-# Application environment files
-*/**/.env*
+# -- Service rules:
 
-# -- Specific to dockerignore:
+# All services
+data/
+**/.env*
+
+# -- Docker rules:
 
 # Docker configuration files
 Dockerfile
 docker-compose*.yml
-
-# Dotfiles
-.*
