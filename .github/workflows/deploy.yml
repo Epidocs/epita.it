@@ -6,7 +6,8 @@ name: Deploy CD
 # - ASTRO_BASE_PATH
 # - ASTRO_ASSETS_PREFIX
 
-# GitHub secrets: N/A
+# GitHub secrets:
+# - CONFIG_PROD (optional)
 
 on:
 
@@ -50,7 +51,45 @@ jobs:
       # Dependency steps
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+
+      - name: Install jq
+        run: |
+          # apt-get install jq
+          sudo apt-get -q update
+          sudo apt-get -qy install --no-install-recommends jq
+
+      # Preparation steps
+
+      - name: Load app config in environment
+        env:
+          CONFIG_PROD: ${{ secrets.CONFIG_PROD }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          GITHUB_VARS: ${{ toJson(vars) }}
+        run: |
+          # Load app config in environment
+
+          # Load shell functions to load app config variables
+          . ./.github/workflows/scripts/load_app_config_functions.sh
+
+          echo '::group::Load app config variables'
+
+          # Deployment
+          load_var 'GITHUB_REPOSITORY_URL' 'false' "https://github.com/${GITHUB_REPOSITORY}"
+          load_var 'GITHUB_SHA' 'false' "${GITHUB_SHA}"
+          load_var 'VERSION_TAG' 'true' "${GITHUB_REF_NAME}"
+
+          # Astro
+          load_var 'ASTRO_SITE_URL' 'true'
+          load_var 'ASTRO_BASE_PATH' 'true'
+          load_var 'ASTRO_ASSETS_PREFIX' 'true'
+
+          # Application
+          # (Load env vars for your application here.)
+
+          echo '::endgroup::'
 
       # Execution steps
 
@@ -64,18 +103,18 @@ jobs:
 
       - name: Build for production
         env:
-          # Build configuration
+          # Build
           BUILD_CHECK: 'false' # Skip type checks
-          # Deployment configuration
-          GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
-          GITHUB_SHA: ${{ github.sha }}
-          VERSION_TAG: ${{ vars.VERSION_TAG }}
-          # Astro configuration
-          ASTRO_SITE_URL: ${{ vars.ASTRO_SITE_URL }}
-          ASTRO_BASE_PATH: ${{ vars.ASTRO_BASE_PATH }}
-          ASTRO_ASSETS_PREFIX: ${{ vars.ASTRO_ASSETS_PREFIX }}
-          # Application configuration
-          # Add env vars for your application here.
+          # Deployment
+          GITHUB_REPOSITORY_URL: ${{ env.GITHUB_REPOSITORY_URL }}
+          GITHUB_SHA: ${{ env.GITHUB_SHA }}
+          VERSION_TAG: ${{ env.VERSION_TAG }}
+          # Astro
+          ASTRO_SITE_URL: ${{ env.ASTRO_SITE_URL }}
+          ASTRO_BASE_PATH: ${{ env.ASTRO_BASE_PATH }}
+          ASTRO_ASSETS_PREFIX: ${{ env.ASTRO_ASSETS_PREFIX }}
+          # Application
+          # (Add env vars for your application here.)
         run: |
           # docker compose build
           export DOCKER_UID="$(id -u)"
