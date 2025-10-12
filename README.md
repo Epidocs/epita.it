@@ -13,7 +13,7 @@ Use this command to run the site locally for development:
 
 ```sh
 docker compose watch
-# or: docker compose up
+# or: docker compose up -d
 ```
 
 Using `watch`, you'll benefit from file changes watching for sync & rebuild.

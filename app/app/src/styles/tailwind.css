@@ -6,14 +6,8 @@
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
 
-/* Iconify Plugin for Tailwind CSS. */
+/* Iconify Plugin for Tailwind CSS */
 @plugin "@iconify/tailwind4";
-
-/* Tailwind CSS legacy configuration */
-/* Uncomment the `@config` line below to use your legacy configuration file.
-   This may be useful when upgrading from Tailwind CSS v3. Eventually, you should migrate to the
-   new custom theme configuration in the `@theme` block below. */
-/* @config "../../tailwind.config.mjs"; */
 
 /* Custom theme configuration */
 @theme {
