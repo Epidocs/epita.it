@@ -97,7 +97,7 @@
     style:
     - 'background-color: #fff'
 
-  # Hijacked domain name
+  # Hijacked domain
   - name: Epimap
     icon: icon-[fa6-solid--user-group]
     href: https://epimap.fr/
