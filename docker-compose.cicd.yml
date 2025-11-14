@@ -24,6 +24,7 @@ services:
       target: app_prod_build
       args:
         UID: ${DOCKER_UID:-${UID:-1000}}
+        BUILD_CHECK: ${BUILD_CHECK:-false}
     # Deploy override
     depends_on:
       app-volumes:
