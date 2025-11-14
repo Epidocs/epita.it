@@ -33,7 +33,7 @@
 - title: Old official resources
   items:
 
-  # 404 Not Found
+  # DNS resolution error
   - name: IonisX
     href: https://ionisx.com/
     class: tile tile-medium text-dark invalid
@@ -42,6 +42,7 @@
     - 'background-color: #d09c01'
     # - 'background-size: 90%'
 
+  # Deprecated resource
   - name: Algo TD
     href: https://algo-td.infoprepa.epita.fr/
     class: tile tile-medium text-dark
@@ -49,7 +50,7 @@
     style:
     - 'background-color: #e5e5f0'
 
-  # 502 Bad Gateway
+  # Connection timeout
   - name: Chronos
     href: http://chronos.epita.net/
     class: tile tile-small-wide invalid
@@ -66,6 +67,7 @@
     style:
     - 'background-color: #f5f5ff'
 
+  # Redirects to Forge Docs
   - name: Doc. EPITA (CRI)
     href: https://doc.cri.epita.fr/
     class: tile tile-small-wide invalid
@@ -76,6 +78,7 @@
     - 'background-size: auto 50%'
     - 'background-position-y: 20%'
 
+  # 404 Not Found
   - name: Rocket.Chat
     href: http://rocketchat.cri.epita.fr/
     class: tile tile-small-wide invalid
@@ -90,7 +93,7 @@
     <span class="icon icon-[fa6-solid--bullhorn] icon-align icon-fw"></span> = Client for reading newsgroups, not affiliated with EPITA.
   items:
 
-  # Unresolved domain name
+  # DNS resolution error
   - name: iChronos
     icon: icon-[fa6-solid--user-group]
     href: https://ichronos.net/
@@ -98,6 +101,7 @@
     style:
     - 'background-color: #616161'
 
+  # Deprecated resource
   - name: Map EPITA
     icon: icon-[fa6-solid--user-group]
     href: http://map.epita.eu/
@@ -105,6 +109,7 @@
     style:
     - 'background-color: #fff'
 
+  # DNS resolution error
   - name: Infinity Zeus
     icon: icon-[fa6-solid--user-group]
     href: https://zeus.infinity.study/
@@ -112,7 +117,7 @@
     style:
     - 'background-color: #bd510a'
 
-  # DNS_PROBE_FINISHED_NXDOMAIN
+  # DNS resolution error
   - name: RTFN
     icon: icon-[fa6-solid--bullhorn]
     href: https://rtfn.fr/
@@ -120,7 +125,7 @@
     style:
     - 'background-color: #fff'
 
-  # DNS_PROBE_FINISHED_NXDOMAIN
+  # DNS resolution error
   - name: Muffin Reader
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.deliciousmuffins.net/
@@ -129,7 +134,7 @@
     style:
     - 'background-color: #222222'
 
-  # DNS_PROBE_FINISHED_NXDOMAIN
+  # DNS resolution error
   - name: news.infinity.study
     icon: icon-[fa6-solid--bullhorn]
     href: https://news.infinity.study/
@@ -138,6 +143,7 @@
     style:
     - 'background-color: #8c3f0d'
 
+  # Domain for sale
   - name: Back to Basics
     href: https://backtobasics.axen.io/
     class: tile tile-small-wide text-dark invalid
@@ -147,6 +153,7 @@
     # - 'background-size: 90%'
     # - 'background-position-y: top'
 
+  # 404 Not Found
   - name: Epita ALED
     href: https://epita.litarvan.com/a/aled
     class: tile tile-small-wide invalid
@@ -156,6 +163,7 @@
     - 'background-color: #1E1E1E'
     # - 'background-size: 75%'
 
+  # DNS resolution error
   - name: tonnerre.link
     icon: icon-[fa6-solid--user-group]
     href: https://tonnerre.link/
@@ -163,6 +171,7 @@
     style:
     - 'background-color: #170e34'
 
+  # Deprecated resource
   - name: kb.zoroark.guru
     href: https://kb.zoroark.guru/
     class: tile tile-small-wide
@@ -173,6 +182,7 @@
     - 'background-position: 5% 10%'
     - 'background-size: auto 60%'
 
+  # DNS resolution error
   - name: Redux
     href: https://redux.epita.cf/
     class: tile tile-small-wide invalid
@@ -181,6 +191,7 @@
     style:
     - 'background-color: #1254a4'
 
+  # Cloudflare error: Invalid SSL certificate
   - name: EpiPortal
     href: https://epiportal.com/
     class: tile tile-small-wide text-dark invalid
@@ -188,6 +199,7 @@
     style:
     - 'background-color: #fafafa'
 
+  # DNS resolution error
   - name: Epitar
     href: https://epitar.aureleoules.com
     class: tile tile-small-wide invalid
@@ -196,7 +208,7 @@
     style:
     - 'background-color: #141d27'
 
-  # Cloudflare block page
+  # Hijacked domain
   - name: Epitaf
     href: https://www.epitaf.fr/
     class: tile tile-small-wide invalid
