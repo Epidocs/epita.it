@@ -228,17 +228,6 @@
     <span class="icon icon-[fa6-solid--user-group] icon-align icon-fw"></span> = Community resource, not affiliated with EPITA.
   items:
 
-  - name: Epimap
-    icon: icon-[fa6-solid--user-group]
-    href: https://epimap.fr/
-    class: tile tile-medium
-    background_image: https://epimap.fr/img/logo-epimap.svg
-    style:
-    - 'background-color: #230071'
-    - 'background-size: 80%'
-    - 'background-position-x: 50%'
-    - 'background-position-y: 45%'
-
   - name: Past-Exams
     href: https://past-exams.epidocs.eu/
     class: tile tile-medium
