@@ -22,11 +22,11 @@
   items:
 
   - name: Blast
-    href: https://g00pix.github.io/ProjetBlast/
+    href: https://projetblast.matiboux.dev/
     class: tile tile-medium
     style:
     - 'background-color: #343a40'
-    - 'background-image: url(https://g00pix.github.io/ProjetBlast/logo.png), url(https://g00pix.github.io/ProjetBlast/square-background-150px.png)'
+    - 'background-image: url(https://projetblast.matiboux.dev/logo.png), url(https://projetblast.matiboux.dev/square-background-150px.png)'
     - 'background-size: contain, cover'
 
   - name: Du Bekar!
