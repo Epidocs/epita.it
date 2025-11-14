@@ -59,6 +59,14 @@
     - 'background-color: #b77fa2'
     # - 'background-size: 90%'
 
+  # Subresources are 404 Not Found
+  - name: Debug-Pro
+    relurl: /debugpro
+    icon: icon-[fa6-solid--list-ul]
+    class: tile tile-small-wide text-dark
+    style:
+    - 'background-color: #f5f5ff'
+
   # Redirects to Forge Docs
   - name: Doc. EPITA (CRI)
     href: https://doc.cri.epita.fr/
