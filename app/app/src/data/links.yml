@@ -150,13 +150,6 @@
     - 'background-position-x: 10%'
     - 'background-position-y: 20%'
 
-  - name: Debug-Pro
-    relurl: /debugpro
-    icon: icon-[fa6-solid--list-ul]
-    class: tile tile-small-wide text-dark
-    style:
-    - 'background-color: #f5f5ff'
-
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
     class: tile tile-small-wide text-dark
