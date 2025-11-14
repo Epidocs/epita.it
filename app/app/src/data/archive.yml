@@ -101,6 +101,15 @@
     style:
     - 'background-color: #fff'
 
+  # Hijacked domain
+  - name: Epimap
+    icon: icon-[fa6-solid--user-group]
+    href: https://epimap.fr/
+    class: tile tile-small-wide invalid
+    # background_image: https://epimap.fr/img/logo-epimap.svg
+    style:
+    - 'background-color: #230071'
+
   # DNS resolution error
   - name: Infinity Zeus
     icon: icon-[fa6-solid--user-group]
