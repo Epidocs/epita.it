@@ -1,5 +1,7 @@
 # Services definition for running CLI commands
 
+name: astro-template-cli
+
 services:
 
   app-volumes:

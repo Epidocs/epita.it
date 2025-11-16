@@ -1,5 +1,7 @@
 # Services definition for building & deploying
 
+name: astro-template
+
 services:
 
   app:
