@@ -63,10 +63,12 @@ jobs:
       - name: Pull dependencies
         run: |
           # docker compose pull --ignore-buildable
+          echo '::group::Pull details'
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
             --env-file .env \
             pull --ignore-buildable
+          echo '::endgroup::'
 
       - name: Build for production
         env:
@@ -95,11 +97,13 @@ jobs:
       - name: Copy application files
         run: |
           # docker compose up
+          echo '::group::Run details'
           export DOCKER_UID="$(id -u)"
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
             --env-file .env \
             up
+          echo '::endgroup::'
 
       - name: Check application files
         run: |
@@ -126,10 +130,12 @@ jobs:
       - name: Pull dependencies
         run: |
           # docker compose pull --ignore-buildable
+          echo '::group::Pull details'
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
             --env-file .env \
             pull --ignore-buildable
+          echo '::endgroup::'
 
       - name: Build for unit tests
         env:
@@ -156,11 +162,13 @@ jobs:
       - name: Start unit tests
         run: |
           # docker compose up
+          echo '::group::Run details'
           export DOCKER_UID="$(id -u)"
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.test-unit.yml \
             --env-file .env \
             up -d
+          echo '::endgroup::'
 
       - name: List unit tests services
         run: |
@@ -239,10 +247,12 @@ jobs:
       - name: Pull dependencies
         run: |
           # docker compose pull --ignore-buildable
+          echo '::group::Pull details'
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
             --env-file .env \
             pull --ignore-buildable
+          echo '::endgroup::'
 
       - name: Build for E2E tests
         env:
@@ -269,11 +279,13 @@ jobs:
       - name: Start E2E tests
         run: |
           # docker compose up
+          echo '::group::Run details'
           export DOCKER_UID="$(id -u)"
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.test-e2e.yml \
             --env-file .env \
             up -d
+          echo '::endgroup::'
 
       - name: List E2E tests services
         run: |
