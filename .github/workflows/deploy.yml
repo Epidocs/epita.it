@@ -96,10 +96,12 @@ jobs:
       - name: Pull dependencies
         run: |
           # docker compose pull --ignore-buildable
+          echo '::group::Pull details'
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
             --env-file .env \
             pull --ignore-buildable
+          echo '::endgroup::'
 
       - name: Build for production
         env:
@@ -117,20 +119,24 @@ jobs:
           # (Add env vars for your application here.)
         run: |
           # docker compose build
+          echo '::group::Build details'
           export DOCKER_UID="$(id -u)"
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
             --env-file .env \
             build
+          echo '::endgroup::'
 
       - name: Copy application files
         run: |
           # docker compose up
+          echo '::group::Run details'
           export DOCKER_UID="$(id -u)"
           docker compose \
             -f ./docker-compose.yml -f ./docker-compose.cicd.yml \
             --env-file .env \
             up
+          echo '::endgroup::'
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3

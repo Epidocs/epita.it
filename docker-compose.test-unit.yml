@@ -1,5 +1,7 @@
 # Services overrides for testing
 
+name: epita-it-test-unit
+
 x-common:
 
   app-test-environment: &app-test-environment

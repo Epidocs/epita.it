@@ -1,5 +1,7 @@
 # Services definition for running CLI commands
 
+name: epita-it-cli
+
 services:
 
   app-volumes:
