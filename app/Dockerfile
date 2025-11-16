@@ -270,13 +270,13 @@ FROM nginx_upstream AS app_prod
 ENV APP_ENV=prod
 
 # Copy nginx configuration
-COPY --link --chown="${UID}:0" ./nginx/default.conf.template /etc/nginx/templates/
+COPY --link ./nginx/default.conf.template /etc/nginx/templates/
 
 # Copy app production built files
-COPY --from=app_prod_build --link /app/dist/ /usr/share/nginx/html
+COPY --from=app_prod_build --link /app/dist/ /usr/share/nginx/html/
 
 # Set environment variables
-ARG NGINX_HOST='local'
+ARG NGINX_HOST='localhost'
 ENV NGINX_HOST=${NGINX_HOST}
 
 # Set exposed port
