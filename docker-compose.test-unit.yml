@@ -1,6 +1,6 @@
 # Services overrides for testing
 
-name: astro-template-test-unit
+name: epita-it-test-unit
 
 x-common:
 

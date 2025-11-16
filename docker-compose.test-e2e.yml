@@ -1,6 +1,6 @@
 # Services overrides for testing
 
-name: astro-template-test-e2e
+name: epita-it-test-e2e
 
 x-common:
 

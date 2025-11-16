@@ -1,6 +1,6 @@
 # Services definition for building & deploying
 
-name: astro-template
+name: epita-it
 
 services:
 

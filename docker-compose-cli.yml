@@ -1,6 +1,6 @@
 # Services definition for running CLI commands
 
-name: astro-template-cli
+name: epita-it-cli
 
 services:
 
