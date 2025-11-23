@@ -127,7 +127,7 @@ jobs:
 
       # Execution steps
 
-      - name: Pull dependencies
+      - name: Pull images for unit tests
         run: |
           # docker compose pull --ignore-buildable
           echo '::group::Pull details'
@@ -137,7 +137,7 @@ jobs:
             pull --ignore-buildable
           echo '::endgroup::'
 
-      - name: Build for unit tests
+      - name: Build images for unit tests
         env:
           # Deployment
           GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
@@ -184,7 +184,7 @@ jobs:
           echo "${DOCKER_SERVICES}" >> $GITHUB_ENV
           echo 'GITHUB_ENV_EOF' >> $GITHUB_ENV
 
-      - name: Wait for unit tests to finish
+      - name: Wait for services to finish
         env:
           DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
         run: |
@@ -195,7 +195,7 @@ jobs:
             wait $DOCKER_SERVICES \
             || exit 0
 
-      - name: Print unit tests logs
+      - name: Print services logs
         env:
           DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
         run: |
@@ -244,7 +244,7 @@ jobs:
 
       # Execution steps
 
-      - name: Pull dependencies
+      - name: Pull images for e2e tests
         run: |
           # docker compose pull --ignore-buildable
           echo '::group::Pull details'
@@ -254,7 +254,7 @@ jobs:
             pull --ignore-buildable
           echo '::endgroup::'
 
-      - name: Build for E2E tests
+      - name: Build images for e2e tests
         env:
           # Deployment
           GITHUB_REPOSITORY_URL: https://github.com/${{ github.repository }}
@@ -276,7 +276,7 @@ jobs:
             build
           echo '::endgroup::'
 
-      - name: Start E2E tests
+      - name: Start e2e tests
         run: |
           # docker compose up
           echo '::group::Run details'
@@ -287,7 +287,7 @@ jobs:
             up -d
           echo '::endgroup::'
 
-      - name: List E2E tests services
+      - name: List e2e tests services
         run: |
           # Set DOCKER_SERVICES environment variable
           DOCKER_SERVICES="$(
@@ -301,7 +301,7 @@ jobs:
           echo "${DOCKER_SERVICES}" >> $GITHUB_ENV
           echo 'GITHUB_ENV_EOF' >> $GITHUB_ENV
 
-      - name: Wait for E2E tests to finish
+      - name: Wait for services to finish
         env:
           DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
         run: |
@@ -312,7 +312,7 @@ jobs:
             wait $DOCKER_SERVICES \
             || exit 0
 
-      - name: Print E2E tests logs
+      - name: Print services logs
         env:
           DOCKER_SERVICES: ${{ env.DOCKER_SERVICES }}
         run: |
