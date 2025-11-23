@@ -1,0 +1,20 @@
+server {
+	listen       ${NGINX_PORT};
+	listen  [::]:${NGINX_PORT};
+	server_name  ${NGINX_HOST};
+
+	# Serve application files
+	location / {
+		root  /usr/share/nginx/html;
+		index  index.html index.htm;
+	}
+
+	# Redirect client errors
+	error_page  404  /404.html;
+
+	# Redirect server errors
+	error_page  500 502 503 504  /50x.html;
+	location = /50x.html {
+		root  /usr/share/nginx/html;
+	}
+}

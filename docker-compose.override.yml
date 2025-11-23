@@ -22,8 +22,8 @@ services:
           path: ./app/Dockerfile
         # Application build files
         - action: rebuild
-          path: ./app/app/pnpm-lock.yaml
+          path: ./app/pnpm-lock.yaml
         # Application source code
         - action: sync
-          path: ./app/app
+          path: ./app
           target: /app

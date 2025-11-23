@@ -13,7 +13,7 @@ services:
       VOLUMES: |
         /app
     volumes:
-      - ./app/app:/app
+      - ./app:/app
 
   app:
     # Extend
@@ -35,5 +35,5 @@ services:
     tmpfs:
       - /tmp:mode=1777,exec,uid=${DOCKER_UID:-${UID:-1000}},gid=0
     volumes:
-      - ./app/app:/app
+      - ./app:/app
     ports: !reset null
