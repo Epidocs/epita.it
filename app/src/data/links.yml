@@ -106,7 +106,7 @@
     - https://assistants.epita.fr/lightnoise.png
     style:
     - 'background-color: #000000'
-    - 'background-size: 80%'
+    - 'background-size: 80%, 100%'
     - 'background-position-y: 15%'
 
   - name: Office
