@@ -29,10 +29,11 @@
   - name: Absences
     href: https://absences.epita.net/
     class: tile tile-medium text-dark
-    background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
+    background_image: https://absences.epita.net/assets/img/absences-logo.png
     style:
     - 'background-color: #fff'
     - 'background-size: 90%'
+    - 'background-position-y: top'
 
   - name: Study Abroad
     href: https://epitafr.sharepoint.com/sites/EPITAStudyAbroad
