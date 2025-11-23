@@ -336,3 +336,10 @@
     style:
     - 'background-color: #00ffd2'
     # - 'background-size: auto 90%'
+
+  - name: EPITA.it Archive
+    icon: icon-[fa6-solid--box-archive]
+    relurl: /archive
+    class: tile tile-small-wide text-dark
+    style:
+    - 'background-color: #fff'
