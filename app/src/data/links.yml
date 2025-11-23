@@ -117,16 +117,6 @@
     style:
     - 'background-color: #b90e80'
 
-  - name: Office
-    href: https://www.office.com/?auth=2
-    class: tile tile-small-wide
-    background_image: https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/more-apps-consumer-861afc732e.png
-    style:
-    - 'background-color: #d83b01'
-    - 'background-size: auto 150%'
-    - 'background-position-x: 180%'
-    - 'background-position-y: top'
-
   - name: Zeus
     href: https://zeus.ionis-it.com/
     class: tile tile-small-wide
@@ -136,6 +126,16 @@
     - 'background-size: auto 65%'
     - 'background-position-x: 75%'
     - 'background-position-y: 50%'
+
+  - name: Office
+    href: https://www.office.com/?auth=2
+    class: tile tile-small-wide
+    background_image: https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/more-apps-consumer-861afc732e.png
+    style:
+    - 'background-color: #d83b01'
+    - 'background-size: auto 150%'
+    - 'background-position-x: 180%'
+    - 'background-position-y: top'
 
   - name: Gitlab CRI
     href: https://gitlab.cri.epita.fr/
