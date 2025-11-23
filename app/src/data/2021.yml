@@ -1,10 +1,11 @@
 - title: Student Community
   items:
 
+  # Expired link
   - name: Discord EPITA 2021
     icon: icon-[fa6-brands--discord]
     href: https://discordapp.com/invite/WbhavjX
-    class: tile tile-wide
+    class: tile tile-wide invalid
     background_image: /assets/2021-discord-logo.png
     style:
     - 'background-color: #202225'
