@@ -12,12 +12,22 @@ ARG UID=1001
 # --
 # Upstream images
 
+FROM alpine:3.22 AS alpine_upstream
 FROM node:24-slim AS node_upstream
 FROM nginx:1.29-alpine AS nginx_upstream
 
 
 # --
-# Base stage
+# Alpine base stage
+
+FROM alpine_upstream AS alpine_base
+
+# Set app directory
+WORKDIR /app
+
+
+# --
+# Node base image
 
 FROM node_upstream AS node_base
 
@@ -39,25 +49,19 @@ RUN --mount=type=cache,id=npm,target=/root/.npm \
 
 
 # --
-# Deps base stage
-
-FROM node_build_base AS deps_base
-
-# Copy build configuration
-COPY --link ./app/package.json ./app/pnpm-lock.yaml ./
-
-
-# --
 # Deps dev stage
 
-FROM deps_base AS deps_dev
-
-# Install development dependencies
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-	pnpm install --frozen-lockfile
+FROM node_build_base AS deps_dev
 
 # Create Astro runtime directory
 RUN mkdir -p ./.astro
+
+# Copy build configuration
+COPY --link ./package.json ./pnpm-lock.yaml ./
+
+# Install dev dependencies
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+	pnpm install --frozen-lockfile
 
 
 # --
@@ -100,12 +104,24 @@ CMD [ "--help" ]
 
 
 # --
+# Source dev stage
+
+FROM alpine_base AS source_dev
+
+# Copy source code
+COPY --link ./ ./
+
+
+# --
 # Lint image
 
 FROM node_build_base AS app_lint
 
 # Build arguments
 ARG UID
+
+# Set runtime environment
+ENV APP_ENV=test
 
 # Run as non-root user
 USER ${UID}:0
@@ -124,7 +140,7 @@ ARG UID
 # Set runtime environment
 ENV APP_ENV=test
 
-# Copy development dependencies
+# Copy dev dependencies
 ENV NODE_ENV=development
 COPY --from=deps_dev --link --chown="${UID}:0" /app/.astro/ ./.astro/
 COPY --from=deps_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
@@ -140,7 +156,7 @@ ARG UID
 
 # Copy source code
 RUN chown "${UID}:0" .
-COPY --link --chown="${UID}:0" ./app/ ./
+COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
 # Run as non-root user
 USER ${UID}:0
@@ -163,7 +179,7 @@ RUN pnpm exec playwright install --with-deps
 
 # Copy source code
 RUN chown "${UID}:0" .
-COPY --link --chown="${UID}:0" ./app/ ./
+COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
 # Build application
 RUN pnpm run build-only
@@ -185,14 +201,14 @@ ARG UID
 # Set runtime environment
 ENV APP_ENV=dev
 
-# Copy development dependencies
+# Copy dev dependencies
 ENV NODE_ENV=development
 COPY --from=deps_dev --link --chown="${UID}:0" /app/.astro/ ./.astro/
 COPY --from=deps_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
 
 # Copy source code
 RUN chown "${UID}:0" .
-COPY --link --chown="${UID}:0" ./app/ ./
+COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
 # Create user 'user' in group 'root'
 # (hadolint: Ignore unchecked pipe failures)
@@ -212,7 +228,6 @@ ARG PORT=8080
 ENV PORT=${PORT}
 EXPOSE ${PORT}
 
-# Start development server
 CMD [ "sh", "-c", "pnpm run dev --host --port \"${PORT}\"" ]
 
 
@@ -227,12 +242,12 @@ ARG UID
 # Set runtime environment
 ENV APP_ENV=prod
 
-# Copy development dependencies
+# Copy dev dependencies
 ENV NODE_ENV=development
 COPY --from=deps_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
 
 # Copy source code
-COPY --link --chown="${UID}:0" ./app/ ./
+COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
 # Set app environment variables
 # : Deployment configuration
