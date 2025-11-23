@@ -109,15 +109,13 @@
     - 'background-size: 80%, 100%'
     - 'background-position-y: 15%'
 
-  - name: Office
-    href: https://www.office.com/?auth=2
+  - name: Campus Maps
+    icon: icon-[fa6-solid--map]
+    href: https://maps.forge.epita.fr/
     class: tile tile-small-wide
-    background_image: https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/more-apps-consumer-861afc732e.png
+    # background_image: https://epimap.fr/img/logo-epimap.svg
     style:
-    - 'background-color: #d83b01'
-    - 'background-size: auto 150%'
-    - 'background-position-x: 180%'
-    - 'background-position-y: top'
+    - 'background-color: #b90e80'
 
   - name: Zeus
     href: https://zeus.ionis-it.com/
@@ -128,6 +126,16 @@
     - 'background-size: auto 65%'
     - 'background-position-x: 75%'
     - 'background-position-y: 50%'
+
+  - name: Office
+    href: https://www.office.com/?auth=2
+    class: tile tile-small-wide
+    background_image: https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/more-apps-consumer-861afc732e.png
+    style:
+    - 'background-color: #d83b01'
+    - 'background-size: auto 150%'
+    - 'background-position-x: 180%'
+    - 'background-position-y: top'
 
   - name: Gitlab CRI
     href: https://gitlab.cri.epita.fr/
