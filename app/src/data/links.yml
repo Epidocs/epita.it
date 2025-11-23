@@ -110,14 +110,6 @@
     - 'background-position-x: 95%'
     - 'background-position-y: 10%'
 
-  - name: Campus Maps
-    icon: icon-[fa6-solid--map]
-    href: https://maps.forge.epita.fr/
-    class: tile tile-small-wide
-    # background_image: https://epimap.fr/img/logo-epimap.svg
-    style:
-    - 'background-color: #b90e80'
-
   - name: Zeus
     href: https://zeus.ionis-it.com/
     class: tile tile-small-wide
@@ -127,6 +119,14 @@
     - 'background-size: auto 65%'
     - 'background-position-x: 75%'
     - 'background-position-y: 50%'
+
+  - name: Campus Maps
+    icon: icon-[fa6-solid--map]
+    href: https://maps.forge.epita.fr/
+    class: tile tile-small-wide
+    # background_image: https://epimap.fr/img/logo-epimap.svg
+    style:
+    - 'background-color: #b90e80'
 
   - name: Office
     href: https://www.office.com/?auth=2
