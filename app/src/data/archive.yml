@@ -59,6 +59,57 @@
     - 'background-color: #b77fa2'
     # - 'background-size: 90%'
 
+  # Deprecated resource
+  - name: Pegasus Prepa
+    href: https://prepa-epita.helvetius.net/pegasus
+    class: tile tile-small-wide text-dark
+    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: left'
+
+  # Deprecated resource
+  - name: Pegasus Ing
+    href: https://inge-etud.epita.net/pegasus/
+    class: tile tile-small-wide text-dark
+    background_image: https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/a4/23/f4/a423f466-ad1d-7071-9b75-0079f744a72a/source/70x70bb.jpg
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: left'
+
+  # Deprecated resource
+  - name: Wiki Prog
+    href: https://wiki-prog.infoprepa.epita.fr/
+    class: tile tile-small-wide text-dark
+    background_image: https://wiki-prog.infoprepa.epita.fr/skins/common/images/LogoLSE-small.html
+    style:
+    - 'background-color: #f6f6f6'
+    - 'background-position-x: 90%'
+    - 'background-position-y: 30%'
+    - 'background-size: auto 65%'
+
+  # Deprecated resource
+  - name: Algo Cours (FR)
+    href: https://algo.infoprepa.epita.fr/
+    class: tile tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 15%'
+    - 'background-size: auto 60%'
+
+  # Deprecated resource
+  - name: Algo Courses (EN)
+    href: https://algo.infoprepa.epita.fr/english/
+    class: tile tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 15%'
+    - 'background-size: auto 60%'
+
   # Subresources are 404 Not Found
   - name: Debug-Pro
     relurl: /debugpro
