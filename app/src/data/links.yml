@@ -109,6 +109,14 @@
     - 'background-size: 80%'
     - 'background-position-y: 15%'
 
+  - name: Campus Maps
+    icon: icon-[fa6-solid--map]
+    href: https://maps.forge.epita.fr/
+    class: tile tile-small-wide
+    # background_image: https://epimap.fr/img/logo-epimap.svg
+    style:
+    - 'background-color: #b90e80'
+
   - name: Office
     href: https://www.office.com/?auth=2
     class: tile tile-small-wide
