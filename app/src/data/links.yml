@@ -188,6 +188,26 @@
     - 'background-position-x: 50%'
     - 'background-position-y: 15%'
 
+  - name: Algo Cours Wiki (FR)
+    href: https://algo.infoprepa.epita.fr/
+    class: tile tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 15%'
+    - 'background-size: auto 60%'
+
+  - name: Algo Courses Wiki (EN)
+    href: https://algo.infoprepa.epita.fr/english/
+    class: tile tile-small-wide text-dark
+    background_image: https://algo.infoprepa.epita.fr/skins/common/images/Algo_prepas_epita_wiki_logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 15%'
+    - 'background-size: auto 60%'
+
 - title: Unofficial resources for students
   text: |
     <span class="icon icon-[fa6-solid--user-group] icon-align icon-fw"></span> = Community resource, not affiliated with EPITA.
