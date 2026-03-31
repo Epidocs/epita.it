@@ -36,7 +36,7 @@
     "@iconify-json/twemoji": "^1.2.4",
     "@iconify/tailwind4": "^1.1.0",
     "@tailwindcss/vite": "^4.1.17",
-    "astro": "^5.16.0",
+    "astro": "^5.18.1",
     "js-yaml": "^4.1.1",
     "sass": "^1.94.2",
     "tailwindcss": "^4.1.17",
