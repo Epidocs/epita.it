@@ -3,6 +3,10 @@
 # This Dockerfile uses the service folder as context.
 
 
+# ----------------
+# Global
+# ----------------
+
 # --
 # Global build arguments
 
@@ -48,10 +52,14 @@ RUN --mount=type=cache,id=npm,target=/root/.npm \
 	npm install -g pnpm
 
 
-# --
-# Deps dev stage
+# ----------------
+# Dependencies
+# ----------------
 
-FROM node_build_base AS deps_dev
+# --
+# Deps base stage
+
+FROM node_build_base AS deps_base
 
 # Create Astro runtime directory
 RUN mkdir -p ./.astro
@@ -59,10 +67,29 @@ RUN mkdir -p ./.astro
 # Copy build configuration
 COPY --link ./package.json ./pnpm-lock.yaml ./
 
+# --
+# Deps dev stage
+
+FROM deps_base AS deps_dev
+
 # Install dev dependencies
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
 	pnpm install --frozen-lockfile
 
+
+# --
+# Deps prod stage
+
+FROM deps_base AS deps_prod
+
+# Install prod dependencies
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+	pnpm install --prod --frozen-lockfile
+
+
+# ----------------
+# CLI
+# ----------------
 
 # --
 # CLI image
@@ -97,20 +124,81 @@ USER ${UID}
 # Mount source code
 VOLUME /app
 
-# Run CLI command
+# Copy scripts
 COPY --link --chmod=755 ./docker/cli-entrypoint.sh /usr/local/bin/app-cli-entrypoint
+
 ENTRYPOINT [ "app-cli-entrypoint" ]
 CMD [ "--help" ]
 
+
+# ----------------
+# Source code
+# ----------------
 
 # --
 # Source dev stage
 
 FROM alpine_base AS source_dev
 
+# Copy dev dependencies
+COPY --from=deps_dev --link /app/.astro/ ./.astro/
+COPY --from=deps_dev --link /app/node_modules/ ./node_modules/
+
 # Copy source code
 COPY --link ./ ./
 
+
+# --
+# Source prod build stage
+
+FROM node_build_base AS source_prod_build
+
+# Set runtime environment
+ENV APP_ENV=prod
+ENV NODE_ENV=production
+
+# Copy dev dependencies & source code
+COPY --from=source_dev --link /app/ ./
+
+# Set app environment variables
+# : Deployment configuration
+ARG GITHUB_REPOSITORY_URL=''
+ENV GITHUB_REPOSITORY_URL=${GITHUB_REPOSITORY_URL}
+ARG GITHUB_SHA=''
+ENV GITHUB_SHA=${GITHUB_SHA}
+ARG VERSION_TAG=''
+ENV VERSION_TAG=${VERSION_TAG}
+# : Astro configuration
+ARG ASTRO_SITE_URL=''
+ENV ASTRO_SITE_URL=${ASTRO_SITE_URL}
+ARG ASTRO_BASE_PATH=''
+ENV ASTRO_BASE_PATH=${ASTRO_BASE_PATH}
+ARG ASTRO_ASSETS_PREFIX=''
+ENV ASTRO_ASSETS_PREFIX=${ASTRO_ASSETS_PREFIX}
+# : Application configuration
+# Add env vars for your application here.
+
+# Build application in dist/ directory
+ARG BUILD_CHECK='true'
+RUN if [ "${BUILD_CHECK}" = 'true' ]; then \
+		pnpm run build; \
+	else \
+		pnpm run build-only; \
+	fi
+
+
+# --
+# Source prod stage
+
+FROM alpine_base AS source_prod
+
+# Copy built prod application files
+COPY --from=source_prod_build --link /app/dist/ ./dist/
+
+
+# ----------------
+# Lint
+# ----------------
 
 # --
 # Lint image
@@ -129,6 +217,10 @@ USER ${UID}:0
 CMD [ "sh", "-c", "exit 0" ]
 
 
+# ----------------
+# Test
+# ----------------
+
 # --
 # Test base stage
 
@@ -139,11 +231,7 @@ ARG UID
 
 # Set runtime environment
 ENV APP_ENV=test
-
-# Copy dev dependencies
 ENV NODE_ENV=development
-COPY --from=deps_dev --link --chown="${UID}:0" /app/.astro/ ./.astro/
-COPY --from=deps_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
 
 
 # --
@@ -154,7 +242,7 @@ FROM test_base AS test_unit
 # Build arguments
 ARG UID
 
-# Copy source code
+# Copy dev dependencies & source code
 RUN chown "${UID}:0" .
 COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
@@ -172,12 +260,16 @@ FROM test_base AS test_e2e
 # Build arguments
 ARG UID
 
+# Copy dev dependencies
+COPY --from=source_dev --link --chown="${UID}:0" /app/.astro/ ./.astro/
+COPY --from=source_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
+
 # Install Playwright dependencies
 ENV PLAYWRIGHT_BROWSERS_PATH=/etc/playwright/browsers
 COPY --from=deps_dev --link --chown="${UID}:0" /app/package.json /app/pnpm-lock.yaml ./
 RUN pnpm exec playwright install --with-deps
 
-# Copy source code
+# Copy dev source code
 RUN chown "${UID}:0" .
 COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
@@ -190,6 +282,10 @@ USER ${UID}:0
 CMD [ "sh", "-c", "pnpm run test:playwright --output /tmp/playwright/test-results" ]
 
 
+# ----------------
+# Dev
+# ----------------
+
 # --
 # Dev image
 
@@ -200,13 +296,9 @@ ARG UID
 
 # Set runtime environment
 ENV APP_ENV=dev
-
-# Copy dev dependencies
 ENV NODE_ENV=development
-COPY --from=deps_dev --link --chown="${UID}:0" /app/.astro/ ./.astro/
-COPY --from=deps_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
 
-# Copy source code
+# Copy dev dependencies & source code
 RUN chown "${UID}:0" .
 COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
@@ -231,10 +323,14 @@ EXPOSE ${PORT}
 CMD [ "sh", "-c", "pnpm run dev --host --port \"${PORT}\"" ]
 
 
-# --
-# Prod build stage
+# ----------------
+# Prod
+# ----------------
 
-FROM node_build_base AS app_prod_build
+# --
+# Prod image
+
+FROM nginx_upstream AS app_prod
 
 # Build arguments
 ARG UID
@@ -242,53 +338,11 @@ ARG UID
 # Set runtime environment
 ENV APP_ENV=prod
 
-# Copy dev dependencies
-ENV NODE_ENV=development
-COPY --from=deps_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
-
-# Copy source code
-COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
-
-# Set app environment variables
-# : Deployment configuration
-ARG GITHUB_REPOSITORY_URL=''
-ENV GITHUB_REPOSITORY_URL=${GITHUB_REPOSITORY_URL}
-ARG GITHUB_SHA=''
-ENV GITHUB_SHA=${GITHUB_SHA}
-ARG VERSION_TAG=''
-ENV VERSION_TAG=${VERSION_TAG}
-# : Astro configuration
-ARG ASTRO_SITE_URL=''
-ENV ASTRO_SITE_URL=${ASTRO_SITE_URL}
-ARG ASTRO_BASE_PATH=''
-ENV ASTRO_BASE_PATH=${ASTRO_BASE_PATH}
-ARG ASTRO_ASSETS_PREFIX=''
-ENV ASTRO_ASSETS_PREFIX=${ASTRO_ASSETS_PREFIX}
-# : Application configuration
-# Add env vars for your application here.
-
-# Build application
-ARG BUILD_CHECK='true'
-RUN if [ "${BUILD_CHECK}" = 'true' ]; then \
-		pnpm run build; \
-	else \
-		pnpm run build-only; \
-	fi
-
-
-# --
-# Prod image
-
-FROM nginx_upstream AS app_prod
-
-# Set runtime environment
-ENV APP_ENV=prod
-
 # Copy nginx configuration
 COPY --link ./nginx/default.conf.template /etc/nginx/templates/
 
-# Copy app production built files
-COPY --from=app_prod_build --link /app/dist/ /usr/share/nginx/html/
+# Copy built prod application files
+COPY --from=source_prod --link --chown="${UID}:0" /app/dist/ /usr/share/nginx/html/
 
 # Set environment variables
 ARG NGINX_HOST='localhost'

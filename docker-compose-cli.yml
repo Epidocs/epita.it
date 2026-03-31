@@ -18,7 +18,7 @@ services:
   app:
     # Extend
     extends:
-      file: ./app/docker-compose-app.yml
+      file: ./app/docker-compose.yml
       service: app
     # Build override
     image: ${IMAGES_PREFIX:-app}-cli:${IMAGES_TAG:-latest}

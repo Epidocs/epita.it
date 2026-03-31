@@ -7,5 +7,5 @@ services:
   app:
     # Extend
     extends:
-      file: ./app/docker-compose-app.yml
+      file: ./app/docker-compose.yml
       service: app

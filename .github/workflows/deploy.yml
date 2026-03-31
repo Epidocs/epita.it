@@ -46,12 +46,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
+    # Only run if:
+    # - Deploys are not disabled
+    if: |
+      vars.CI_DISABLE_DEPLOYS != 'true'
+
     steps:
 
       # Dependency steps
-
-      - name: Checkout
-        uses: actions/checkout@v5
 
       - name: Install jq
         run: |
@@ -60,6 +62,9 @@ jobs:
           sudo apt-get -qy install --no-install-recommends jq
 
       # Preparation steps
+
+      - name: Checkout
+        uses: actions/checkout@v6
 
       - name: Load app config in environment
         env:
@@ -139,7 +144,7 @@ jobs:
           echo '::endgroup::'
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./app/dist
 
@@ -155,6 +160,7 @@ jobs:
 
     # Set GITHUB_TOKEN permissions for the job
     permissions:
+      actions: write
       id-token: write
       pages: write
 
@@ -169,4 +175,41 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+
+      - name: Delete GitHub Pages artifact
+        uses: actions/github-script@v8
+        env:
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          ARTIFACT_PATTERN: '^github-pages$'
+        with:
+          script: |
+            const runId = process.env.GITHUB_RUN_ID;
+            const artifactPattern = new RegExp(process.env.ARTIFACT_PATTERN);
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            core.info(`Listing artifacts for run '${runId}' in '${owner}/${repo}'...`);
+            const res = await github.rest.actions.listWorkflowRunArtifacts({
+              owner,
+              repo,
+              run_id: runId,
+            });
+            const artifacts = res.data?.artifacts || [];
+            if (artifacts.length <= 0) {
+              core.info('No artifacts found.');
+              return;
+            }
+            const requiredArtifacts = artifacts.filter(a => artifactPattern.test(a.name));
+            if (requiredArtifacts.length <= 0) {
+              core.info('Required artifact(s) not found.');
+              return;
+            }
+            for (const artifact of requiredArtifacts) {
+              core.info(`Deleting artifact '${artifact.name}' (${artifact.id})...`);
+              await github.rest.actions.deleteArtifact({
+                owner,
+                repo,
+                artifact_id: artifact.id,
+              });
+            }
+            core.info('Done.');
