@@ -68,7 +68,7 @@ To make this request, you can open an issue here or contact [@matiboux](https://
 
 ## License
 
-Copyright (c) 2019-2025 [Matiboux](https://github.com/matiboux) ([matiboux.me](https://matiboux.me))
+Copyright (c) 2019-2026 [Matiboux](https://github.com/matiboux) ([matiboux.me](https://matiboux.me))
 
 Licensed under the [Creative Commons BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/). You can see a copy in the [LICENSE](LICENSE) file.
 
