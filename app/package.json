@@ -15,8 +15,7 @@
     "astro:sync": "astro sync",
     "astro:preview": "astro preview",
     "test:vitest": "vitest run",
-    "test:playwright": "playwright test",
-    "deps:update": "pnpx npm-check-updates -t semver -u && pnpm i"
+    "test:playwright": "playwright test"
   },
   "repository": {
     "type": "git",
