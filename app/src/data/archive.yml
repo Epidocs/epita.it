@@ -247,10 +247,12 @@
     style:
     - 'background-color: #141d27'
 
+  # DNS resolution error
     # 404 error : website no longer supported
-    - name: 3ie
+  - name: 3ie
     href: https://www.3ie.fr/
     class: tile tile-small-wide invalid
     # background_image: https://www.3ie.fr/images/3ie-logo.svg
     style:
     - 'background-color: #00ffd2'
+    # - 'background-size: auto 90%'
