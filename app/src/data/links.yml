@@ -240,6 +240,15 @@
     - 'background-color: #111827'
     - 'background-size: 70%'
 
+  - name: EpiTime
+    href: https://epitime.epita.it/
+    class: tile tile-medium text-dark
+    icon: icon-[fa6-solid--user-group]
+    background_image: https://epitime.epita.it/icons/logo.png
+    style:
+      - 'background-color: #fff'
+      - 'background-size: 100%'
+
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
     class: tile tile-small-wide text-dark
