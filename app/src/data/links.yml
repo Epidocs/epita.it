@@ -305,24 +305,6 @@
     - 'background-position-x: 50%'
     - 'background-position-y: 25%'
 
-  - name: LSE
-    href: https://www.lse.epita.fr/
-    class: tile tile-small-wide
-    background_image: https://www.lse.epita.fr/images/logoLSE.png
-    style:
-    - 'background-color: #141212'
-    - 'background-size: auto 80%'
-    - 'background-position-x: 70%'
-
-  - name: LRDE
-    href: https://www.lrde.epita.fr/
-    class: tile tile-small-wide text-dark
-    background_image: https://www.lrde.epita.fr/skins/common/images/logo.png
-    style:
-    - 'background-color: #d5e6f7'
-    - 'background-size: auto 100%'
-    - 'background-position-x: 70%'
-
   - name: EPITA.it Archive
     icon: icon-[fa6-solid--box-archive]
     relurl: /archive
