@@ -1,0 +1,8 @@
+allowBuilds:
+  '@parcel/watcher': set this to true or false
+  esbuild: set this to true or false
+  sharp: set this to true or false
+minimumReleaseAgeExclude:
+  - yaml@2.8.3
+overrides:
+  yaml@>=2.0.0 <2.8.3: ^2.8.3

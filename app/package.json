@@ -48,19 +48,6 @@
     "typescript": "^6.0.3",
     "vitest": "^4.1.5"
   },
-  "pnpm": {
-    "overrides": {
-      "volar-service-emmet@0.0.66": "0.0.67",
-      "lodash@>=4.0.0 <=4.17.22": ">=4.17.23",
-      "svgo@=4.0.0": ">=4.0.1",
-      "devalue@<5.6.4": ">=5.6.4",
-      "devalue@<=5.6.3": ">=5.6.4",
-      "yaml@>=2.0.0 <2.8.3": ">=2.8.3",
-      "picomatch@<2.3.2": ">=2.3.2",
-      "picomatch@>=4.0.0 <4.0.4": ">=4.0.4",
-      "smol-toml@<1.6.1": ">=1.6.1"
-    }
-  },
   "imports": {
     "#global.css": "./src/styles/global.css",
     "#tailwind.css": "./src/styles/tailwind.css"
