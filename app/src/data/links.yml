@@ -295,6 +295,16 @@
     - 'background-size: auto 80%'
     - 'background-position-x: 75%'
 
+  - name: FabLab Lyon
+    href: https://i2t-lyon.fab-manager.com/
+    class: tile tile-small-wide text-dark
+    background_image: https://raw.githubusercontent.com/sleede/fab-manager/refs/heads/master/app/frontend/images/fabmanager-logo.png
+    style:
+    - 'background-color: #ffffff'
+    - 'background-size: 90% auto'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 25%'
+
   - name: LSE
     href: https://www.lse.epita.fr/
     class: tile tile-small-wide
@@ -312,7 +322,7 @@
     - 'background-color: #d5e6f7'
     - 'background-size: auto 100%'
     - 'background-position-x: 70%'
-    
+
   - name: EPITA.it Archive
     icon: icon-[fa6-solid--box-archive]
     relurl: /archive
