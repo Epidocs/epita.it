@@ -9,6 +9,7 @@ x-common:
 
   app-environment: &app-environment
     # Deployment
+    APP_ENV: ${APP_ENV:-prod}
     GITHUB_REPOSITORY_URL: ${GITHUB_REPOSITORY_URL:-}
     GITHUB_SHA: ${GITHUB_SHA:-}
     VERSION_TAG: ${VERSION_TAG:-}
