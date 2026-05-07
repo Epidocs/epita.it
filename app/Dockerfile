@@ -65,7 +65,7 @@ FROM node_build_base AS deps_base
 RUN mkdir -p ./.astro
 
 # Copy build configuration
-COPY --link ./package.json ./pnpm-lock.yaml ./
+COPY --link ./package.json ./pnpm-lock.yaml ./pnpm-workspace.yaml ./
 
 # --
 # Deps dev stage
@@ -154,7 +154,8 @@ COPY --link ./ ./
 FROM node_build_base AS source_prod_build
 
 # Set runtime environment
-ENV APP_ENV=prod
+ARG APP_ENV=prod
+ENV APP_ENV=${APP_ENV}
 ENV NODE_ENV=production
 
 # Copy dev dependencies & source code
@@ -191,6 +192,9 @@ RUN if [ "${BUILD_CHECK}" = 'true' ]; then \
 # Source prod stage
 
 FROM alpine_base AS source_prod
+
+# Copy prod dependencies
+COPY --from=deps_prod --link /app/node_modules/ ./node_modules/
 
 # Copy built prod application files
 COPY --from=source_prod_build --link /app/dist/ ./dist/
@@ -266,7 +270,7 @@ COPY --from=source_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modul
 
 # Install Playwright dependencies
 ENV PLAYWRIGHT_BROWSERS_PATH=/etc/playwright/browsers
-COPY --from=deps_dev --link --chown="${UID}:0" /app/package.json /app/pnpm-lock.yaml ./
+COPY --from=deps_dev --link --chown="${UID}:0" /app/package.json /app/pnpm-lock.yaml /app/pnpm-workspace.yaml ./
 RUN pnpm exec playwright install --with-deps
 
 # Copy dev source code

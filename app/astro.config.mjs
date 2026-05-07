@@ -20,6 +20,7 @@ export default defineConfig({
 	env: {
 		schema: {
 			// Deployment configuration
+			APP_ENV: envField.enum({ context: 'client', access: 'public', optional: true, values: ['dev', 'test', 'prod'], default: 'prod' }),
 			GITHUB_REPOSITORY_URL: envField.string({ context: 'client', access: 'public', optional: true }),
 			GITHUB_SHA: envField.string({ context: 'client', access: 'public', optional: true }),
 			VERSION_TAG: envField.string({ context: 'client', access: 'public', optional: true }),

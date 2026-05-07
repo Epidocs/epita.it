@@ -15,7 +15,8 @@
     "astro:sync": "astro sync",
     "astro:preview": "astro preview",
     "test:vitest": "vitest run",
-    "test:playwright": "playwright test"
+    "test:playwright": "playwright test",
+    "npm:lockfile": "npm install --package-lock-only --ignore-scripts"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,7 @@
   },
   "homepage": "https://github.com/Epidocs/epita.it#readme",
   "dependencies": {
-    "@astrojs/check": "^0.9.8",
+    "@astrojs/check": "^0.9.9",
     "@fontsource/roboto": "^5.2.10",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-regular": "^1.2.4",
@@ -34,31 +35,18 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/twemoji": "^1.2.5",
     "@iconify/tailwind4": "^1.2.3",
-    "@tailwindcss/vite": "^4.2.2",
-    "astro": "^6.1.6",
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^6.2.2",
     "js-yaml": "^4.1.1",
-    "sass": "^1.98.0",
-    "tailwindcss": "^4.2.2",
-    "typescript": "^6.0.2"
+    "sass": "^1.99.0",
+    "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
+    "@playwright/test": "^1.59.1",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^24.12.0",
-    "vitest": "^4.1.2"
-  },
-  "pnpm": {
-    "overrides": {
-      "volar-service-emmet@0.0.66": "0.0.67",
-      "lodash@>=4.0.0 <=4.17.22": ">=4.17.23",
-      "svgo@=4.0.0": ">=4.0.1",
-      "devalue@<5.6.4": ">=5.6.4",
-      "devalue@<=5.6.3": ">=5.6.4",
-      "yaml@>=2.0.0 <2.8.3": ">=2.8.3",
-      "picomatch@<2.3.2": ">=2.3.2",
-      "picomatch@>=4.0.0 <4.0.4": ">=4.0.4",
-      "smol-toml@<1.6.1": ">=1.6.1"
-    }
+    "@types/node": "^24.12.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
   },
   "imports": {
     "#global.css": "./src/styles/global.css",
