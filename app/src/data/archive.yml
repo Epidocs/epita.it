@@ -141,7 +141,7 @@
     style:
     - 'background-color: #616161'
 
-  # Deprecated resource
+  # Deprecated: Retired project
   - name: Map EPITA
     icon: icon-[fa6-solid--user-group]
     href: http://map.epita.eu/
@@ -149,7 +149,7 @@
     style:
     - 'background-color: #fff'
 
-  # Hijacked domain
+  # Dead: Hijacked domain
   - name: Epimap
     icon: icon-[fa6-solid--user-group]
     href: https://epimap.fr/
