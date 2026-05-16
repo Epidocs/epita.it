@@ -249,6 +249,15 @@
       - 'background-color: #fff'
       - 'background-size: 100%'
 
+  - name: Chrysalide
+    href: https://chrysalide.app/
+    class: tile tile-medium
+    icon: icon-[fa6-solid--user-group]
+    background_image: https://chrysalide.app/icon.png
+    style:
+      - 'background-color: #0060d6'
+      - 'background-size: 80%'
+
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
     class: tile tile-small-wide text-dark
