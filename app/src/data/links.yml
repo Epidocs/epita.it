@@ -168,6 +168,15 @@
     - 'background-position-x: 10%'
     - 'background-position-y: 20%'
 
+  - name: Edusign
+    href: https://edusign.com/
+    class: tile tile-small-wide
+    background_image: https://edusign.com/fr/wp-content/uploads/sites/2/2023/07/Calque_1-5.png
+    style:
+      - 'background-color: #13333e'
+      - 'background-size: auto 35%'
+      - 'background-position-y: 30%'
+
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
     class: tile tile-small-wide text-dark
