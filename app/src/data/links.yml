@@ -168,6 +168,15 @@
     - 'background-position-x: 10%'
     - 'background-position-y: 20%'
 
+  - name: Edusign
+    href: https://edusign.com/
+    class: tile tile-small-wide
+    background_image: https://edusign.com/fr/wp-content/uploads/sites/2/2023/07/Calque_1-5.png
+    style:
+      - 'background-color: #13333e'
+      - 'background-size: auto 35%'
+      - 'background-position-y: 30%'
+
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
     class: tile tile-small-wide text-dark
@@ -248,6 +257,15 @@
     style:
       - 'background-color: #fff'
       - 'background-size: 100%'
+
+  - name: Chrysalide
+    href: https://chrysalide.app/
+    class: tile tile-medium
+    icon: icon-[fa6-solid--user-group]
+    background_image: https://chrysalide.app/icon.png
+    style:
+      - 'background-color: #0060d6'
+      - 'background-size: 80%'
 
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
