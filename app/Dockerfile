@@ -128,7 +128,7 @@ VOLUME /app
 COPY --link --chmod=755 ./docker/cli-entrypoint.sh /usr/local/bin/app-cli-entrypoint
 
 ENTRYPOINT [ "app-cli-entrypoint" ]
-CMD [ "--help" ]
+CMD []
 
 
 # ----------------
