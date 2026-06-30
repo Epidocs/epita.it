@@ -29,7 +29,7 @@ services:
       <<: [ *app-build-context ]
       target: app_prod
       args:
-        PORT: ${HTTP_DOCKER_PORT:-8080}
+        PORT: ${APP_DOCKER_PORT:-8080}
         BUILD_CHECK: ${BUILD_CHECK:-true}
         NGINX_HOST: ${NGINX_HOST:-localhost}
         <<: [ *app-environment ]
@@ -37,4 +37,4 @@ services:
     environment:
       <<: [ *app-environment ]
     ports:
-      - ${HTTP_PORT:-8080}:${HTTP_DOCKER_PORT:-8080} # HTTP
+      - ${APP_PORT:-8080}:${APP_DOCKER_PORT:-8080} # HTTP

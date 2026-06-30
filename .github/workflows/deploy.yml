@@ -53,6 +53,11 @@ jobs:
 
     steps:
 
+      # Initialization steps
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
       # Dependency steps
 
       - name: Install jq
@@ -62,9 +67,6 @@ jobs:
           sudo apt-get -qy install --no-install-recommends jq
 
       # Preparation steps
-
-      - name: Checkout
-        uses: actions/checkout@v6
 
       - name: Load app config in environment
         env:
@@ -91,7 +93,7 @@ jobs:
           load_var 'ASTRO_BASE_PATH' 'true'
           load_var 'ASTRO_ASSETS_PREFIX' 'true'
 
-          # Application
+          # Application (app env vars)
           # (Load env vars for your application here.)
 
           echo '::endgroup::'
@@ -120,7 +122,7 @@ jobs:
           ASTRO_SITE_URL: ${{ env.ASTRO_SITE_URL }}
           ASTRO_BASE_PATH: ${{ env.ASTRO_BASE_PATH }}
           ASTRO_ASSETS_PREFIX: ${{ env.ASTRO_ASSETS_PREFIX }}
-          # Application
+          # Application (app env vars)
           # (Add env vars for your application here.)
         run: |
           # docker compose build

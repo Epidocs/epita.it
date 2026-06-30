@@ -49,7 +49,7 @@ FROM node_base AS node_build_base
 
 # Install pnpm
 RUN --mount=type=cache,id=npm,target=/root/.npm \
-	npm install -g pnpm
+	npm install -g pnpm@11
 
 
 # ----------------
@@ -128,7 +128,7 @@ VOLUME /app
 COPY --link --chmod=755 ./docker/cli-entrypoint.sh /usr/local/bin/app-cli-entrypoint
 
 ENTRYPOINT [ "app-cli-entrypoint" ]
-CMD [ "--help" ]
+CMD []
 
 
 # ----------------

@@ -73,8 +73,12 @@ load_var() {
 	if [ -n "${var_value}" ]; then
 		echo "${var_value}" | sed 's/^ */::add-mask::/'
 	fi
+
 	echo "Set ${var_name} (secret)"
-	echo "${var_name}<<GITHUB_ENV_EOF" >> "$GITHUB_ENV"
-	echo "${var_value}" >> "$GITHUB_ENV"
-	echo 'GITHUB_ENV_EOF' >> "$GITHUB_ENV"
+
+	{
+		echo "${var_name}<<GITHUB_ENV_EOF"
+		echo "${var_value}"
+		echo 'GITHUB_ENV_EOF'
+	} >> "${GITHUB_ENV}"
 }
