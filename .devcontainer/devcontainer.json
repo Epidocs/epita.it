@@ -1,0 +1,19 @@
+{
+  "name": "epita-it",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "devcontainer",
+  "workspaceFolder": "/workdir",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [4321],
+  "portsAttributes": {
+    "4321": { "label": "app" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "mhutchie.git-graph"
+      ]
+    }
+  }
+}
