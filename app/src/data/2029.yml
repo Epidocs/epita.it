@@ -9,6 +9,14 @@
     style:
     - 'background-color: #202225'
 
+  - name: Discord EPITA APPRENTISSAGE 2029
+    icon: icon-[fa6-brands--discord]
+    href: https://discord.gg/KFXuUezyvA
+    class: tile tile-wide
+    background_image: /assets/2029-discord-app-logo.png
+    style:
+    - 'background-color: #202225'
+
 - title: Misc.
   items:
 
