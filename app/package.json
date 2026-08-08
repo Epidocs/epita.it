@@ -37,7 +37,7 @@
     "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.6",
-    "js-yaml": "^4.3.0",
+    "js-yaml": "^4.3.1",
     "sass": "^1.102.0",
     "tailwindcss": "^4.3.3"
   },
