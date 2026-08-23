@@ -120,6 +120,10 @@ const items = Astro.props.grid ? await prepareItems(Astro.props.grid) : []
 								{},
 							),
 						}}
+						{...(item.href
+							? { 'data-umami-event': 'Outbound Link', 'data-umami-event-url': item.href }
+							: {}
+						)}
 					>
 						<span class="branding-bar">{item.name}</span>
 						{item.icon && (
