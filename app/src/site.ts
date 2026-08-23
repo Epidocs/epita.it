@@ -51,7 +51,6 @@ export const site: Site = {
 	viewportScale: 1,
 	socialTitle: true,
 	socialDescription: true,
-	// gtag: 'UA-140860210-2',
 }
 
 export const githubRepositoryUrl: string = (
