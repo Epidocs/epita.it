@@ -1,5 +1,11 @@
 # Services definition override for development
 
+x-common:
+
+  app-environment: &app-environment
+    # Deployment
+    APP_ENV: ${APP_ENV:-dev}
+
 services:
 
   app:
@@ -15,6 +21,8 @@ services:
         UID: ${DOCKER_UID:-${UID:-1000}}
     # Deploy override
     user: ${DOCKER_UID:-${UID:-1000}}
+    environment:
+      <<: [ *app-environment ]
     develop:
       watch:
         # Docker image
