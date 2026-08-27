@@ -33,9 +33,11 @@ Thumbs.db
 # -- Application rules:
 
 # Node.js
+.coverage/
 .pnpm-store/
 dist/
 node_modules/
+tsconfig*.tsbuildinfo
 
 # Astro
 .astro/
@@ -46,6 +48,9 @@ blob-report/
 playwright-report/
 playwright/.cache/
 test-results/
+
+# Generated source files
+generated/
 
 # -- Service rules:
 
