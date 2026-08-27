@@ -36,9 +36,9 @@
     "@iconify-json/twemoji": "^1.2.5",
     "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.0",
-    "js-yaml": "^4.3.1",
-    "sass": "^1.102.0",
+    "astro": "^7.2.8",
+    "js-yaml": "^4.3.2",
+    "sass": "^1.103.1",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
@@ -46,7 +46,7 @@
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^24.13.3",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "imports": {
     "#global.css": "./src/styles/global.css",

@@ -20,9 +20,9 @@ services:
       args:
         UID: ${DOCKER_UID:-${UID:-1000}}
     # Deploy override
-    user: ${DOCKER_UID:-${UID:-1000}}
     environment:
       <<: [ *app-environment ]
+    user: ${DOCKER_UID:-${UID:-1000}}
     develop:
       watch:
         # Docker image
