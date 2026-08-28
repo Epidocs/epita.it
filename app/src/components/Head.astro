@@ -11,6 +11,5 @@ import { site } from '~/site'
 <link rel="manifest" href="/manifest.json" />
 
 {APP_ENV === 'prod' && (
-	<script is:inline>window.twFallback=function(el){try{var d=el.dataset;var b=JSON.stringify({type:'event',payload:{website:d.websiteId,hostname:location.hostname,url:location.pathname+location.search,referrer:document.referrer,language:navigator.language,screen:screen.width+'x'+screen.height,title:document.title}});navigator.sendBeacon('https://u.mtbx.it/api/send',new Blob([b],{type:'application/json'}))}catch(e){}}</script>
-	<script is:inline defer src="https://u.mtbx.it/tw.js" data-website-id="89eb4e7e-94a7-4f03-8383-e41f78b1fc15" onerror="window.twFallback(this)"></script>
+	<script is:inline defer src="https://u.epidocs.eu/tw.js" data-website-id="89eb4e7e-94a7-4f03-8383-e41f78b1fc15" onerror="window.twFallback(this)"></script>
 )}
