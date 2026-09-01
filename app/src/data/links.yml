@@ -269,12 +269,13 @@
     
   - name: Jarvis
     href: https://github.com/MBaptisteM/Jarvis
-    class: tile tile-medium
+    class: tile tile-small-wide
     icon: icon-[fa6-solid--user-group]
     background_image: https://MBaptisteM.github.io/Jarvis/Logo.png
     style:
       - 'background-color: #131415'
-      - 'background-size: 75%'
+      - 'background-size: auto 70%'
+      - 'background-position-y: 15%'
 
   - name: HyperAnnales
     href: https://annales.hyperion.tf/
