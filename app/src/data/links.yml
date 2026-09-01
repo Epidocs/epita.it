@@ -266,11 +266,11 @@
     style:
       - 'background-color: #0060d6'
       - 'background-size: 80%'
-    
+
   - name: Jarvis
-    href: https://github.com/MBaptisteM/Jarvis
+    href: https://mbaptistem.github.io/Jarvis/jarvis.html
     class: tile tile-small-wide
-    icon: icon-[fa6-brands--github]
+    icon: icon-[fa6-solid--user-group]
     background_image: https://MBaptisteM.github.io/Jarvis/Logo.png
     style:
       - 'background-color: #131415'
