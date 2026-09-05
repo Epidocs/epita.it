@@ -74,7 +74,7 @@
   - name: Moodle
     href: https://moodle.epita.fr/
     class: tile tile-medium text-dark
-    background_image: https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1594982425/moodle_logo_small
+    background_image: https://upload.wikimedia.org/wikipedia/commons/c/c6/Moodle-logo.svg
     style:
     - 'background-color: #fff'
     - 'background-position-y: 45%'
