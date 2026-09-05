@@ -141,7 +141,7 @@
   - name: Gitlab CRI
     href: https://gitlab.cri.epita.fr/
     class: tile tile-small-wide
-    background_image: https://about.gitlab.com/images/press/logo/svg/gitlab-logo-white-rgb.svg
+    background_image: https://about.gitlab.com/images/press/gitlab-logo-200-rgb.svg
     style:
     - 'background-color: #292961'
     - 'background-position-y: 15%'
