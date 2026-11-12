@@ -100,16 +100,6 @@
     - 'background-size: 80%, 100%'
     - 'background-position-y: 15%'
 
-  - name: Absences
-    href: https://absences.epita.net/
-    class: tile tile-small-wide text-dark
-    background_image: https://absences.epita.net/assets/img/absences-logo.png
-    style:
-    - 'background-color: #fff'
-    - 'background-size: auto 90%'
-    - 'background-position-x: 95%'
-    - 'background-position-y: 10%'
-
   - name: Zeus
     href: https://zeus.ionis-it.com/
     class: tile tile-small-wide
@@ -119,6 +109,15 @@
     - 'background-size: auto 65%'
     - 'background-position-x: 75%'
     - 'background-position-y: 50%'
+
+  - name: Edusign
+    href: https://edusign.com/
+    class: tile tile-small-wide
+    background_image: https://edusign.com/fr/wp-content/uploads/sites/2/2023/07/Calque_1-5.png
+    style:
+      - 'background-color: #13333e'
+      - 'background-size: auto 35%'
+      - 'background-position-y: 30%'
 
   - name: Campus Maps
     icon: icon-[fa6-regular--map]
@@ -167,15 +166,6 @@
     - 'background-size: auto 50%'
     - 'background-position-x: 10%'
     - 'background-position-y: 20%'
-
-  - name: Edusign
-    href: https://edusign.com/
-    class: tile tile-small-wide
-    background_image: https://edusign.com/fr/wp-content/uploads/sites/2/2023/07/Calque_1-5.png
-    style:
-      - 'background-color: #13333e'
-      - 'background-size: auto 35%'
-      - 'background-position-y: 30%'
 
   - name: Projet Voltaire
     href: https://www.projet-voltaire.fr/
