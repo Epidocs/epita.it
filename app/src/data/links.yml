@@ -167,16 +167,6 @@
     - 'background-position-x: 10%'
     - 'background-position-y: 20%'
 
-  - name: Projet Voltaire
-    href: https://www.projet-voltaire.fr/
-    class: tile tile-small-wide text-dark
-    background_image: https://ressources.dane.ac-versailles.fr/IMG/logo/projetvoltaire-2.jpg
-    style:
-    - 'background-color: #c7d600'
-    - 'background-size: auto 85%'
-    - 'background-position-x: 105%'
-    - 'background-position-y: 15%'
-
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
     class: tile tile-small-wide text-dark
