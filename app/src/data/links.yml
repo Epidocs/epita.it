@@ -180,12 +180,12 @@
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
     class: tile tile-small-wide text-dark
-    background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/320px-Rosetta_Stone_logo.svg.png
+    background_image: https://upload.wikimedia.org/wikipedia/commons/1/16/Rosetta_Stone_icon.png
     style:
-    - 'background-color: #ffffff'
-    - 'background-size: auto 60%'
-    - 'background-position-x: 50%'
-    - 'background-position-y: 15%'
+      - 'background-color: #ffe46d'
+      - 'background-size: auto 50%'
+      - 'background-position-x: 85%'
+      - 'background-position-y: 25%'
 
   - name: Algo Cours Wiki (FR)
     href: https://algo.infoprepa.epita.fr/
