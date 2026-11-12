@@ -217,6 +217,16 @@
     - 'background-position-y: 15%'
     - 'background-size: auto 60%'
 
+  - name: Glyps
+    href: https://epita.glyps.fr/
+    class: tile tile-small-wide text-dark
+    background_image: https://www.glyps.fr/logo.png
+    style:
+    - 'background-color: #f8fafc'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 25%'
+    - 'background-size: auto 40%'
+
 - title: Unofficial resources for students
   text: |
     <span class="icon icon-[fa6-solid--user-group] icon-align icon-fw"></span> = Community resource, not affiliated with EPITA.
