@@ -4,10 +4,10 @@
   - name: EPITA.fr
     href: https://www.epita.fr/
     class: tile tile-wide
-    background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
+    background_image: https://www.epita.fr/wp-content/uploads/2026/10/logo-epita-sans-baseline-bleu.webp
     style:
     - 'background-color: #03374e'
-    - 'background-size: auto 80%'
+    - 'background-size: auto 70%'
 
   - name: EPITA.net
     href: https://epita.net/
