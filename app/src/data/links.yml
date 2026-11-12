@@ -343,6 +343,16 @@
     - 'background-position-x: 50%'
     - 'background-position-y: 25%'
 
+  - name: APEE
+    href: https://www.epita.fr/association-parents-eleves/
+    class: tile tile-small-wide text-dark
+    background_image: https://www.epita.fr/wp-content/uploads/2026/07/favicon-150x150.webp
+    style:
+      - 'background-color: #fff'
+      - 'background-position-x: 50%'
+      - 'background-position-y: 10%'
+      - 'background-size: auto 80%'
+
   - name: EPITA.it Archive
     icon: icon-[fa6-solid--box-archive]
     relurl: /archive
