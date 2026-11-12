@@ -4,10 +4,18 @@
   - name: EPITA.fr
     href: https://www.epita.fr/
     class: tile tile-wide
-    background_image: https://www.epita.fr/wp-content/themes/epita-refonte-theme/assets/images/logo-epita.svg
+    background_image: https://www.epita.fr/wp-content/uploads/2026/10/logo-epita-sans-baseline-bleu.webp
     style:
     - 'background-color: #03374e'
-    - 'background-size: auto 80%'
+    - 'background-size: auto 70%'
+
+  - name: EPITA Helpcenter
+    href: https://support.epita.fr/hc/fr
+    class: tile tile-medium
+    background_image: https://support.epita.fr/hc/theming_assets/01KBF8WKK7RVBN2QPCA2FNSX37
+    style:
+      - 'background-color: #06254a'
+      - 'background-size: 90%'
 
   - name: EPITA.net
     href: https://epita.net/
@@ -100,16 +108,6 @@
     - 'background-size: 80%, 100%'
     - 'background-position-y: 15%'
 
-  - name: Absences
-    href: https://absences.epita.net/
-    class: tile tile-small-wide text-dark
-    background_image: https://absences.epita.net/assets/img/absences-logo.png
-    style:
-    - 'background-color: #fff'
-    - 'background-size: auto 90%'
-    - 'background-position-x: 95%'
-    - 'background-position-y: 10%'
-
   - name: Zeus
     href: https://zeus.ionis-it.com/
     class: tile tile-small-wide
@@ -119,6 +117,15 @@
     - 'background-size: auto 65%'
     - 'background-position-x: 75%'
     - 'background-position-y: 50%'
+
+  - name: Edusign
+    href: https://edusign.com/
+    class: tile tile-small-wide
+    background_image: https://edusign.com/fr/wp-content/uploads/sites/2/2023/07/Calque_1-5.png
+    style:
+      - 'background-color: #13333e'
+      - 'background-size: auto 35%'
+      - 'background-position-y: 30%'
 
   - name: Campus Maps
     icon: icon-[fa6-regular--map]
@@ -168,34 +175,15 @@
     - 'background-position-x: 10%'
     - 'background-position-y: 20%'
 
-  - name: Edusign
-    href: https://edusign.com/
-    class: tile tile-small-wide
-    background_image: https://edusign.com/fr/wp-content/uploads/sites/2/2023/07/Calque_1-5.png
-    style:
-      - 'background-color: #13333e'
-      - 'background-size: auto 35%'
-      - 'background-position-y: 30%'
-
-  - name: Projet Voltaire
-    href: https://www.projet-voltaire.fr/
-    class: tile tile-small-wide text-dark
-    background_image: https://ressources.dane.ac-versailles.fr/IMG/logo/projetvoltaire-2.jpg
-    style:
-    - 'background-color: #c7d600'
-    - 'background-size: auto 85%'
-    - 'background-position-x: 105%'
-    - 'background-position-y: 15%'
-
   - name: Rosetta Stone
     href: https://login.rosettastone.com/
     class: tile tile-small-wide text-dark
-    background_image: https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Rosetta_Stone_logo.svg/320px-Rosetta_Stone_logo.svg.png
+    background_image: https://upload.wikimedia.org/wikipedia/commons/1/16/Rosetta_Stone_icon.png
     style:
-    - 'background-color: #ffffff'
-    - 'background-size: auto 60%'
-    - 'background-position-x: 50%'
-    - 'background-position-y: 15%'
+      - 'background-color: #ffe46d'
+      - 'background-size: auto 50%'
+      - 'background-position-x: 85%'
+      - 'background-position-y: 25%'
 
   - name: Algo Cours Wiki (FR)
     href: https://algo.infoprepa.epita.fr/
@@ -216,6 +204,16 @@
     - 'background-position-x: 50%'
     - 'background-position-y: 15%'
     - 'background-size: auto 60%'
+
+  - name: Glyps
+    href: https://epita.glyps.fr/
+    class: tile tile-small-wide text-dark
+    background_image: https://www.glyps.fr/logo.png
+    style:
+    - 'background-color: #f8fafc'
+    - 'background-position-x: 50%'
+    - 'background-position-y: 25%'
+    - 'background-size: auto 40%'
 
 - title: Unofficial resources for students
   text: |
@@ -332,6 +330,16 @@
     - 'background-size: 90% auto'
     - 'background-position-x: 50%'
     - 'background-position-y: 25%'
+
+  - name: APEE
+    href: https://www.epita.fr/association-parents-eleves/
+    class: tile tile-small-wide text-dark
+    background_image: https://www.epita.fr/wp-content/uploads/2026/07/favicon-150x150.webp
+    style:
+      - 'background-color: #fff'
+      - 'background-position-x: 50%'
+      - 'background-position-y: 10%'
+      - 'background-size: auto 80%'
 
   - name: EPITA.it Archive
     icon: icon-[fa6-solid--box-archive]
