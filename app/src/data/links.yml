@@ -9,6 +9,14 @@
     - 'background-color: #03374e'
     - 'background-size: auto 70%'
 
+  - name: EPITA Helpcenter
+    href: https://support.epita.fr/hc/fr
+    class: tile tile-medium
+    background_image: https://support.epita.fr/hc/theming_assets/01KBF8WKK7RVBN2QPCA2FNSX37
+    style:
+      - 'background-color: #06254a'
+      - 'background-size: 90%'
+
   - name: EPITA.net
     href: https://epita.net/
     class: tile tile-medium
