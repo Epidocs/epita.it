@@ -5,7 +5,8 @@
 
     "paths": {
       "//*": [ "./*" ],
-      "~/*": [ "./src/*" ]
+      "~/*": [ "./src/*" ],
+      "~test/*": [ "./test/*" ]
 		},
 
     "outDir": "./dist",
@@ -21,6 +22,7 @@
   "include": [
     "${configDir}/.astro/types.d.ts",
     "${configDir}/src",
+    "${configDir}/test",
     "${configDir}/*.ts"
   ],
   "exclude": [
