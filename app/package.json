@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "lint": "biome lint",
     "check": "astro check --tsconfig tsconfig.prod.json",
     "build-only": "astro build",
     "build": "pnpm run check && pnpm run build-only",
