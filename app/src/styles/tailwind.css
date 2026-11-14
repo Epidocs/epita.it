@@ -25,6 +25,14 @@
 	--breakpoint-xl: 1140px;
 }
 
+/* Tailwind CSS utilities */
+@utility icon-align {
+	@apply align-[-0.125em];
+}
+@utility icon-fw {
+	@apply w-5 text-center;
+}
+
 /* Tailwind CSS safe list */
 /* You may optionally declare a safelist of classes to always include in the final CSS output. */
 /* Syntax example: `@source inline("{sm:,md,lg:,xl:,}bg-red-{100..900..50}");` */
