@@ -25,12 +25,14 @@ export const i18nLocales = [
 
 export const i18nDefaultLocale = i18nLocales[0].path
 
+export const i18nFallback = Object.fromEntries(
+	i18nLocales.slice(1).map(({ path }) => [path, i18nDefaultLocale]),
+) as Record<Exclude<typeof i18nLocales[number]['path'], typeof i18nDefaultLocale>, typeof i18nDefaultLocale>
+
 export const i18n = {
 	locales: i18nLocales,
 	defaultLocale: i18nDefaultLocale,
-	fallback: {
-		fr: 'en',
-	},
+	fallback: i18nFallback,
 	localeKeys: {
 		en,
 		fr,
