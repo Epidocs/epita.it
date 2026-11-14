@@ -3,10 +3,33 @@ server {
 	listen  [::]:${NGINX_PORT};
 	server_name  ${NGINX_HOST};
 
+	# Compress text assets
+	gzip  on;
+	gzip_vary  on;
+	gzip_comp_level  5;
+	gzip_types  text/plain text/css text/xml application/json application/javascript application/xml image/svg+xml;
+
+	# Security headers
+	add_header  X-Content-Type-Options  "nosniff"  always;
+	add_header  X-Frame-Options  "SAMEORIGIN"  always;
+	add_header  Referrer-Policy  "strict-origin-when-cross-origin"  always;
+
 	# Serve application files
 	location / {
 		root  /usr/share/nginx/html;
 		index  index.html index.htm;
+	}
+
+	# Cache hashed assets for a long time
+	location ~ ^/(.+/)?_astro/ {
+		root  /usr/share/nginx/html;
+		access_log  off;
+		expires  1y;
+		add_header  Cache-Control  "public, immutable";
+		# Repeat security headers, as add_header is not inherited here
+		add_header  X-Content-Type-Options  "nosniff"  always;
+		add_header  X-Frame-Options  "SAMEORIGIN"  always;
+		add_header  Referrer-Policy  "strict-origin-when-cross-origin"  always;
 	}
 
 	# Redirect client errors
