@@ -61,6 +61,17 @@
     - 'background-color: #d09c01'
     # - 'background-size: 90%'
 
+  # Deprecated
+  - name: Absences
+    href: https://absences.epita.net/
+    class: tile tile-small-wide text-dark
+    background_image: https://absences.epita.net/assets/img/absences-logo.png
+    style:
+    - 'background-color: #fff'
+    - 'background-size: auto 90%'
+    - 'background-position-x: 95%'
+    - 'background-position-y: 10%'
+
   # Connection timeout
   - name: Chronos
     href: http://chronos.epita.net/
@@ -106,6 +117,17 @@
     class: tile tile-small-wide text-dark
     style:
     - 'background-color: #f5f5ff'
+
+  # Deprecated
+  - name: Projet Voltaire
+    href: https://www.projet-voltaire.fr/
+    class: tile tile-small-wide text-dark
+    background_image: https://ressources.dane.ac-versailles.fr/IMG/logo/projetvoltaire-2.jpg
+    style:
+    - 'background-color: #c7d600'
+    - 'background-size: auto 85%'
+    - 'background-position-x: 105%'
+    - 'background-position-y: 15%'
 
   # Redirects to Forge Docs
   - name: Doc. EPITA (CRI)
