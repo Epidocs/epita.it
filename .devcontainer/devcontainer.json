@@ -3,6 +3,7 @@
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "devcontainer",
   "workspaceFolder": "/workdir",
+  "postCreateCommand": "git config --global --add safe.directory /workdir",
   "shutdownAction": "stopCompose",
   "forwardPorts": [4321],
   "portsAttributes": {
@@ -11,8 +12,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "astro-build.astro-vscode",
-        "mhutchie.git-graph"
+        "astro-build.astro-vscode"
       ]
     }
   }

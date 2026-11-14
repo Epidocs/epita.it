@@ -5,6 +5,16 @@ name: Check CI
 # - ASTRO_SITE_URL
 # - ASTRO_BASE_PATH
 # - ASTRO_ASSETS_PREFIX
+# - CI_DISABLE_CHECKS (disable all checks)
+# - CI_DISABLE_TESTS (disable all tests)
+# - CI_DISABLE_TESTS_UNIT
+# - CI_DISABLE_TESTS_E2E
+# - CI_DISABLE_LINT (disable all lint checks)
+# - CI_DISABLE_LINT_NODE
+# - CI_DISABLE_LINT_DOCKER
+# - CI_DISABLE_SECURITY (disable all security checks)
+# - CI_DISABLE_SECURITY_AUDIT
+# - CI_DISABLE_SECURITY_SECRETS
 
 # GitHub secrets: N/A
 
@@ -27,6 +37,8 @@ on:
       - 'docker-compose.cicd.yml'
       - 'docker-compose.test-unit.yml'
       - 'docker-compose.test-e2e.yml'
+      - 'scripts/**'
+      - '.gitleaks-baseline.json'
       - '.env'
       # Application files
       - 'app/**'
@@ -368,3 +380,124 @@ jobs:
             exit 1
           fi
           echo '::endgroup::'
+
+  # Lint Node job
+  lint-node:
+    name: Lint Node
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Only run if:
+    # - Checks are not disabled
+    # - Lint checks are not disabled
+    # - Node lint is not disabled
+    if: |
+      vars.CI_DISABLE_CHECKS != 'true' &&
+      vars.CI_DISABLE_LINT != 'true' &&
+      vars.CI_DISABLE_LINT_NODE != 'true'
+
+    steps:
+
+      # Initialization steps
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install pnpm
+        run: npm install -g pnpm@12
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        working-directory: app
+
+      # Execution steps
+
+      - name: Lint Node projects
+        run: sh scripts/check_node_lint.sh
+
+  # Lint Docker job
+  lint-docker:
+    name: Lint Docker
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Only run if:
+    # - Checks are not disabled
+    # - Lint checks are not disabled
+    # - Docker lint is not disabled
+    if: |
+      vars.CI_DISABLE_CHECKS != 'true' &&
+      vars.CI_DISABLE_LINT != 'true' &&
+      vars.CI_DISABLE_LINT_DOCKER != 'true'
+
+    steps:
+
+      # Initialization steps
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      # Execution steps
+
+      - name: Lint Dockerfiles
+        run: sh scripts/check_docker_lint.sh
+
+  # Audit job
+  audit:
+    name: Audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Only run if:
+    # - Checks are not disabled
+    # - Security checks are not disabled
+    # - Dependencies audit is not disabled
+    if: |
+      vars.CI_DISABLE_CHECKS != 'true' &&
+      vars.CI_DISABLE_SECURITY != 'true' &&
+      vars.CI_DISABLE_SECURITY_AUDIT != 'true'
+
+    steps:
+
+      # Initialization steps
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install pnpm
+        run: npm install -g pnpm@12
+
+      # Execution steps
+
+      - name: Audit Node dependencies
+        run: sh scripts/check_node_audit.sh
+
+  # Secrets scan job
+  secrets:
+    name: Secrets Scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Only run if:
+    # - Checks are not disabled
+    # - Security checks are not disabled
+    # - Secrets scan is not disabled
+    if: |
+      vars.CI_DISABLE_CHECKS != 'true' &&
+      vars.CI_DISABLE_SECURITY != 'true' &&
+      vars.CI_DISABLE_SECURITY_SECRETS != 'true'
+
+    steps:
+
+      # Initialization steps
+
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          # Full history is needed to scan past commits
+          fetch-depth: 0
+
+      # Execution steps
+
+      - name: Scan git history for secrets
+        run: sh scripts/check_secrets_scan.sh

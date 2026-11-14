@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "lint": "biome lint",
     "check": "astro check --tsconfig tsconfig.prod.json",
     "build-only": "astro build",
     "build": "pnpm run check && pnpm run build-only",
@@ -27,7 +28,7 @@
   },
   "homepage": "https://github.com/Epidocs/epita.it#readme",
   "dependencies": {
-    "@astrojs/check": "^0.9.10",
+    "@astrojs/check": "^0.9.12",
     "@fontsource/roboto": "^5.3.0",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-regular": "^1.2.4",
@@ -35,18 +36,23 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/twemoji": "^1.2.5",
     "@iconify/tailwind4": "^1.2.3",
-    "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.8",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.12",
     "js-yaml": "^4.3.2",
-    "sass": "^1.103.1",
-    "tailwindcss": "^4.3.3"
+    "sass": "^1.108.2",
+    "tailwindcss": "^4.3.5"
   },
   "devDependencies": {
-    "@playwright/test": "^1.62.1",
+    "@biomejs/biome": "^2.6.7",
+    "@playwright/test": "^1.65.1",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^24.13.3",
+    "@types/node": "^24.19.2",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.11"
+    "vitest": "^4.1.12"
+  },
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=12"
   },
   "imports": {
     "#global.css": "./src/styles/global.css",

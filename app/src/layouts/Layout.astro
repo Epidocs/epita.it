@@ -1,16 +1,22 @@
 ---
+import { i18nFactory } from '~/i18n'
 import { site } from '~/site'
 import Base from '~/layouts/Base.astro'
 import type { Props as BaseProps } from '~/layouts/Base.astro'
 
 export interface Props extends BaseProps {}
 
+const _ = i18nFactory(Astro.currentLocale)
+const pageTitle = Astro.props.title ? _(Astro.props.title) : undefined
+const siteTitle = site.title ? _(site.title) : undefined
+
 const baseProps: BaseProps = {
 	...site,
+	lang: Astro.currentLocale ?? site.lang,
 	...Astro.props,
-	title: Astro.props.title
-		? (site.title ? `${Astro.props.title} – ${site.title}` : Astro.props.title)
-		: (site.title || undefined),
+	title: pageTitle
+		? (siteTitle ? `${pageTitle} – ${siteTitle}` : pageTitle)
+		: (siteTitle || undefined),
 }
 ---
 

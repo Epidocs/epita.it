@@ -13,6 +13,7 @@ export default defineConfig({
 
   use: {
     baseURL: 'http://localhost:4321',
+    locale: 'en-US',
     trace: 'on-first-retry', // See https://playwright.dev/docs/trace-viewer.
   },
 

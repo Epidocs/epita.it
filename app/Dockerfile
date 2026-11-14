@@ -49,7 +49,7 @@ FROM node_base AS node_build_base
 
 # Install pnpm
 RUN --mount=type=cache,id=npm,target=/root/.npm \
-	npm install -g pnpm@11
+	npm install -g pnpm@12
 
 
 # ----------------
@@ -265,6 +265,7 @@ FROM test_base AS test_e2e
 ARG UID
 
 # Copy dev dependencies
+RUN chown "${UID}:0" .
 COPY --from=source_dev --link --chown="${UID}:0" /app/.astro/ ./.astro/
 COPY --from=source_dev --link --chown="${UID}:0" /app/node_modules/ ./node_modules/
 
@@ -274,7 +275,6 @@ COPY --from=deps_dev --link --chown="${UID}:0" /app/package.json /app/pnpm-lock.
 RUN pnpm exec playwright install --with-deps
 
 # Copy dev source code
-RUN chown "${UID}:0" .
 COPY --from=source_dev --link --chown="${UID}:0" /app/ ./
 
 # Build application

@@ -20,7 +20,7 @@ export function getUrlWithoutLocale(url: URL | string): string
 				}
 			}
 		}
-		catch (error)
+		catch
 		{}
 
 		urlPathnames.push(urlParts[i])
@@ -33,5 +33,5 @@ export function getUrlWithoutLocale(url: URL | string): string
 		++i
 	}
 
-	return '/' + urlPathnames.join('/')
+	return `/${urlPathnames.join('/')}`
 }

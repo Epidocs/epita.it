@@ -17,7 +17,7 @@ function getLocaleKeysValue(
 	}
 
 	// Try to access the exact key
-	let value = localeKeys?.[key]
+	const value = localeKeys?.[key]
 	if (value !== undefined)
 	{
 		return typeof value === 'string' ? value : undefined
@@ -96,7 +96,7 @@ export function i18n(
 		// Arguments are passed as an array
 		return value.replaceAll(
 			/{(\d+)}/g,
-			(match, number) => String(args[Number.parseInt(number)] ?? match),
+			(match, number) => String(args[Number.parseInt(number, 10)] ?? match),
 		)
 	}
 
