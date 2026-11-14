@@ -1,15 +1,11 @@
 ---
-import { Fragment } from 'astro/jsx-runtime'
-
 import { i18nFactory, locales } from '~/i18n'
 const _ = i18nFactory(Astro.currentLocale as any)
 
 const {
-	type: elementType,
+	type: ElementType,
 	...otherProps
 } = Astro.props
-
-const ElementType = elementType || Fragment
 
 for (const key in Astro.slots)
 {
@@ -42,6 +38,7 @@ const [ i18nKeys, i18nArgs ] = Object.entries(otherProps).reduce<[
 
 ---
 
-<ElementType>
-	{_(i18nKeys as any, i18nArgs)}
-</ElementType>
+{ElementType
+	? <ElementType>{_(i18nKeys as any, i18nArgs)}</ElementType>
+	: <Fragment>{_(i18nKeys as any, i18nArgs)}</Fragment>
+}

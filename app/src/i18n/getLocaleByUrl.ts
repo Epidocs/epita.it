@@ -23,7 +23,7 @@ export function getLocaleByUrl(url: URL | string, fallback: boolean = true): str
 				return locale
 			}
 		}
-		catch (error)
+		catch
 		{}
 	}
 
